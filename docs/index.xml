@@ -316,10 +316,10 @@ The project name should be unique, if that&amp;rsquo;s the case the project ID w
     
     <item>
       <title>Docs: Interplanetary File System</title>
-      <link>/docs/alternative-publishing-methods/ipfs/</link>
+      <link>/docs/alternative-publishing-methods/ipfs/ipfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/alternative-publishing-methods/ipfs/</guid>
+      <guid>/docs/alternative-publishing-methods/ipfs/ipfs/</guid>
       <description>
         
         
@@ -657,10 +657,10 @@ HiddenServicePort &lt;span style=&#34;color:#f60&#34;&gt;80&lt;/span&gt; 127.0.0
     
     <item>
       <title>Docs: Encrypted SNI</title>
-      <link>/docs/alternative-publishing-methods/esni/</link>
+      <link>/docs/alternative-publishing-methods/esni/esni/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/alternative-publishing-methods/esni/</guid>
+      <guid>/docs/alternative-publishing-methods/esni/esni/</guid>
       <description>
         
         

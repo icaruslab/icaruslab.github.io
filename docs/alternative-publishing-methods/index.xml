@@ -36,10 +36,10 @@
     
     <item>
       <title>Docs: Interplanetary File System</title>
-      <link>/docs/alternative-publishing-methods/ipfs/</link>
+      <link>/docs/alternative-publishing-methods/ipfs/ipfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/alternative-publishing-methods/ipfs/</guid>
+      <guid>/docs/alternative-publishing-methods/ipfs/ipfs/</guid>
       <description>
         
         
@@ -208,10 +208,10 @@ provides a solution similar to the regular web Domain Name System (DNS).
     
     <item>
       <title>Docs: Encrypted SNI</title>
-      <link>/docs/alternative-publishing-methods/esni/</link>
+      <link>/docs/alternative-publishing-methods/esni/esni/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/alternative-publishing-methods/esni/</guid>
+      <guid>/docs/alternative-publishing-methods/esni/esni/</guid>
       <description>
         
         

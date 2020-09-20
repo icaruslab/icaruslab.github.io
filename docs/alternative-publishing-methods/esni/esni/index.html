@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="/docs/contribution-guidelines/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,21 +20,28 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Contribution Guidelines | Icarus Project</title><meta property="og:title" content="Contribution Guidelines" />
-<meta property="og:description" content="How to contribute to the docs
+<title>Encrypted SNI | Icarus Project</title><meta property="og:title" content="Encrypted SNI" />
+<meta property="og:description" content="Encrypted Server Name Indication
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/docs/contribution-guidelines/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/alternative-publishing-methods/esni/esni/" />
 <meta property="og:image" content="/images/misc/logo.png"/>
 <meta property="og:site_name" content="Icarus Project" />
-<meta itemprop="name" content="Contribution Guidelines">
-<meta itemprop="description" content="How to contribute to the docs
+<meta itemprop="name" content="Encrypted SNI">
+<meta itemprop="description" content="Encrypted Server Name Indication
 ">
+
+<meta itemprop="wordCount" content="582">
+<meta itemprop="image" content="/images/misc/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/misc/logo.png"/>
 
-<meta name="twitter:title" content="Contribution Guidelines"/>
-<meta name="twitter:description" content="How to contribute to the docs
+<meta name="twitter:title" content="Encrypted SNI"/>
+<meta name="twitter:description" content="Encrypted Server Name Indication
 "/>
 
 
@@ -58,7 +64,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -357,10 +363,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/alternative-publishing-methods/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Alternative Publishing Methods</a>
+    <a  href="/docs/alternative-publishing-methods/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Alternative Publishing Methods</a>
   </li>
   <ul>
-    <li class="collapse " id="docsalternative-publishing-methods">
+    <li class="collapse show" id="docsalternative-publishing-methods">
       
       
       
@@ -414,7 +420,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsalternative-publishing-methodsesniesni" href="/docs/alternative-publishing-methods/esni/esni/">ESNI</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsalternative-publishing-methodsesniesni" href="/docs/alternative-publishing-methods/esni/esni/">ESNI</a>
       
       
     </li>
@@ -433,10 +439,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/contribution-guidelines/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+    <a  href="/docs/contribution-guidelines/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
   </li>
   <ul>
-    <li class="collapse show" id="docscontribution-guidelines">
+    <li class="collapse " id="docscontribution-guidelines">
       
       
       
@@ -494,8 +500,8 @@
 
 
 
-<a href="https://github.com/icaruslab/docs/edit/master/content/en/docs/Contribution%20guidelines/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/icaruslab/docs/issues/new?title=Contribution%20Guidelines" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/icaruslab/docs/edit/master/content/en/docs/Alternative%20Publishing%20Methods/esni/esni.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/icaruslab/docs/issues/new?title=Encrypted%20SNI" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 
 <a href="https://github.com/icaruslab/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
@@ -509,14 +515,14 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#creating-an-issue">Creating an issue</a></li>
-    <li><a href="#useful-resources">Useful resources</a></li>
-    <li><a href="#updating-a-single-page">Updating a single page</a></li>
-    <li><a href="#previewing-your-changes-locally">Previewing your changes locally</a></li>
-    <li><a href="#localization">Localization</a>
+    <li>
       <ul>
-        <li><a href="#example-of-the-required-values">Example of the required values</a></li>
-        <li><a href="#available-languages">available Languages</a></li>
+        <li><a href="#what-is-server-name-indication-sni">What is Server Name Indication (SNI)?</a></li>
+        <li><a href="#what-is-encrypted-sni-and-how-can-it-help">What is Encrypted SNI and how can it help?</a></li>
+        <li><a href="#how-to-test-encrypted-sni">How to test Encrypted SNI?</a></li>
+        <li><a href="#server-side">Server Side</a></li>
+        <li><a href="#client-side">Client Side</a></li>
+        <li><a href="#resources-and-readings">Resources and readings</a></li>
       </ul>
     </li>
   </ul>
@@ -539,6 +545,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="/docs/">Documentation</a>
 </li>
@@ -546,8 +555,15 @@
 
 
 
+<li class="breadcrumb-item" >
+	<a href="/docs/alternative-publishing-methods/">Alternative Publishing Methods</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="/docs/contribution-guidelines/">Contribution Guidelines</a>
+	<a href="/docs/alternative-publishing-methods/esni/esni/">ESNI</a>
 </li>
 
 	</ol>
@@ -555,146 +571,127 @@
 
             
 <div class="td-content">
-	<h1>Contribution Guidelines</h1>
-        <div class="lead">How to contribute to the docs</div>
+	<h1>Encrypted SNI</h1>
+    <div class="lead">Encrypted Server Name Indication</div>
 	
-            <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 3 minute read</p>
-        
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>This project is hoping to create a knowledge repository of accumulated experience in the fight for a free and open Internet. All our documentations, guides, code, and research are published under <a href="https://www.gnu.org/licenses/quick-guide-gplv3.html">GNU General Public License (GPLv3)</a></p>
-<p>We welcome and appreciate any contributions, suggestions, and critique.</p>
-
-</div>
-
-<p>We use <a href="https://gohugo.io/">Hugo</a> to format and generate our website, the
-<a href="https://github.com/google/docsy">Docsy</a> theme for styling and site structure,
-and <a href="https://www.github.com/">GitHub</a> to deploy and host the site.</p>
-<p><a href="https://gohugo.io/">Hugo</a> is an open-source static site generator that provides us with templates,
-content management in a standard directory structure, and a website generation
-engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps them up into a website.</p>
+        <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 3 minute read</p>
+           
+	<p>Required expertise level : <strong>Advanced</strong></p>
+<p>Platform : <strong>Any</strong></p>
+<hr>
+<h3 id="what-is-server-name-indication-sni">What is Server Name Indication (SNI)?</h3>
+<p><strong>Server Name Indication (SNI) is an extension to the Transport Layer Security (TLS) network encrypted protocol.</strong></p>
 
 
 <div class="alert alert-primary" role="alert">
 
-<p><strong>This Project and all it&rsquo;s related materials are hosted on <a href="https://github.com/icaruslab">GitHub</a>.</strong></p>
-<p>We use GitHub pull requests to receive contributions and submissions,  Consult <a href="https://help.github.com/articles/about-pull-requests/">GitHub Help</a> for more information on using pull requests.</p>
+<strong>Essentially,</strong> SNI&rsquo;s purpose is to send the requested domain name to the webserver in the form of plain/text HTTP header, so the server will send back the appropriate response to initiate the encrypted connection.
+</div>
+
+<p><strong>SNI was originally <a href="https://tools.ietf.org/html/rfc3546">standardized in 2003</a>,</strong> it&rsquo;s wide implementation is a big part of today&rsquo;s Internet infrastructure, mainly because it allowed hosting multiple websites with different domain names on the same webserver.</p>
+<p>Since then, the SNI header is a main target in any Deep Packet Inspection (DPI) operations, to preliminarily detect traffic to specific host before blocking.  <a href="https://blog.cloudflare.com/encrypted-sni/">read more about SNI and the issues it presents</a></p>
+<h3 id="what-is-encrypted-sni-and-how-can-it-help">What is Encrypted SNI and how can it help?</h3>
+
+
+<div class="alert alert-primary" role="alert">
+
+<p><a href="https://tools.ietf.org/html/draft-ietf-tls-esni-06">Encrypted SNI (ESNI)</a> is a new suggested extension, it uses symmetric encryption key to encrypt the SNI header, the server publishes the public key <code>well-known</code> DNS record and the client fetches the key using DNS.</p>
+<p>Current implementations of ESNI requires DNS over HTTPS (DoH) in order to work.</p>
 
 </div>
 
-<h2 id="creating-an-issue">Creating an issue</h2>
-<p>If you&rsquo;ve found a problem in the docs, but you&rsquo;re not sure how to fix it yourself, please create an issue in the <a href="https://github.com/icaruslab/docs/issues">Documentations repo</a>. You can also create an issue about a specific page by clicking the <strong>Create Issue</strong> button in the top right hand corner of the page.</p>
-<h2 id="useful-resources">Useful resources</h2>
-<ul>
-<li><a href="https://www.docsy.dev/docs/">Docsy user guide</a>: All about Docsy Hugo theme, including how it manages navigation, look and feel, and multi-language support.</li>
-<li><a href="https://gohugo.io/documentation/">Hugo documentation</a>: Comprehensive reference for Hugo.</li>
-<li><a href="https://guides.github.com/activities/hello-world/">Github Hello World!</a>: A basic introduction to GitHub concepts and workflow.</li>
-</ul>
-<h2 id="updating-a-single-page">Updating a single page</h2>
-<p>If you&rsquo;ve just spotted something you&rsquo;d like to change while using the docs, Docsy has a shortcut for you:</p>
-<p>1- Click <strong>Edit this page</strong> in the top right hand corner of the page.
-2- If you don&rsquo;t already have an up to date fork of the project repo, you are prompted to get one - click <strong>Fork this repository and propose changes</strong> or <strong>Update your Fork</strong> to get an up to date version of the project to edit. The appropriate page in your fork is displayed in edit mode.</p>
-<h2 id="previewing-your-changes-locally">Previewing your changes locally</h2>
-<p>If you want to run your own local Hugo server to preview your changes as you work:</p>
-<p>1- Follow the instructions here <a href="https://gohugo.io/getting-started/quick-start/">Getting started</a> to install Hugo and any other tools you need. You&rsquo;ll need at least <strong>Hugo version 0.45</strong> (we recommend using the most recent available version), and it must be the <strong>extended</strong> version, which supports SCSS.</p>
-<p>2- Fork the <a href="https://github.com/icaruslab/docs">project website repository</a> repo into your own project, clone it to your local machine</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone <span style="color:#555">[</span>your fork address<span style="color:#555">]</span>
-</code></pre></div><p>3- Run <code>hugo server</code> in the site root directory.</p>
-<blockquote>
-<p>By default your site will be available at http://localhost:1313/. Now that you&rsquo;re serving your site locally, Hugo will watch for changes to the content and automatically refresh your site.</p>
-</blockquote>
-<p>4- Continue with the usual <a href="https://guides.github.com/activities/hello-world/">GitHub workflow</a> to edit files, commit them, push the changes up to your fork, and create a pull request.</p>
-<h2 id="localization">Localization</h2>
-<p>We hope our documentations will be accessible to as many people as possible, if you find it useful and willing to localize it to unavailable language, or have suggestions to improve an existing translation, we welcome and appreciate your efforts, we use <a href="https://guides.github.com/activities/hello-world/">GitHub workflow</a>.</p>
-<p>After forking the website repository to your own project/account</p>
-<ul>
-<li>Create a directory under <code>content</code> i.e. <code>content/ar</code></li>
-<li>Add the new language under <code>[languages]</code> in <code>config.toml</code></li>
-</ul>
-<h3 id="example-of-the-required-values">Example of the required values</h3>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[languages.en]
-		title = <span style="color:#c30">&#34;Icarus Project&#34;</span>
-		description = <span style="color:#c30">&#34;Testign and documenting Internet censorship circumvention techniques&#34;</span>
-		languageName =<span style="color:#c30">&#34;English&#34;</span>
-		languagedirection = <span style="color:#c30">&#34;ltr&#34;</span>
-		contentDir = <span style="color:#c30">&#34;content/en&#34;</span>
-    weight = <span style="color:#f60">1</span>
-    time_format_default = <span style="color:#c30">&#34;02.01.2006&#34;</span>
-		time_format_blog = <span style="color:#c30">&#34;02.01.2006&#34;</span>
-</code></pre></div><ul>
-<li>Follow <a href="https://www.docsy.dev/docs/language/#internationalization-bundles">Docsy&rsquo;s guide</a> on how to translate the theme&rsquo;s UI strings (text for buttons etc.)</li>
-<li>Submit your changes in a pull request</li>
-</ul>
-<h3 id="available-languages">available Languages</h3>
-<ul>
-<li>
-<p><input disabled="" type="checkbox"> Arabic (coming soon!)</p>
-</li>
-<li>
-<p><input checked="" disabled="" type="checkbox"> English</p>
-</li>
-</ul>
 
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+Encrypted SNI is still not standardized, which means that it&rsquo;s still in early development stages and might undergo a lot of changes on it&rsquo;s way to be a widely implemented standard
 </div>
+
+<hr>
+<h3 id="how-to-test-encrypted-sni">How to test Encrypted SNI?</h3>
+<p>Some projects are trying to test for the best implementation of ESNI, or how to integrate it with major software stacks i.e. <a href="https://github.com/sftcd/nginx">Nginx</a>, and <a href="https://github.com/sftcd/openssl/tree/master/esnistuff">OpenSSL</a>.</p>
+<p><strong>If you are interested in a deeper technical understanding of ESNI you can check out these projects</strong></p>
+<ul>
+<li><a href="https://defo.ie/">Developing ESNI for OpenSSL (DEfO)</a></li>
+<li><a href="https://github.com/SixGenInc/Noctilucent">Noctilucent</a></li>
+</ul>
+<hr>
+
+
+<div class="alert alert-primary" role="alert">
+
+In this guide, we will use the most stable and tested implementation which comes with CloudFlare and Mozilla Firefox
+</div>
+
+<h3 id="server-side">Server Side</h3>
+<p><strong>Currently,</strong> the only stable and tested server side implementation of ESNI is <a href="https://blog.cloudflare.com/esni/">CloudFlare</a>.</p>
+<p>All you have to do is to enable <strong>TLS 1.3</strong></p>
+<p><strong>Log in</strong> to your <strong>CloudFlare account,</strong> select your <strong>domain name</strong>, go to &gt; <code>SSL/TLS</code> options, choose &gt; <code>Edge Certificates</code>, and make sure &gt; <code>TLS 1.3</code> is enabled.</p>
+<p><img src="/images/esni/1.png" alt=""></p>
+<h3 id="client-side">Client Side</h3>
+<p>Mozilla Firefox latest releases are shipped with TLSv1.3 and ESNI extension support, yet, it doesn&rsquo;t come enabled by default for now.</p>
+<p><strong>To enable ESNI support in Mozilla Firefox</strong></p>
+<ul>
+<li>Make Firefox is updated to latest release</li>
+</ul>
+<p><img src="/images/esni/2.png" alt=""></p>
+<ul>
+<li>Enable DNS over HTTPS (DoH) in <code>Preferences</code> &gt; <code>Network Settings</code> &gt; <code>Enable DNS over HTTPS</code></li>
+</ul>
+<p><img src="/images/esni/3.png" alt=""></p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+<p>CloudFlare DoH resolver <strong>might be blocked</strong> in your country. <strong><a href="https://1.1.1.1/help">Check here</a>.</strong></p>
+<p>If that&rsquo;s the case, you can try changing <code>Next DNS</code>, or choose <code>Custom</code> and test the public resolver - with DoH support -  from <strong><a href="https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers">this list</a>.</strong></p>
+
+</div>
+
+<ul>
+<li>Enable ESNI extension support
+<ul>
+<li>Open a <strong>new tab</strong> and type the address <code>about:config</code></li>
+<li><strong>Click</strong> <code>Accept the Risk and Continue</code></li>
+<li><strong>Search</strong> for <code>network.security.esni.enabled</code></li>
+<li><strong>Click</strong> on the value to change it from <code>False</code> to <code>True</code></li>
+</ul>
+</li>
+<li><strong>Restart</strong> your browser and test your settings <a href="https://www.cloudflare.com/ssl/encrypted-sni/">here</a></li>
+</ul>
+<p><img src="/images/esni/4.png" alt=""></p>
+<p><img src="/images/esni/5.png" alt=""></p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Test your website</h4>
+<p>by adding visiting this address in your browser <code>https://[yourdomain.com]/cdn-cgi/trace</code> i.e. <code>https://www.cloudflare.com/cdn-cgi/trace</code></p>
+<p>You should get these <strong>values:</strong></p>
+<pre><code>tls=TLSv1.3
+sni=encrypted
+</code></pre>
+</div>
+
+<hr>
+<h3 id="resources-and-readings">Resources and readings</h3>
+<ul>
+<li>CloudFlare : <a href="https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/">Encrypt that SNI: Firefox edition</a></li>
+<li>CloudFlare : <a href="https://blog.cloudflare.com/encrypted-sni/">Encrypt it or lose it: how encrypted SNI works</a></li>
+<li>IETF : <a href="https://tools.ietf.org/html/rfc3546">Transport Layer Security (TLS) Extensions</a></li>
+<li>IETF : <a href="https://tools.ietf.org/html/draft-ietf-tls-esni-07">TLS Encrypted Client Hello - draft-ietf-tls-esni-07</a></li>
+<li>Chromium Support Status :  <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=908132">Issue 908132</a></li>
+<li><a href="https://defo.ie/">Developing ESNI for OpenSSL (DEfO)</a></li>
+<li>Mozilla : <a href="https://blog.mozilla.org/security/2018/10/18/encrypted-sni-comes-to-firefox-nightly/">Encrypted SNI Comes to Firefox Nightly - October 18, 2018</a></li>
+<li>If you want to test ESNI further, or develop something for it - <a href="https://github.com/SixGenInc/Noctilucent">Noctilucent</a></li>
+<li>For better understanding of <a href="https://www.cloudflare.com/learning/dns/dns-over-tls/">DNS over HTTPS (DoH)</a> and other <a href="https://dnsprivacy.org/wiki/">DNS privacy related materials</a></li>
+</ul>
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified September 20, 2020: <a  href="https://github.com/icaruslab/docs/commit/17bfe5ce7b168877e8da658a54bb9961fe575349">Hello world (17bfe5c)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
 </div>
 </div>
+
 
           </main>
         </div>
