@@ -62,7 +62,7 @@ in this scenario, the browser gets to do most of job and IPFS just delivers raw 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 
-To learn about &lt;strong&gt;the difference between static and dynamic websites&lt;/strong&gt;, refer the &lt;a href=&#34;/docs/getting-started/#what-is-the-difference-between-static-and-dynamic-websites&#34;&gt;&lt;strong&gt;Getting Started&lt;/strong&gt;&lt;/a&gt; section in the documentations.
+To learn about &lt;strong&gt;the difference between static and dynamic websites&lt;/strong&gt;, refer the &lt;a href=&#34;../../docs/getting-started/#what-is-the-difference-between-static-and-dynamic-websites&#34;&gt;&lt;strong&gt;Getting Started&lt;/strong&gt;&lt;/a&gt; section in the documentations.
 &lt;/div&gt;
 
 &lt;hr&gt;
@@ -91,7 +91,7 @@ To learn about &lt;strong&gt;the difference between static and dynamic websites&
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/1.png&#34; alt=&#34;&#34;&gt;IPFS Desktop app&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/1.png&#34; alt=&#34;&#34;&gt;IPFS Desktop app&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;adding-your-static-mirror-to-ipfs&#34;&gt;Adding your static mirror to IPFS&lt;/h2&gt;
 
@@ -110,7 +110,7 @@ ipfs version 0.6.0
 &lt;li&gt;Using your termianl, go to your static mirror directory.&lt;/li&gt;
 &lt;li&gt;Run &lt;code&gt;ipfs add -Q  --recursive --progress mystaticmirror &lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -121,7 +121,7 @@ start adding your files to it&amp;rsquo;s &lt;a href=&#34;https://docs.ipfs.io/c
 &lt;ul&gt;
 &lt;li&gt;Now, we can try to access our mirror using IPFS and the hash of the root directory.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;There are two ways of accessing files on IPFS&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Using a gateway&lt;/strong&gt;
@@ -155,7 +155,7 @@ There are several online gateways that provides a bridge between normal web and 
 &lt;li&gt;Install &lt;a href=&#34;https://github.com/ipfs-shipyard/ipfs-companion&#34;&gt;&lt;strong&gt;IPFS Companion&lt;/strong&gt;&lt;/a&gt; browser extension and make sur IPFS is running on you machine.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;When you enable the extension,&lt;/strong&gt; it detects if your local IPFS daemon is running in the background and automatically rewrites any IPFS URL that contains a valid hash to be fetched using your local IPFS installation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;updating-a-website-on-ipfs&#34;&gt;Updating a website on IPFS&lt;/h3&gt;
 
@@ -181,16 +181,16 @@ provides a solution similar to the regular web Domain Name System (DNS).
 &lt;li&gt;Generate a new IPFS key&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;ipfs key gen --type=rsa --size=2048 mystaticsite&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/5.png&#34; alt=&#34;&#34;&gt;The output will be your new IPNS address&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/5.png&#34; alt=&#34;&#34;&gt;The output will be your new IPNS address&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Publish your IPNS address and link it with your mirror&amp;rsquo;s most recent hash.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;ipfs name publish --key=mystaticsite [replace with your files most recent hash]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/6.png&#34; alt=&#34;&#34;&gt;The output will confirmation for the linking between the IPNS address and the IPFS hash&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/6.png&#34; alt=&#34;&#34;&gt;The output will confirmation for the linking between the IPNS address and the IPFS hash&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We can confirm that your new IPNS address is alive either by accessing it using a gateway i.e. | &lt;strong&gt;&lt;code&gt;ipfs.io/ipns/[put your IPNS hash here]&lt;/code&gt;&lt;/strong&gt; |, or &lt;strong&gt;enable IPFS Companion browser extension&lt;/strong&gt; to be redirected automatically to your local gateway&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -266,18 +266,18 @@ In this guide, we will use the most stable and tested implementation which comes
 &lt;p&gt;&lt;strong&gt;Currently,&lt;/strong&gt; the only stable and tested server side implementation of ESNI is &lt;a href=&#34;https://blog.cloudflare.com/esni/&#34;&gt;CloudFlare&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;All you have to do is to enable &lt;strong&gt;TLS 1.3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Log in&lt;/strong&gt; to your &lt;strong&gt;CloudFlare account,&lt;/strong&gt; select your &lt;strong&gt;domain name&lt;/strong&gt;, go to &amp;gt; &lt;code&gt;SSL/TLS&lt;/code&gt; options, choose &amp;gt; &lt;code&gt;Edge Certificates&lt;/code&gt;, and make sure &amp;gt; &lt;code&gt;TLS 1.3&lt;/code&gt; is enabled.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;client-side&#34;&gt;Client Side&lt;/h3&gt;
 &lt;p&gt;Mozilla Firefox latest releases are shipped with TLSv1.3 and ESNI extension support, yet, it doesn&amp;rsquo;t come enabled by default for now.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;To enable ESNI support in Mozilla Firefox&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make Firefox is updated to latest release&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Enable DNS over HTTPS (DoH) in &lt;code&gt;Preferences&lt;/code&gt; &amp;gt; &lt;code&gt;Network Settings&lt;/code&gt; &amp;gt; &lt;code&gt;Enable DNS over HTTPS&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -298,8 +298,8 @@ In this guide, we will use the most stable and tested implementation which comes
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Restart&lt;/strong&gt; your browser and test your settings &lt;a href=&#34;https://www.cloudflare.com/ssl/encrypted-sni/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;

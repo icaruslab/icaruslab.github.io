@@ -59,7 +59,7 @@ is the acronym for the original project that produced The Onion Router protocol,
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/onion-services/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The encryption protocol&lt;/strong&gt; allows each node the packet is passing through to decrypt just one layer of the encryption to get information about the next node the packet will pass through.&lt;/p&gt;
 &lt;p&gt;The aim of the onion routing protocol is for your packet to pass through a series of random nodes before reaching its final destination, &lt;strong&gt;with each node only receiving information about the nodes that directly proceed and follow it.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;None of the nodes — &lt;em&gt;except for the last one&lt;/em&gt; — can access information about the data packet’s final destination or see what’s inside it. &lt;strong&gt;The final exit node decrypts the final layer and directs the packet to its intended destination on the internet.&lt;/strong&gt;&lt;/p&gt;
@@ -149,7 +149,7 @@ You can reach Tor Browser and download the installer for your respective operati
 You can also use Tor network’s proxy app &lt;a href=&#34;https://play.google.com/store/apps/details?id=org.torproject.android&#34;&gt;&lt;strong&gt;Orbot&lt;/strong&gt;&lt;/a&gt;, which provides a similar service to VPNs. Orbot redirects the data from all the apps on your phone to go through Tor network. This can help override blocks placed on apps such as Signal and Wire, among others.
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/3.gif&#34; alt=&#34;Orbot VPN mode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/onion-services/3.gif&#34; alt=&#34;Orbot VPN mode&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -176,11 +176,11 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 &lt;p&gt;&lt;strong&gt;In a nutshell,&lt;/strong&gt; bridges are servers run by volunteers whose addresses aren’t usually published openly. Bridges work as an intermediary between users and Tor network and help bypass blocks while hiding the connection from any party trying to analyze the network’s data.&lt;/p&gt;
 &lt;h3 id=&#34;activating-bridges&#34;&gt;Activating Bridges&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Tor browser on Android phones&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/1.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/onion-services/1.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tor’s Android client, Orbot&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/2.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/onion-services/2.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tor browser on Desktop devices&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/4.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/onion-services/4.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;websites-that-can-be-accessed-through-onion-services&#34;&gt;Websites that can be accessed through .onion services&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -232,7 +232,7 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;strong&gt;A thorough &lt;a href=&#34;https://github.com/alecmuffett/eotk/blob/master/docs.d/HOW-TO-INSTALL.md&#34;&gt;implementation guide&lt;/a&gt;&lt;/strong&gt; is available on the project&amp;rsquo;s &lt;strong&gt;&lt;a href=&#34;https://github.com/alecmuffett/eotk&#34;&gt;repository on GitHub&lt;/a&gt;&lt;/strong&gt;, therefore, we will be providing translations in other &lt;strong&gt;&lt;a href=&#34;/docs&#34;&gt;available languages&lt;/a&gt;&lt;/strong&gt; for our guides.
+&lt;strong&gt;A thorough &lt;a href=&#34;https://github.com/alecmuffett/eotk/blob/master/docs.d/HOW-TO-INSTALL.md&#34;&gt;implementation guide&lt;/a&gt;&lt;/strong&gt; is available on the project&amp;rsquo;s &lt;strong&gt;&lt;a href=&#34;https://github.com/alecmuffett/eotk&#34;&gt;repository on GitHub&lt;/a&gt;&lt;/strong&gt;, therefore, we will be providing translations in other &lt;strong&gt;&lt;a href=&#34;../docs&#34;&gt;available languages&lt;/a&gt;&lt;/strong&gt; for our guides.
 &lt;/div&gt;
 
 
@@ -273,7 +273,7 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 &lt;p&gt;After accessing &lt;a href=&#34;https://console.cloud.google.com/&#34;&gt;Google Cloud Console&lt;/a&gt; create a new project&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/images/decoy/1.png&#34; alt=&#34;&#34;&gt;New Project&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/decoy/1.png&#34; alt=&#34;&#34;&gt;New Project&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
@@ -288,15 +288,15 @@ The project name should be unique, if that&amp;rsquo;s the case the project ID w
 &lt;li&gt;Run &lt;code&gt;gcloud init&lt;/code&gt; to configure GCloud SDK and login to your account.&lt;/li&gt;
 &lt;li&gt;Select the project you created earlier using &lt;code&gt;gcloud config set project [ProjectID]&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/images/decoy/2.png&#34; alt=&#34;&#34;&gt;Set project ID&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/decoy/2.png&#34; alt=&#34;&#34;&gt;Set project ID&lt;/p&gt;
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;Run &lt;code&gt;gcloud app deploy&lt;/code&gt; and follow the instructions to deploy the app&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/images/decoy/3.png&#34; alt=&#34;&#34;&gt;Deploy&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/decoy/3.png&#34; alt=&#34;&#34;&gt;Deploy&lt;/p&gt;
 &lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;Finally you can confirm your mirror is running by visiting &lt;code&gt;[youprojectname].appspot.com&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/images/decoy/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/decoy/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;why-google-app-engine&#34;&gt;Why Google App Engine?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;The main advantage&lt;/strong&gt; of having the mirror traffic routed through GAE, is the ability to use a sub-domain under &lt;code&gt;appspot.com&lt;/code&gt; to access the mirror.&lt;/p&gt;
 &lt;p&gt;As the same domain is associated with many other &lt;strong&gt;Google cloud services&lt;/strong&gt; it&amp;rsquo;d be difficult to block it entirely.&lt;/p&gt;
@@ -342,7 +342,7 @@ in this scenario, the browser gets to do most of job and IPFS just delivers raw 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 
-To learn about &lt;strong&gt;the difference between static and dynamic websites&lt;/strong&gt;, refer the &lt;a href=&#34;/docs/getting-started/#what-is-the-difference-between-static-and-dynamic-websites&#34;&gt;&lt;strong&gt;Getting Started&lt;/strong&gt;&lt;/a&gt; section in the documentations.
+To learn about &lt;strong&gt;the difference between static and dynamic websites&lt;/strong&gt;, refer the &lt;a href=&#34;../docs/getting-started/#what-is-the-difference-between-static-and-dynamic-websites&#34;&gt;&lt;strong&gt;Getting Started&lt;/strong&gt;&lt;/a&gt; section in the documentations.
 &lt;/div&gt;
 
 &lt;hr&gt;
@@ -371,7 +371,7 @@ To learn about &lt;strong&gt;the difference between static and dynamic websites&
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/1.png&#34; alt=&#34;&#34;&gt;IPFS Desktop app&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/ipfs/1.png&#34; alt=&#34;&#34;&gt;IPFS Desktop app&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;adding-your-static-mirror-to-ipfs&#34;&gt;Adding your static mirror to IPFS&lt;/h2&gt;
 
@@ -390,7 +390,7 @@ ipfs version 0.6.0
 &lt;li&gt;Using your termianl, go to your static mirror directory.&lt;/li&gt;
 &lt;li&gt;Run &lt;code&gt;ipfs add -Q  --recursive --progress mystaticmirror &lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/ipfs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -401,7 +401,7 @@ start adding your files to it&amp;rsquo;s &lt;a href=&#34;https://docs.ipfs.io/c
 &lt;ul&gt;
 &lt;li&gt;Now, we can try to access our mirror using IPFS and the hash of the root directory.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/ipfs/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;There are two ways of accessing files on IPFS&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Using a gateway&lt;/strong&gt;
@@ -435,7 +435,7 @@ There are several online gateways that provides a bridge between normal web and 
 &lt;li&gt;Install &lt;a href=&#34;https://github.com/ipfs-shipyard/ipfs-companion&#34;&gt;&lt;strong&gt;IPFS Companion&lt;/strong&gt;&lt;/a&gt; browser extension and make sur IPFS is running on you machine.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;When you enable the extension,&lt;/strong&gt; it detects if your local IPFS daemon is running in the background and automatically rewrites any IPFS URL that contains a valid hash to be fetched using your local IPFS installation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/ipfs/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;updating-a-website-on-ipfs&#34;&gt;Updating a website on IPFS&lt;/h3&gt;
 
@@ -461,16 +461,16 @@ provides a solution similar to the regular web Domain Name System (DNS).
 &lt;li&gt;Generate a new IPFS key&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;ipfs key gen --type=rsa --size=2048 mystaticsite&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/5.png&#34; alt=&#34;&#34;&gt;The output will be your new IPNS address&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/ipfs/5.png&#34; alt=&#34;&#34;&gt;The output will be your new IPNS address&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Publish your IPNS address and link it with your mirror&amp;rsquo;s most recent hash.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;ipfs name publish --key=mystaticsite [replace with your files most recent hash]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/6.png&#34; alt=&#34;&#34;&gt;The output will confirmation for the linking between the IPNS address and the IPFS hash&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/ipfs/6.png&#34; alt=&#34;&#34;&gt;The output will confirmation for the linking between the IPNS address and the IPFS hash&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We can confirm that your new IPNS address is alive either by accessing it using a gateway i.e. | &lt;strong&gt;&lt;code&gt;ipfs.io/ipns/[put your IPNS hash here]&lt;/code&gt;&lt;/strong&gt; |, or &lt;strong&gt;enable IPFS Companion browser extension&lt;/strong&gt; to be redirected automatically to your local gateway&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/ipfs/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/ipfs/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -522,7 +522,7 @@ provides a solution similar to the regular web Domain Name System (DNS).
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt install software-properties-common
 sudo add-apt-repository ppa:nginx/stable
 sudo apt update &lt;span style=&#34;color:#555&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install nginx -y
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/images/onion-services/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/onion-services/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Confirm your installation by entering &lt;code&gt;nginx -v&lt;/code&gt;, the output should look similar to this&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Install Tor client&lt;/strong&gt;&lt;/li&gt;
@@ -556,7 +556,7 @@ sudo systemctl &lt;span style=&#34;color:#366&#34;&gt;enable&lt;/span&gt; tor
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl status tor
 tor --version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/images/onion-services/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/onion-services/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Configure Tor client&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -588,7 +588,7 @@ HiddenServicePort &lt;span style=&#34;color:#f60&#34;&gt;80&lt;/span&gt; 127.0.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should find two files generated at this directory&lt;/p&gt;
 &lt;p&gt;1- &lt;code&gt;hostname&lt;/code&gt; &lt;strong&gt;contains your Onion Service address&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2- &lt;code&gt;private_key&lt;/code&gt; &lt;strong&gt;Private key used for encryption. Don&amp;rsquo;t edit or share this file under any circumstances&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/onion-services/8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Configure Nginx Webserver&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -609,7 +609,7 @@ HiddenServicePort &lt;span style=&#34;color:#f60&#34;&gt;80&lt;/span&gt; 127.0.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Testing your setup&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/onion-services/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Make sure Both Nginx and Tor client are restarted and running succesfully, then head to your Tor Browser and test your new Onion address.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;[Optional] - announcing your new mirror for Tor browser users&lt;/strong&gt;&lt;/li&gt;
@@ -650,7 +650,7 @@ HiddenServicePort &lt;span style=&#34;color:#f60&#34;&gt;80&lt;/span&gt; 127.0.0
 &lt;strong&gt;When&lt;/strong&gt; everything is well configured and working, visitors of your original Clearnet website using Tor browser, should be notified about the availability of the Onion mirror and it&amp;rsquo;s address.
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/onion-services/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -715,18 +715,18 @@ In this guide, we will use the most stable and tested implementation which comes
 &lt;p&gt;&lt;strong&gt;Currently,&lt;/strong&gt; the only stable and tested server side implementation of ESNI is &lt;a href=&#34;https://blog.cloudflare.com/esni/&#34;&gt;CloudFlare&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;All you have to do is to enable &lt;strong&gt;TLS 1.3&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Log in&lt;/strong&gt; to your &lt;strong&gt;CloudFlare account,&lt;/strong&gt; select your &lt;strong&gt;domain name&lt;/strong&gt;, go to &amp;gt; &lt;code&gt;SSL/TLS&lt;/code&gt; options, choose &amp;gt; &lt;code&gt;Edge Certificates&lt;/code&gt;, and make sure &amp;gt; &lt;code&gt;TLS 1.3&lt;/code&gt; is enabled.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/esni/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;client-side&#34;&gt;Client Side&lt;/h3&gt;
 &lt;p&gt;Mozilla Firefox latest releases are shipped with TLSv1.3 and ESNI extension support, yet, it doesn&amp;rsquo;t come enabled by default for now.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;To enable ESNI support in Mozilla Firefox&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make Firefox is updated to latest release&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/esni/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Enable DNS over HTTPS (DoH) in &lt;code&gt;Preferences&lt;/code&gt; &amp;gt; &lt;code&gt;Network Settings&lt;/code&gt; &amp;gt; &lt;code&gt;Enable DNS over HTTPS&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/esni/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -747,8 +747,8 @@ In this guide, we will use the most stable and tested implementation which comes
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Restart&lt;/strong&gt; your browser and test your settings &lt;a href=&#34;https://www.cloudflare.com/ssl/encrypted-sni/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/esni/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/esni/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/esni/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -1030,7 +1030,7 @@ When using HTTrack &lt;em&gt;- and almost any website downloader -,&lt;/em&gt; w
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | BSD&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;wp2statichttpsgithubcomwp2static&#34;&gt;&lt;a href=&#34;https://github.com/WP2Static&#34;&gt;WP2Static&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/1.png&#34; alt=&#34;&#34;&gt;WP2Static options&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/wp2static/1.png&#34; alt=&#34;&#34;&gt;WP2Static options&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;WP2Static can be considered as the most optimal plugin for the purpose of generating and updating a static mirror.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1080,16 +1080,16 @@ When using HTTrack &lt;em&gt;- and almost any website downloader -,&lt;/em&gt; w
 
 &lt;hr&gt;
 &lt;h3 id=&#34;wp2static-settings-and-configuration&#34;&gt;WP2Static settings and configuration&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/2.png&#34; alt=&#34;&#34;&gt;Select which content types should be included in the mirror, and the deployment URL&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/3.png&#34; alt=&#34;&#34;&gt;After installing any deployment Add-On it should be displayed here&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/4.png&#34; alt=&#34;&#34;&gt;Example for Amazon S3 deployment Add-On options&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/5.png&#34; alt=&#34;&#34;&gt;Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/wp2static/2.png&#34; alt=&#34;&#34;&gt;Select which content types should be included in the mirror, and the deployment URL&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/wp2static/3.png&#34; alt=&#34;&#34;&gt;After installing any deployment Add-On it should be displayed here&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/wp2static/4.png&#34; alt=&#34;&#34;&gt;Example for Amazon S3 deployment Add-On options&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/wp2static/5.png&#34; alt=&#34;&#34;&gt;Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p&gt;
 &lt;h2 id=&#34;simply-statichttpswordpressorgpluginssimply-static&#34;&gt;&lt;a href=&#34;https://wordpress.org/plugins/simply-static/&#34;&gt;Simply static&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;/images/simplystatic/1.png&#34; alt=&#34;&#34;&gt;Simply Static options&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/simplystatic/1.png&#34; alt=&#34;&#34;&gt;Simply Static options&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Simply Static&lt;/strong&gt; is a WordPress Plugin with similar functionality to WP2Static. However, it comes with fewer features and might not fit the needs of a big and/or very frequently updated website, as for example, it doesn’t support incremental builds for the static mirror, which means it needs to go through the whole process every time a build is triggered.&lt;/p&gt;
 &lt;p&gt;Furthermore, Simply Static doesn’t support automatic builds triggering with every new post, so a new build can only be triggered manually, which makes this plugin more fit for small blogs or rarely updated websites.&lt;/p&gt;
 &lt;h3 id=&#34;simply-static-settings-and-configuration&#34;&gt;Simply Static settings and configuration&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;/images/simplystatic/2.png&#34; alt=&#34;&#34;&gt;Simply Static options&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/simplystatic/2.png&#34; alt=&#34;&#34;&gt;Simply Static options&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -1108,7 +1108,7 @@ When using HTTrack &lt;em&gt;- and almost any website downloader -,&lt;/em&gt; w
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/simplystatic/3.png&#34; alt=&#34;&#34;&gt;Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/simplystatic/3.png&#34; alt=&#34;&#34;&gt;Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p&gt;
 
       </description>
     </item>
@@ -1144,11 +1144,11 @@ When using HTTrack &lt;em&gt;- and almost any website downloader -,&lt;/em&gt; w
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;First,&lt;/strong&gt; you need to create an account on &lt;strong&gt;&lt;a href=&#34;https://aws.amazon.com/&#34;&gt;Amazon Web Services (AWS)&lt;/a&gt;&lt;/strong&gt;, and then, &lt;strong&gt;sign in&lt;/strong&gt; to &lt;strong&gt;&lt;a href=&#34;https://signin.aws.amazon.com&#34;&gt;AWS Console&lt;/a&gt;.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/1.png&#34; alt=&#34;&#34;&gt;AWS login page&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/1.png&#34; alt=&#34;&#34;&gt;AWS login page&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In &lt;strong&gt;&lt;a href=&#34;https://s3.console.aws.amazon.com&#34;&gt;S3 management console&lt;/a&gt;&lt;/strong&gt;, create a new bucket.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/2.png&#34; alt=&#34;&#34;&gt;S3 management console&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/2.png&#34; alt=&#34;&#34;&gt;S3 management console&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -1156,32 +1156,32 @@ When using HTTrack &lt;em&gt;- and almost any website downloader -,&lt;/em&gt; w
 You should pick a unique name for your bucket.
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/3.png&#34; alt=&#34;&#34;&gt;S3 new bucket&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/3.png&#34; alt=&#34;&#34;&gt;S3 new bucket&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In &lt;strong&gt;Set permissions&lt;/strong&gt; tab, uncheck &lt;strong&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Block &lt;em&gt;all&lt;/em&gt; public access&lt;/strong&gt;, and confirm that you want to enable public access to the bucket.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/4.png&#34; alt=&#34;&#34;&gt;Bucket permission tab&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/4.png&#34; alt=&#34;&#34;&gt;Bucket permission tab&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Finally,&lt;/strong&gt; review your options and &lt;strong&gt;create&lt;/strong&gt; the new bucket.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/5.png&#34; alt=&#34;&#34;&gt;Create bucket&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/5.png&#34; alt=&#34;&#34;&gt;Create bucket&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Your newly created bucket should appear in this form.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Head to the new bucket&amp;rsquo;s settings by clicking on the bucket name.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/7.png&#34; alt=&#34;&#34;&gt;S3 bucket settings&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/7.png&#34; alt=&#34;&#34;&gt;S3 bucket settings&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In &lt;strong&gt;Properties&lt;/strong&gt; tab click on &lt;strong&gt;Static website hosting&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/8.png&#34; alt=&#34;&#34;&gt;S3 bucket Properties&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/8.png&#34; alt=&#34;&#34;&gt;S3 bucket Properties&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;After setting &lt;strong&gt;Use this bucket to host a website&lt;/strong&gt;, you need to set the &lt;strong&gt;path&lt;/strong&gt; for your &lt;code&gt;index.html&lt;/code&gt;(main page), &lt;strong&gt;optionally&lt;/strong&gt; you can set a custom &lt;code&gt;error.html&lt;/code&gt; page, and click &lt;strong&gt;save&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/9.png&#34; alt=&#34;&#34;&gt;S3 Static website hosting&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/10.png&#34; alt=&#34;&#34;&gt;S3 enabled Static website hosting&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/9.png&#34; alt=&#34;&#34;&gt;S3 Static website hosting&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/10.png&#34; alt=&#34;&#34;&gt;S3 enabled Static website hosting&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -1192,7 +1192,7 @@ Now, we need to set the &lt;strong&gt;bucket permissions policy&lt;/strong&gt; t
 &lt;ul&gt;
 &lt;li&gt;Head to &lt;strong&gt;Permissions&lt;/strong&gt; tab, and click on &lt;strong&gt;Bucket Policy&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/11.png&#34; alt=&#34;&#34;&gt;S3 bucket policy&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/11.png&#34; alt=&#34;&#34;&gt;S3 bucket policy&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The simplest form of static website hosting policy on S3 should look like this.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1230,11 +1230,11 @@ In this example bucket policy &lt;code&gt;example.com&lt;/code&gt; is the bucket
 &lt;ul&gt;
 &lt;li&gt;You will find the upload option in the bucket settings page.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/12.png&#34; alt=&#34;&#34;&gt;S3 files upload&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/12.png&#34; alt=&#34;&#34;&gt;S3 files upload&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make sure &lt;strong&gt;grant public read access&lt;/strong&gt; to the uploaded files in the permissions tab.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/13.png&#34; alt=&#34;&#34;&gt;S3 files upload permissions&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/13.png&#34; alt=&#34;&#34;&gt;S3 files upload permissions&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
@@ -1288,7 +1288,7 @@ Make sure to store the generated keys &lt;strong&gt;securely&lt;/strong&gt; and 
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;awscli configure
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;ِMove to the website local directory.&lt;/p&gt;
@@ -1305,7 +1305,7 @@ Make sure to store the generated keys &lt;strong&gt;securely&lt;/strong&gt; and 
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/15.png&#34; alt=&#34;Find the configured URL for your website here&#34;&gt;Find the configured URL for your website here&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/15.png&#34; alt=&#34;Find the configured URL for your website here&#34;&gt;Find the configured URL for your website here&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -1313,16 +1313,16 @@ Make sure to store the generated keys &lt;strong&gt;securely&lt;/strong&gt; and 
 Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com&#34;&gt;http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com&lt;/a&gt; can only be accessed on plain-text HTTP protocol
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/16.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/16.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now, there are two different URL structures which allows accessing your static website on the secure protocol HTTPS&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Bucket name as a sub-domain  &lt;code&gt;https://[mystaticwebsitetest].s3.us-east-2.amazonaws.com&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/17.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/17.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Bucket name in the path &lt;code&gt;https://s3.us-east-2.amazonaws.com/[mystaticwebsitetest]&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/18.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/18.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -1372,32 +1372,32 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;strong&gt;While it&amp;rsquo;s possible to use a pre-existing Google account for this step, it&amp;rsquo;s better to create a new one just for this purpose&lt;/strong&gt;.
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Log in to &lt;strong&gt;&lt;a href=&#34;https://console.cloud.google.com/&#34;&gt;Google Cloud Console&lt;/a&gt;&lt;/strong&gt; using your newly created account.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Here, you&amp;rsquo;ll need to open &lt;strong&gt;Storage&lt;/strong&gt; from the side bar to access &lt;a href=&#34;https://console.cloud.google.com/storage&#34;&gt;&lt;strong&gt;Google Cloud Storage&lt;/strong&gt;&lt;/a&gt; settings page.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/3.png&#34; alt=&#34;&#34;&gt;Create a new bucket here&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/4.png&#34; alt=&#34;&#34;&gt;Buck name&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/3.png&#34; alt=&#34;&#34;&gt;Create a new bucket here&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/4.png&#34; alt=&#34;&#34;&gt;Buck name&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;First step will be choosing your bucket name, &lt;strong&gt;bucket names should be unique and you&amp;rsquo;ll use it to access your static website later&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/5.png&#34; alt=&#34;&#34;&gt;Region settings&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/5.png&#34; alt=&#34;&#34;&gt;Region settings&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Unless you know what you are doing, there is no need to change anything here.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/6.png&#34; alt=&#34;&#34;&gt;Storage Class&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/6.png&#34; alt=&#34;&#34;&gt;Storage Class&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In most cases it should be &lt;strong&gt;Standard&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/7.png&#34; alt=&#34;&#34;&gt;Access control&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/7.png&#34; alt=&#34;&#34;&gt;Access control&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We will be handling permissions and access control configurations later on, so we&amp;rsquo;ll leave it unchanged for now.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/8.png&#34; alt=&#34;&#34;&gt;Encryption&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/8.png&#34; alt=&#34;&#34;&gt;Encryption&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;As this bucket will be publicly available, we don&amp;rsquo;t need to change anything with Encryption settings.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1408,7 +1408,7 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;strong&gt;Now, we can go proceed to the new bucket settings page.&lt;/strong&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;upload-the-static-website&#34;&gt;Upload the static website&lt;/h3&gt;
 
@@ -1424,11 +1424,11 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;ul&gt;
 &lt;li&gt;After installing Google Cloud Sdk, you will need to authorize the local client to connect to you Google Cloud account, you can do that by opening your terminal and entering &lt;code&gt;gcloud init&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;After &lt;strong&gt;Successfully logging in to your account&lt;/strong&gt;, you will be asked to select the project you want to use, if you didn&amp;rsquo;t create a new project you can do that now using the local CLI.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -1446,11 +1446,11 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;strong&gt;Replace &lt;code&gt;[local-dir]&lt;/code&gt; with the static mirror directory name and &lt;code&gt;[bucketname]&lt;/code&gt; with the bucket name.&lt;/strong&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/12.png&#34; alt=&#34;&#34;&gt;Uploading files&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/12.png&#34; alt=&#34;&#34;&gt;Uploading files&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Now if you go to your bucket settings page, you will notice the static mirror files are uploaded.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/13.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/13.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Final step will be &lt;strong&gt;setting public permissions&lt;/strong&gt; to the files so the static mirror will be accessible to public internet, you can do that using the local CLI by entering &lt;code&gt;gsutil iam ch allUsers:objectViewer gs://[bucketname]&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1469,7 +1469,7 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;strong&gt;Replace &lt;code&gt;[bucketname]&lt;/code&gt; with your bucket name.&lt;/strong&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../images/hosting-gcs/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;

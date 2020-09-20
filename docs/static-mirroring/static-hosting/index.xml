@@ -44,11 +44,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;First,&lt;/strong&gt; you need to create an account on &lt;strong&gt;&lt;a href=&#34;https://aws.amazon.com/&#34;&gt;Amazon Web Services (AWS)&lt;/a&gt;&lt;/strong&gt;, and then, &lt;strong&gt;sign in&lt;/strong&gt; to &lt;strong&gt;&lt;a href=&#34;https://signin.aws.amazon.com&#34;&gt;AWS Console&lt;/a&gt;.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/1.png&#34; alt=&#34;&#34;&gt;AWS login page&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/1.png&#34; alt=&#34;&#34;&gt;AWS login page&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In &lt;strong&gt;&lt;a href=&#34;https://s3.console.aws.amazon.com&#34;&gt;S3 management console&lt;/a&gt;&lt;/strong&gt;, create a new bucket.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/2.png&#34; alt=&#34;&#34;&gt;S3 management console&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/2.png&#34; alt=&#34;&#34;&gt;S3 management console&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -56,32 +56,32 @@
 You should pick a unique name for your bucket.
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/3.png&#34; alt=&#34;&#34;&gt;S3 new bucket&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/3.png&#34; alt=&#34;&#34;&gt;S3 new bucket&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In &lt;strong&gt;Set permissions&lt;/strong&gt; tab, uncheck &lt;strong&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Block &lt;em&gt;all&lt;/em&gt; public access&lt;/strong&gt;, and confirm that you want to enable public access to the bucket.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/4.png&#34; alt=&#34;&#34;&gt;Bucket permission tab&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/4.png&#34; alt=&#34;&#34;&gt;Bucket permission tab&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Finally,&lt;/strong&gt; review your options and &lt;strong&gt;create&lt;/strong&gt; the new bucket.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/5.png&#34; alt=&#34;&#34;&gt;Create bucket&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/5.png&#34; alt=&#34;&#34;&gt;Create bucket&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Your newly created bucket should appear in this form.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Head to the new bucket&amp;rsquo;s settings by clicking on the bucket name.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/7.png&#34; alt=&#34;&#34;&gt;S3 bucket settings&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/7.png&#34; alt=&#34;&#34;&gt;S3 bucket settings&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In &lt;strong&gt;Properties&lt;/strong&gt; tab click on &lt;strong&gt;Static website hosting&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/8.png&#34; alt=&#34;&#34;&gt;S3 bucket Properties&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/8.png&#34; alt=&#34;&#34;&gt;S3 bucket Properties&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;After setting &lt;strong&gt;Use this bucket to host a website&lt;/strong&gt;, you need to set the &lt;strong&gt;path&lt;/strong&gt; for your &lt;code&gt;index.html&lt;/code&gt;(main page), &lt;strong&gt;optionally&lt;/strong&gt; you can set a custom &lt;code&gt;error.html&lt;/code&gt; page, and click &lt;strong&gt;save&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/9.png&#34; alt=&#34;&#34;&gt;S3 Static website hosting&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/10.png&#34; alt=&#34;&#34;&gt;S3 enabled Static website hosting&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/9.png&#34; alt=&#34;&#34;&gt;S3 Static website hosting&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/10.png&#34; alt=&#34;&#34;&gt;S3 enabled Static website hosting&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -92,7 +92,7 @@ Now, we need to set the &lt;strong&gt;bucket permissions policy&lt;/strong&gt; t
 &lt;ul&gt;
 &lt;li&gt;Head to &lt;strong&gt;Permissions&lt;/strong&gt; tab, and click on &lt;strong&gt;Bucket Policy&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/11.png&#34; alt=&#34;&#34;&gt;S3 bucket policy&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/11.png&#34; alt=&#34;&#34;&gt;S3 bucket policy&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The simplest form of static website hosting policy on S3 should look like this.&lt;/li&gt;
 &lt;/ul&gt;
@@ -130,11 +130,11 @@ In this example bucket policy &lt;code&gt;example.com&lt;/code&gt; is the bucket
 &lt;ul&gt;
 &lt;li&gt;You will find the upload option in the bucket settings page.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/12.png&#34; alt=&#34;&#34;&gt;S3 files upload&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/12.png&#34; alt=&#34;&#34;&gt;S3 files upload&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make sure &lt;strong&gt;grant public read access&lt;/strong&gt; to the uploaded files in the permissions tab.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/13.png&#34; alt=&#34;&#34;&gt;S3 files upload permissions&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/13.png&#34; alt=&#34;&#34;&gt;S3 files upload permissions&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
@@ -188,7 +188,7 @@ Make sure to store the generated keys &lt;strong&gt;securely&lt;/strong&gt; and 
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;awscli configure
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;ِMove to the website local directory.&lt;/p&gt;
@@ -205,7 +205,7 @@ Make sure to store the generated keys &lt;strong&gt;securely&lt;/strong&gt; and 
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/15.png&#34; alt=&#34;Find the configured URL for your website here&#34;&gt;Find the configured URL for your website here&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/15.png&#34; alt=&#34;Find the configured URL for your website here&#34;&gt;Find the configured URL for your website here&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -213,16 +213,16 @@ Make sure to store the generated keys &lt;strong&gt;securely&lt;/strong&gt; and 
 Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com&#34;&gt;http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com&lt;/a&gt; can only be accessed on plain-text HTTP protocol
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/16.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/16.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now, there are two different URL structures which allows accessing your static website on the secure protocol HTTPS&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Bucket name as a sub-domain  &lt;code&gt;https://[mystaticwebsitetest].s3.us-east-2.amazonaws.com&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/17.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/17.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Bucket name in the path &lt;code&gt;https://s3.us-east-2.amazonaws.com/[mystaticwebsitetest]&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-s3/18.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/18.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -272,32 +272,32 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;strong&gt;While it&amp;rsquo;s possible to use a pre-existing Google account for this step, it&amp;rsquo;s better to create a new one just for this purpose&lt;/strong&gt;.
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Log in to &lt;strong&gt;&lt;a href=&#34;https://console.cloud.google.com/&#34;&gt;Google Cloud Console&lt;/a&gt;&lt;/strong&gt; using your newly created account.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Here, you&amp;rsquo;ll need to open &lt;strong&gt;Storage&lt;/strong&gt; from the side bar to access &lt;a href=&#34;https://console.cloud.google.com/storage&#34;&gt;&lt;strong&gt;Google Cloud Storage&lt;/strong&gt;&lt;/a&gt; settings page.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/3.png&#34; alt=&#34;&#34;&gt;Create a new bucket here&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/4.png&#34; alt=&#34;&#34;&gt;Buck name&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/3.png&#34; alt=&#34;&#34;&gt;Create a new bucket here&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/4.png&#34; alt=&#34;&#34;&gt;Buck name&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;First step will be choosing your bucket name, &lt;strong&gt;bucket names should be unique and you&amp;rsquo;ll use it to access your static website later&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/5.png&#34; alt=&#34;&#34;&gt;Region settings&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/5.png&#34; alt=&#34;&#34;&gt;Region settings&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Unless you know what you are doing, there is no need to change anything here.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/6.png&#34; alt=&#34;&#34;&gt;Storage Class&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/6.png&#34; alt=&#34;&#34;&gt;Storage Class&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In most cases it should be &lt;strong&gt;Standard&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/7.png&#34; alt=&#34;&#34;&gt;Access control&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/7.png&#34; alt=&#34;&#34;&gt;Access control&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We will be handling permissions and access control configurations later on, so we&amp;rsquo;ll leave it unchanged for now.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/8.png&#34; alt=&#34;&#34;&gt;Encryption&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/8.png&#34; alt=&#34;&#34;&gt;Encryption&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;As this bucket will be publicly available, we don&amp;rsquo;t need to change anything with Encryption settings.&lt;/li&gt;
 &lt;/ul&gt;
@@ -308,7 +308,7 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;strong&gt;Now, we can go proceed to the new bucket settings page.&lt;/strong&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;upload-the-static-website&#34;&gt;Upload the static website&lt;/h3&gt;
 
@@ -324,11 +324,11 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;ul&gt;
 &lt;li&gt;After installing Google Cloud Sdk, you will need to authorize the local client to connect to you Google Cloud account, you can do that by opening your terminal and entering &lt;code&gt;gcloud init&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;After &lt;strong&gt;Successfully logging in to your account&lt;/strong&gt;, you will be asked to select the project you want to use, if you didn&amp;rsquo;t create a new project you can do that now using the local CLI.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -346,11 +346,11 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;strong&gt;Replace &lt;code&gt;[local-dir]&lt;/code&gt; with the static mirror directory name and &lt;code&gt;[bucketname]&lt;/code&gt; with the bucket name.&lt;/strong&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/12.png&#34; alt=&#34;&#34;&gt;Uploading files&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/12.png&#34; alt=&#34;&#34;&gt;Uploading files&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Now if you go to your bucket settings page, you will notice the static mirror files are uploaded.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/13.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/13.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Final step will be &lt;strong&gt;setting public permissions&lt;/strong&gt; to the files so the static mirror will be accessible to public internet, you can do that using the local CLI by entering &lt;code&gt;gsutil iam ch allUsers:objectViewer gs://[bucketname]&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -369,7 +369,7 @@ Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3
 &lt;strong&gt;Replace &lt;code&gt;[bucketname]&lt;/code&gt; with your bucket name.&lt;/strong&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/hosting-gcs/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;

@@ -59,7 +59,7 @@ is the acronym for the original project that produced The Onion Router protocol,
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The encryption protocol&lt;/strong&gt; allows each node the packet is passing through to decrypt just one layer of the encryption to get information about the next node the packet will pass through.&lt;/p&gt;
 &lt;p&gt;The aim of the onion routing protocol is for your packet to pass through a series of random nodes before reaching its final destination, &lt;strong&gt;with each node only receiving information about the nodes that directly proceed and follow it.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;None of the nodes — &lt;em&gt;except for the last one&lt;/em&gt; — can access information about the data packet’s final destination or see what’s inside it. &lt;strong&gt;The final exit node decrypts the final layer and directs the packet to its intended destination on the internet.&lt;/strong&gt;&lt;/p&gt;
@@ -149,7 +149,7 @@ You can reach Tor Browser and download the installer for your respective operati
 You can also use Tor network’s proxy app &lt;a href=&#34;https://play.google.com/store/apps/details?id=org.torproject.android&#34;&gt;&lt;strong&gt;Orbot&lt;/strong&gt;&lt;/a&gt;, which provides a similar service to VPNs. Orbot redirects the data from all the apps on your phone to go through Tor network. This can help override blocks placed on apps such as Signal and Wire, among others.
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/3.gif&#34; alt=&#34;Orbot VPN mode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/3.gif&#34; alt=&#34;Orbot VPN mode&#34;&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -176,11 +176,11 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 &lt;p&gt;&lt;strong&gt;In a nutshell,&lt;/strong&gt; bridges are servers run by volunteers whose addresses aren’t usually published openly. Bridges work as an intermediary between users and Tor network and help bypass blocks while hiding the connection from any party trying to analyze the network’s data.&lt;/p&gt;
 &lt;h3 id=&#34;activating-bridges&#34;&gt;Activating Bridges&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Tor browser on Android phones&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/1.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/1.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tor’s Android client, Orbot&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/2.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/2.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tor browser on Desktop devices&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/4.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/4.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;websites-that-can-be-accessed-through-onion-services&#34;&gt;Websites that can be accessed through .onion services&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -232,7 +232,7 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;strong&gt;A thorough &lt;a href=&#34;https://github.com/alecmuffett/eotk/blob/master/docs.d/HOW-TO-INSTALL.md&#34;&gt;implementation guide&lt;/a&gt;&lt;/strong&gt; is available on the project&amp;rsquo;s &lt;strong&gt;&lt;a href=&#34;https://github.com/alecmuffett/eotk&#34;&gt;repository on GitHub&lt;/a&gt;&lt;/strong&gt;, therefore, we will be providing translations in other &lt;strong&gt;&lt;a href=&#34;/docs&#34;&gt;available languages&lt;/a&gt;&lt;/strong&gt; for our guides.
+&lt;strong&gt;A thorough &lt;a href=&#34;https://github.com/alecmuffett/eotk/blob/master/docs.d/HOW-TO-INSTALL.md&#34;&gt;implementation guide&lt;/a&gt;&lt;/strong&gt; is available on the project&amp;rsquo;s &lt;strong&gt;&lt;a href=&#34;https://github.com/alecmuffett/eotk&#34;&gt;repository on GitHub&lt;/a&gt;&lt;/strong&gt;, therefore, we will be providing translations in other &lt;strong&gt;&lt;a href=&#34;../../../docs&#34;&gt;available languages&lt;/a&gt;&lt;/strong&gt; for our guides.
 &lt;/div&gt;
 
 
@@ -275,7 +275,7 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt install software-properties-common
 sudo add-apt-repository ppa:nginx/stable
 sudo apt update &lt;span style=&#34;color:#555&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install nginx -y
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/images/onion-services/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Confirm your installation by entering &lt;code&gt;nginx -v&lt;/code&gt;, the output should look similar to this&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Install Tor client&lt;/strong&gt;&lt;/li&gt;
@@ -309,7 +309,7 @@ sudo systemctl &lt;span style=&#34;color:#366&#34;&gt;enable&lt;/span&gt; tor
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl status tor
 tor --version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;/images/onion-services/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Configure Tor client&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -341,7 +341,7 @@ HiddenServicePort &lt;span style=&#34;color:#f60&#34;&gt;80&lt;/span&gt; 127.0.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should find two files generated at this directory&lt;/p&gt;
 &lt;p&gt;1- &lt;code&gt;hostname&lt;/code&gt; &lt;strong&gt;contains your Onion Service address&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2- &lt;code&gt;private_key&lt;/code&gt; &lt;strong&gt;Private key used for encryption. Don&amp;rsquo;t edit or share this file under any circumstances&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Configure Nginx Webserver&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -362,7 +362,7 @@ HiddenServicePort &lt;span style=&#34;color:#f60&#34;&gt;80&lt;/span&gt; 127.0.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Testing your setup&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Make sure Both Nginx and Tor client are restarted and running succesfully, then head to your Tor Browser and test your new Onion address.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;[Optional] - announcing your new mirror for Tor browser users&lt;/strong&gt;&lt;/li&gt;
@@ -403,7 +403,7 @@ HiddenServicePort &lt;span style=&#34;color:#f60&#34;&gt;80&lt;/span&gt; 127.0.0
 &lt;strong&gt;When&lt;/strong&gt; everything is well configured and working, visitors of your original Clearnet website using Tor browser, should be notified about the availability of the Onion mirror and it&amp;rsquo;s address.
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/onion-services/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>

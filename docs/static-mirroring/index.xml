@@ -266,7 +266,7 @@ When using HTTrack &lt;em&gt;- and almost any website downloader -,&lt;/em&gt; w
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | BSD&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;wp2statichttpsgithubcomwp2static&#34;&gt;&lt;a href=&#34;https://github.com/WP2Static&#34;&gt;WP2Static&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/1.png&#34; alt=&#34;&#34;&gt;WP2Static options&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/wp2static/1.png&#34; alt=&#34;&#34;&gt;WP2Static options&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;WP2Static can be considered as the most optimal plugin for the purpose of generating and updating a static mirror.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -316,16 +316,16 @@ When using HTTrack &lt;em&gt;- and almost any website downloader -,&lt;/em&gt; w
 
 &lt;hr&gt;
 &lt;h3 id=&#34;wp2static-settings-and-configuration&#34;&gt;WP2Static settings and configuration&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/2.png&#34; alt=&#34;&#34;&gt;Select which content types should be included in the mirror, and the deployment URL&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/3.png&#34; alt=&#34;&#34;&gt;After installing any deployment Add-On it should be displayed here&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/4.png&#34; alt=&#34;&#34;&gt;Example for Amazon S3 deployment Add-On options&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/wp2static/5.png&#34; alt=&#34;&#34;&gt;Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/wp2static/2.png&#34; alt=&#34;&#34;&gt;Select which content types should be included in the mirror, and the deployment URL&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/wp2static/3.png&#34; alt=&#34;&#34;&gt;After installing any deployment Add-On it should be displayed here&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/wp2static/4.png&#34; alt=&#34;&#34;&gt;Example for Amazon S3 deployment Add-On options&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/wp2static/5.png&#34; alt=&#34;&#34;&gt;Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p&gt;
 &lt;h2 id=&#34;simply-statichttpswordpressorgpluginssimply-static&#34;&gt;&lt;a href=&#34;https://wordpress.org/plugins/simply-static/&#34;&gt;Simply static&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;/images/simplystatic/1.png&#34; alt=&#34;&#34;&gt;Simply Static options&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/simplystatic/1.png&#34; alt=&#34;&#34;&gt;Simply Static options&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Simply Static&lt;/strong&gt; is a WordPress Plugin with similar functionality to WP2Static. However, it comes with fewer features and might not fit the needs of a big and/or very frequently updated website, as for example, it doesn’t support incremental builds for the static mirror, which means it needs to go through the whole process every time a build is triggered.&lt;/p&gt;
 &lt;p&gt;Furthermore, Simply Static doesn’t support automatic builds triggering with every new post, so a new build can only be triggered manually, which makes this plugin more fit for small blogs or rarely updated websites.&lt;/p&gt;
 &lt;h3 id=&#34;simply-static-settings-and-configuration&#34;&gt;Simply Static settings and configuration&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;/images/simplystatic/2.png&#34; alt=&#34;&#34;&gt;Simply Static options&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/simplystatic/2.png&#34; alt=&#34;&#34;&gt;Simply Static options&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -344,7 +344,7 @@ When using HTTrack &lt;em&gt;- and almost any website downloader -,&lt;/em&gt; w
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/simplystatic/3.png&#34; alt=&#34;&#34;&gt;Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/simplystatic/3.png&#34; alt=&#34;&#34;&gt;Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p&gt;
 
       </description>
     </item>
