@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.75.1" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>WordPress Plugins | Icarus Project</title><meta property="og:title" content="WordPress Plugins" />
+<meta property="og:description" content="Testing multiple WordPress plugins to generate a static mirror.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/static-mirroring/wpplugins/" />
+<meta property="og:image" content="/images/misc/logo.png"/>
+<meta property="article:modified_time" content="2020-09-20T02:33:10+02:00" /><meta property="og:site_name" content="Icarus Project" />
+<meta itemprop="name" content="WordPress Plugins">
+<meta itemprop="description" content="Testing multiple WordPress plugins to generate a static mirror.
+">
+<meta itemprop="dateModified" content="2020-09-20T02:33:10+02:00" />
+<meta itemprop="wordCount" content="511">
+<meta itemprop="image" content="/images/misc/logo.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/misc/logo.png"/>
+
+<meta name="twitter:title" content="WordPress Plugins"/>
+<meta name="twitter:description" content="Testing multiple WordPress plugins to generate a static mirror.
+"/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.7e57b7a01378c377b7ee8c80e84deced067d88d3f7802013add01500079d2f6d.css" as="style">
+<link href="/scss/main.min.7e57b7a01378c377b7ee8c80e84deced067d88d3f7802013add01500079d2f6d.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Icarus Project</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/blog/" ><span>Blog</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/community/" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/mirrors/" ><span>Mirrors</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.1574f9cdb5a9e9545de2251e546845ed9f31ec1794ef931f42b98e886394e042a2199110c3e26494d0b1480b865735c7995b8b965e8734952c74f3a0f6fd5205.json"
+  data-offline-search-base-href="/"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.1574f9cdb5a9e9545de2251e546845ed9f31ec1794ef931f42b98e886394e042a2199110c3e26494d0b1480b865735c7995b8b965e8734952c74f3a0f6fd5205.json"
+  data-offline-search-base-href="/"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Overview</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsoverview">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgetting-started">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/static-mirroring/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Static mirroring</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsstatic-mirroring">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsstatic-mirroringwget-guide" href="/docs/static-mirroring/wget-guide/">Wget</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsstatic-mirroringhttrack-guide" href="/docs/static-mirroring/httrack-guide/">HTTrack</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsstatic-mirroringwpplugins" href="/docs/static-mirroring/wpplugins/">WordPress Plugins</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/static-mirroring/static-hosting/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Hosting</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsstatic-mirroringstatic-hosting">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsstatic-mirroringstatic-hostingamazons3" href="/docs/static-mirroring/static-hosting/amazons3/">Amazon S3</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsstatic-mirroringstatic-hostinggcs" href="/docs/static-mirroring/static-hosting/gcs/">Google CS</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsstatic-mirroringstatic-hostinggithub" href="/docs/static-mirroring/static-hosting/github/">GitHub</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/dynamic-mirroring/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Dynamic Mirroring</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsdynamic-mirroring">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsdynamic-mirroringdecoy" href="/docs/dynamic-mirroring/decoy/">Decoy</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/alternative-publishing-methods/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Alternative Publishing Methods</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsalternative-publishing-methods">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/alternative-publishing-methods/tor/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tor</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsalternative-publishing-methodstor">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsalternative-publishing-methodstorintro" href="/docs/alternative-publishing-methods/tor/intro/">Intro to Tor</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsalternative-publishing-methodstoreotk" href="/docs/alternative-publishing-methods/tor/eotk/">EOTK</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsalternative-publishing-methodstorstaticonion" href="/docs/alternative-publishing-methods/tor/staticonion/">Static Onion</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsalternative-publishing-methods_ipfs" href="/docs/alternative-publishing-methods/_ipfs/">IPFS</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsalternative-publishing-methods_esni" href="/docs/alternative-publishing-methods/_esni/">ESNI</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/contribution-guidelines/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docscontribution-guidelines">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">References</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreference">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/icaruslab/docs/edit/master/content/en/docs/Static%20mirroring/wpplugins.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/icaruslab/docs/issues/new?title=WordPress%20Plugins" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/icaruslab/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#wp2statichttpsgithubcomwp2static"><a href="https://github.com/WP2Static">WP2Static</a></a>
+      <ul>
+        <li><a href="#downloading-and-building-the-new-plugin">Downloading and building the new plugin</a></li>
+        <li><a href="#wp2static-settings-and-configuration">WP2Static settings and configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#simply-statichttpswordpressorgpluginssimply-static"><a href="https://wordpress.org/plugins/simply-static/">Simply static</a></a>
+      <ul>
+        <li><a href="#simply-static-settings-and-configuration">Simply Static settings and configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/static-mirroring/">Static mirroring</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/static-mirroring/wpplugins/">WordPress Plugins</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>WordPress Plugins</h1>
+    <div class="lead">Testing multiple WordPress plugins to generate a static mirror.</div>
+	
+        <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 3 minute read</p>
+           
+	<p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
+<p>Platform : <strong>Gnu/Linux | macOS | MS Windows | BSD</strong></p>
+<hr>
+<h2 id="wp2statichttpsgithubcomwp2static"><a href="https://github.com/WP2Static">WP2Static</a></h2>
+<p><img src="/images/wp2static/1.png" alt="">WP2Static options</p>
+<blockquote>
+<p>WP2Static can be considered as the most optimal plugin for the purpose of generating and updating a static mirror.</p>
+</blockquote>
+<p>This plugin also offers different deployment sub-plugins which can configure direct deployments to platforms like Amazon S3 and GitHub.</p>
+<p><strong>However</strong>, it&rsquo;s plugin development process itself doesn’t seem to be stable, at the time of writing these documentations, it appears to be transitioning to a new approach and undergoing big changes.</p>
+<p><a href="https://wordpress.org/plugins/static-html-output-plugin/">An old version of the plugin</a> was recently flagged as closed in WordPress’s plugins platform, and the developed published his <a href="https://staticword.press/t/removal-of-wp2static-from-wordpress-org/159">reasoning</a> behind this approach.</p>
+<p><strong>Two different versions</strong> of the plugin however will continue to be available through the developer&rsquo;s <a href="https://wp2static.com/">website</a> and <a href="https://github.com/WP2Static">GitHub repository</a>.</p>
+<p>The <strong>old version</strong> renamed as <a href="https://github.com/WP2Static/static-html-output-plugin">static-html-output-plugin</a>, will be available pre-built and ready to install on the website download section.</p>
+<p>The <strong>new version</strong> named as <a href="https://github.com/WP2Static/wp2static">WP2Static</a>, while still being considered as <strong>experimental</strong>, it performed well in our testing <strong><em>but it needs to be built from the source before installing on WordPress.</em></strong></p>
+<hr>
+<h3 id="downloading-and-building-the-new-plugin">Downloading and building the new plugin</h3>
+<ul>
+<li>
+<p>Clone the repository.</p>
+<p><code>git clone https://github.com/WP2Static/wp2static.git</code></p>
+</li>
+<li>
+<p>Install <a href="https://getcomposer.org/">Composer</a> and PHP on your local machine.</p>
+</li>
+<li>
+<p>Change to the plugins source code directory.</p>
+</li>
+<li>
+<p>Build the plugin using</p>
+<p><code>composer install</code></p>
+</li>
+<li>
+<p>Compress the plugin directory into a .zip archive</p>
+<p><code>zip -r wp2static.zip wp2static</code></p>
+</li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+<p><strong>Same steps are required</strong> for each sub-plugin which you will need for automating deployments to differant hosting platforms such as Amazon S3 or GitHub.</p>
+<ul>
+<li>
+<p>Sub-plugins should be installed manually as separate plugins on WordPress.</p>
+</li>
+<li>
+<p>Sub-plugins will show under Add-Ons section in WP2Static settings and needs to be enabled and configured.</p>
+</li>
+</ul>
+
+</div>
+
+<hr>
+<h3 id="wp2static-settings-and-configuration">WP2Static settings and configuration</h3>
+<p><img src="/images/wp2static/2.png" alt="">Select which content types should be included in the mirror, and the deployment URL</p>
+<p><img src="/images/wp2static/3.png" alt="">After installing any deployment Add-On it should be displayed here</p>
+<p><img src="/images/wp2static/4.png" alt="">Example for Amazon S3 deployment Add-On options</p>
+<p><img src="/images/wp2static/5.png" alt="">Here you will find useful diagnostic information about your installation and it&rsquo;s compatibility with the plugin requirements</p>
+<h2 id="simply-statichttpswordpressorgpluginssimply-static"><a href="https://wordpress.org/plugins/simply-static/">Simply static</a></h2>
+<p><img src="/images/simplystatic/1.png" alt="">Simply Static options</p>
+<p><strong>Simply Static</strong> is a WordPress Plugin with similar functionality to WP2Static. However, it comes with fewer features and might not fit the needs of a big and/or very frequently updated website, as for example, it doesn’t support incremental builds for the static mirror, which means it needs to go through the whole process every time a build is triggered.</p>
+<p>Furthermore, Simply Static doesn’t support automatic builds triggering with every new post, so a new build can only be triggered manually, which makes this plugin more fit for small blogs or rarely updated websites.</p>
+<h3 id="simply-static-settings-and-configuration">Simply Static settings and configuration</h3>
+<p><img src="/images/simplystatic/2.png" alt="">Simply Static options</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+<ul>
+<li>
+<p>You can set the <code>Delivery Method</code> to <code>Local Directory</code> to have the generated static files stored on the same server/machine</p>
+</li>
+<li>
+<p>Make sure the web-server user have write privileges on the selected directory</p>
+</li>
+<li>
+<p>If you are planning on hosting your static website on an object storage platform such as S3, you should make sure to <code>Use relative URLs</code></p>
+</li>
+</ul>
+
+</div>
+
+<p><img src="/images/simplystatic/3.png" alt="">Here you will find useful diagnostic information about your installation and it&rsquo;s compatibility with the plugin requirements</p>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified September 20, 2020: <a  href="https://github.com/icaruslab/docs/commit/17bfe5ce7b168877e8da658a54bb9961fe575349">Hello world (17bfe5c)</a>
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Matrix channel" aria-label="Matrix channel">
+    <a class="text-white" target="_blank" href="https://matrix.to/#/!kxgkaasHfjVIgsDvlx:matrix.org?via=matrix.org">
+      <i class="fa fa-comment"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" href="https://twitter.com/IcarusProject0">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Mastodon" aria-label="Mastodon">
+    <a class="text-white" target="_blank" href="https://mastodon.online/web/accounts/41742">
+      <i class="fab fa-mastodon"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/icaruslab">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Send us an email" aria-label="Send us an email">
+    <a class="text-white" target="_blank" href="mailto:icarus_acl@protonmail.com%20">
+      <i class="fa fa-at"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GPG Key" aria-label="GPG Key">
+    <a class="text-white" target="_blank" href="https://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0x8982de90bb823122bed49ba7b055b6a6adf40cda">
+      <i class="fa fa-key"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 GPLv3, GNU GENERAL PUBLIC LICENSE - Version 3</small>
+        
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.7afee248b9b3c1d4438c6841cc272ae0ac1f81a3ee5c0ed939f1d57c18de3f7d.js" integrity="sha256-ev7iSLmzwdRDjGhBzCcq4KwfgaPuXA7ZOfHVfBjeP30=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
