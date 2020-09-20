@@ -1,442 +1,313 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Icarus Project – Static mirror hosting</title>
-    <link>/docs/static-mirroring/static-hosting/</link>
-    <description>Recent content in Static mirror hosting on Icarus Project</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="/docs/static-mirroring/static-hosting/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Docs: Hosting on Amazon S3</title>
-      <link>/docs/static-mirroring/static-hosting/amazons3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/static-mirroring/static-hosting/amazons3/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Required expertise level : &lt;strong&gt;Intermediate&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Platform : &lt;strong&gt;Any&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Amazon S3&lt;/strong&gt; (Amazon Simple Storage Service) is a data storage service and one of the Amazon Web Services (AWS)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;S3 provides &lt;strong&gt;object storage&lt;/strong&gt; service, which means that data is stored and addressed as objects, each object contains it&amp;rsquo;s own data in addition to meta-data and a unique identifier.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Object storage&lt;/strong&gt; is often used to store big amounts of data that doesn&amp;rsquo;t need the features and structure of the file systems hierarchy.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;main&lt;/strong&gt; advantage of using S3 to host our static mirror is the ability to serve a fully functional &lt;strong&gt;&amp;ldquo;static&amp;rdquo;&lt;/strong&gt; web pages directly from Amazon S3 URLs which consists of &lt;code&gt;[bucketname]+[endpoint]&lt;/code&gt; or &lt;code&gt;[endpoint]/[bucketname]&lt;/code&gt; ex: &lt;code&gt;mybucket.s3.us-east-2.amazonaws.com&lt;/code&gt; or &lt;code&gt;https://s3.us-east-2.amazonaws.com/mybucket&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;configure-static-site-hosting-on-s3&#34;&gt;Configure static site hosting on S3&lt;/h2&gt;
-&lt;h3 id=&#34;creating-s3-bucket-and-setting-configurations-for-static-site-hosting&#34;&gt;Creating S3 bucket, and setting configurations for Static Site hosting&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;First,&lt;/strong&gt; you need to create an account on &lt;strong&gt;&lt;a href=&#34;https://aws.amazon.com/&#34;&gt;Amazon Web Services (AWS)&lt;/a&gt;&lt;/strong&gt;, and then, &lt;strong&gt;sign in&lt;/strong&gt; to &lt;strong&gt;&lt;a href=&#34;https://signin.aws.amazon.com&#34;&gt;AWS Console&lt;/a&gt;.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/1.png&#34; alt=&#34;&#34;&gt;AWS login page&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In &lt;strong&gt;&lt;a href=&#34;https://s3.console.aws.amazon.com&#34;&gt;S3 management console&lt;/a&gt;&lt;/strong&gt;, create a new bucket.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/2.png&#34; alt=&#34;&#34;&gt;S3 management console&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Static mirror hosting</title><link>/docs/static-mirroring/static-hosting/</link><description>Recent content in Static mirror hosting on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/static-mirroring/static-hosting/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Hosting on Amazon S3</title><link>/docs/static-mirroring/static-hosting/amazons3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/amazons3/</guid><description>
+&lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
+&lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;div class="alert alert-primary" role="alert">
+&lt;blockquote>
+&lt;p>&lt;strong>Amazon S3&lt;/strong> (Amazon Simple Storage Service) is a data storage service and one of the Amazon Web Services (AWS)&lt;/p>
+&lt;/blockquote>
+&lt;/div>
+&lt;p>S3 provides &lt;strong>object storage&lt;/strong> service, which means that data is stored and addressed as objects, each object contains it&amp;rsquo;s own data in addition to meta-data and a unique identifier.&lt;/p>
+&lt;p>&lt;strong>Object storage&lt;/strong> is often used to store big amounts of data that doesn&amp;rsquo;t need the features and structure of the file systems hierarchy.&lt;/p>
+&lt;p>The &lt;strong>main&lt;/strong> advantage of using S3 to host our static mirror is the ability to serve a fully functional &lt;strong>&amp;ldquo;static&amp;rdquo;&lt;/strong> web pages directly from Amazon S3 URLs which consists of &lt;code>[bucketname]+[endpoint]&lt;/code> or &lt;code>[endpoint]/[bucketname]&lt;/code> ex: &lt;code>mybucket.s3.us-east-2.amazonaws.com&lt;/code> or &lt;code>https://s3.us-east-2.amazonaws.com/mybucket&lt;/code>&lt;/p>
+&lt;hr>
+&lt;h2 id="configure-static-site-hosting-on-s3">Configure static site hosting on S3&lt;/h2>
+&lt;h3 id="creating-s3-bucket-and-setting-configurations-for-static-site-hosting">Creating S3 bucket, and setting configurations for Static Site hosting&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>First,&lt;/strong> you need to create an account on &lt;strong>&lt;a href="https://aws.amazon.com/">Amazon Web Services (AWS)&lt;/a>&lt;/strong>, and then, &lt;strong>sign in&lt;/strong> to &lt;strong>&lt;a href="https://signin.aws.amazon.com">AWS Console&lt;/a>.&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/1.png" alt="">AWS login page&lt;/p>
+&lt;ul>
+&lt;li>In &lt;strong>&lt;a href="https://s3.console.aws.amazon.com">S3 management console&lt;/a>&lt;/strong>, create a new bucket.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/2.png" alt="">S3 management console&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
 You should pick a unique name for your bucket.
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/3.png&#34; alt=&#34;&#34;&gt;S3 new bucket&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In &lt;strong&gt;Set permissions&lt;/strong&gt; tab, uncheck &lt;strong&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Block &lt;em&gt;all&lt;/em&gt; public access&lt;/strong&gt;, and confirm that you want to enable public access to the bucket.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/4.png&#34; alt=&#34;&#34;&gt;Bucket permission tab&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Finally,&lt;/strong&gt; review your options and &lt;strong&gt;create&lt;/strong&gt; the new bucket.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/5.png&#34; alt=&#34;&#34;&gt;Create bucket&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Your newly created bucket should appear in this form.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Head to the new bucket&amp;rsquo;s settings by clicking on the bucket name.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/7.png&#34; alt=&#34;&#34;&gt;S3 bucket settings&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In &lt;strong&gt;Properties&lt;/strong&gt; tab click on &lt;strong&gt;Static website hosting&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/8.png&#34; alt=&#34;&#34;&gt;S3 bucket Properties&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;After setting &lt;strong&gt;Use this bucket to host a website&lt;/strong&gt;, you need to set the &lt;strong&gt;path&lt;/strong&gt; for your &lt;code&gt;index.html&lt;/code&gt;(main page), &lt;strong&gt;optionally&lt;/strong&gt; you can set a custom &lt;code&gt;error.html&lt;/code&gt; page, and click &lt;strong&gt;save&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/9.png&#34; alt=&#34;&#34;&gt;S3 Static website hosting&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/10.png&#34; alt=&#34;&#34;&gt;S3 enabled Static website hosting&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-Now, we need to set the &lt;strong&gt;bucket permissions policy&lt;/strong&gt; to allow public read for all objects.
-&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Head to &lt;strong&gt;Permissions&lt;/strong&gt; tab, and click on &lt;strong&gt;Bucket Policy&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/11.png&#34; alt=&#34;&#34;&gt;S3 bucket policy&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The simplest form of static website hosting policy on S3 should look like this.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Version&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;2012-10-17&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Statement&amp;#34;&lt;/span&gt;: [
-        {
-            &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Sid&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;PublicReadGetObject&amp;#34;&lt;/span&gt;,
-            &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Effect&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;Allow&amp;#34;&lt;/span&gt;,
-            &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Principal&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;*&amp;#34;&lt;/span&gt;,
-            &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Action&amp;#34;&lt;/span&gt;: [
-                &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;s3:GetObject&amp;#34;&lt;/span&gt;
-            ],
-            &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;&amp;#34;Resource&amp;#34;&lt;/span&gt;: [
-                &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;arn:aws:s3:::example.com/*&amp;#34;&lt;/span&gt;
-            ]
-        }
-    ]
+&lt;/div>
+&lt;p>&lt;img src="../../../images/hosting-s3/3.png" alt="">S3 new bucket&lt;/p>
+&lt;ul>
+&lt;li>In &lt;strong>Set permissions&lt;/strong> tab, uncheck &lt;strong>&lt;input disabled="" type="checkbox"> Block &lt;em>all&lt;/em> public access&lt;/strong>, and confirm that you want to enable public access to the bucket.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/4.png" alt="">Bucket permission tab&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Finally,&lt;/strong> review your options and &lt;strong>create&lt;/strong> the new bucket.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/5.png" alt="">Create bucket&lt;/p>
+&lt;ul>
+&lt;li>Your newly created bucket should appear in this form.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/6.png" alt="">&lt;/p>
+&lt;ul>
+&lt;li>Head to the new bucket&amp;rsquo;s settings by clicking on the bucket name.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/7.png" alt="">S3 bucket settings&lt;/p>
+&lt;ul>
+&lt;li>In &lt;strong>Properties&lt;/strong> tab click on &lt;strong>Static website hosting&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/8.png" alt="">S3 bucket Properties&lt;/p>
+&lt;ul>
+&lt;li>After setting &lt;strong>Use this bucket to host a website&lt;/strong>, you need to set the &lt;strong>path&lt;/strong> for your &lt;code>index.html&lt;/code>(main page), &lt;strong>optionally&lt;/strong> you can set a custom &lt;code>error.html&lt;/code> page, and click &lt;strong>save&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/9.png" alt="">S3 Static website hosting&lt;/p>
+&lt;p>&lt;img src="../../../images/hosting-s3/10.png" alt="">S3 enabled Static website hosting&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+Now, we need to set the &lt;strong>bucket permissions policy&lt;/strong> to allow public read for all objects.
+&lt;/div>
+&lt;ul>
+&lt;li>Head to &lt;strong>Permissions&lt;/strong> tab, and click on &lt;strong>Bucket Policy&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/11.png" alt="">S3 bucket policy&lt;/p>
+&lt;ul>
+&lt;li>The simplest form of static website hosting policy on S3 should look like this.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;span style="color:#309;font-weight:bold">&amp;#34;Version&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;2012-10-17&amp;#34;&lt;/span>,
+&lt;span style="color:#309;font-weight:bold">&amp;#34;Statement&amp;#34;&lt;/span>: [
+{
+&lt;span style="color:#309;font-weight:bold">&amp;#34;Sid&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;PublicReadGetObject&amp;#34;&lt;/span>,
+&lt;span style="color:#309;font-weight:bold">&amp;#34;Effect&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;Allow&amp;#34;&lt;/span>,
+&lt;span style="color:#309;font-weight:bold">&amp;#34;Principal&amp;#34;&lt;/span>: &lt;span style="color:#c30">&amp;#34;*&amp;#34;&lt;/span>,
+&lt;span style="color:#309;font-weight:bold">&amp;#34;Action&amp;#34;&lt;/span>: [
+&lt;span style="color:#c30">&amp;#34;s3:GetObject&amp;#34;&lt;/span>
+],
+&lt;span style="color:#309;font-weight:bold">&amp;#34;Resource&amp;#34;&lt;/span>: [
+&lt;span style="color:#c30">&amp;#34;arn:aws:s3:::example.com/*&amp;#34;&lt;/span>
+]
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-In this example bucket policy &lt;code&gt;example.com&lt;/code&gt; is the bucket name. To use this policy example you need to replace &lt;code&gt;example.com&lt;/code&gt; with your newly created bucket name in the &lt;code&gt;&amp;quot;Resources&amp;quot;&lt;/code&gt; key value.
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Now, we are ready to upload our &lt;strong&gt;static mirror&lt;/strong&gt; to our S3 bucket.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h3 id=&#34;upload-using-the-web-user-interface&#34;&gt;Upload using the Web user interface&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;You will find the upload option in the bucket settings page.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/12.png&#34; alt=&#34;&#34;&gt;S3 files upload&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Make sure &lt;strong&gt;grant public read access&lt;/strong&gt; to the uploaded files in the permissions tab.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/13.png&#34; alt=&#34;&#34;&gt;S3 files upload permissions&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;strong&gt;While&lt;/strong&gt; you can easily upload your website files directly in the browser by clicking on &lt;strong&gt;Upload&lt;/strong&gt; in the bucket settings page, it&amp;rsquo;s preferred to use &lt;strong&gt;AWS CLI&lt;/strong&gt;, specially if when you are uploading large websites.
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h4 id=&#34;install-aws-command-line-interfacehttpsdocsawsamazoncomclilatestuserguideinstall-cliv2html&#34;&gt;&lt;a href=&#34;https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html&#34;&gt;Install AWS Command Line Interface&lt;/a&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;MS Windows&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://awscli.amazonaws.com/AWSCLIV2.msi&#34;&gt;Download&lt;/a&gt;&lt;/strong&gt; and install the official installation file&lt;/li&gt;
-&lt;li&gt;Install using &lt;strong&gt;&lt;a href=&#34;https://chocolatey.org/packages/awscli&#34;&gt;Chocolatey&lt;/a&gt;&lt;/strong&gt; windows package manager &lt;code&gt;choco install awscli&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Gnu/Linux&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Normally,&lt;/strong&gt; you will fine AWS CLI package available in your distribution software repositories, in that case you can simply use your package manager to install it directly. ex: &lt;code&gt;apt install awscli&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;If that&amp;rsquo;s not the case, you can install it &lt;strong&gt;manually&lt;/strong&gt; by executing these commands in your terminal in their respective order.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Linux x86 (64-bit)&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&amp;#34;&lt;/span&gt; -o &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;awscliv2.zip&amp;#34;&lt;/span&gt;
+]
+}
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+In this example bucket policy &lt;code>example.com&lt;/code> is the bucket name. To use this policy example you need to replace &lt;code>example.com&lt;/code> with your newly created bucket name in the &lt;code>&amp;quot;Resources&amp;quot;&lt;/code> key value.
+&lt;/div>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Now, we are ready to upload our &lt;strong>static mirror&lt;/strong> to our S3 bucket.&lt;/p>
+&lt;/div>
+&lt;h3 id="upload-using-the-web-user-interface">Upload using the Web user interface&lt;/h3>
+&lt;ul>
+&lt;li>You will find the upload option in the bucket settings page.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/12.png" alt="">S3 files upload&lt;/p>
+&lt;ul>
+&lt;li>Make sure &lt;strong>grant public read access&lt;/strong> to the uploaded files in the permissions tab.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/13.png" alt="">S3 files upload permissions&lt;/p>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+&lt;strong>While&lt;/strong> you can easily upload your website files directly in the browser by clicking on &lt;strong>Upload&lt;/strong> in the bucket settings page, it&amp;rsquo;s preferred to use &lt;strong>AWS CLI&lt;/strong>, specially if when you are uploading large websites.
+&lt;/div>
+&lt;hr>
+&lt;h4 id="install-aws-command-line-interfacehttpsdocsawsamazoncomclilatestuserguideinstall-cliv2html">&lt;a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html">Install AWS Command Line Interface&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>MS Windows&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://awscli.amazonaws.com/AWSCLIV2.msi">Download&lt;/a>&lt;/strong> and install the official installation file&lt;/li>
+&lt;li>Install using &lt;strong>&lt;a href="https://chocolatey.org/packages/awscli">Chocolatey&lt;/a>&lt;/strong> windows package manager &lt;code>choco install awscli&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Gnu/Linux&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Normally,&lt;/strong> you will fine AWS CLI package available in your distribution software repositories, in that case you can simply use your package manager to install it directly. ex: &lt;code>apt install awscli&lt;/code>&lt;/li>
+&lt;li>If that&amp;rsquo;s not the case, you can install it &lt;strong>manually&lt;/strong> by executing these commands in your terminal in their respective order.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Linux x86 (64-bit)&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl &lt;span style="color:#c30">&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&amp;#34;&lt;/span> -o &lt;span style="color:#c30">&amp;#34;awscliv2.zip&amp;#34;&lt;/span>
 unzip awscliv2.zip
 sudo ./aws/install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Linux ARM&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip&amp;#34;&lt;/span&gt; -o &lt;span style=&#34;color:#c30&#34;&gt;&amp;#34;awscliv2.zip&amp;#34;&lt;/span&gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Linux ARM&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl &lt;span style="color:#c30">&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip&amp;#34;&lt;/span> -o &lt;span style="color:#c30">&amp;#34;awscliv2.zip&amp;#34;&lt;/span>
 unzip awscliv2.zip
 sudo ./aws/install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;macOS&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Install using &lt;strong&gt;&lt;a href=&#34;https://docs.brew.sh/Installation&#34;&gt;Homebrew&lt;/a&gt;&lt;/strong&gt; package manager. &lt;code&gt;brew install awscli&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;upload-using-aws-cli&#34;&gt;Upload using AWS CLI&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;First, you should configure &lt;code&gt;awscli&lt;/code&gt; and grant it access to your AWS account, for that you will need to get your &lt;strong&gt;AWS Access Key ID&lt;/strong&gt; and &lt;strong&gt;Secret Access Key&lt;/strong&gt;, you can create new Access Keys by going to &lt;a href=&#34;https://console.aws.amazon.com/iam/home?#/security_credentials&#34;&gt;AWS IAM (Identity and Access Management) Dashboard&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Alert&lt;/h4&gt;
-Make sure to store the generated keys &lt;strong&gt;securely&lt;/strong&gt; and don&amp;rsquo;t share them over unsecured medium, the keys can be used to gain access to your AWS account data.
-&lt;/div&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;awscli configure
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;ِMove to the website local directory.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Upload your files by executing &lt;strong&gt;&lt;strong&gt;replace [bucket-name] with the name of the bucket you created on S3&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;aws s3 sync . s3://&lt;span style=&#34;color:#555&#34;&gt;[&lt;/span&gt;bucket-name&lt;span style=&#34;color:#555&#34;&gt;]&lt;/span&gt;/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;Now you can test your new static mirror, you&amp;rsquo;ll find the website URL in &lt;strong&gt;bucket settings &amp;gt; Properties &amp;gt; Static website hosting&lt;/strong&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/15.png&#34; alt=&#34;Find the configured URL for your website here&#34;&gt;Find the configured URL for your website here&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-Note that the provided URL here is &lt;a href=&#34;http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com&#34;&gt;http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com&lt;/a&gt; can only be accessed on plain-text HTTP protocol
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/16.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Now, there are two different URL structures which allows accessing your static website on the secure protocol HTTPS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bucket name as a sub-domain  &lt;code&gt;https://[mystaticwebsitetest].s3.us-east-2.amazonaws.com&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/17.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bucket name in the path &lt;code&gt;https://s3.us-east-2.amazonaws.com/[mystaticwebsitetest]&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-s3/18.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;While both methods may achieve same results, it&amp;rsquo;s preferred &lt;strong&gt;in censorship circumvention context&lt;/strong&gt; to include the bucket name in the path as in &lt;strong&gt;method number 2&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;AWS uses a &lt;strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Wildcard_certificate&#34;&gt;Wildcard SSL certificate&lt;/a&gt;&lt;/strong&gt; which supports any sub-domain under &lt;code&gt;*.s3.us-east-2.amazonaws.com&lt;/code&gt;, but defining the bucket name in the URL path would make it more difficult to detect traffic to this particular bucket/region/endpoint through &lt;strong&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Deep_packet_inspection&#34;&gt;Deep Packet Inspection(DPI)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Hosting on Google Cloud Storage</title>
-      <link>/docs/static-mirroring/static-hosting/gcs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/static-mirroring/static-hosting/gcs/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Required expertise level : &lt;strong&gt;Intermediate&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Platform : &lt;strong&gt;Any&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Google Cloud Storage&lt;/strong&gt; is &lt;strong&gt;object storage service&lt;/strong&gt; similar to Amazon S3, and it provides the ability to serve static web pages as well.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;The &lt;strong&gt;main&lt;/strong&gt; advantage of using Google Cloud Storage to host our static mirror is the ability to serve a fully functional &lt;strong&gt;&amp;ldquo;static&amp;rdquo;&lt;/strong&gt; web pages directly using Google Cloud Platform URLs which usually looks like this: &lt;code&gt;https://storage.googleapis.com/[bucketname]&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;configure-static-site-hosting-on-google-cloud-storage&#34;&gt;Configure static site hosting on Google Cloud Storage&lt;/h2&gt;
-&lt;h3 id=&#34;creating-gcs-bucket-and-setting-permissions&#34;&gt;Creating GCS bucket, and setting permissions&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;First,&lt;/strong&gt; you need to create an account on &lt;strong&gt;&lt;a href=&#34;https://cloud.google.com/&#34;&gt;Google Cloud Platform&lt;/a&gt;&lt;/strong&gt;, you will need to create a Google account for this.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;strong&gt;While it&amp;rsquo;s possible to use a pre-existing Google account for this step, it&amp;rsquo;s better to create a new one just for this purpose&lt;/strong&gt;.
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Log in to &lt;strong&gt;&lt;a href=&#34;https://console.cloud.google.com/&#34;&gt;Google Cloud Console&lt;/a&gt;&lt;/strong&gt; using your newly created account.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Here, you&amp;rsquo;ll need to open &lt;strong&gt;Storage&lt;/strong&gt; from the side bar to access &lt;a href=&#34;https://console.cloud.google.com/storage&#34;&gt;&lt;strong&gt;Google Cloud Storage&lt;/strong&gt;&lt;/a&gt; settings page.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/3.png&#34; alt=&#34;&#34;&gt;Create a new bucket here&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/4.png&#34; alt=&#34;&#34;&gt;Buck name&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;First step will be choosing your bucket name, &lt;strong&gt;bucket names should be unique and you&amp;rsquo;ll use it to access your static website later&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/5.png&#34; alt=&#34;&#34;&gt;Region settings&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Unless you know what you are doing, there is no need to change anything here.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/6.png&#34; alt=&#34;&#34;&gt;Storage Class&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In most cases it should be &lt;strong&gt;Standard&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/7.png&#34; alt=&#34;&#34;&gt;Access control&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;We will be handling permissions and access control configurations later on, so we&amp;rsquo;ll leave it unchanged for now.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/8.png&#34; alt=&#34;&#34;&gt;Encryption&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;As this bucket will be publicly available, we don&amp;rsquo;t need to change anything with Encryption settings.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-&lt;strong&gt;Now, we can go proceed to the new bucket settings page.&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;upload-the-static-website&#34;&gt;Upload the static website&lt;/h3&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-&lt;strong&gt;While you can upload your static website using the web interface, it&amp;rsquo;s preferred to do that using Google Cloud SDK, specially if you are planning on updating your mirror with new content frequently.&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&#34;install-google-cloud-sdk-command-line-interfacehttpscloudgooglecomsdkinstall&#34;&gt;&lt;a href=&#34;https://cloud.google.com/sdk/install&#34;&gt;Install Google Cloud SDK Command Line Interface&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Installing Google Cloud SDK&lt;/strong&gt; is pretty straight forward process. Simply, follow the instructions related to your operating system in this &lt;a href=&#34;https://cloud.google.com/sdk/install&#34;&gt;&lt;strong&gt;guide&lt;/strong&gt;&lt;/a&gt; and you will be good to go.&lt;/p&gt;
-&lt;h3 id=&#34;upload-using-google-cloud-sdk-cli&#34;&gt;Upload using Google Cloud SDK CLI&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;After installing Google Cloud Sdk, you will need to authorize the local client to connect to you Google Cloud account, you can do that by opening your terminal and entering &lt;code&gt;gcloud init&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;After &lt;strong&gt;Successfully logging in to your account&lt;/strong&gt;, you will be asked to select the project you want to use, if you didn&amp;rsquo;t create a new project you can do that now using the local CLI.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-&lt;strong&gt;Now, you can use your local CLI to upload the static mirror to the newly created bucket.&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Using your terminal, change directory to the static mirror files location, and enter &lt;code&gt;gsutil rsync -R [local-dir] gs://[bucketname]&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;strong&gt;Replace &lt;code&gt;[local-dir]&lt;/code&gt; with the static mirror directory name and &lt;code&gt;[bucketname]&lt;/code&gt; with the bucket name.&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/12.png&#34; alt=&#34;&#34;&gt;Uploading files&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Now if you go to your bucket settings page, you will notice the static mirror files are uploaded.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/13.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Final step will be &lt;strong&gt;setting public permissions&lt;/strong&gt; to the files so the static mirror will be accessible to public internet, you can do that using the local CLI by entering &lt;code&gt;gsutil iam ch allUsers:objectViewer gs://[bucketname]&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;strong&gt;Replace &lt;code&gt;[bucketname]&lt;/code&gt; with your bucket name.&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Now you can access your static mirror using this URL scheme &lt;code&gt;https://storage.googleapis.com/[bucketname]/index.html&lt;/code&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;strong&gt;Replace &lt;code&gt;[bucketname]&lt;/code&gt; with your bucket name.&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../../images/hosting-gcs/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Updating the static mirror&lt;/h4&gt;
-&lt;strong&gt;Updating your static mirror with new content&lt;/strong&gt; will be as simple as going to the mirror&amp;rsquo;s local directory on your terminal and executing &lt;code&gt;gsutil rsync -R [local-dir] gs://[bucketname]&lt;/code&gt; every time.
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Hosting on GitHub</title>
-      <link>/docs/static-mirroring/static-hosting/github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/static-mirroring/static-hosting/github/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Required expertise level : &lt;strong&gt;Intermediate&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Platform : &lt;strong&gt;Any&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt; is &lt;strong&gt;a software development platform&lt;/strong&gt; using Git version control system, and it provides the ability to serve static web pages through &lt;a href=&#34;https://pages.github.com/&#34;&gt;&lt;strong&gt;GitHub Pages service&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-GitHub provides an easy &lt;a href=&#34;https://pages.github.com/&#34;&gt;&lt;strong&gt;step-by-step guide&lt;/strong&gt;&lt;/a&gt; on how to host a static website on their platform.
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;strong>macOS&lt;/strong>
+&lt;ul>
+&lt;li>Install using &lt;strong>&lt;a href="https://docs.brew.sh/Installation">Homebrew&lt;/a>&lt;/strong> package manager. &lt;code>brew install awscli&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="upload-using-aws-cli">Upload using AWS CLI&lt;/h3>
+&lt;ul>
+&lt;li>First, you should configure &lt;code>awscli&lt;/code> and grant it access to your AWS account, for that you will need to get your &lt;strong>AWS Access Key ID&lt;/strong> and &lt;strong>Secret Access Key&lt;/strong>, you can create new Access Keys by going to &lt;a href="https://console.aws.amazon.com/iam/home?#/security_credentials">AWS IAM (Identity and Access Management) Dashboard&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Alert&lt;/h4>
+Make sure to store the generated keys &lt;strong>securely&lt;/strong> and don&amp;rsquo;t share them over unsecured medium, the keys can be used to gain access to your AWS account data.
+&lt;/div>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">awscli configure
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="../../../images/hosting-s3/14.png" alt="">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>ِMove to the website local directory.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Upload your files by executing &lt;strong>&lt;strong>replace [bucket-name] with the name of the bucket you created on S3&lt;/strong>&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">aws s3 sync . s3://&lt;span style="color:#555">[&lt;/span>bucket-name&lt;span style="color:#555">]&lt;/span>/
+&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Now you can test your new static mirror, you&amp;rsquo;ll find the website URL in &lt;strong>bucket settings &amp;gt; Properties &amp;gt; Static website hosting&lt;/strong>&lt;/p>
+&lt;/div>
+&lt;p>&lt;img src="../../../images/hosting-s3/15.png" alt="Find the configured URL for your website here">Find the configured URL for your website here&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+Note that the provided URL here is &lt;a href="http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com">http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com&lt;/a> can only be accessed on plain-text HTTP protocol
+&lt;/div>
+&lt;p>&lt;img src="../../../images/hosting-s3/16.png" alt="">&lt;/p>
+&lt;p>Now, there are two different URL structures which allows accessing your static website on the secure protocol HTTPS&lt;/p>
+&lt;ul>
+&lt;li>Bucket name as a sub-domain &lt;code>https://[mystaticwebsitetest].s3.us-east-2.amazonaws.com&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/17.png" alt="">&lt;/p>
+&lt;ul>
+&lt;li>Bucket name in the path &lt;code>https://s3.us-east-2.amazonaws.com/[mystaticwebsitetest]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-s3/18.png" alt="">&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+&lt;p>While both methods may achieve same results, it&amp;rsquo;s preferred &lt;strong>in censorship circumvention context&lt;/strong> to include the bucket name in the path as in &lt;strong>method number 2&lt;/strong>.&lt;/p>
+&lt;p>AWS uses a &lt;strong>&lt;a href="https://en.wikipedia.org/wiki/Wildcard_certificate">Wildcard SSL certificate&lt;/a>&lt;/strong> which supports any sub-domain under &lt;code>*.s3.us-east-2.amazonaws.com&lt;/code>, but defining the bucket name in the URL path would make it more difficult to detect traffic to this particular bucket/region/endpoint through &lt;strong>&lt;a href="https://en.wikipedia.org/wiki/Deep_packet_inspection">Deep Packet Inspection(DPI)&lt;/a>&lt;/strong>&lt;/p>
+&lt;/div></description></item><item><title>Docs: Hosting on Google Cloud Storage</title><link>/docs/static-mirroring/static-hosting/gcs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/gcs/</guid><description>
+&lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
+&lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;div class="alert alert-primary" role="alert">
+&lt;blockquote>
+&lt;p>&lt;strong>Google Cloud Storage&lt;/strong> is &lt;strong>object storage service&lt;/strong> similar to Amazon S3, and it provides the ability to serve static web pages as well.&lt;/p>
+&lt;/blockquote>
+&lt;/div>
+&lt;p>The &lt;strong>main&lt;/strong> advantage of using Google Cloud Storage to host our static mirror is the ability to serve a fully functional &lt;strong>&amp;ldquo;static&amp;rdquo;&lt;/strong> web pages directly using Google Cloud Platform URLs which usually looks like this: &lt;code>https://storage.googleapis.com/[bucketname]&lt;/code>&lt;/p>
+&lt;hr>
+&lt;h2 id="configure-static-site-hosting-on-google-cloud-storage">Configure static site hosting on Google Cloud Storage&lt;/h2>
+&lt;h3 id="creating-gcs-bucket-and-setting-permissions">Creating GCS bucket, and setting permissions&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>First,&lt;/strong> you need to create an account on &lt;strong>&lt;a href="https://cloud.google.com/">Google Cloud Platform&lt;/a>&lt;/strong>, you will need to create a Google account for this.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+&lt;strong>While it&amp;rsquo;s possible to use a pre-existing Google account for this step, it&amp;rsquo;s better to create a new one just for this purpose&lt;/strong>.
+&lt;/div>
+&lt;p>&lt;img src="../../../images/hosting-gcs/1.png" alt="">&lt;/p>
+&lt;ul>
+&lt;li>Log in to &lt;strong>&lt;a href="https://console.cloud.google.com/">Google Cloud Console&lt;/a>&lt;/strong> using your newly created account.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/2.png" alt="">&lt;/p>
+&lt;ul>
+&lt;li>Here, you&amp;rsquo;ll need to open &lt;strong>Storage&lt;/strong> from the side bar to access &lt;a href="https://console.cloud.google.com/storage">&lt;strong>Google Cloud Storage&lt;/strong>&lt;/a> settings page.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/3.png" alt="">Create a new bucket here&lt;/p>
+&lt;p>&lt;img src="../../../images/hosting-gcs/4.png" alt="">Buck name&lt;/p>
+&lt;ul>
+&lt;li>First step will be choosing your bucket name, &lt;strong>bucket names should be unique and you&amp;rsquo;ll use it to access your static website later&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/5.png" alt="">Region settings&lt;/p>
+&lt;ul>
+&lt;li>Unless you know what you are doing, there is no need to change anything here.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/6.png" alt="">Storage Class&lt;/p>
+&lt;ul>
+&lt;li>In most cases it should be &lt;strong>Standard&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/7.png" alt="">Access control&lt;/p>
+&lt;ul>
+&lt;li>We will be handling permissions and access control configurations later on, so we&amp;rsquo;ll leave it unchanged for now.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/8.png" alt="">Encryption&lt;/p>
+&lt;ul>
+&lt;li>As this bucket will be publicly available, we don&amp;rsquo;t need to change anything with Encryption settings.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-primary" role="alert">
+&lt;strong>Now, we can go proceed to the new bucket settings page.&lt;/strong>
+&lt;/div>
+&lt;p>&lt;img src="../../../images/hosting-gcs/9.png" alt="">&lt;/p>
+&lt;hr>
+&lt;h3 id="upload-the-static-website">Upload the static website&lt;/h3>
+&lt;div class="alert alert-primary" role="alert">
+&lt;strong>While you can upload your static website using the web interface, it&amp;rsquo;s preferred to do that using Google Cloud SDK, specially if you are planning on updating your mirror with new content frequently.&lt;/strong>
+&lt;/div>
+&lt;h4 id="install-google-cloud-sdk-command-line-interfacehttpscloudgooglecomsdkinstall">&lt;a href="https://cloud.google.com/sdk/install">Install Google Cloud SDK Command Line Interface&lt;/a>&lt;/h4>
+&lt;p>&lt;strong>Installing Google Cloud SDK&lt;/strong> is pretty straight forward process. Simply, follow the instructions related to your operating system in this &lt;a href="https://cloud.google.com/sdk/install">&lt;strong>guide&lt;/strong>&lt;/a> and you will be good to go.&lt;/p>
+&lt;h3 id="upload-using-google-cloud-sdk-cli">Upload using Google Cloud SDK CLI&lt;/h3>
+&lt;ul>
+&lt;li>After installing Google Cloud Sdk, you will need to authorize the local client to connect to you Google Cloud account, you can do that by opening your terminal and entering &lt;code>gcloud init&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/10.png" alt="">&lt;/p>
+&lt;ul>
+&lt;li>After &lt;strong>Successfully logging in to your account&lt;/strong>, you will be asked to select the project you want to use, if you didn&amp;rsquo;t create a new project you can do that now using the local CLI.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/11.png" alt="">&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;strong>Now, you can use your local CLI to upload the static mirror to the newly created bucket.&lt;/strong>
+&lt;/div>
+&lt;ul>
+&lt;li>Using your terminal, change directory to the static mirror files location, and enter &lt;code>gsutil rsync -R [local-dir] gs://[bucketname]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+&lt;strong>Replace &lt;code>[local-dir]&lt;/code> with the static mirror directory name and &lt;code>[bucketname]&lt;/code> with the bucket name.&lt;/strong>
+&lt;/div>
+&lt;p>&lt;img src="../../../images/hosting-gcs/12.png" alt="">Uploading files&lt;/p>
+&lt;ul>
+&lt;li>Now if you go to your bucket settings page, you will notice the static mirror files are uploaded.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../images/hosting-gcs/13.png" alt="">&lt;/p>
+&lt;ul>
+&lt;li>Final step will be &lt;strong>setting public permissions&lt;/strong> to the files so the static mirror will be accessible to public internet, you can do that using the local CLI by entering &lt;code>gsutil iam ch allUsers:objectViewer gs://[bucketname]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+&lt;strong>Replace &lt;code>[bucketname]&lt;/code> with your bucket name.&lt;/strong>
+&lt;/div>
+&lt;p>Now you can access your static mirror using this URL scheme &lt;code>https://storage.googleapis.com/[bucketname]/index.html&lt;/code>&lt;/p>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+&lt;strong>Replace &lt;code>[bucketname]&lt;/code> with your bucket name.&lt;/strong>
+&lt;/div>
+&lt;p>&lt;img src="../../../images/hosting-gcs/14.png" alt="">&lt;/p>
+&lt;div class="alert alert-primary" role="alert">
+&lt;h4 class="alert-heading">Updating the static mirror&lt;/h4>
+&lt;strong>Updating your static mirror with new content&lt;/strong> will be as simple as going to the mirror&amp;rsquo;s local directory on your terminal and executing &lt;code>gsutil rsync -R [local-dir] gs://[bucketname]&lt;/code> every time.
+&lt;/div></description></item><item><title>Docs: Hosting on GitHub</title><link>/docs/static-mirroring/static-hosting/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/github/</guid><description>
+&lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
+&lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;div class="alert alert-primary" role="alert">
+&lt;blockquote>
+&lt;p>&lt;strong>GitHub&lt;/strong> is &lt;strong>a software development platform&lt;/strong> using Git version control system, and it provides the ability to serve static web pages through &lt;a href="https://pages.github.com/">&lt;strong>GitHub Pages service&lt;/strong>&lt;/a>.&lt;/p>
+&lt;/blockquote>
+&lt;/div>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
+GitHub provides an easy &lt;a href="https://pages.github.com/">&lt;strong>step-by-step guide&lt;/strong>&lt;/a> on how to host a static website on their platform.
 The guide is available in English, so, in order to avoid redundancy we&amp;rsquo;ll just refer to it here and add a translated version for every available language in our documentations.
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h2 id=&#34;install-git&#34;&gt;Install Git&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;MS Windows&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;Download&lt;/a&gt;&lt;/strong&gt; and install the official installation file&lt;/li&gt;
-&lt;li&gt;Install using &lt;strong&gt;&lt;a href=&#34;https://chocolatey.org/packages/git&#34;&gt;Chocolatey&lt;/a&gt;&lt;/strong&gt; windows package manager &lt;code&gt;choco install git&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Gnu/Linux&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Normally,&lt;/strong&gt; you will fine Git package available in your distribution software repositories, in that case you can simply use your package manager to install it directly. ex: &lt;code&gt;apt install git&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;macOS&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Install using &lt;strong&gt;&lt;a href=&#34;https://docs.brew.sh/Installation&#34;&gt;Homebrew&lt;/a&gt;&lt;/strong&gt; package manager. &lt;code&gt;brew install git&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="install-git">Install Git&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>MS Windows&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://git-scm.com/download/win">Download&lt;/a>&lt;/strong> and install the official installation file&lt;/li>
+&lt;li>Install using &lt;strong>&lt;a href="https://chocolatey.org/packages/git">Chocolatey&lt;/a>&lt;/strong> windows package manager &lt;code>choco install git&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Gnu/Linux&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Normally,&lt;/strong> you will fine Git package available in your distribution software repositories, in that case you can simply use your package manager to install it directly. ex: &lt;code>apt install git&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>macOS&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Install using &lt;strong>&lt;a href="https://docs.brew.sh/Installation">Homebrew&lt;/a>&lt;/strong> package manager. &lt;code>brew install git&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
