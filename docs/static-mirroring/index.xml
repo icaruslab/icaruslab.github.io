@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Static mirroring</title><link>/docs/static-mirroring/</link><description>Recent content in Static mirroring on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/static-mirroring/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Wget</title><link>/docs/static-mirroring/wget-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/wget-guide/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Static mirroring</title><link>/docs/static-mirroring.html</link><description>Recent content in Static mirroring on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/static-mirroring/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Wget</title><link>/docs/static-mirroring/wget-guide.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/wget-guide.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -73,7 +73,7 @@ We will be using some basic parameters for Wget which should work for the majori
 &lt;h4 class="alert-heading">Note&lt;/h4>
 For websites operating behind Cloudflare, this process can be identified as malicious behaviour as many simultaneous requests are coming from one IP address in short intervals, this can result in partial downloads or failing to download some assets such as inline images and CSS files.
 &lt;/div>
-&lt;p>&lt;strong>This can be solved&lt;/strong> by either &lt;strong>whitelisting your IP address on Cloudflare&lt;/strong> and disable assets protection features during the crawling process, or configure the origin server to &lt;strong>allow direct access&lt;/strong> on a different domain/sub-domain with &lt;a href="https://en.wikipedia.org/wiki/Basic_access_authentication">basic authentication&lt;/a> enabled, you can then add &lt;code>--http-user=[HTTP-USER]&lt;/code> &lt;code>--http-passwd=[HTTP-PASSWORD]&lt;/code> parameters to your Wget command to authenticate.&lt;/p></description></item><item><title>Docs: HTTrack</title><link>/docs/static-mirroring/httrack-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/httrack-guide/</guid><description>
+&lt;p>&lt;strong>This can be solved&lt;/strong> by either &lt;strong>whitelisting your IP address on Cloudflare&lt;/strong> and disable assets protection features during the crawling process, or configure the origin server to &lt;strong>allow direct access&lt;/strong> on a different domain/sub-domain with &lt;a href="https://en.wikipedia.org/wiki/Basic_access_authentication">basic authentication&lt;/a> enabled, you can then add &lt;code>--http-user=[HTTP-USER]&lt;/code> &lt;code>--http-passwd=[HTTP-PASSWORD]&lt;/code> parameters to your Wget command to authenticate.&lt;/p></description></item><item><title>Docs: HTTrack</title><link>/docs/static-mirroring/httrack-guide.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/httrack-guide.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -170,7 +170,7 @@ When using HTTrack &lt;em>- and almost any website downloader -,&lt;/em> while y
 &lt;p>&lt;strong>With big websites&lt;/strong>, many security settings and tools might identify the constant crawling and multiple hits in short time intervals as malicious behavior and block or throttle your IP address&amp;rsquo;s connection to the website.&lt;/p>
 &lt;p>&lt;strong>In that case&lt;/strong> you should revise your security settings and find the maximum allowed connections then you can use arguments like &lt;code>--max-rate=N&lt;/code>, &lt;code>--connection-per-second=N&lt;/code>, &lt;code>--max-pause=N&lt;/code> to limit HTTrack traffic hitting your website to the maximum allowed numbers.&lt;/p>
 &lt;p>Also, you should consider whitelisting your IP address in your security settings if the option exists.&lt;/p>
-&lt;/div></description></item><item><title>Docs: WordPress Plugins</title><link>/docs/static-mirroring/wpplugins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/wpplugins/</guid><description>
+&lt;/div></description></item><item><title>Docs: WordPress Plugins</title><link>/docs/static-mirroring/wpplugins.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/wpplugins.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -245,7 +245,7 @@ When using HTTrack &lt;em>- and almost any website downloader -,&lt;/em> while y
 &lt;/li>
 &lt;/ul>
 &lt;/div>
-&lt;p>&lt;img src="../../images/simplystatic/3.png" alt="">Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p></description></item><item><title>Docs: Static mirror hosting</title><link>/docs/static-mirroring/static-hosting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/</guid><description>
+&lt;p>&lt;img src="../../images/simplystatic/3.png" alt="">Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p></description></item><item><title>Docs: Static mirror hosting</title><link>/docs/static-mirroring/static-hosting.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting.html</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>In this section, we will go through some of the cloud service providers which offers the functionality of hosting and serving a static website.&lt;/p>
 &lt;/div></description></item></channel></rss>

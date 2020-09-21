@@ -1,8 +1,8 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Alternative Publishing Methods</title><link>/docs/alternative-publishing-methods/</link><description>Recent content in Alternative Publishing Methods on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/alternative-publishing-methods/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Tor</title><link>/docs/alternative-publishing-methods/tor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Alternative Publishing Methods</title><link>/docs/alternative-publishing-methods.html</link><description>Recent content in Alternative Publishing Methods on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/alternative-publishing-methods/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Tor</title><link>/docs/alternative-publishing-methods/tor.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor.html</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>In this guide we will be introducing two different methods of &lt;strong>creating a mirror for your website on Tor network&lt;/strong> using &lt;strong>Tor Onion services&lt;/strong> formerly known as - &lt;strong>Tor Hidden Services&lt;/strong>.&lt;/p>
 &lt;p>You will also find a brief introduction to Tor network and how access it if it&amp;rsquo;s blocked in your country&lt;/p>
-&lt;/div></description></item><item><title>Docs: Interplanetary File System</title><link>/docs/alternative-publishing-methods/ipfs/ipfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/ipfs/ipfs/</guid><description>
+&lt;/div></description></item><item><title>Docs: Interplanetary File System</title><link>/docs/alternative-publishing-methods/ipfs/ipfs.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/ipfs/ipfs.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -127,7 +127,7 @@ provides a solution similar to the regular web Domain Name System (DNS).
 &lt;p>it might be a good idea to add &lt;code>--nocopy&lt;/code> parameter in the first step:&lt;/p>
 &lt;p>&lt;code>ipfs add -Q --recursive --nocopy --progress mystaticmirror &lt;/code>&lt;/p>
 &lt;p>this will tell IPFS not to make a full copy of every file in it&amp;rsquo;s datastore and will just create the hashes and use the original files, &lt;strong>which will save disk space.&lt;/strong>&lt;/p>
-&lt;/div></description></item><item><title>Docs: Encrypted SNI</title><link>/docs/alternative-publishing-methods/esni/esni/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/esni/esni/</guid><description>
+&lt;/div></description></item><item><title>Docs: Encrypted SNI</title><link>/docs/alternative-publishing-methods/esni/esni.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/esni/esni.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
 &lt;hr>

@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Tor</title><link>/docs/alternative-publishing-methods/tor/</link><description>Recent content in Tor on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/alternative-publishing-methods/tor/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Intro to Tor</title><link>/docs/alternative-publishing-methods/tor/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/intro/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Tor</title><link>/docs/alternative-publishing-methods/tor.html</link><description>Recent content in Tor on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/alternative-publishing-methods/tor/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Intro to Tor</title><link>/docs/alternative-publishing-methods/tor/intro.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/intro.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -132,7 +132,7 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 &lt;li>
 &lt;p>&lt;a href="https://madat5boo7oo5t2w.onion/">&lt;strong>MadaMasr&lt;/strong>&lt;/a>&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>Docs: EOTK</title><link>/docs/alternative-publishing-methods/tor/eotk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/eotk/</guid><description>
+&lt;/ul></description></item><item><title>Docs: EOTK</title><link>/docs/alternative-publishing-methods/tor/eotk.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/eotk.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -147,7 +147,7 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 &lt;div class="alert alert-warning" role="alert">
 &lt;h4 class="alert-heading">Note&lt;/h4>
 &lt;strong>A thorough &lt;a href="https://github.com/alecmuffett/eotk/blob/master/docs.d/HOW-TO-INSTALL.md">implementation guide&lt;/a>&lt;/strong> is available on the project&amp;rsquo;s &lt;strong>&lt;a href="https://github.com/alecmuffett/eotk">repository on GitHub&lt;/a>&lt;/strong>, therefore, we will be providing translations in other &lt;strong>&lt;a href="../../../docs">available languages&lt;/a>&lt;/strong> for our guides.
-&lt;/div></description></item><item><title>Docs: Static Onion</title><link>/docs/alternative-publishing-methods/tor/staticonion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/staticonion/</guid><description>
+&lt;/div></description></item><item><title>Docs: Static Onion</title><link>/docs/alternative-publishing-methods/tor/staticonion.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/staticonion.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Linux / Ubuntu - Debian&lt;/strong>&lt;/p>
 &lt;hr>
