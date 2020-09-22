@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Documentation</title><link>/docs/</link><description>Recent content in Documentation on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Intro to Tor</title><link>/docs/alternative-publishing-methods/tor/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/intro/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Documentation</title><link>/docs.html</link><description>Recent content in Documentation on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Intro to Tor</title><link>/docs/alternative-publishing-methods/tor/intro.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/intro.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -132,7 +132,7 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 &lt;li>
 &lt;p>&lt;a href="https://madat5boo7oo5t2w.onion/">&lt;strong>MadaMasr&lt;/strong>&lt;/a>&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>Docs: EOTK</title><link>/docs/alternative-publishing-methods/tor/eotk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/eotk/</guid><description>
+&lt;/ul></description></item><item><title>Docs: EOTK</title><link>/docs/alternative-publishing-methods/tor/eotk.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/eotk.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -147,7 +147,7 @@ Connection to Tor network usually gets restricted through blocking or jamming en
 &lt;div class="alert alert-warning" role="alert">
 &lt;h4 class="alert-heading">Note&lt;/h4>
 &lt;strong>A thorough &lt;a href="https://github.com/alecmuffett/eotk/blob/master/docs.d/HOW-TO-INSTALL.md">implementation guide&lt;/a>&lt;/strong> is available on the project&amp;rsquo;s &lt;strong>&lt;a href="https://github.com/alecmuffett/eotk">repository on GitHub&lt;/a>&lt;/strong>, therefore, we will be providing translations in other &lt;strong>&lt;a href="../docs">available languages&lt;/a>&lt;/strong> for our guides.
-&lt;/div></description></item><item><title>Docs: Decoy</title><link>/docs/dynamic-mirroring/decoy/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/docs/dynamic-mirroring/decoy/</guid><description>
+&lt;/div></description></item><item><title>Docs: Decoy</title><link>/docs/dynamic-mirroring/decoy.html</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/docs/dynamic-mirroring/decoy.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Intermediate / Advanced&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -202,7 +202,7 @@ The project name should be unique, if that&amp;rsquo;s the case the project ID w
 &lt;h2 id="todo">Todo&lt;/h2>
 &lt;ul>
 &lt;li>&lt;input disabled="" type="checkbox"> Rewrite in Python3&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Interplanetary File System</title><link>/docs/alternative-publishing-methods/ipfs/ipfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/ipfs/ipfs/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Interplanetary File System</title><link>/docs/alternative-publishing-methods/ipfs/ipfs.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/ipfs/ipfs.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -327,7 +327,7 @@ provides a solution similar to the regular web Domain Name System (DNS).
 &lt;p>it might be a good idea to add &lt;code>--nocopy&lt;/code> parameter in the first step:&lt;/p>
 &lt;p>&lt;code>ipfs add -Q --recursive --nocopy --progress mystaticmirror &lt;/code>&lt;/p>
 &lt;p>this will tell IPFS not to make a full copy of every file in it&amp;rsquo;s datastore and will just create the hashes and use the original files, &lt;strong>which will save disk space.&lt;/strong>&lt;/p>
-&lt;/div></description></item><item><title>Docs: Static Onion</title><link>/docs/alternative-publishing-methods/tor/staticonion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/staticonion/</guid><description>
+&lt;/div></description></item><item><title>Docs: Static Onion</title><link>/docs/alternative-publishing-methods/tor/staticonion.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/staticonion.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Linux / Ubuntu - Debian&lt;/strong>&lt;/p>
 &lt;hr>
@@ -463,7 +463,7 @@ HiddenServicePort &lt;span style="color:#f60">80&lt;/span> 127.0.0.1:80
 &lt;div class="alert alert-primary" role="alert">
 &lt;strong>When&lt;/strong> everything is well configured and working, visitors of your original Clearnet website using Tor browser, should be notified about the availability of the Onion mirror and it&amp;rsquo;s address.
 &lt;/div>
-&lt;p>&lt;img src="../images/onion-services/10.png" alt="">&lt;/p></description></item><item><title>Docs: Encrypted SNI</title><link>/docs/alternative-publishing-methods/esni/esni/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/esni/esni/</guid><description>
+&lt;p>&lt;img src="../images/onion-services/10.png" alt="">&lt;/p></description></item><item><title>Docs: Encrypted SNI</title><link>/docs/alternative-publishing-methods/esni/esni.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/esni/esni.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
 &lt;hr>
@@ -549,7 +549,7 @@ sni=encrypted
 &lt;li>Mozilla : &lt;a href="https://blog.mozilla.org/security/2018/10/18/encrypted-sni-comes-to-firefox-nightly/">Encrypted SNI Comes to Firefox Nightly - October 18, 2018&lt;/a>&lt;/li>
 &lt;li>If you want to test ESNI further, or develop something for it - &lt;a href="https://github.com/SixGenInc/Noctilucent">Noctilucent&lt;/a>&lt;/li>
 &lt;li>For better understanding of &lt;a href="https://www.cloudflare.com/learning/dns/dns-over-tls/">DNS over HTTPS (DoH)&lt;/a> and other &lt;a href="https://dnsprivacy.org/wiki/">DNS privacy related materials&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Wget</title><link>/docs/static-mirroring/wget-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/wget-guide/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Wget</title><link>/docs/static-mirroring/wget-guide.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/wget-guide.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -624,7 +624,7 @@ We will be using some basic parameters for Wget which should work for the majori
 &lt;h4 class="alert-heading">Note&lt;/h4>
 For websites operating behind Cloudflare, this process can be identified as malicious behaviour as many simultaneous requests are coming from one IP address in short intervals, this can result in partial downloads or failing to download some assets such as inline images and CSS files.
 &lt;/div>
-&lt;p>&lt;strong>This can be solved&lt;/strong> by either &lt;strong>whitelisting your IP address on Cloudflare&lt;/strong> and disable assets protection features during the crawling process, or configure the origin server to &lt;strong>allow direct access&lt;/strong> on a different domain/sub-domain with &lt;a href="https://en.wikipedia.org/wiki/Basic_access_authentication">basic authentication&lt;/a> enabled, you can then add &lt;code>--http-user=[HTTP-USER]&lt;/code> &lt;code>--http-passwd=[HTTP-PASSWORD]&lt;/code> parameters to your Wget command to authenticate.&lt;/p></description></item><item><title>Docs: HTTrack</title><link>/docs/static-mirroring/httrack-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/httrack-guide/</guid><description>
+&lt;p>&lt;strong>This can be solved&lt;/strong> by either &lt;strong>whitelisting your IP address on Cloudflare&lt;/strong> and disable assets protection features during the crawling process, or configure the origin server to &lt;strong>allow direct access&lt;/strong> on a different domain/sub-domain with &lt;a href="https://en.wikipedia.org/wiki/Basic_access_authentication">basic authentication&lt;/a> enabled, you can then add &lt;code>--http-user=[HTTP-USER]&lt;/code> &lt;code>--http-passwd=[HTTP-PASSWORD]&lt;/code> parameters to your Wget command to authenticate.&lt;/p></description></item><item><title>Docs: HTTrack</title><link>/docs/static-mirroring/httrack-guide.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/httrack-guide.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -721,7 +721,7 @@ When using HTTrack &lt;em>- and almost any website downloader -,&lt;/em> while y
 &lt;p>&lt;strong>With big websites&lt;/strong>, many security settings and tools might identify the constant crawling and multiple hits in short time intervals as malicious behavior and block or throttle your IP address&amp;rsquo;s connection to the website.&lt;/p>
 &lt;p>&lt;strong>In that case&lt;/strong> you should revise your security settings and find the maximum allowed connections then you can use arguments like &lt;code>--max-rate=N&lt;/code>, &lt;code>--connection-per-second=N&lt;/code>, &lt;code>--max-pause=N&lt;/code> to limit HTTrack traffic hitting your website to the maximum allowed numbers.&lt;/p>
 &lt;p>Also, you should consider whitelisting your IP address in your security settings if the option exists.&lt;/p>
-&lt;/div></description></item><item><title>Docs: WordPress Plugins</title><link>/docs/static-mirroring/wpplugins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/wpplugins/</guid><description>
+&lt;/div></description></item><item><title>Docs: WordPress Plugins</title><link>/docs/static-mirroring/wpplugins.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/wpplugins.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | BSD&lt;/strong>&lt;/p>
 &lt;hr>
@@ -796,7 +796,7 @@ When using HTTrack &lt;em>- and almost any website downloader -,&lt;/em> while y
 &lt;/li>
 &lt;/ul>
 &lt;/div>
-&lt;p>&lt;img src="../images/simplystatic/3.png" alt="">Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p></description></item><item><title>Docs: Hosting on Amazon S3</title><link>/docs/static-mirroring/static-hosting/amazons3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/amazons3/</guid><description>
+&lt;p>&lt;img src="../images/simplystatic/3.png" alt="">Here you will find useful diagnostic information about your installation and it&amp;rsquo;s compatibility with the plugin requirements&lt;/p></description></item><item><title>Docs: Hosting on Amazon S3</title><link>/docs/static-mirroring/static-hosting/amazons3.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/amazons3.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
 &lt;hr>
@@ -972,7 +972,7 @@ Note that the provided URL here is &lt;a href="http://mystaticwebsitetest.s3-web
 &lt;h4 class="alert-heading">Note&lt;/h4>
 &lt;p>While both methods may achieve same results, it&amp;rsquo;s preferred &lt;strong>in censorship circumvention context&lt;/strong> to include the bucket name in the path as in &lt;strong>method number 2&lt;/strong>.&lt;/p>
 &lt;p>AWS uses a &lt;strong>&lt;a href="https://en.wikipedia.org/wiki/Wildcard_certificate">Wildcard SSL certificate&lt;/a>&lt;/strong> which supports any sub-domain under &lt;code>*.s3.us-east-2.amazonaws.com&lt;/code>, but defining the bucket name in the URL path would make it more difficult to detect traffic to this particular bucket/region/endpoint through &lt;strong>&lt;a href="https://en.wikipedia.org/wiki/Deep_packet_inspection">Deep Packet Inspection(DPI)&lt;/a>&lt;/strong>&lt;/p>
-&lt;/div></description></item><item><title>Docs: Hosting on Google Cloud Storage</title><link>/docs/static-mirroring/static-hosting/gcs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/gcs/</guid><description>
+&lt;/div></description></item><item><title>Docs: Hosting on Google Cloud Storage</title><link>/docs/static-mirroring/static-hosting/gcs.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/gcs.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
 &lt;hr>
@@ -1072,7 +1072,7 @@ Note that the provided URL here is &lt;a href="http://mystaticwebsitetest.s3-web
 &lt;div class="alert alert-primary" role="alert">
 &lt;h4 class="alert-heading">Updating the static mirror&lt;/h4>
 &lt;strong>Updating your static mirror with new content&lt;/strong> will be as simple as going to the mirror&amp;rsquo;s local directory on your terminal and executing &lt;code>gsutil rsync -R [local-dir] gs://[bucketname]&lt;/code> every time.
-&lt;/div></description></item><item><title>Docs: Hosting on GitHub</title><link>/docs/static-mirroring/static-hosting/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/github/</guid><description>
+&lt;/div></description></item><item><title>Docs: Hosting on GitHub</title><link>/docs/static-mirroring/static-hosting/github.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/static-mirroring/static-hosting/github.html</guid><description>
 &lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
 &lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
 &lt;hr>
