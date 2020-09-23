@@ -140,7 +140,7 @@ provides a solution similar to the regular web Domain Name System (DNS).
 &lt;p>Since then, the SNI header is a main target in any Deep Packet Inspection (DPI) operations, to preliminarily detect traffic to specific host before blocking. &lt;a href="https://blog.cloudflare.com/encrypted-sni/">read more about SNI and the issues it presents&lt;/a>&lt;/p>
 &lt;h3 id="what-is-encrypted-sni-and-how-can-it-help">What is Encrypted SNI and how can it help?&lt;/h3>
 &lt;div class="alert alert-primary" role="alert">
-&lt;p>&lt;a href="https://tools.ietf.org/html/draft-ietf-tls-esni-06">Encrypted SNI (ESNI)&lt;/a> is a new suggested extension, it uses symmetric encryption key to encrypt the SNI header, the server publishes the public key &lt;code>well-known&lt;/code> DNS record and the client fetches the key using DNS.&lt;/p>
+&lt;p>&lt;a href="https://tools.ietf.org/html/draft-ietf-tls-esni-06">Encrypted SNI (ESNI)&lt;/a> is a new suggested extension, it uses asymmetric encryption key to encrypt the SNI header, the server publishes the public key &lt;code>well-known&lt;/code> DNS record and the client fetches the key using DNS.&lt;/p>
 &lt;p>Current implementations of ESNI requires DNS over HTTPS (DoH) in order to work.&lt;/p>
 &lt;/div>
 &lt;div class="alert alert-warning" role="alert">
