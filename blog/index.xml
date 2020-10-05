@@ -9,10 +9,43 @@
 &lt;div class="alert alert-primary" role="alert">
 With the &lt;strong>first release&lt;/strong> of Icarus Project&amp;rsquo;s documentations, we are happy to announce the results of our research and documentation process.
 &lt;/div>
+&lt;h2 id="what-is-icarus-project">What is Icarus Project?&lt;/h2>
 &lt;p>&lt;strong>The project idea&lt;/strong> started as an individual initiative in 2017, trying to collect, test, document, and develop Internet censorship circumvention techniques as a response to the rise of Internet censorship at the time.&lt;/p>
 &lt;p>&lt;strong>In 2019&lt;/strong> the idea started to be realized through one year fellowship program supported by Open Tech Fund (OTF) Information Controls Fellowship program, and hosted by &lt;a href="https://www.stratosphereips.org/team">Stratosphere Lab&lt;/a> at the Czech Technical University in Prague (CVUT).&lt;/p>
 &lt;p>&lt;strong>We started by collecting, testing, and documenting as many ideas and methods as we can.&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>Now,&lt;/strong> we present these guides and documentations to serve as the core of this project. We are hoping that this initial release should it prove - useful and effective - will receive and integrate different contributions from the interested communities, towards developing and maintaining an accessible and user-friendly online repository of accumulative experience and research.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
+&lt;hr>
+&lt;h2 id="who-is-this-project-for">Who is this project for?&lt;/h2>
+&lt;p>Icarus Project and all its affiliated documentations, tools, and code are created and developed for the sole purpose of supporting Human rights organizations, independent new outlets, and individual publishers and activists struggling with Internet censorship in their environment.&lt;/p>
+&lt;h2 id="why-not-just-use-user-side-tools-such-as-tor-or-vpn">Why not just use user-side tools, such as Tor or VPN?&lt;/h2>
+&lt;blockquote>
+&lt;p>While we are willing to document and facilitate the usability of different user-side circumvention solutions such as Tor, and various VPN protocols, our main focus will be at publishers-side approaches.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>There are many reasons behind this approach&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>User-side circumvention tools are often easy to be blocked or throttled&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>With the exception of some circumvention tools with built-in obfuscation techniques such Shadowsocks, and new VPN protocols like Wireguard, most VPN services can be easy to identify and block.
+Beside the fact that implementing circumvention solutions in this scenario with protocols like OpenVPN such as SSL tunnelling can be very complicated and usually has its own consequences on the connection performance.&lt;/p>
+&lt;p>As for Tor, it will always be a very good and recommended solution, not just for censorship circumvention but also for user privacy related reasons, and enabling Tor bridges to overcome the network blockage is relatively easy and effective.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Circumventing the block of user-side circumvention tools can be complicated process for non-technical users&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>As mentioned earlier, in a scenario where VPN services and/or Tor network is being effectively blocked or throttled, enabling and utilizing circumvention techniques for these services by the end user can be complicated especially for users with little or no technical experience.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Publishers often lose big chunk of their non-technical audience&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>As a consequence of this situation, independent publishers in their struggle with Internet censorship often lose a considerable part of their audience due to the user’s inability to get around the censorship, in addition to that it also affects their ability to reach new audience.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>In some environments, installing circumvention tools i.e. Tor, VPN could be incriminating and dangerous&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>One big concern would be the user&amp;rsquo;s physical security issue as in some oppressive environments, physical abduction of the user’s devices is a possibility and the very existence of such software on these devices could be incriminating and often gets utilized by the authorities as evidence against users.&lt;/p>
+&lt;h3 id="collateral-freedom">Collateral freedom!&lt;/h3>
+&lt;p>In the context of Internet censorship circumvention, &lt;a href="https://en.wikipedia.org/wiki/Collateral_freedom">Collateral freedom&lt;/a> concept can be described as increasing the economical, political, and technical costs of Internet censorship by using crucial and big cloud services providers, and utilizing modern web encryption protocols to ultimately force censors in a situation where they can&amp;rsquo;t block the content, without breaking or completely blocking access to crucial cloud services.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="../docs/getting-started.html">Getting Started&lt;/a>: Get started with Icarus Project&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Note&lt;/h4>
 Feel free to reach out and let us know what do you think and how can we improve, &lt;a href="../community">checkout the community page&lt;/a>, also, checkout the &lt;a href="../docs/contribution-guidelines/">Contribution Guidelines&lt;/a> if you are interested!
 &lt;/div></description></item></channel></rss>
