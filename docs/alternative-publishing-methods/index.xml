@@ -1,216 +1,362 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Alternative Publishing Methods</title><link>/docs/alternative-publishing-methods.html</link><description>Recent content in Alternative Publishing Methods on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/alternative-publishing-methods/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Tor</title><link>/docs/alternative-publishing-methods/tor.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor.html</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>In this guide we will be introducing two different methods of &lt;strong>creating a mirror for your website on Tor network&lt;/strong> using &lt;strong>Tor Onion services&lt;/strong> formerly known as - &lt;strong>Tor Hidden Services&lt;/strong>.&lt;/p>
-&lt;p>You will also find a brief introduction to Tor network and how access it if it&amp;rsquo;s blocked in your country&lt;/p>
-&lt;/div></description></item><item><title>Docs: Interplanetary File System</title><link>/docs/alternative-publishing-methods/ipfs/ipfs.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/ipfs/ipfs.html</guid><description>
-&lt;p>Required expertise level : &lt;strong>Intermediate&lt;/strong>&lt;/p>
-&lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
-&lt;hr>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Interplanetary File System - IPFS &lt;/h4>
-&lt;p>&lt;strong>is A peer-to-peer hypermedia protocol&lt;/strong> which is being introduced as the future successor of HTTP.&lt;/p>
-&lt;p>&lt;strong>Being built on the peer-to-peer data exchange system,&lt;/strong> IPFS is practically difficult to block at least by current censorship techniques and standards, making it worth testing.&lt;/p>
-&lt;/div>
-&lt;p>&lt;strong>While it&amp;rsquo;s basically built as a data storage and distribution protocol,&lt;/strong> makes the way it functions different than most current day web hosting and cloud functions today, where in most cases, websites are basically web applications which processes and renders on a server then send the resulted web pages to the user.&lt;/p>
-&lt;p>&lt;strong>In IPFS case,&lt;/strong> there are no server nor processing capabilities, which mean that it&amp;rsquo;s only capable of serving static or semi-static web pages, essentially anything which depends on client-side rendering and processing.
-in this scenario, the browser gets to do most of job and IPFS just delivers raw files.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-To learn about &lt;strong>the difference between static and dynamic websites&lt;/strong>, refer the &lt;a href="../../docs/getting-started/#what-is-the-difference-between-static-and-dynamic-websites">&lt;strong>Getting Started&lt;/strong>&lt;/a> section in the documentations.
-&lt;/div>
-&lt;hr>
-&lt;h2 id="installing-ipfs">Installing IPFS&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>MS Windows&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Install the CLI tool using &lt;strong>&lt;a href="https://chocolatey.org/packages/ipfs">Chocolatey&lt;/a>&lt;/strong> windows package manager &lt;code>choco install ipfs&lt;/code>&lt;/li>
-&lt;li>Install the Desktop app (GUI) &lt;strong>&lt;a href="https://chocolatey.org/packages/ipfs-desktop">Chocolatey&lt;/a>&lt;/strong> &lt;code>choco install ipfs-desktop&lt;/code>&lt;/li>
-&lt;li>Or download the installation file directly from &lt;a href="https://ipfs.io/#install">IPFS website&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Gnu/Linux&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Download and run the installation script for the Command Line Interface - CLI - tool from &lt;a href="https://docs.ipfs.io/how-to/command-line-quick-start/#install-ipfs">IPFS website&lt;/a>&lt;/li>
-&lt;li>Download and run the installation package for the Graphical User Interface - GUI - desktop app from &lt;a href="https://github.com/ipfs-shipyard/ipfs-desktop#install">GitHub&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>macOS&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Install using &lt;strong>&lt;a href="https://docs.brew.sh/Installation">Homebrew&lt;/a>&lt;/strong> package manager. &lt;code>brew install ipfs&lt;/code>&lt;/li>
-&lt;li>Download the Desktop app from &lt;a href="https://github.com/ipfs-shipyard/ipfs-desktop#install">GitHub&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../images/ipfs/1.png" alt="">IPFS Desktop app&lt;/p>
-&lt;hr>
-&lt;h2 id="adding-your-static-mirror-to-ipfs">Adding your static mirror to IPFS&lt;/h2>
-&lt;div class="alert alert-primary" role="alert">
-&lt;strong>Adding your static mirror to IPFS&lt;/strong> is a very simple process but there are some configuration which should be considered to make sure your website will be easily accessible.
-&lt;/div>
-&lt;ul>
-&lt;li>&lt;strong>After following &lt;a href="https://docs.ipfs.io/how-to/command-line-quick-start/#initialize-the-repository">IPFS guides&lt;/a> on how to get the application on your machine running, confirm&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">❯ ipfs --version
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icarus Project – Alternative Publishing Methods</title>
+    <link>/docs/alternative-publishing-methods.html</link>
+    <description>Recent content in Alternative Publishing Methods on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/alternative-publishing-methods/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Tor</title>
+      <link>/docs/alternative-publishing-methods/tor.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/alternative-publishing-methods/tor.html</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;In this guide we will be introducing two different methods of &lt;strong&gt;creating a mirror for your website on Tor network&lt;/strong&gt; using &lt;strong&gt;Tor Onion services&lt;/strong&gt; formerly known as - &lt;strong&gt;Tor Hidden Services&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You will also find a brief introduction to Tor network and how access it if it&amp;rsquo;s blocked in your country&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Interplanetary File System</title>
+      <link>/docs/alternative-publishing-methods/ipfs/ipfs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/alternative-publishing-methods/ipfs/ipfs.html</guid>
+      <description>
+        
+        
+        &lt;p&gt;Required expertise level : &lt;strong&gt;Intermediate&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Interplanetary File System - IPFS &lt;/h4&gt;
+
+    &lt;p&gt;&lt;strong&gt;is A peer-to-peer hypermedia protocol&lt;/strong&gt; which is being introduced as the future successor of HTTP.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Being built on the peer-to-peer data exchange system,&lt;/strong&gt; IPFS is practically difficult to block at least by current censorship techniques and standards, making it worth testing.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;While it&amp;rsquo;s basically built as a data storage and distribution protocol,&lt;/strong&gt; makes the way it functions different than most current day web hosting and cloud functions today, where in most cases, websites are basically web applications which processes and renders on a server then send the resulted web pages to the user.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In IPFS case,&lt;/strong&gt; there are no server nor processing capabilities, which mean that it&amp;rsquo;s only capable of serving static or semi-static web pages, essentially anything which depends on client-side rendering and processing.
+in this scenario, the browser gets to do most of job and IPFS just delivers raw files.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    To learn about &lt;strong&gt;the difference between static and dynamic websites&lt;/strong&gt;, refer the &lt;a href=&#34;../../docs/getting-started/#what-is-the-difference-between-static-and-dynamic-websites&#34;&gt;&lt;strong&gt;Getting Started&lt;/strong&gt;&lt;/a&gt; section in the documentations.
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;installing-ipfs&#34;&gt;Installing IPFS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;MS Windows&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the CLI tool using &lt;strong&gt;&lt;a href=&#34;https://chocolatey.org/packages/ipfs&#34;&gt;Chocolatey&lt;/a&gt;&lt;/strong&gt; windows package manager &lt;code&gt;choco install ipfs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install the Desktop app (GUI) &lt;strong&gt;&lt;a href=&#34;https://chocolatey.org/packages/ipfs-desktop&#34;&gt;Chocolatey&lt;/a&gt;&lt;/strong&gt; &lt;code&gt;choco install ipfs-desktop&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Or download the installation file directly from &lt;a href=&#34;https://ipfs.io/#install&#34;&gt;IPFS website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Gnu/Linux&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download and run the installation script for the Command Line Interface - CLI - tool from &lt;a href=&#34;https://docs.ipfs.io/how-to/command-line-quick-start/#install-ipfs&#34;&gt;IPFS website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download and run the installation package for the Graphical User Interface - GUI - desktop app from &lt;a href=&#34;https://github.com/ipfs-shipyard/ipfs-desktop#install&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;macOS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install using &lt;strong&gt;&lt;a href=&#34;https://docs.brew.sh/Installation&#34;&gt;Homebrew&lt;/a&gt;&lt;/strong&gt; package manager. &lt;code&gt;brew install ipfs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Download the Desktop app from &lt;a href=&#34;https://github.com/ipfs-shipyard/ipfs-desktop#install&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/1.png&#34; alt=&#34;&#34;&gt;IPFS Desktop app&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;adding-your-static-mirror-to-ipfs&#34;&gt;Adding your static mirror to IPFS&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;strong&gt;Adding your static mirror to IPFS&lt;/strong&gt; is a very simple process but there are some configuration which should be considered to make sure your website will be easily accessible.
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;After following &lt;a href=&#34;https://docs.ipfs.io/how-to/command-line-quick-start/#initialize-the-repository&#34;&gt;IPFS guides&lt;/a&gt; on how to get the application on your machine running, confirm&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;❯ ipfs --version
 ipfs version 0.6.0
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>Using your termianl, go to your static mirror directory.&lt;/li>
-&lt;li>Run &lt;code>ipfs add -Q --recursive --progress mystaticmirror &lt;/code>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../images/ipfs/2.png" alt="">&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">IPFS will&lt;/h4>
-start adding your files to it&amp;rsquo;s &lt;a href="https://docs.ipfs.io/concepts/glossary/#datastore">Datastore&lt;/a>, and creating a unique &lt;a href="https://docs.ipfs.io/concepts/hashing/#hashes-are-important">hash&lt;/a> for every file, the hash of the root directory will be the final output, this will be the address of your mirror on IPFS network.
-&lt;/div>
-&lt;ul>
-&lt;li>Now, we can try to access our mirror using IPFS and the hash of the root directory.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../images/ipfs/3.png" alt="">&lt;/p>
-&lt;p>&lt;strong>There are two ways of accessing files on IPFS&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Using a gateway&lt;/strong>
-&lt;ul>
-&lt;li>IPFS Gateway - &lt;a href="https://ipfs.io">ipfs.io&lt;/a>&lt;/li>
-&lt;li>CloudFlare Gateway - &lt;a href="cloudflare-ipfs.com">cloudflare-ipfs.com&lt;/a>&lt;/li>
-&lt;li>Pinata Gateway - &lt;a href="https://gateway.pinata.cloud">gateway.pinata.cloud&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;div class="alert alert-primary" role="alert">
-There are several online gateways that provides a bridge between normal web and data stored on IPFS, you can do that by going to the gateway in your browser while appending &lt;strong>&lt;code>/ipfs/QmYn4A9jzkXob1iUPuwjpqxaMkrwE54ywvJUv2cE1s4egE&lt;/code>&lt;/strong> to the URL.
-&lt;/div>
-&lt;ul>
-&lt;li>&lt;strong>using the local client (peer-to-peer)&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;div class="alert alert-primary" role="alert">
-&lt;p>This is the method IPFS should be functioning essentially.&lt;/p>
-&lt;p>&lt;strong>You need to have IPFS installed on your machine for this method to work.&lt;/strong>&lt;/p>
-&lt;/div>
-&lt;ul>
-&lt;li>Install &lt;a href="https://github.com/ipfs-shipyard/ipfs-companion">&lt;strong>IPFS Companion&lt;/strong>&lt;/a> browser extension and make sur IPFS is running on you machine.&lt;/li>
-&lt;li>&lt;strong>When you enable the extension,&lt;/strong> it detects if your local IPFS daemon is running in the background and automatically rewrites any IPFS URL that contains a valid hash to be fetched using your local IPFS installation.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../images/ipfs/4.png" alt="">&lt;/p>
-&lt;hr>
-&lt;h3 id="updating-a-website-on-ipfs">Updating a website on IPFS&lt;/h3>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Every time&lt;/h4>
-you update your static mirror with new content, you will need to add the new version to IPFS again.
-&lt;/div>
-&lt;p>&lt;strong>As we mentioned earlier,&lt;/strong> IPFS depends on a hashing system to keep track of files, and since every file will create a unique hash, that means the final - root directory - hash will be different every time.&lt;/p>
-&lt;p>This situation &lt;strong>presents a usability issue,&lt;/strong> as you will need somehow to share the new calculated hash with your audience every time you update your website, in order for them to be able to reach the most recent version of your website on IPFS.&lt;/p>
-&lt;h4 id="enters-the-interplanetary-name-system-ipnshttpsdocsipfsioconceptsipns">Enters the Interplanetary Name System &lt;a href="https://docs.ipfs.io/concepts/ipns/">(IPNS)&lt;/a>&lt;/h4>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">IPNS&lt;/h4>
-provides a solution similar to the regular web Domain Name System (DNS).
-&lt;/div>
-&lt;p>Using a locally generated key on your machine, IPNS will create a static hash, which will be published to the &lt;a href="https://en.wikipedia.org/wiki/Distributed_hash_table">Distributed hash table (DHT)&lt;/a>, this key can be linked to another hash and store it as value.&lt;/p>
-&lt;p>Think about it (IPNS) as a domain name generator, it gives you a random hash, and register it in a table and store the most recent hash of your files as a value, IPFS users will just need the static IPNS hash to access your website.&lt;/p>
-&lt;ul>
-&lt;li>Generate a new IPFS key&lt;/li>
-&lt;/ul>
-&lt;p>&lt;code>ipfs key gen --type=rsa --size=2048 mystaticsite&lt;/code>&lt;/p>
-&lt;p>&lt;img src="../../images/ipfs/5.png" alt="">The output will be your new IPNS address&lt;/p>
-&lt;ul>
-&lt;li>Publish your IPNS address and link it with your mirror&amp;rsquo;s most recent hash.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;code>ipfs name publish --key=mystaticsite [replace with your files most recent hash]&lt;/code>&lt;/p>
-&lt;p>&lt;img src="../../images/ipfs/6.png" alt="">The output will confirmation for the linking between the IPNS address and the IPFS hash&lt;/p>
-&lt;ul>
-&lt;li>We can confirm that your new IPNS address is alive either by accessing it using a gateway i.e. | &lt;strong>&lt;code>ipfs.io/ipns/[put your IPNS hash here]&lt;/code>&lt;/strong> |, or &lt;strong>enable IPFS Companion browser extension&lt;/strong> to be redirected automatically to your local gateway&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../images/ipfs/7.png" alt="">&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Note&lt;/h4>
-&lt;p>If you are adding large files/directories to IPFS.&lt;/p>
-&lt;p>it might be a good idea to add &lt;code>--nocopy&lt;/code> parameter in the first step:&lt;/p>
-&lt;p>&lt;code>ipfs add -Q --recursive --nocopy --progress mystaticmirror &lt;/code>&lt;/p>
-&lt;p>this will tell IPFS not to make a full copy of every file in it&amp;rsquo;s datastore and will just create the hashes and use the original files, &lt;strong>which will save disk space.&lt;/strong>&lt;/p>
-&lt;/div></description></item><item><title>Docs: Encrypted SNI</title><link>/docs/alternative-publishing-methods/esni/esni.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/esni/esni.html</guid><description>
-&lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
-&lt;p>Platform : &lt;strong>Any&lt;/strong>&lt;/p>
-&lt;hr>
-&lt;h3 id="what-is-server-name-indication-sni">What is Server Name Indication (SNI)?&lt;/h3>
-&lt;p>&lt;strong>Server Name Indication (SNI) is an extension to the Transport Layer Security (TLS) network encrypted protocol.&lt;/strong>&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;strong>Essentially,&lt;/strong> SNI&amp;rsquo;s purpose is to send the requested domain name to the webserver in the form of plain/text HTTP header, so the server will send back the appropriate response to initiate the encrypted connection.
-&lt;/div>
-&lt;p>&lt;strong>SNI was originally &lt;a href="https://tools.ietf.org/html/rfc3546">standardized in 2003&lt;/a>,&lt;/strong> it&amp;rsquo;s wide implementation is a big part of today&amp;rsquo;s Internet infrastructure, mainly because it allowed hosting multiple websites with different domain names on the same webserver.&lt;/p>
-&lt;p>Since then, the SNI header is a main target in any Deep Packet Inspection (DPI) operations, to preliminarily detect traffic to specific host before blocking. &lt;a href="https://blog.cloudflare.com/encrypted-sni/">read more about SNI and the issues it presents&lt;/a>&lt;/p>
-&lt;h3 id="what-is-encrypted-sni-and-how-can-it-help">What is Encrypted SNI and how can it help?&lt;/h3>
-&lt;div class="alert alert-primary" role="alert">
-&lt;p>&lt;a href="https://tools.ietf.org/html/draft-ietf-tls-esni-06">Encrypted SNI (ESNI)&lt;/a> is a new suggested extension, it uses &lt;a href="https://en.wikipedia.org/wiki/Public-key_cryptography">&lt;strong>asymmetric encryption keys&lt;/strong>&lt;/a> to encrypt the SNI header, the server publishes the public key &lt;code>well-known&lt;/code> DNS record and the client fetches the key using DNS.&lt;/p>
-&lt;p>Current implementations of ESNI requires DNS over HTTPS (DoH) in order to work.&lt;/p>
-&lt;/div>
-&lt;div class="alert alert-warning" role="alert">
-&lt;h4 class="alert-heading">Note&lt;/h4>
-Encrypted SNI is still not standardized, which means that it&amp;rsquo;s still in early development stages and might undergo a lot of changes on it&amp;rsquo;s way to be a widely implemented standard
-&lt;/div>
-&lt;hr>
-&lt;h3 id="how-to-test-encrypted-sni">How to test Encrypted SNI?&lt;/h3>
-&lt;p>Some projects are trying to test for the best implementation of ESNI, or how to integrate it with major software stacks i.e. &lt;a href="https://github.com/sftcd/nginx">Nginx&lt;/a>, and &lt;a href="https://github.com/sftcd/openssl/tree/master/esnistuff">OpenSSL&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>If you are interested in a deeper technical understanding of ESNI you can check out these projects&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://defo.ie/">Developing ESNI for OpenSSL (DEfO)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/SixGenInc/Noctilucent">Noctilucent&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;div class="alert alert-primary" role="alert">
-In this guide, we will use the most stable and tested implementation which comes with CloudFlare and Mozilla Firefox
-&lt;/div>
-&lt;h3 id="server-side">Server Side&lt;/h3>
-&lt;p>&lt;strong>Currently,&lt;/strong> the only stable and tested server side implementation of ESNI is &lt;a href="https://blog.cloudflare.com/esni/">CloudFlare&lt;/a>.&lt;/p>
-&lt;p>All you have to do is to enable &lt;strong>TLS 1.3&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>Log in&lt;/strong> to your &lt;strong>CloudFlare account,&lt;/strong> select your &lt;strong>domain name&lt;/strong>, go to &amp;gt; &lt;code>SSL/TLS&lt;/code> options, choose &amp;gt; &lt;code>Edge Certificates&lt;/code>, and make sure &amp;gt; &lt;code>TLS 1.3&lt;/code> is enabled.&lt;/p>
-&lt;p>&lt;img src="../../images/esni/1.png" alt="">&lt;/p>
-&lt;h3 id="client-side">Client Side&lt;/h3>
-&lt;p>Mozilla Firefox latest releases are shipped with TLSv1.3 and ESNI extension support, yet, it doesn&amp;rsquo;t come enabled by default for now.&lt;/p>
-&lt;p>&lt;strong>To enable ESNI support in Mozilla Firefox&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Make Firefox is updated to latest release&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../images/esni/2.png" alt="">&lt;/p>
-&lt;ul>
-&lt;li>Enable DNS over HTTPS (DoH) in &lt;code>Preferences&lt;/code> &amp;gt; &lt;code>Network Settings&lt;/code> &amp;gt; &lt;code>Enable DNS over HTTPS&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../images/esni/3.png" alt="">&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Note&lt;/h4>
-&lt;p>CloudFlare DoH resolver &lt;strong>might be blocked&lt;/strong> in your country. &lt;strong>&lt;a href="https://1.1.1.1/help">Check here&lt;/a>.&lt;/strong>&lt;/p>
-&lt;p>If that&amp;rsquo;s the case, you can try changing &lt;code>Next DNS&lt;/code>, or choose &lt;code>Custom&lt;/code> and test the public resolver - with DoH support - from &lt;strong>&lt;a href="https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers">this list&lt;/a>.&lt;/strong>&lt;/p>
-&lt;/div>
-&lt;ul>
-&lt;li>Enable ESNI extension support
-&lt;ul>
-&lt;li>Open a &lt;strong>new tab&lt;/strong> and type the address &lt;code>about:config&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Click&lt;/strong> &lt;code>Accept the Risk and Continue&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Search&lt;/strong> for &lt;code>network.security.esni.enabled&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Click&lt;/strong> on the value to change it from &lt;code>False&lt;/code> to &lt;code>True&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Restart&lt;/strong> your browser and test your settings &lt;a href="https://www.cloudflare.com/ssl/encrypted-sni/">here&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../images/esni/4.png" alt="">&lt;/p>
-&lt;p>&lt;img src="../../images/esni/5.png" alt="">&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Test your website&lt;/h4>
-&lt;p>by adding visiting this address in your browser &lt;code>https://[yourdomain.com]/cdn-cgi/trace&lt;/code> i.e. &lt;code>https://www.cloudflare.com/cdn-cgi/trace&lt;/code>&lt;/p>
-&lt;p>You should get these &lt;strong>values:&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>tls=TLSv1.3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Using your termianl, go to your static mirror directory.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;ipfs add -Q  --recursive --progress mystaticmirror &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;IPFS will&lt;/h4&gt;
+
+    start adding your files to it&amp;rsquo;s &lt;a href=&#34;https://docs.ipfs.io/concepts/glossary/#datastore&#34;&gt;Datastore&lt;/a&gt;, and creating a unique &lt;a href=&#34;https://docs.ipfs.io/concepts/hashing/#hashes-are-important&#34;&gt;hash&lt;/a&gt; for every file, the hash of the root directory will be the final output, this will be the address of your mirror on IPFS network.
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Now, we can try to access our mirror using IPFS and the hash of the root directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;There are two ways of accessing files on IPFS&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Using a gateway&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;IPFS Gateway  - &lt;a href=&#34;https://ipfs.io&#34;&gt;ipfs.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CloudFlare Gateway - &lt;a href=&#34;cloudflare-ipfs.com&#34;&gt;cloudflare-ipfs.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pinata Gateway  - &lt;a href=&#34;https://gateway.pinata.cloud&#34;&gt;gateway.pinata.cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    There are several online gateways that provides a bridge between normal web and data stored on IPFS, you can do that by going to the gateway in your browser while appending &lt;strong&gt;&lt;code&gt;/ipfs/QmYn4A9jzkXob1iUPuwjpqxaMkrwE54ywvJUv2cE1s4egE&lt;/code&gt;&lt;/strong&gt; to the URL.
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;using the local client (peer-to-peer)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;This is the method IPFS should be functioning essentially.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You need to have IPFS installed on your machine for this method to work.&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://github.com/ipfs-shipyard/ipfs-companion&#34;&gt;&lt;strong&gt;IPFS Companion&lt;/strong&gt;&lt;/a&gt; browser extension and make sur IPFS is running on you machine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When you enable the extension,&lt;/strong&gt; it detects if your local IPFS daemon is running in the background and automatically rewrites any IPFS URL that contains a valid hash to be fetched using your local IPFS installation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;updating-a-website-on-ipfs&#34;&gt;Updating a website on IPFS&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Every time&lt;/h4&gt;
+
+    you update your static mirror with new content, you will need to add the new version to IPFS again.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;As we mentioned earlier,&lt;/strong&gt; IPFS depends on a hashing system to keep track of files, and since every file will create a unique hash, that means the final - root directory - hash will be different every time.&lt;/p&gt;
+&lt;p&gt;This situation &lt;strong&gt;presents a usability issue,&lt;/strong&gt; as you will need somehow to share the new calculated hash with your audience every time you update your website, in order for them to be able to reach the most recent version of your website on IPFS.&lt;/p&gt;
+&lt;h4 id=&#34;enters-the-interplanetary-name-system-ipnshttpsdocsipfsioconceptsipns&#34;&gt;Enters the Interplanetary Name System &lt;a href=&#34;https://docs.ipfs.io/concepts/ipns/&#34;&gt;(IPNS)&lt;/a&gt;&lt;/h4&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;IPNS&lt;/h4&gt;
+
+    provides a solution similar to the regular web Domain Name System (DNS).
+
+&lt;/div&gt;
+
+&lt;p&gt;Using a locally generated key on your machine, IPNS will create a static hash, which will be published to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Distributed_hash_table&#34;&gt;Distributed hash table (DHT)&lt;/a&gt;, this key can be linked to another hash and store it as value.&lt;/p&gt;
+&lt;p&gt;Think about it (IPNS) as a domain name generator, it gives you a random hash, and register it in a table and store the most recent hash of your files as a value, IPFS users will just need the static IPNS hash to access your website.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generate a new IPFS key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;ipfs key gen --type=rsa --size=2048 mystaticsite&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/5.png&#34; alt=&#34;&#34;&gt;The output will be your new IPNS address&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Publish your IPNS address and link it with your mirror&amp;rsquo;s most recent hash.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;ipfs name publish --key=mystaticsite [replace with your files most recent hash]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/6.png&#34; alt=&#34;&#34;&gt;The output will confirmation for the linking between the IPNS address and the IPFS hash&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We can confirm that your new IPNS address is alive either by accessing it using a gateway i.e. | &lt;strong&gt;&lt;code&gt;ipfs.io/ipns/[put your IPNS hash here]&lt;/code&gt;&lt;/strong&gt; |, or &lt;strong&gt;enable IPFS Companion browser extension&lt;/strong&gt; to be redirected automatically to your local gateway&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/ipfs/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;p&gt;If you are adding large files/directories to IPFS.&lt;/p&gt;
+&lt;p&gt;it might be a good idea to add &lt;code&gt;--nocopy&lt;/code&gt; parameter in the first step:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ipfs add -Q  --recursive --nocopy --progress mystaticmirror &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;this will tell IPFS not to make a full copy of every file in it&amp;rsquo;s datastore and will just create the hashes and use the original files, &lt;strong&gt;which will save disk space.&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Encrypted SNI</title>
+      <link>/docs/alternative-publishing-methods/esni/esni.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/alternative-publishing-methods/esni/esni.html</guid>
+      <description>
+        
+        
+        &lt;p&gt;Required expertise level : &lt;strong&gt;Advanced&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Platform : &lt;strong&gt;Any&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-is-server-name-indication-sni&#34;&gt;What is Server Name Indication (SNI)?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Server Name Indication (SNI) is an extension to the Transport Layer Security (TLS) network encrypted protocol.&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;strong&gt;Essentially,&lt;/strong&gt; SNI&amp;rsquo;s purpose is to send the requested domain name to the webserver in the form of plain/text HTTP header, so the server will send back the appropriate response to initiate the encrypted connection.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;SNI was originally &lt;a href=&#34;https://tools.ietf.org/html/rfc3546&#34;&gt;standardized in 2003&lt;/a&gt;,&lt;/strong&gt; it&amp;rsquo;s wide implementation is a big part of today&amp;rsquo;s Internet infrastructure, mainly because it allowed hosting multiple websites with different domain names on the same webserver.&lt;/p&gt;
+&lt;p&gt;Since then, the SNI header is a main target in any Deep Packet Inspection (DPI) operations, to preliminarily detect traffic to specific host before blocking.  &lt;a href=&#34;https://blog.cloudflare.com/encrypted-sni/&#34;&gt;read more about SNI and the issues it presents&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-is-encrypted-sni-and-how-can-it-help&#34;&gt;What is Encrypted SNI and how can it help?&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;&lt;a href=&#34;https://tools.ietf.org/html/draft-ietf-tls-esni-06&#34;&gt;Encrypted SNI (ESNI)&lt;/a&gt; is a new suggested extension, it uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Public-key_cryptography&#34;&gt;&lt;strong&gt;asymmetric encryption keys&lt;/strong&gt;&lt;/a&gt; to encrypt the SNI header, the server publishes the public key &lt;code&gt;well-known&lt;/code&gt; DNS record and the client fetches the key using DNS.&lt;/p&gt;
+&lt;p&gt;Current implementations of ESNI requires DNS over HTTPS (DoH) in order to work.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    Encrypted SNI is still not standardized, which means that it&amp;rsquo;s still in early development stages and might undergo a lot of changes on it&amp;rsquo;s way to be a widely implemented standard
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h3 id=&#34;how-to-test-encrypted-sni&#34;&gt;How to test Encrypted SNI?&lt;/h3&gt;
+&lt;p&gt;Some projects are trying to test for the best implementation of ESNI, or how to integrate it with major software stacks i.e. &lt;a href=&#34;https://github.com/sftcd/nginx&#34;&gt;Nginx&lt;/a&gt;, and &lt;a href=&#34;https://github.com/sftcd/openssl/tree/master/esnistuff&#34;&gt;OpenSSL&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If you are interested in a deeper technical understanding of ESNI you can check out these projects&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://defo.ie/&#34;&gt;Developing ESNI for OpenSSL (DEfO)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SixGenInc/Noctilucent&#34;&gt;Noctilucent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    In this guide, we will use the most stable and tested implementation which comes with CloudFlare and Mozilla Firefox
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;server-side&#34;&gt;Server Side&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Currently,&lt;/strong&gt; the only stable and tested server side implementation of ESNI is &lt;a href=&#34;https://blog.cloudflare.com/esni/&#34;&gt;CloudFlare&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All you have to do is to enable &lt;strong&gt;TLS 1.3&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Log in&lt;/strong&gt; to your &lt;strong&gt;CloudFlare account,&lt;/strong&gt; select your &lt;strong&gt;domain name&lt;/strong&gt;, go to &amp;gt; &lt;code&gt;SSL/TLS&lt;/code&gt; options, choose &amp;gt; &lt;code&gt;Edge Certificates&lt;/code&gt;, and make sure &amp;gt; &lt;code&gt;TLS 1.3&lt;/code&gt; is enabled.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;client-side&#34;&gt;Client Side&lt;/h3&gt;
+&lt;p&gt;Mozilla Firefox latest releases are shipped with TLSv1.3 and ESNI extension support, yet, it doesn&amp;rsquo;t come enabled by default for now.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To enable ESNI support in Mozilla Firefox&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make Firefox is updated to latest release&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enable DNS over HTTPS (DoH) in &lt;code&gt;Preferences&lt;/code&gt; &amp;gt; &lt;code&gt;Network Settings&lt;/code&gt; &amp;gt; &lt;code&gt;Enable DNS over HTTPS&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;p&gt;CloudFlare DoH resolver &lt;strong&gt;might be blocked&lt;/strong&gt; in your country. &lt;strong&gt;&lt;a href=&#34;https://1.1.1.1/help&#34;&gt;Check here&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If that&amp;rsquo;s the case, you can try changing &lt;code&gt;Next DNS&lt;/code&gt;, or choose &lt;code&gt;Custom&lt;/code&gt; and test the public resolver - with DoH support -  from &lt;strong&gt;&lt;a href=&#34;https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers&#34;&gt;this list&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Enable ESNI extension support
+&lt;ul&gt;
+&lt;li&gt;Open a &lt;strong&gt;new tab&lt;/strong&gt; and type the address &lt;code&gt;about:config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Click&lt;/strong&gt; &lt;code&gt;Accept the Risk and Continue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search&lt;/strong&gt; for &lt;code&gt;network.security.esni.enabled&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Click&lt;/strong&gt; on the value to change it from &lt;code&gt;False&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Restart&lt;/strong&gt; your browser and test your settings &lt;a href=&#34;https://www.cloudflare.com/ssl/encrypted-sni/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/esni/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Test your website&lt;/h4&gt;
+
+    &lt;p&gt;by adding visiting this address in your browser &lt;code&gt;https://[yourdomain.com]/cdn-cgi/trace&lt;/code&gt; i.e. &lt;code&gt;https://www.cloudflare.com/cdn-cgi/trace&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You should get these &lt;strong&gt;values:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;tls=TLSv1.3
 sni=encrypted
-&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;hr>
-&lt;h3 id="resources-and-readings">Resources and readings&lt;/h3>
-&lt;ul>
-&lt;li>CloudFlare : &lt;a href="https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/">Encrypt that SNI: Firefox edition&lt;/a>&lt;/li>
-&lt;li>CloudFlare : &lt;a href="https://blog.cloudflare.com/encrypted-sni/">Encrypt it or lose it: how encrypted SNI works&lt;/a>&lt;/li>
-&lt;li>IETF : &lt;a href="https://tools.ietf.org/html/rfc3546">Transport Layer Security (TLS) Extensions&lt;/a>&lt;/li>
-&lt;li>IETF : &lt;a href="https://tools.ietf.org/html/draft-ietf-tls-esni-07">TLS Encrypted Client Hello - draft-ietf-tls-esni-07&lt;/a>&lt;/li>
-&lt;li>Chromium Support Status : &lt;a href="https://bugs.chromium.org/p/chromium/issues/detail?id=908132">Issue 908132&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://defo.ie/">Developing ESNI for OpenSSL (DEfO)&lt;/a>&lt;/li>
-&lt;li>Mozilla : &lt;a href="https://blog.mozilla.org/security/2018/10/18/encrypted-sni-comes-to-firefox-nightly/">Encrypted SNI Comes to Firefox Nightly - October 18, 2018&lt;/a>&lt;/li>
-&lt;li>If you want to test ESNI further, or develop something for it - &lt;a href="https://github.com/SixGenInc/Noctilucent">Noctilucent&lt;/a>&lt;/li>
-&lt;li>For better understanding of &lt;a href="https://www.cloudflare.com/learning/dns/dns-over-tls/">DNS over HTTPS (DoH)&lt;/a> and other &lt;a href="https://dnsprivacy.org/wiki/">DNS privacy related materials&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h3 id=&#34;resources-and-readings&#34;&gt;Resources and readings&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CloudFlare : &lt;a href=&#34;https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/&#34;&gt;Encrypt that SNI: Firefox edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CloudFlare : &lt;a href=&#34;https://blog.cloudflare.com/encrypted-sni/&#34;&gt;Encrypt it or lose it: how encrypted SNI works&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;IETF : &lt;a href=&#34;https://tools.ietf.org/html/rfc3546&#34;&gt;Transport Layer Security (TLS) Extensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;IETF : &lt;a href=&#34;https://tools.ietf.org/html/draft-ietf-tls-esni-07&#34;&gt;TLS Encrypted Client Hello - draft-ietf-tls-esni-07&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chromium Support Status :  &lt;a href=&#34;https://bugs.chromium.org/p/chromium/issues/detail?id=908132&#34;&gt;Issue 908132&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://defo.ie/&#34;&gt;Developing ESNI for OpenSSL (DEfO)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mozilla : &lt;a href=&#34;https://blog.mozilla.org/security/2018/10/18/encrypted-sni-comes-to-firefox-nightly/&#34;&gt;Encrypted SNI Comes to Firefox Nightly - October 18, 2018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you want to test ESNI further, or develop something for it - &lt;a href=&#34;https://github.com/SixGenInc/Noctilucent&#34;&gt;Noctilucent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For better understanding of &lt;a href=&#34;https://www.cloudflare.com/learning/dns/dns-over-tls/&#34;&gt;DNS over HTTPS (DoH)&lt;/a&gt; and other &lt;a href=&#34;https://dnsprivacy.org/wiki/&#34;&gt;DNS privacy related materials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

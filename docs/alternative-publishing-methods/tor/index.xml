@@ -1,286 +1,442 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Tor</title><link>/docs/alternative-publishing-methods/tor.html</link><description>Recent content in Tor on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/docs/alternative-publishing-methods/tor/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Intro to Tor</title><link>/docs/alternative-publishing-methods/tor/intro.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/intro.html</guid><description>
-&lt;p>Required expertise level : &lt;strong>Beginner / Intermediate&lt;/strong>&lt;/p>
-&lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
-&lt;hr>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>&lt;strong>This guide is an updated version of this &lt;a href="https://www.madamasr.com/en/2019/12/25/feature/politics/beating-the-block-mada-masr-launches-tor-mirror/">article&lt;/a>, published by MadaMasr - An Egyptian independent media organization - in the context of releasing their own Onion mirror.&lt;/strong>&lt;/p>
-&lt;/div>
-&lt;h2 id="what-is-tor">What is Tor?&lt;/h2>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube-nocookie.com/embed/JWII85UlzKw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Tor&lt;/h4>
-is the acronym for the original project that produced The Onion Router protocol, which protects the identity of internet users. It’s one of several technologies that have become widely used to roam the web freely and securely.
-&lt;/div>
-&lt;p>&lt;strong>The project began in the mid-1990s&lt;/strong> and has gone through several phases. It is now administered by a not-for-profit organization, supervised by a community of its users and developers.&lt;/p>
-&lt;p>All Tor software is developed under &lt;strong>open-source licenses&lt;/strong> and is publicly available for anyone to view and collaborate in improving.&lt;/p>
-&lt;h2 id="how-does-tor-work">How does Tor work?&lt;/h2>
-&lt;p>&lt;strong>Let’s imagine the journey of a data packet between a user and a server&lt;/strong> (i.e. a website), both connected to the internet. With a regular connection, the data packet moves from the user’s device through the local router and then to the servers of the Internet Server Provider (ISP). If the ISP’s servers allow the packet to pass, it will reach its destination, hassle-free.&lt;/p>
-&lt;p>&lt;strong>&lt;em>But what if you don’t want anyone to access your data packet, its destination or its content? Or to be able to block its journey?&lt;/em>&lt;/strong>&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">Onion routing&lt;/h4>
-&lt;p>allows your packet to take a different, more secure route to reach its final destination.&lt;/p>
-&lt;p>Your Tor client will choose a group of random nodes for the packet to move through until it reaches its final destination. It will then generate a set of keys on your computer, which are used to encrypt the data packet as many times as the number of nodes it will pass through in its journey before reaching the final exit node.&lt;/p>
-&lt;/div>
-&lt;p>&lt;img src="../../../images/onion-services/5.png" alt="">&lt;/p>
-&lt;p>&lt;strong>The encryption protocol&lt;/strong> allows each node the packet is passing through to decrypt just one layer of the encryption to get information about the next node the packet will pass through.&lt;/p>
-&lt;p>The aim of the onion routing protocol is for your packet to pass through a series of random nodes before reaching its final destination, &lt;strong>with each node only receiving information about the nodes that directly proceed and follow it.&lt;/strong>&lt;/p>
-&lt;p>None of the nodes — &lt;em>except for the last one&lt;/em> — can access information about the data packet’s final destination or see what’s inside it. &lt;strong>The final exit node decrypts the final layer and directs the packet to its intended destination on the internet.&lt;/strong>&lt;/p>
-&lt;h2 id="who-runs-tor">Who runs Tor?&lt;/h2>
-&lt;div class="alert alert-primary" role="alert">
-&lt;h4 class="alert-heading">The organization&lt;/h4>
-operates several machines that serve as nodes on its network. Volunteers run thousands more nodes — all under the community’s supervision — to ensure data security.
-&lt;/div>
-&lt;p>&lt;strong>Anyone can volunteer&lt;/strong> to host a node in the network given that they have the necessary technical capabilities and internet speed.&lt;/p>
-&lt;p>Neither the community nor the organization &lt;strong>has the right or the ability to interfere with the encryption protocol because the encryption keys of each user are stored on their respective devices.&lt;/strong>&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-&lt;strong>Data packets are therefore completely encrypted within the Tor network.&lt;/strong>
-&lt;/div>
-&lt;h2 id="whats-the-difference-between-using-tor-and-using-a-virtual-private-network-vpn">What’s the difference between using Tor and using a Virtual Private Network (VPN)?&lt;/h2>
-&lt;blockquote>
-&lt;p>VPN is the name given to different protocols and mechanisms that route the connection of one or more machines to a virtual network through which they can access the internet.&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>To do so,&lt;/strong> the VPN client creates an encrypted connection to the server of the virtual private network, which acts like a tunnel transferring data from the machine to the server before it reaches the internet. When the data gets to its final destination, it appears as if it were sent from the server of the virtual network.&lt;/p>
-&lt;p>VPN theoretically helps protect users’ anonymity as it hides their geographical locations and identities from the servers at the receiving end. Yet while VPN provides some privacy besides enabling users to access blocked websites, it doesn’t provide watertight protection.&lt;/p>
-&lt;p>Network admins can collect users’ data after decrypting them. Data can also be manipulated if users connect to websites and services that don’t use secure protocols, such as HTTPS.&lt;/p>
-&lt;p>&lt;strong>It’s also not advisable to use free VPN services&lt;/strong>, as many such services make money by collecting and selling user data. Others inadvertently transfer adware and, sometimes, malware from unprotected websites while browsing.&lt;/p>
-&lt;p>These are the main differences between using the Tor network and VPN services. Whether paid or free, VPN providers generally seek profit, and there isn’t a practical method to verify their user data security policies. Tor, on the other hand, is subject to clear transparency rules and the supervision of both developers and users.&lt;/p>
-&lt;p>&lt;strong>Additionally,&lt;/strong> it’s easy to block access to VPN service providers, either through tracking their respective routing protocols or intercepting connections. Authorities can also directly block VPN servers and websites, as is the case with some countries.&lt;/p>
-&lt;h2 id="whats-the-difference-between-onion-services-and-the-normal-web---clearnethttpsenwikipediaorgwikiclearnet_networking">What’s the difference between Onion Services and the normal web - &lt;a href="https://en.wikipedia.org/wiki/Clearnet_(networking)">Clearnet&lt;/a>?&lt;/h2>
-&lt;p>&lt;strong>We’ve explained how Tor network operates by describing the journey of a data packet through the nodes&lt;/strong> until it reaches the exit node and then its destination on the internet.&lt;/p>
-&lt;p>&lt;strong>But what if the packet never leaves Tor network?&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>Onion services&lt;/strong> are used to grant access to servers operating completely within the Tor network that are only accessible using the onion routing protocol. These services can be accessed through randomly generated addresses (most of the time) ending with the special-use top-level domain suffix “.onion” (as opposed to the more common .com or .org).&lt;/p>
-&lt;p>&lt;strong>What this technique provides&lt;/strong> is a routing protocol between the user and the server so that neither has any information about the other.&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-Under optimum conditions in which all preferences are properly set by both parties, it is not possible to trace the server operating on Tor network, nor can the website’s admin collect any data that would reveal a user’s identity — barring, of course, a mistake or voluntary release of such information.
-&lt;/div>
-&lt;h2 id="tor-browser">Tor Browser&lt;/h2>
-&lt;div class="alert alert-primary" role="alert">
-You can reach Tor Browser and download the installer for your respective operating system using the following links
-&lt;/div>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://www.torproject.org/download/">Tor Project website&lt;/a> &lt;strong>If Internet censorship is in place in your country, there is a fairly chance this website is &lt;em>blocked&lt;/em>&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://github.com/TheTorProject/gettorbrowser/releases/tag/torbrowser-release">&lt;strong>Tor Project repository on GitHub&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://archive.org/details/@gettor">&lt;strong>The Internet Archive&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://drive.google.com/open?id=13CADQTsCwrGsIID09YQbNz2DfRMUoxUU">&lt;strong>Google Drive&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Other mirrors&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://tor.eff.org/">https://tor.eff.org/&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://tor.calyxinstitute.org/">https://tor.calyxinstitute.org/&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://tor.ccc.de/">https://tor.ccc.de/&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>We host an &lt;strong>expermintal mirror for Tor Browser binary files on IPFS,&lt;/strong> you can reach it on &lt;a href="https://ipfs.io/ipns/tor-ipfs.fightcensorship.tech">ipfs.io/ipns/tor-ipfs.fightcensorship.tech&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Tor Project&lt;/strong> also provides another method to download its browser. &lt;strong>Just send an email to &lt;a href="mailto:gettor@torproject.org">gettor@torproject.org&lt;/a>&lt;/strong> including the name of your operating system (Windows, OSX, Linux). You will receive a message containing links to download the browser via Google Drive and Dropbox, which aren’t blocked.&lt;/p>
-&lt;hr>
-&lt;p>&lt;strong>Tor Browser for Android is also available on the &lt;a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser">Google Play Store&lt;/a>&lt;/strong>&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-You can also use Tor network’s proxy app &lt;a href="https://play.google.com/store/apps/details?id=org.torproject.android">&lt;strong>Orbot&lt;/strong>&lt;/a>, which provides a similar service to VPNs. Orbot redirects the data from all the apps on your phone to go through Tor network. This can help override blocks placed on apps such as Signal and Wire, among others.
-&lt;/div>
-&lt;p>&lt;img src="../../../images/onion-services/3.gif" alt="Orbot VPN mode">&lt;/p>
-&lt;div class="alert alert-primary" role="alert">
-&lt;p>&lt;strong>There isn’t an official version&lt;/strong> of Tor Browser for iPhone and iPad users because of the restrictions Apple places on apps. However, every now and then, independent developers come up with alternative browsers to access Tor network such as &lt;a href="https://onionbrowser.com/">&lt;strong>OnionBrowser&lt;/strong>&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>These browsers, however, don’t ensure the anonymity of users accessing content outside the Tor network.&lt;/strong>&lt;/p>
-&lt;/div>
-&lt;h2 id="when-tor-is-blocked-activate-bridges">When Tor is blocked, activate bridges&lt;/h2>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube-nocookie.com/embed/DkEqWGF3cvg?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div>
-&lt;div class="alert alert-primary" role="alert">
-Connection to Tor network usually gets restricted through blocking or jamming entry nodes because the addresses of most VPNs, as well as the protocols of nodes and relays, are openly available on the internet.
-&lt;/div>
-&lt;p>&lt;strong>What makes fully blocking Tor network such a difficult task is that there are many ways to connect to it. One such way is by using bridges.&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>In a nutshell,&lt;/strong> bridges are servers run by volunteers whose addresses aren’t usually published openly. Bridges work as an intermediary between users and Tor network and help bypass blocks while hiding the connection from any party trying to analyze the network’s data.&lt;/p>
-&lt;h3 id="activating-bridges">Activating Bridges&lt;/h3>
-&lt;p>&lt;strong>Tor browser on Android phones&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="../../../images/onion-services/1.gif" alt="">&lt;/p>
-&lt;p>&lt;strong>Tor’s Android client, Orbot&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="../../../images/onion-services/2.gif" alt="">&lt;/p>
-&lt;p>&lt;strong>Tor browser on Desktop devices&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="../../../images/onion-services/4.gif" alt="">&lt;/p>
-&lt;h3 id="websites-that-can-be-accessed-through-onion-services">Websites that can be accessed through .onion services&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://www.bbcnewsv2vjtpsuy.onion/">&lt;strong>BBC&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://www.nytimes3xbfgragh.onion/">&lt;strong>The New York Times&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://protonirockerxow.onion/">&lt;strong>ProtonMail&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="http://facebookcorewwwi.onion/">&lt;strong>Facebook&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://madat5boo7oo5t2w.onion/">&lt;strong>MadaMasr&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ul></description></item><item><title>Docs: EOTK</title><link>/docs/alternative-publishing-methods/tor/eotk.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/eotk.html</guid><description>
-&lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
-&lt;p>Platform : &lt;strong>Gnu/Linux | macOS | BSD&lt;/strong>&lt;/p>
-&lt;hr>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;blockquote>
-&lt;p>As described by it&amp;rsquo;s own developer&lt;/p>
-&lt;/blockquote>
-&lt;div class="alert alert-primary" role="alert">
-&lt;p>EOTK provides &lt;strong>a tool for deploying HTTP and HTTPS onion sites&lt;/strong> to provide official onion-networking presences for popular websites.&lt;/p>
-&lt;p>The result is essentially a &amp;ldquo;man in the middle&amp;rdquo; proxy; you should set them up only for your own sites, or for sites which do not require login credentials of any kind.&lt;/p>
-&lt;/div>
-&lt;div class="alert alert-warning" role="alert">
-&lt;h4 class="alert-heading">Note&lt;/h4>
-&lt;strong>A thorough &lt;a href="https://github.com/alecmuffett/eotk/blob/master/docs.d/HOW-TO-INSTALL.md">implementation guide&lt;/a>&lt;/strong> is available on the project&amp;rsquo;s &lt;strong>&lt;a href="https://github.com/alecmuffett/eotk">repository on GitHub&lt;/a>&lt;/strong>, therefore, we will be providing translations in other &lt;strong>&lt;a href="../../../docs">available languages&lt;/a>&lt;/strong> for our guides.
-&lt;/div></description></item><item><title>Docs: Static Onion</title><link>/docs/alternative-publishing-methods/tor/staticonion.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/alternative-publishing-methods/tor/staticonion.html</guid><description>
-&lt;p>Required expertise level : &lt;strong>Advanced&lt;/strong>&lt;/p>
-&lt;p>Platform : &lt;strong>Linux / Ubuntu - Debian&lt;/strong>&lt;/p>
-&lt;hr>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>This guide will walk you through the process of creating &lt;strong>Onion Service&lt;/strong> for you static website.&lt;/p>
-&lt;/div>
-&lt;div class="alert alert-warning" role="alert">
-&lt;h4 class="alert-heading">Note&lt;/h4>
-&lt;strong>This guide&lt;/strong> focuses on creating a simple Onion service mainly in the context of censorship circumvention, if you are more concerned with the anonymity Tor provides in Onion services you should not depend on this guide alone, reading and understanding &lt;strong>&lt;a href="https://2019.www.torproject.org/docs/tor-onion-service.html.en">Tor project documentations&lt;/a>&lt;/strong> will best practice in that case, &lt;strong>as a ensuring full anonymity is an advanced and very details oriented process.&lt;/strong>
-&lt;/div>
-&lt;hr>
-&lt;ul>
-&lt;li>&lt;strong>Install Nginx webserver&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>Run the following commands in your terminal in their respective order&lt;/p>
-&lt;/blockquote>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sudo apt install software-properties-common
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icarus Project – Tor</title>
+    <link>/docs/alternative-publishing-methods/tor.html</link>
+    <description>Recent content in Tor on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/alternative-publishing-methods/tor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Intro to Tor</title>
+      <link>/docs/alternative-publishing-methods/tor/intro.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/alternative-publishing-methods/tor/intro.html</guid>
+      <description>
+        
+        
+        &lt;p&gt;Required expertise level : &lt;strong&gt;Beginner / Intermediate&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;&lt;strong&gt;This guide is an updated version of this &lt;a href=&#34;https://www.madamasr.com/en/2019/12/25/feature/politics/beating-the-block-mada-masr-launches-tor-mirror/&#34;&gt;article&lt;/a&gt;, published by MadaMasr - An Egyptian independent media organization - in the context of releasing their own Onion mirror.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;what-is-tor&#34;&gt;What is Tor?&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube-nocookie.com/embed/JWII85UlzKw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tor&lt;/h4&gt;
+
+    is the acronym for the original project that produced The Onion Router protocol, which protects the identity of internet users. It’s one of several technologies that have become widely used to roam the web freely and securely.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;The project began in the mid-1990s&lt;/strong&gt; and has gone through several phases. It is now administered by a not-for-profit organization, supervised by a community of its users and developers.&lt;/p&gt;
+&lt;p&gt;All Tor software is developed under &lt;strong&gt;open-source licenses&lt;/strong&gt; and is publicly available for anyone to view and collaborate in improving.&lt;/p&gt;
+&lt;h2 id=&#34;how-does-tor-work&#34;&gt;How does Tor work?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Let’s imagine the journey of a data packet between a user and a server&lt;/strong&gt; (i.e. a website), both connected to the internet. With a regular connection, the data packet moves from the user’s device through the local router and then to the servers of the Internet Server Provider (ISP). If the ISP’s servers allow the packet to pass, it will reach its destination, hassle-free.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;But what if you don’t want anyone to access your data packet, its destination or its content? Or to be able to block its journey?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Onion routing&lt;/h4&gt;
+
+    &lt;p&gt;allows your packet to take a different, more secure route to reach its final destination.&lt;/p&gt;
+&lt;p&gt;Your Tor client will choose a group of random nodes for the packet to move through until it reaches its final destination. It will then generate a set of keys on your computer, which are used to encrypt the data packet as many times as the number of nodes it will pass through in its journey before reaching the final exit node.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The encryption protocol&lt;/strong&gt; allows each node the packet is passing through to decrypt just one layer of the encryption to get information about the next node the packet will pass through.&lt;/p&gt;
+&lt;p&gt;The aim of the onion routing protocol is for your packet to pass through a series of random nodes before reaching its final destination, &lt;strong&gt;with each node only receiving information about the nodes that directly proceed and follow it.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;None of the nodes — &lt;em&gt;except for the last one&lt;/em&gt; — can access information about the data packet’s final destination or see what’s inside it. &lt;strong&gt;The final exit node decrypts the final layer and directs the packet to its intended destination on the internet.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;who-runs-tor&#34;&gt;Who runs Tor?&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;The organization&lt;/h4&gt;
+
+    operates several machines that serve as nodes on its network. Volunteers run thousands more nodes — all under the community’s supervision — to ensure data security.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Anyone can volunteer&lt;/strong&gt; to host a node in the network given that they have the necessary technical capabilities and internet speed.&lt;/p&gt;
+&lt;p&gt;Neither the community nor the organization &lt;strong&gt;has the right or the ability to interfere with the encryption protocol because the encryption keys of each user are stored on their respective devices.&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;strong&gt;Data packets are therefore completely encrypted within the Tor network.&lt;/strong&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;whats-the-difference-between-using-tor-and-using-a-virtual-private-network-vpn&#34;&gt;What’s the difference between using Tor and using a Virtual Private Network (VPN)?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;VPN is the name given to different protocols and mechanisms that route the connection of one or more machines to a virtual network through which they can access the internet.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;To do so,&lt;/strong&gt; the VPN client creates an encrypted connection to the server of the virtual private network, which acts like a tunnel transferring data from the machine to the server before it reaches the internet. When the data gets to its final destination, it appears as if it were sent from the server of the virtual network.&lt;/p&gt;
+&lt;p&gt;VPN theoretically helps protect users’ anonymity as it hides their geographical locations and identities from the servers at the receiving end. Yet while VPN provides some privacy besides enabling users to access blocked websites, it doesn’t provide watertight protection.&lt;/p&gt;
+&lt;p&gt;Network admins can collect users’ data after decrypting them. Data can also be manipulated if users connect to websites and services that don’t use secure protocols, such as HTTPS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It’s also not advisable to use free VPN services&lt;/strong&gt;, as many such services make money by collecting and selling user data. Others inadvertently transfer adware and, sometimes, malware from unprotected websites while browsing.&lt;/p&gt;
+&lt;p&gt;These are the main differences between using the Tor network and VPN services. Whether paid or free, VPN providers generally seek profit, and there isn’t a practical method to verify their user data security policies. Tor, on the other hand, is subject to clear transparency rules and the supervision of both developers and users.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Additionally,&lt;/strong&gt; it’s easy to block access to VPN service providers, either through tracking their respective routing protocols or intercepting connections. Authorities can also directly block VPN servers and websites, as is the case with some countries.&lt;/p&gt;
+&lt;h2 id=&#34;whats-the-difference-between-onion-services-and-the-normal-web---clearnethttpsenwikipediaorgwikiclearnet_networking&#34;&gt;What’s the difference between Onion Services and the normal web - &lt;a href=&#34;https://en.wikipedia.org/wiki/Clearnet_(networking)&#34;&gt;Clearnet&lt;/a&gt;?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;We’ve explained how Tor network operates by describing the journey of a data packet through the nodes&lt;/strong&gt; until it reaches the exit node and then its destination on the internet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But what if the packet never leaves Tor network?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Onion services&lt;/strong&gt; are used to grant access to servers operating completely within the Tor network that are only accessible using the onion routing protocol. These services can be accessed through randomly generated addresses (most of the time) ending with the special-use top-level domain suffix “.onion” (as opposed to the more common .com or .org).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What this technique provides&lt;/strong&gt; is a routing protocol between the user and the server so that neither has any information about the other.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    Under optimum conditions in which all preferences are properly set by both parties, it is not possible to trace the server operating on Tor network, nor can the website’s admin collect any data that would reveal a user’s identity — barring, of course, a mistake or voluntary release of such information.
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;tor-browser&#34;&gt;Tor Browser&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    You can reach Tor Browser and download the installer for your respective operating system using the following links
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.torproject.org/download/&#34;&gt;Tor Project website&lt;/a&gt;       &lt;strong&gt;If Internet censorship is in place in your country, there is a fairly chance this website is &lt;em&gt;blocked&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/TheTorProject/gettorbrowser/releases/tag/torbrowser-release&#34;&gt;&lt;strong&gt;Tor Project repository on GitHub&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://archive.org/details/@gettor&#34;&gt;&lt;strong&gt;The Internet Archive&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=13CADQTsCwrGsIID09YQbNz2DfRMUoxUU&#34;&gt;&lt;strong&gt;Google Drive&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Other mirrors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tor.eff.org/&#34;&gt;https://tor.eff.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tor.calyxinstitute.org/&#34;&gt;https://tor.calyxinstitute.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://tor.ccc.de/&#34;&gt;https://tor.ccc.de/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We host an &lt;strong&gt;expermintal mirror for Tor Browser binary files on IPFS,&lt;/strong&gt; you can reach it on &lt;a href=&#34;https://ipfs.io/ipns/tor-ipfs.fightcensorship.tech&#34;&gt;ipfs.io/ipns/tor-ipfs.fightcensorship.tech&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Tor Project&lt;/strong&gt; also provides another method to download its browser. &lt;strong&gt;Just send an email to &lt;a href=&#34;mailto:gettor@torproject.org&#34;&gt;gettor@torproject.org&lt;/a&gt;&lt;/strong&gt; including the name of your operating system (Windows, OSX, Linux). You will receive a message containing links to download the browser via Google Drive and Dropbox, which aren’t blocked.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Tor Browser for Android is also available on the &lt;a href=&#34;https://play.google.com/store/apps/details?id=org.torproject.torbrowser&#34;&gt;Google Play Store&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    You can also use Tor network’s proxy app &lt;a href=&#34;https://play.google.com/store/apps/details?id=org.torproject.android&#34;&gt;&lt;strong&gt;Orbot&lt;/strong&gt;&lt;/a&gt;, which provides a similar service to VPNs. Orbot redirects the data from all the apps on your phone to go through Tor network. This can help override blocks placed on apps such as Signal and Wire, among others.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/3.gif&#34; alt=&#34;Orbot VPN mode&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;&lt;strong&gt;There isn’t an official version&lt;/strong&gt; of Tor Browser for iPhone and iPad users because of the restrictions Apple places on apps. However, every now and then, independent developers come up with alternative browsers to access Tor network such as &lt;a href=&#34;https://onionbrowser.com/&#34;&gt;&lt;strong&gt;OnionBrowser&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;These browsers, however, don’t ensure the anonymity of users accessing content outside the Tor network.&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;when-tor-is-blocked-activate-bridges&#34;&gt;When Tor is blocked, activate bridges&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube-nocookie.com/embed/DkEqWGF3cvg?autoplay=1&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    Connection to Tor network usually gets restricted through blocking or jamming entry nodes because the addresses of most VPNs, as well as the protocols of nodes and relays, are openly available on the internet.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;What makes fully blocking Tor network such a difficult task is that there are many ways to connect to it. One such way is by using bridges.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In a nutshell,&lt;/strong&gt; bridges are servers run by volunteers whose addresses aren’t usually published openly. Bridges work as an intermediary between users and Tor network and help bypass blocks while hiding the connection from any party trying to analyze the network’s data.&lt;/p&gt;
+&lt;h3 id=&#34;activating-bridges&#34;&gt;Activating Bridges&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tor browser on Android phones&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/1.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tor’s Android client, Orbot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/2.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tor browser on Desktop devices&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/4.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;websites-that-can-be-accessed-through-onion-services&#34;&gt;Websites that can be accessed through .onion services&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bbcnewsv2vjtpsuy.onion/&#34;&gt;&lt;strong&gt;BBC&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nytimes3xbfgragh.onion/&#34;&gt;&lt;strong&gt;The New York Times&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://protonirockerxow.onion/&#34;&gt;&lt;strong&gt;ProtonMail&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://facebookcorewwwi.onion/&#34;&gt;&lt;strong&gt;Facebook&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://madat5boo7oo5t2w.onion/&#34;&gt;&lt;strong&gt;MadaMasr&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: EOTK</title>
+      <link>/docs/alternative-publishing-methods/tor/eotk.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/alternative-publishing-methods/tor/eotk.html</guid>
+      <description>
+        
+        
+        &lt;p&gt;Required expertise level : &lt;strong&gt;Advanced&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | BSD&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As described by it&amp;rsquo;s own developer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;EOTK provides &lt;strong&gt;a tool for deploying HTTP and HTTPS onion sites&lt;/strong&gt; to provide official onion-networking presences for popular websites.&lt;/p&gt;
+&lt;p&gt;The result is essentially a &amp;ldquo;man in the middle&amp;rdquo; proxy; you should set them up only for your own sites, or for sites which do not require login credentials of any kind.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;strong&gt;A thorough &lt;a href=&#34;https://github.com/alecmuffett/eotk/blob/master/docs.d/HOW-TO-INSTALL.md&#34;&gt;implementation guide&lt;/a&gt;&lt;/strong&gt; is available on the project&amp;rsquo;s &lt;strong&gt;&lt;a href=&#34;https://github.com/alecmuffett/eotk&#34;&gt;repository on GitHub&lt;/a&gt;&lt;/strong&gt;, therefore, we will be providing translations in other &lt;strong&gt;&lt;a href=&#34;../../../docs&#34;&gt;available languages&lt;/a&gt;&lt;/strong&gt; for our guides.
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Static Onion</title>
+      <link>/docs/alternative-publishing-methods/tor/staticonion.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/alternative-publishing-methods/tor/staticonion.html</guid>
+      <description>
+        
+        
+        &lt;p&gt;Required expertise level : &lt;strong&gt;Advanced&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Platform : &lt;strong&gt;Linux / Ubuntu - Debian&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This guide will walk you through the process of creating &lt;strong&gt;Onion Service&lt;/strong&gt; for you static website.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;strong&gt;This guide&lt;/strong&gt; focuses on creating a simple Onion service mainly in the context of censorship circumvention, if you are more concerned with the anonymity Tor provides in Onion services you should not depend on this guide alone, reading and understanding &lt;strong&gt;&lt;a href=&#34;https://2019.www.torproject.org/docs/tor-onion-service.html.en&#34;&gt;Tor project documentations&lt;/a&gt;&lt;/strong&gt; will best practice in that case, &lt;strong&gt;as a ensuring full anonymity is an advanced and very details oriented process.&lt;/strong&gt;
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Install Nginx webserver&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Run the following commands in your terminal in their respective order&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt install software-properties-common
 sudo add-apt-repository ppa:nginx/stable
-sudo apt update &lt;span style="color:#555">&amp;amp;&amp;amp;&lt;/span> sudo apt install nginx -y
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="../../../images/onion-services/6.png" alt="">&lt;/p>
-&lt;p>Confirm your installation by entering &lt;code>nginx -v&lt;/code>, the output should look similar to this&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Install Tor client&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;div class="alert alert-warning" role="alert">
-&lt;h4 class="alert-heading">Note&lt;/h4>
-&lt;strong>If Tor Project Website and Tor communications are blocked in your country,&lt;/strong> probably the official &lt;strong>&lt;a href="https://deb.torproject.org/torproject.org">software repositories&lt;/a>&lt;/strong> are also blocked, in which case you should skip adding them and install Tor directly from &lt;strong>your distribution&amp;rsquo;s repositories.&lt;/strong>
-&lt;/div>
-&lt;blockquote>
-&lt;p>Add in the following lines in &lt;code>/etc/apt/sources.list&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;pre>&lt;code>deb https://deb.torproject.org/torproject.org stretch main
+sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install nginx -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Confirm your installation by entering &lt;code&gt;nginx -v&lt;/code&gt;, the output should look similar to this&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Install Tor client&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;strong&gt;If Tor Project Website and Tor communications are blocked in your country,&lt;/strong&gt; probably the official &lt;strong&gt;&lt;a href=&#34;https://deb.torproject.org/torproject.org&#34;&gt;software repositories&lt;/a&gt;&lt;/strong&gt; are also blocked, in which case you should skip adding them and install Tor directly from &lt;strong&gt;your distribution&amp;rsquo;s repositories.&lt;/strong&gt;
+
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Add in the following lines in &lt;code&gt;/etc/apt/sources.list&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;deb https://deb.torproject.org/torproject.org stretch main
 deb-src https://deb.torproject.org/torproject.org stretch main
-&lt;/code>&lt;/pre>&lt;blockquote>
-&lt;p>Run the following commands in your terminal in their respective order&lt;/p>
-&lt;/blockquote>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Run the following commands in your terminal in their respective order&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
-sudo apt update &lt;span style="color:#555">&amp;amp;&amp;amp;&lt;/span> apt install tor deb.torproject.org-keyring
-sudo apt update &lt;span style="color:#555">&amp;amp;&amp;amp;&lt;/span> sudo apt install tor
-&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
-&lt;p>Run the following commands to start Tor daemon&lt;/p>
-&lt;/blockquote>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sudo systemctl start tor
-sudo systemctl &lt;span style="color:#366">enable&lt;/span> tor
-&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
-&lt;p>Confirm Tor is running without issues&lt;/p>
-&lt;/blockquote>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">sudo systemctl status tor
+sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt install tor deb.torproject.org-keyring
+sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install tor
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Run the following commands to start Tor daemon&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start tor
+sudo systemctl &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;enable&lt;/span&gt; tor
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Confirm Tor is running without issues&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl status tor
 tor --version
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="../../../images/onion-services/7.png" alt="">&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Configure Tor client&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>&lt;strong>Open&lt;/strong> Tor config file at &lt;code>/etc/tor/torrc&lt;/code> with your favorite editor&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;code>vim /etc/tor/torrc&lt;/code>&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Uncomment&lt;/strong> the following lines by removing the &lt;code>#&lt;/code>, and optionally, replace the directory name in &lt;code>/var/lib/tor/hidden_service/&lt;/code> with different name, specially if you are planning on hosting multiple Onion Services on the same server. i.e. &lt;code>/var/lib/tor/myfirstonion/&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>&lt;strong>Before:&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash"> &lt;span style="color:#f60">72&lt;/span> &lt;span style="color:#09f;font-style:italic">#HiddenServiceDir /var/lib/tor/hidden_service/&lt;/span>
-&lt;span style="color:#f60">73&lt;/span> &lt;span style="color:#09f;font-style:italic">#HiddenServicePort 80 127.0.0.1:80&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;strong>After&lt;/strong>:&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">HiddenServiceDir /var/lib/tor/myfirstonion/
-HiddenServicePort &lt;span style="color:#f60">80&lt;/span> 127.0.0.1:80
-&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
-&lt;p>Restart Tor service&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;code>sudo systemctl restart tor&lt;/code>&lt;/p>
-&lt;blockquote>
-&lt;p>Confirm your Onion Service related files were generated at &lt;code>/var/lib/tor/myfirstonion/&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#366">cd&lt;/span> /var/lib/tor/myfirstonion/ &lt;span style="color:#555">&amp;amp;&amp;amp;&lt;/span> ls
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>You should find two files generated at this directory&lt;/p>
-&lt;p>1- &lt;code>hostname&lt;/code> &lt;strong>contains your Onion Service address&lt;/strong>&lt;/p>
-&lt;p>2- &lt;code>private_key&lt;/code> &lt;strong>Private key used for encryption. Don&amp;rsquo;t edit or share this file under any circumstances&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="../../../images/onion-services/8.png" alt="">&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Configure Nginx Webserver&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>It&amp;rsquo;s very important to read Nginx documentations and follow the &lt;a href="https://riseup.net/en/security/network-security/tor/onionservices-best-practices">best practices&lt;/a> when configuring your Onion Service&lt;/strong>&lt;/p>
-&lt;p>But essentially, you can get your Onion Service up &amp;amp; running by adding this simple config file to your &lt;code>/etc/nginx/sites-enabled&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-nginx" data-lang="nginx">&lt;span style="color:#069;font-weight:bold">server&lt;/span> {
-&lt;span style="color:#069;font-weight:bold">listen&lt;/span> 127.0.0.1:&lt;span style="color:#f60">80&lt;/span>;
-&lt;span style="color:#069;font-weight:bold">server_name&lt;/span> &lt;span style="color:#c30">[onion-address]&lt;/span>; &lt;span style="color:#09f;font-style:italic">#replace with your generated onion address, you can get that by executing : `cat /var/lib/[yourservicename]/hostname`
-&lt;/span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#069;font-weight:bold">root&lt;/span> &lt;span style="color:#c30">/var/www/html/mystaticmirror&lt;/span>; &lt;span style="color:#09f;font-style:italic">#replace with your mirror&amp;#39;s files directory, and make sure the webserver user has access permissions to it.
-&lt;/span>&lt;span style="color:#09f;font-style:italic">&lt;/span> &lt;span style="color:#069;font-weight:bold">client_max_body_size&lt;/span> &lt;span style="color:#c30">99M&lt;/span>;
-&lt;span style="color:#069;font-weight:bold">port_in_redirect&lt;/span> &lt;span style="color:#360">off&lt;/span>;
-&lt;span style="color:#069;font-weight:bold">charset&lt;/span> &lt;span style="color:#c30">utf-8&lt;/span>;
-&lt;span style="color:#069;font-weight:bold">index&lt;/span> &lt;span style="color:#c30">index.html&lt;/span>;
-&lt;span style="color:#069;font-weight:bold">location&lt;/span> &lt;span style="color:#c30">/&lt;/span> {
-&lt;span style="color:#069;font-weight:bold">autoindex&lt;/span> &lt;span style="color:#360">off&lt;/span>;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Configure Tor client&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Open&lt;/strong&gt; Tor config file at &lt;code&gt;/etc/tor/torrc&lt;/code&gt; with your favorite editor&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;vim /etc/tor/torrc&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Uncomment&lt;/strong&gt; the following lines by removing the &lt;code&gt;#&lt;/code&gt;, and optionally, replace the directory name in &lt;code&gt;/var/lib/tor/hidden_service/&lt;/code&gt; with different name, specially if you are planning on hosting multiple Onion Services on the same server. i.e. &lt;code&gt;/var/lib/tor/myfirstonion/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Before:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;72&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#HiddenServiceDir /var/lib/tor/hidden_service/&lt;/span&gt;
+ &lt;span style=&#34;color:#bd93f9&#34;&gt;73&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#HiddenServicePort 80 127.0.0.1:80&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;After&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;HiddenServiceDir /var/lib/tor/myfirstonion/
+HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.0.0.1:80
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Restart Tor service&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo systemctl restart tor&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Confirm your Onion Service related files were generated at &lt;code&gt;/var/lib/tor/myfirstonion/&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cd&lt;/span&gt; /var/lib/tor/myfirstonion/ &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ls
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should find two files generated at this directory&lt;/p&gt;
+&lt;p&gt;1- &lt;code&gt;hostname&lt;/code&gt; &lt;strong&gt;contains your Onion Service address&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2- &lt;code&gt;private_key&lt;/code&gt; &lt;strong&gt;Private key used for encryption. Don&amp;rsquo;t edit or share this file under any circumstances&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Configure Nginx Webserver&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s very important to read Nginx documentations and follow the &lt;a href=&#34;https://riseup.net/en/security/network-security/tor/onionservices-best-practices&#34;&gt;best practices&lt;/a&gt; when configuring your Onion Service&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;But essentially, you can get your Onion Service up &amp;amp; running by adding this simple config file to your &lt;code&gt;/etc/nginx/sites-enabled&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;server&lt;/span&gt; {
+    &lt;span style=&#34;color:#ff79c6&#34;&gt;listen&lt;/span&gt; 127.0.0.1:&lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt;;
+    &lt;span style=&#34;color:#ff79c6&#34;&gt;server_name&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;[onion-address]&lt;/span&gt;; &lt;span style=&#34;color:#6272a4&#34;&gt;#replace with your generated onion address, you can get that by executing : `cat /var/lib/[yourservicename]/hostname`
+&lt;/span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;/var/www/html/mystaticmirror&lt;/span&gt;; &lt;span style=&#34;color:#6272a4&#34;&gt;#replace with your mirror&amp;#39;s files directory, and make sure the webserver user has access permissions to it.
+&lt;/span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;client_max_body_size&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;99M&lt;/span&gt;;
+    &lt;span style=&#34;color:#ff79c6&#34;&gt;port_in_redirect&lt;/span&gt; off;
+    &lt;span style=&#34;color:#ff79c6&#34;&gt;charset&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;utf-8&lt;/span&gt;;
+    &lt;span style=&#34;color:#ff79c6&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;index.html&lt;/span&gt;;
+&lt;span style=&#34;color:#ff79c6&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;/&lt;/span&gt; {
+    &lt;span style=&#34;color:#ff79c6&#34;&gt;autoindex&lt;/span&gt; off;
 }
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;strong>Testing your setup&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../../images/onion-services/9.png" alt="">&lt;/p>
-&lt;p>Make sure Both Nginx and Tor client are restarted and running succesfully, then head to your Tor Browser and test your new Onion address.&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>[Optional] - announcing your new mirror for Tor browser users&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;div class="alert alert-primary" role="alert">
-&lt;p>&lt;a href="https://community.torproject.org/onion-services/advanced/onion-location/">&lt;strong>Onion-Location&lt;/strong>&lt;/a> is a new feature implemented in Tor Browser.&lt;/p>
-&lt;p>It essentially allows you to &lt;strong>announce your Onion mirror&lt;/strong> for Tor Browser users when they access your original website, through adding an &lt;strong>HTTP Header&lt;/strong> using your webserver, or adding specific &lt;strong>HTML &lt;code>&amp;lt;meta&amp;gt;&lt;/code>&lt;/strong> to your &lt;code>index.html&lt;/code> page.&lt;/p>
-&lt;/div>
-&lt;p>&lt;strong>HTTP Header&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Apache&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-apache" data-lang="apache">&lt;span style="color:#309;font-weight:bold">&amp;lt;VirtualHost&lt;/span> &lt;span style="color:#c30">*:443&lt;/span>&lt;span style="color:#309;font-weight:bold">&amp;gt;&lt;/span>
-&lt;span style="color:#366">ServerName&lt;/span> &amp;lt;your-website.tld&amp;gt;
-&lt;span style="color:#366">DocumentRoot&lt;/span> &lt;span style="color:#c30">/path/to/htdocs&lt;/span>
-&lt;span style="color:#366">Header&lt;/span> set Onion-Location &lt;span style="color:#c30">&amp;#34;http://your-onion-address.onion%{REQUEST_URI}s&amp;#34;&lt;/span>
-&lt;span style="color:#366">SSLEngine&lt;/span> &lt;span style="color:#069;font-weight:bold">on&lt;/span>
-&lt;span style="color:#366">SSLCertificateFile&lt;/span> &lt;span style="color:#c30">&amp;#34;/path/to/www.example.com.cert&amp;#34;&lt;/span>
-&lt;span style="color:#366">SSLCertificateKeyFile&lt;/span> &lt;span style="color:#c30">&amp;#34;/path/to/www.example.com.key&amp;#34;&lt;/span>
-&lt;span style="color:#309;font-weight:bold">&amp;lt;/VirtualHost&amp;gt;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>Nginx&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-nginx" data-lang="nginx">&lt;span style="color:#069;font-weight:bold">add_header&lt;/span> &lt;span style="color:#c30">Onion-Location&lt;/span> &lt;span style="color:#c30">http://&amp;lt;your-onion-address&amp;gt;.onion&lt;/span>&lt;span style="color:#033">$request_uri&lt;/span>;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>HTML &lt;code>&amp;lt;meta&amp;gt;&lt;/code>&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&amp;lt;&lt;span style="color:#309;font-weight:bold">meta&lt;/span> &lt;span style="color:#309">http-equiv&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;onion-location&amp;#34;&lt;/span> &lt;span style="color:#309">content&lt;/span>&lt;span style="color:#555">=&lt;/span>&lt;span style="color:#c30">&amp;#34;http://&amp;lt;your-onion-service-address&amp;gt;.onion&amp;#34;&lt;/span> /&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;div class="alert alert-primary" role="alert">
-&lt;strong>When&lt;/strong> everything is well configured and working, visitors of your original Clearnet website using Tor browser, should be notified about the availability of the Onion mirror and it&amp;rsquo;s address.
-&lt;/div>
-&lt;p>&lt;img src="../../../images/onion-services/10.png" alt="">&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Testing your setup&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Make sure Both Nginx and Tor client are restarted and running succesfully, then head to your Tor Browser and test your new Onion address.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[Optional] - announcing your new mirror for Tor browser users&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;&lt;a href=&#34;https://community.torproject.org/onion-services/advanced/onion-location/&#34;&gt;&lt;strong&gt;Onion-Location&lt;/strong&gt;&lt;/a&gt; is a new feature implemented in Tor Browser.&lt;/p&gt;
+&lt;p&gt;It essentially allows you to &lt;strong&gt;announce your Onion mirror&lt;/strong&gt; for Tor Browser users when they access your original website, through adding an &lt;strong&gt;HTTP Header&lt;/strong&gt; using your webserver, or adding specific &lt;strong&gt;HTML &lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;&lt;/strong&gt; to your &lt;code&gt;index.html&lt;/code&gt; page.&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;HTTP Header&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apache&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;VirtualHost&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;*:443&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+       &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;ServerName&lt;/span&gt; &amp;lt;your-website.tld&amp;gt;
+       &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;DocumentRoot&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;/path/to/htdocs&lt;/span&gt;
+
+       &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;Header&lt;/span&gt; set Onion-Location &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;http://your-onion-address.onion%{REQUEST_URI}s&amp;#34;&lt;/span&gt;
+
+       &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;SSLEngine&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;on&lt;/span&gt;
+       &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;SSLCertificateFile&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/path/to/www.example.com.cert&amp;#34;&lt;/span&gt;
+       &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;SSLCertificateKeyFile&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/path/to/www.example.com.key&amp;#34;&lt;/span&gt;
+     &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/VirtualHost&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;add_header&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;Onion-Location&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;http://&amp;lt;your-onion-address&amp;gt;.onion&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$request_uri&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;HTML &lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;onion-location&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;http://&amp;lt;your-onion-service-address&amp;gt;.onion&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;strong&gt;When&lt;/strong&gt; everything is well configured and working, visitors of your original Clearnet website using Tor browser, should be notified about the availability of the Onion mirror and it&amp;rsquo;s address.
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

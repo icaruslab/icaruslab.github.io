@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.79.0" /><link rel="canonical" type="text/html" href="../../docs/static-mirroring.html">
+<link rel="alternate" type="application/rss&#43;xml" href="../../docs/static-mirroring/index.xml">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="shortcut icon" href="../../favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="../../favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="../../favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="../../favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="../../favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="../../favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="../../favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="../../favicons/android-192x192.png" sizes="192x192">
+
+<title>Static mirroring | Icarus Project</title><meta property="og:title" content="Static mirroring" />
+<meta property="og:description" content="Guides on different methods for static mirroring
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/static-mirroring.html" />
+<meta property="og:image" content="/images/misc/logo.png"/>
+<meta property="og:site_name" content="Icarus Project" />
+<meta itemprop="name" content="Static mirroring">
+<meta itemprop="description" content="Guides on different methods for static mirroring
+">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/misc/logo.png"/>
+
+<meta name="twitter:title" content="Static mirroring"/>
+<meta name="twitter:description" content="Guides on different methods for static mirroring
+"/>
+
+
+
+
+
+<link rel="preload" href="../../scss/main.min.b42560f75b462a090ee18484a6759c8e35354560fa195a3829e0615c4dfae6c9.css" as="style">
+<link href="../../scss/main.min.b42560f75b462a090ee18484a6759c8e35354560fa195a3829e0615c4dfae6c9.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+<meta http-equiv="onion-location" content="http://icaruspbuyned3wm.onion" />
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="../../">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Icarus Project</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../about.html" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link active" href="../../docs.html" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../blog.html" ><span>Blog</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../community.html" ><span>Community</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="../../mirrors.html" ><span>Mirrors</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="../../docs/static-mirroring.html">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Static mirroring</h1>
+<div class="lead">Guides on different methods for static mirroring</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-587be77ff392f3c91caa7ac78e37ab4c">Wget</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-d0e1760e35f1d241942e0213bec5fedf">HTTrack</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-70a5c6d3ecf0ae030976ff21a30d6cea">WordPress Plugins</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-3a95e807cc1878209010f0ddfd4e89d3">Static mirror hosting</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>4.1: <a href="#pg-5bc80f644e49026a7c52f3e47cbe2636">Hosting on Amazon S3</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4.2: <a href="#pg-ea6a8581204ef24376253271090c5a26">Hosting on Google Cloud Storage</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4.3: <a href="#pg-57dae832f11c9e2186ac568884cdf639">Hosting on GitHub</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <h2 id="convert-a-dynamic-site-to-a-static-one">Convert a Dynamic site to a Static one</h2>
+<p><strong>As mentioned earlier</strong>, some suggested solutions in these guides are only capable of serving static web pages, in this section we’ll introduce some methods of generating a static clone of your dynamic website.
+Each of these suggested methods has their own pros and cons, we’ll try to iterate on each one of them as we tested them with different websites.</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-587be77ff392f3c91caa7ac78e37ab4c">1 - Wget</h1>
+    <div class="lead">Use <a href="https://www.gnu.org/software/wget/">Wget</a> to create a static clone of a website</div>
+	<p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
+<p>Platform : <strong>Gnu/Linux | macOS | MS Windows | Android | BSD</strong></p>
+<hr>
+<p>
+
+<div class="alert alert-primary" role="alert">
+
+
+    <strong>Wget</strong> is a cli-based software that retrieves web content, it supports HTTP, HTTPS, and FTP protocols.
+
+</div>
+
+<strong>One of Wget’s features</strong> is the ability to scan and index the entirety of a website and download a fully functional static clone of the original website.</p>
+<p>The static clone can be later refreshed and updated with new content published to the original website.
+While there are different ways of performing this task using Wget, you may get different results depending on your original website properties, including the CMS being used, the web server configurations, any kind of DDoS protection and online asset&rsquo;s protection e.g. images and videos.</p>
+<hr>
+<h3 id="install-wget">Install Wget</h3>
+<p><strong>MS Windows</strong></p>
+<ul>
+<li>
+<p><a href="https://chocolatey.org/install">Chocolatey</a> package manager for MS Windows</p>
+<p><code>choco install wget</code></p>
+</li>
+</ul>
+<p><strong>Gnu/Linux</strong></p>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    As Wget is a Gnu developed software, it’s available in most distributions main repositories, the installation process should be as simple as using your distribution’s package manager.
+
+</div>
+
+<blockquote>
+<p>Examples</p>
+</blockquote>
+<ul>
+<li>
+<p><code>apt install wget</code></p>
+</li>
+<li>
+<p><code>dnf install wget</code></p>
+</li>
+<li>
+<p><code>pacman -S wget</code></p>
+</li>
+</ul>
+<p><strong>macOS</strong></p>
+<ul>
+<li>
+<p>Install using <a href="https://brew.sh/">Homebrew</a> package manager</p>
+<p><code>brew install wget</code></p>
+</li>
+<li>
+<p>Install using <a href="https://www.macports.org/install.php">Macports</a></p>
+<p><code>port install wget</code></p>
+</li>
+</ul>
+<hr>
+<h3 id="pulling-the-website-to-your-local-machine">Pulling the website to your local machine</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    We will be using some basic parameters for Wget which should work for the majority of websites, but you may need to refer to the <a href="https://www.gnu.org/software/wget/manual/wget.html">manual pages of Wget</a> in case of needing to do some tweaks or solve an issue with the resulting mirror.
+
+</div>
+
+<p><code>wget --mirror --convert-links --adjust-extension --page-requisites http://example.org</code></p>
+<h5 id="parameters-and-options-description">Parameters and options description</h5>
+<p><code>--mirror</code></p>
+<p>Turn on options suitable for mirroring.  This option turns on recursion and time-stamping, sets infinite recursion depth and keeps FTP directory listings.</p>
+<p>-<code>-convert-links</code></p>
+<p>After the download is complete, convert the links in the document to make them suitable for local viewing.  This affects not only the visible hyperlinks, but any part of the document that links to external content, such as embedded images, links to style sheets, hyperlinks to non-HTML content, etc.</p>
+<p><code>--adjust-extension</code></p>
+<p>If some link points to <code>//foo.com/bar.cgi?xyz</code> with <code>--adjust-extension</code> asserted and its local destination is intended to be .<code>/foo.com/bar.cgi?xyz.css</code>, then the link would be converted to <code>//foo.com/bar.cgi?xyz.css</code>. Note that only the filename part has been modified. The rest of the URL has been left untouched, including the net path <code>(&quot;//&quot;)</code> which would otherwise be processed by Wget and converted to the effective scheme <code>(ie. &quot;http://&quot;)</code>.</p>
+<p><code>--page-requisites</code></p>
+<p>This option causes Wget to download all the files that are necessary to properly display a given HTML page.  This includes such things as inlined images, sounds, and referenced stylesheets.</p>
+<hr>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    <a href="https://gitlab.com/gnuwget/wget2">Wget2</a> is currently being developed, while it’s not stable yet but it’s a full rewrite of the original Wget and meant to replace it in the near future. Wget2 comes with many new features such as HTTP/2.0 support and multi-threaded download which can make the process of pulling large websites way faster.
+
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    For websites operating behind Cloudflare, this process can be identified as malicious behaviour as many simultaneous requests are coming from one IP address in short intervals, this can result in partial downloads or failing to download some assets such as inline images and CSS files.
+
+</div>
+
+<p><strong>This can be solved</strong> by either <strong>whitelisting your IP address on Cloudflare</strong> and disable assets protection features during the crawling process, or configure the origin server to <strong>allow direct access</strong> on a different domain/sub-domain with <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">basic authentication</a> enabled, you can then add <code>--http-user=[HTTP-USER]</code> <code>--http-passwd=[HTTP-PASSWORD]</code> parameters to your Wget command to authenticate.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-d0e1760e35f1d241942e0213bec5fedf">2 - HTTrack</h1>
+    <div class="lead">Use <a href="https://www.httrack.com/">HTTrack</a> to create a static clone of a website</div>
+	<p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
+<p>Platform : <strong>Gnu/Linux | macOS | MS Windows | Android | BSD</strong></p>
+<hr>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <p><strong>HTTrack</strong> is a free software developed for the specific purpose of downloading fully functional offline copies of any website.</p>
+<blockquote>
+<p>It has many advantages over Wget, and offers a graphical user interface. While it’s not being updated since 2017, it proofed to be efficient in most use cases in our testing scenarios.</p>
+</blockquote>
+
+
+</div>
+
+<h3 id="install-httrack">Install HTTrack</h3>
+<p><strong>Windows</strong></p>
+<ul>
+<li>
+<p><a href="https://chocolatey.org/install">Chocolatey</a> package manager for MS Windows</p>
+<p><code>choco install httrack</code></p>
+</li>
+<li>
+<p>Or you can download the installation file <a href="https://www.httrack.com/page/2/en/index.html">here</a></p>
+</li>
+</ul>
+<p><strong>Gnu/Linux</strong></p>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    Since HTTrack is available in most major distributions main repositories, you can use your package manager to directly install the compiled version.
+
+</div>
+
+<blockquote>
+<p>Example</p>
+</blockquote>
+<ul>
+<li><code>apt install httrack</code></li>
+<li><code>dnf install httrack</code></li>
+<li><code>pacman -S httrack</code></li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    In this <a href="https://www.httrack.com/page/2/en/index.html">page</a> you can find instructions on downloading and building HTTrack from source.
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    Also, a version with a graphical user interface exists for Gnu/Linux but still in beta, you can find the source <a href="https://sourceforge.net/projects/httraqt/">here</a>
+
+</div>
+
+<p><strong>macOS</strong></p>
+<ul>
+<li>
+<p>Using Homebrew package manager</p>
+<p><code>brew install httrack</code></p>
+</li>
+<li>
+<p>Using Macports</p>
+<p><code>sudo port install httrack</code></p>
+</li>
+</ul>
+<hr>
+<h3 id="pulling-the-website-to-your-local-machine">Pulling the website to your local machine</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">httrack --mirror --robots<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span> --stay-on-same-domain --user-agent <span style="color:#f1fa8c">&#34;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0&#34;</span>  --keep-links<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span> --path example.org --quiet https://example.org/ -* +example.org/*
+</code></pre></div><h5 id="parameters-and-options-description">Parameters and options description</h5>
+<p><code>--mirror</code></p>
+<p>Mirror websites</p>
+<p><code>--robots=0</code></p>
+<p>Follow robots.txt and meta  robots  tags  (0=never,1=sometimes,*  2=always,  3=always  (even strict rules)) (&ndash;robots[=N])</p>
+<p><code>--stay-on-same-domain</code></p>
+<p>Stay on the same principal domain</p>
+<p><code>--user-agent &quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0&quot;</code></p>
+<p>User-agent field sent in HTTP headers</p>
+<p><code>--keep-links=0</code></p>
+<p>keep  original  links  (e.g.  <a href="http://www.adr/link">http://www.adr/link</a>)  (<code>--keep-links=0</code> *relative link, <code>--keep-links</code> absolute links, <code>--keep-links=4</code> original links, <code>--keep-links=3</code> absolute URI links, <code>--keep-links=5</code> transparent proxy link)</p>
+<p><code>--path example.org</code></p>
+<p>Path for mirror/logfiles+cache (<code>--path</code> mirror[,path cache and logfiles])</p>
+<p><code>--quiet</code></p>
+<p>no questions - quiet mode</p>
+<p><code>https://example.org/ -*</code></p>
+<p>Replace example.org with the website you want to mirror</p>
+<p><code>+example.org/*</code></p>
+<p>HTTrack will crawl and scan the whole website, renders every and save it locally to your machine in an offline browsable form. The suggested combination of arguments will convert the inline URLs to relative links which can be hosted virtually anywhere.</p>
+<p><code>httrack --continue</code></p>
+<p>In case of intercepted or uncompleted download process HTTrack will use the cache to resume the download process and make sure it won’t include re-downloading the same unchanged assets.</p>
+<p><code>httrack --update</code></p>
+<hr>
+<blockquote>
+<p>Here we need to consider a very important note about how HTTrack functions.</p>
+</blockquote>
+<p><strong>Normally</strong> there will be a cached version of all downloaded assets saved in a directory under the main project’s directory named hts-cache, the cache will be used in every update presumably to avoid having to crawl and download the whole website with every update, which can be a very time-consuming process especially with big websites.</p>
+<p><strong>However</strong>, in our testing with different websites of different sizes and structures, the real-life scenario turned to be different from what the software documentations provides.</p>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <em>For example</em> with a big WordPress website running relatively recent version of Nginx web server and operating behind a Cloudflare proxy, the cache never helped to reduce the update times needed to refresh the static copy with new published content and HTTrack was almost crawling all over the website with every update.
+
+</div>
+
+<p>This can be connected with many elements, among them will that HTTrack is a relatively old software which didn’t receive any updates since 2017 therefore it’s support for the most recent changes in the web structure and technologies isn’t the best.</p>
+<p><strong>One other element</strong> <em>which will cause great impact and change of behavior in any tools doing the same functionality,</em> will be dealing with different configuration and installations of Web servers, CMS, and security measurements.</p>
+<p><strong>We encourage</strong> you to dig deeper in HTTrack documentation to find options and arguments which can help to find the best suited configuration for your setup.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    When using HTTrack <em>- and almost any website downloader -,</em> while you are using Cloudflare proxy and DDoS protection for your website, it’s highly important to set a <code>user-agent</code> in the arguments and make sure the chosen <code>user-agent</code> isn’t blocked in the security settings in your web server and Cloudflare.
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p><strong>With big websites</strong>, many security settings and tools might identify the constant crawling and multiple hits in short time intervals as malicious behavior and block or throttle your IP address&rsquo;s connection to the website.</p>
+<p><strong>In that case</strong> you should revise your security settings and find the maximum allowed connections then you can use arguments like <code>--max-rate=N</code>, <code>--connection-per-second=N</code>, <code>--max-pause=N</code> to limit HTTrack traffic hitting your website to the maximum allowed numbers.</p>
+<p>Also, you should consider whitelisting your IP address in your security settings if the option exists.</p>
+
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-70a5c6d3ecf0ae030976ff21a30d6cea">3 - WordPress Plugins</h1>
+    <div class="lead">Testing multiple WordPress plugins to generate a static mirror.</div>
+	<p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
+<p>Platform : <strong>Gnu/Linux | macOS | MS Windows | BSD</strong></p>
+<hr>
+<h2 id="wp2statichttpsgithubcomwp2static"><a href="https://github.com/WP2Static">WP2Static</a></h2>
+<p><img src="../../images/wp2static/1.png" alt="">WP2Static options</p>
+<blockquote>
+<p>WP2Static can be considered as the most optimal plugin for the purpose of generating and updating a static mirror.</p>
+</blockquote>
+<p>This plugin also offers different deployment sub-plugins which can configure direct deployments to platforms like Amazon S3 and GitHub.</p>
+<p><strong>However</strong>, it&rsquo;s plugin development process itself doesn’t seem to be stable, at the time of writing these documentations, it appears to be transitioning to a new approach and undergoing big changes.</p>
+<p><a href="https://wordpress.org/plugins/static-html-output-plugin/">An old version of the plugin</a> was recently flagged as closed in WordPress’s plugins platform, and the developed published his <a href="https://staticword.press/t/removal-of-wp2static-from-wordpress-org/159">reasoning</a> behind this approach.</p>
+<p><strong>Two different versions</strong> of the plugin however will continue to be available through the developer&rsquo;s <a href="https://wp2static.com/">website</a> and <a href="https://github.com/WP2Static">GitHub repository</a>.</p>
+<p>The <strong>old version</strong> renamed as <a href="https://github.com/WP2Static/static-html-output-plugin">static-html-output-plugin</a>, will be available pre-built and ready to install on the website download section.</p>
+<p>The <strong>new version</strong> named as <a href="https://github.com/WP2Static/wp2static">WP2Static</a>, while still being considered as <strong>experimental</strong>, it performed well in our testing <strong><em>but it needs to be built from the source before installing on WordPress.</em></strong></p>
+<hr>
+<h3 id="downloading-and-building-the-new-plugin">Downloading and building the new plugin</h3>
+<ul>
+<li>
+<p>Clone the repository.</p>
+<p><code>git clone https://github.com/WP2Static/wp2static.git</code></p>
+</li>
+<li>
+<p>Install <a href="https://getcomposer.org/">Composer</a> and PHP on your local machine.</p>
+</li>
+<li>
+<p>Change to the plugins source code directory.</p>
+</li>
+<li>
+<p>Build the plugin using</p>
+<p><code>composer install</code></p>
+</li>
+<li>
+<p>Compress the plugin directory into a .zip archive</p>
+<p><code>zip -r wp2static.zip wp2static</code></p>
+</li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p><strong>Same steps are required</strong> for each sub-plugin which you will need for automating deployments to differant hosting platforms such as Amazon S3 or GitHub.</p>
+<ul>
+<li>
+<p>Sub-plugins should be installed manually as separate plugins on WordPress.</p>
+</li>
+<li>
+<p>Sub-plugins will show under Add-Ons section in WP2Static settings and needs to be enabled and configured.</p>
+</li>
+</ul>
+
+
+</div>
+
+<hr>
+<h3 id="wp2static-settings-and-configuration">WP2Static settings and configuration</h3>
+<p><img src="../../images/wp2static/2.png" alt="">Select which content types should be included in the mirror, and the deployment URL</p>
+<p><img src="../../images/wp2static/3.png" alt="">After installing any deployment Add-On it should be displayed here</p>
+<p><img src="../../images/wp2static/4.png" alt="">Example for Amazon S3 deployment Add-On options</p>
+<p><img src="../../images/wp2static/5.png" alt="">Here you will find useful diagnostic information about your installation and it&rsquo;s compatibility with the plugin requirements</p>
+<h2 id="simply-statichttpswordpressorgpluginssimply-static"><a href="https://wordpress.org/plugins/simply-static/">Simply static</a></h2>
+<p><img src="../../images/simplystatic/1.png" alt="">Simply Static options</p>
+<p><strong>Simply Static</strong> is a WordPress Plugin with similar functionality to WP2Static. However, it comes with fewer features and might not fit the needs of a big and/or very frequently updated website, as for example, it doesn’t support incremental builds for the static mirror, which means it needs to go through the whole process every time a build is triggered.</p>
+<p>Furthermore, Simply Static doesn’t support automatic builds triggering with every new post, so a new build can only be triggered manually, which makes this plugin more fit for small blogs or rarely updated websites.</p>
+<h3 id="simply-static-settings-and-configuration">Simply Static settings and configuration</h3>
+<p><img src="../../images/simplystatic/2.png" alt="">Simply Static options</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <ul>
+<li>
+<p>You can set the <code>Delivery Method</code> to <code>Local Directory</code> to have the generated static files stored on the same server/machine</p>
+</li>
+<li>
+<p>Make sure the web-server user have write privileges on the selected directory</p>
+</li>
+<li>
+<p>If you are planning on hosting your static website on an object storage platform such as S3, you should make sure to <code>Use relative URLs</code></p>
+</li>
+</ul>
+
+
+</div>
+
+<p><img src="../../images/simplystatic/3.png" alt="">Here you will find useful diagnostic information about your installation and it&rsquo;s compatibility with the plugin requirements</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-3a95e807cc1878209010f0ddfd4e89d3">4 - Static mirror hosting</h1>
+    <div class="lead">A guide on hosting the static mirror on various platforms.</div>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>In this section, we will go through some of the cloud service providers which offers the functionality of hosting and serving a static website.</p>
+
+</div>
+
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-5bc80f644e49026a7c52f3e47cbe2636">4.1 - Hosting on Amazon S3</h1>
+    <div class="lead">A guide on hosting a static website on Amazon S3.</div>
+	<p>Required expertise level : <strong>Intermediate</strong></p>
+<p>Platform : <strong>Any</strong></p>
+<hr>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <blockquote>
+<p><strong>Amazon S3</strong> (Amazon Simple Storage Service) is a data storage service and one of the Amazon Web Services (AWS)</p>
+</blockquote>
+
+
+</div>
+
+<p>S3 provides <strong>object storage</strong> service, which means that data is stored and addressed as objects, each object contains it&rsquo;s own data in addition to meta-data and a unique identifier.</p>
+<p><strong>Object storage</strong> is often used to store big amounts of data that doesn&rsquo;t need the features and structure of the file systems hierarchy.</p>
+<p>The <strong>main</strong> advantage of using S3 to host our static mirror is the ability to serve a fully functional <strong>&ldquo;static&rdquo;</strong> web pages directly from Amazon S3 URLs which consists of <code>[bucketname]+[endpoint]</code> or <code>[endpoint]/[bucketname]</code> ex: <code>mybucket.s3.us-east-2.amazonaws.com</code> or <code>https://s3.us-east-2.amazonaws.com/mybucket</code></p>
+<hr>
+<h2 id="configure-static-site-hosting-on-s3">Configure static site hosting on S3</h2>
+<h3 id="creating-s3-bucket-and-setting-configurations-for-static-site-hosting">Creating S3 bucket, and setting configurations for Static Site hosting</h3>
+<ul>
+<li><strong>First,</strong> you need to create an account on <strong><a href="https://aws.amazon.com/">Amazon Web Services (AWS)</a></strong>, and then, <strong>sign in</strong> to <strong><a href="https://signin.aws.amazon.com">AWS Console</a>.</strong></li>
+</ul>
+<p><img src="../../images/hosting-s3/1.png" alt="">AWS login page</p>
+<ul>
+<li>In <strong><a href="https://s3.console.aws.amazon.com">S3 management console</a></strong>, create a new bucket.</li>
+</ul>
+<p><img src="../../images/hosting-s3/2.png" alt="">S3 management console</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    You should pick a unique name for your bucket.
+
+</div>
+
+<p><img src="../../images/hosting-s3/3.png" alt="">S3 new bucket</p>
+<ul>
+<li>In <strong>Set permissions</strong> tab, uncheck <strong><input disabled="" type="checkbox"> Block <em>all</em> public access</strong>, and confirm that you want to enable public access to the bucket.</li>
+</ul>
+<p><img src="../../images/hosting-s3/4.png" alt="">Bucket permission tab</p>
+<ul>
+<li><strong>Finally,</strong> review your options and <strong>create</strong> the new bucket.</li>
+</ul>
+<p><img src="../../images/hosting-s3/5.png" alt="">Create bucket</p>
+<ul>
+<li>Your newly created bucket should appear in this form.</li>
+</ul>
+<p><img src="../../images/hosting-s3/6.png" alt=""></p>
+<ul>
+<li>Head to the new bucket&rsquo;s settings by clicking on the bucket name.</li>
+</ul>
+<p><img src="../../images/hosting-s3/7.png" alt="">S3 bucket settings</p>
+<ul>
+<li>In <strong>Properties</strong> tab click on <strong>Static website hosting</strong></li>
+</ul>
+<p><img src="../../images/hosting-s3/8.png" alt="">S3 bucket Properties</p>
+<ul>
+<li>After setting <strong>Use this bucket to host a website</strong>, you need to set the <strong>path</strong> for your <code>index.html</code>(main page), <strong>optionally</strong> you can set a custom <code>error.html</code> page, and click <strong>save</strong>.</li>
+</ul>
+<p><img src="../../images/hosting-s3/9.png" alt="">S3 Static website hosting</p>
+<p><img src="../../images/hosting-s3/10.png" alt="">S3 enabled Static website hosting</p>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    Now, we need to set the <strong>bucket permissions policy</strong> to allow public read for all objects.
+
+</div>
+
+<ul>
+<li>Head to <strong>Permissions</strong> tab, and click on <strong>Bucket Policy</strong>.</li>
+</ul>
+<p><img src="../../images/hosting-s3/11.png" alt="">S3 bucket policy</p>
+<ul>
+<li>The simplest form of static website hosting policy on S3 should look like this.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#ff79c6">&#34;Version&#34;</span>: <span style="color:#f1fa8c">&#34;2012-10-17&#34;</span>,
+    <span style="color:#ff79c6">&#34;Statement&#34;</span>: [
+        {
+            <span style="color:#ff79c6">&#34;Sid&#34;</span>: <span style="color:#f1fa8c">&#34;PublicReadGetObject&#34;</span>,
+            <span style="color:#ff79c6">&#34;Effect&#34;</span>: <span style="color:#f1fa8c">&#34;Allow&#34;</span>,
+            <span style="color:#ff79c6">&#34;Principal&#34;</span>: <span style="color:#f1fa8c">&#34;*&#34;</span>,
+            <span style="color:#ff79c6">&#34;Action&#34;</span>: [
+                <span style="color:#f1fa8c">&#34;s3:GetObject&#34;</span>
+            ],
+            <span style="color:#ff79c6">&#34;Resource&#34;</span>: [
+                <span style="color:#f1fa8c">&#34;arn:aws:s3:::example.com/*&#34;</span>
+            ]
+        }
+    ]
+}
+</code></pre></div>
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    In this example bucket policy <code>example.com</code> is the bucket name. To use this policy example you need to replace <code>example.com</code> with your newly created bucket name in the <code>&quot;Resources&quot;</code> key value.
+
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p>Now, we are ready to upload our <strong>static mirror</strong> to our S3 bucket.</p>
+
+</div>
+
+<h3 id="upload-using-the-web-user-interface">Upload using the Web user interface</h3>
+<ul>
+<li>You will find the upload option in the bucket settings page.</li>
+</ul>
+<p><img src="../../images/hosting-s3/12.png" alt="">S3 files upload</p>
+<ul>
+<li>Make sure <strong>grant public read access</strong> to the uploaded files in the permissions tab.</li>
+</ul>
+<p><img src="../../images/hosting-s3/13.png" alt="">S3 files upload permissions</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <strong>While</strong> you can easily upload your website files directly in the browser by clicking on <strong>Upload</strong> in the bucket settings page, it&rsquo;s preferred to use <strong>AWS CLI</strong>, specially if when you are uploading large websites.
+
+</div>
+
+<hr>
+<h4 id="install-aws-command-line-interfacehttpsdocsawsamazoncomclilatestuserguideinstall-cliv2html"><a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html">Install AWS Command Line Interface</a></h4>
+<ul>
+<li>
+<p><strong>MS Windows</strong></p>
+<ul>
+<li><strong><a href="https://awscli.amazonaws.com/AWSCLIV2.msi">Download</a></strong> and install the official installation file</li>
+<li>Install using <strong><a href="https://chocolatey.org/packages/awscli">Chocolatey</a></strong> windows package manager <code>choco install awscli</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Gnu/Linux</strong></p>
+<ul>
+<li><strong>Normally,</strong> you will fine AWS CLI package available in your distribution software repositories, in that case you can simply use your package manager to install it directly. ex: <code>apt install awscli</code></li>
+<li>If that&rsquo;s not the case, you can install it <strong>manually</strong> by executing these commands in your terminal in their respective order.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Linux x86 (64-bit)</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#f1fa8c">&#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34;</span> -o <span style="color:#f1fa8c">&#34;awscliv2.zip&#34;</span>
+unzip awscliv2.zip
+sudo ./aws/install
+</code></pre></div><p><strong>Linux ARM</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#f1fa8c">&#34;https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip&#34;</span> -o <span style="color:#f1fa8c">&#34;awscliv2.zip&#34;</span>
+unzip awscliv2.zip
+sudo ./aws/install
+</code></pre></div><ul>
+<li><strong>macOS</strong>
+<ul>
+<li>Install using <strong><a href="https://docs.brew.sh/Installation">Homebrew</a></strong> package manager. <code>brew install awscli</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="upload-using-aws-cli">Upload using AWS CLI</h3>
+<ul>
+<li>First, you should configure <code>awscli</code> and grant it access to your AWS account, for that you will need to get your <strong>AWS Access Key ID</strong> and <strong>Secret Access Key</strong>, you can create new Access Keys by going to <a href="https://console.aws.amazon.com/iam/home?#/security_credentials">AWS IAM (Identity and Access Management) Dashboard</a>.</li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Alert</h4>
+
+    Make sure to store the generated keys <strong>securely</strong> and don&rsquo;t share them over unsecured medium, the keys can be used to gain access to your AWS account data.
+
+</div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">awscli configure
+</code></pre></div><p><img src="../../images/hosting-s3/14.png" alt=""></p>
+<ul>
+<li>
+<p>ِMove to the website local directory.</p>
+</li>
+<li>
+<p>Upload your files by executing <strong><strong>replace [bucket-name] with the name of the bucket you created on S3</strong></strong></p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">aws s3 sync . s3://<span style="color:#ff79c6">[</span>bucket-name<span style="color:#ff79c6">]</span>/
+</code></pre></div>
+
+<div class="pageinfo pageinfo-primary">
+<p>Now you can test your new static mirror, you&rsquo;ll find the website URL in <strong>bucket settings &gt; Properties &gt; Static website hosting</strong></p>
+
+</div>
+
+<p><img src="../../images/hosting-s3/15.png" alt="Find the configured URL for your website here">Find the configured URL for your website here</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    Note that the provided URL here is <a href="http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com">http://mystaticwebsitetest.s3-website.us-east-2.amazonaws.com</a> can only be accessed on plain-text HTTP protocol
+
+</div>
+
+<p><img src="../../images/hosting-s3/16.png" alt=""></p>
+<p>Now, there are two different URL structures which allows accessing your static website on the secure protocol HTTPS</p>
+<ul>
+<li>Bucket name as a sub-domain  <code>https://[mystaticwebsitetest].s3.us-east-2.amazonaws.com</code></li>
+</ul>
+<p><img src="../../images/hosting-s3/17.png" alt=""></p>
+<ul>
+<li>Bucket name in the path <code>https://s3.us-east-2.amazonaws.com/[mystaticwebsitetest]</code></li>
+</ul>
+<p><img src="../../images/hosting-s3/18.png" alt=""></p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <p>While both methods may achieve same results, it&rsquo;s preferred <strong>in censorship circumvention context</strong> to include the bucket name in the path as in <strong>method number 2</strong>.</p>
+<p>AWS uses a <strong><a href="https://en.wikipedia.org/wiki/Wildcard_certificate">Wildcard SSL certificate</a></strong> which supports any sub-domain under <code>*.s3.us-east-2.amazonaws.com</code>, but defining the bucket name in the URL path would make it more difficult to detect traffic to this particular bucket/region/endpoint through <strong><a href="https://en.wikipedia.org/wiki/Deep_packet_inspection">Deep Packet Inspection(DPI)</a></strong></p>
+
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-ea6a8581204ef24376253271090c5a26">4.2 - Hosting on Google Cloud Storage</h1>
+    <div class="lead">A guide on hosting a static website on Google Cloud Storage.</div>
+	<p>Required expertise level : <strong>Intermediate</strong></p>
+<p>Platform : <strong>Any</strong></p>
+<hr>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <blockquote>
+<p><strong>Google Cloud Storage</strong> is <strong>object storage service</strong> similar to Amazon S3, and it provides the ability to serve static web pages as well.</p>
+</blockquote>
+
+
+</div>
+
+<p>The <strong>main</strong> advantage of using Google Cloud Storage to host our static mirror is the ability to serve a fully functional <strong>&ldquo;static&rdquo;</strong> web pages directly using Google Cloud Platform URLs which usually looks like this: <code>https://storage.googleapis.com/[bucketname]</code></p>
+<hr>
+<h2 id="configure-static-site-hosting-on-google-cloud-storage">Configure static site hosting on Google Cloud Storage</h2>
+<h3 id="creating-gcs-bucket-and-setting-permissions">Creating GCS bucket, and setting permissions</h3>
+<ul>
+<li><strong>First,</strong> you need to create an account on <strong><a href="https://cloud.google.com/">Google Cloud Platform</a></strong>, you will need to create a Google account for this.</li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <strong>While it&rsquo;s possible to use a pre-existing Google account for this step, it&rsquo;s better to create a new one just for this purpose</strong>.
+
+</div>
+
+<p><img src="../../images/hosting-gcs/1.png" alt=""></p>
+<ul>
+<li>Log in to <strong><a href="https://console.cloud.google.com/">Google Cloud Console</a></strong> using your newly created account.</li>
+</ul>
+<p><img src="../../images/hosting-gcs/2.png" alt=""></p>
+<ul>
+<li>Here, you&rsquo;ll need to open <strong>Storage</strong> from the side bar to access <a href="https://console.cloud.google.com/storage"><strong>Google Cloud Storage</strong></a> settings page.</li>
+</ul>
+<p><img src="../../images/hosting-gcs/3.png" alt="">Create a new bucket here</p>
+<p><img src="../../images/hosting-gcs/4.png" alt="">Buck name</p>
+<ul>
+<li>First step will be choosing your bucket name, <strong>bucket names should be unique and you&rsquo;ll use it to access your static website later</strong>.</li>
+</ul>
+<p><img src="../../images/hosting-gcs/5.png" alt="">Region settings</p>
+<ul>
+<li>Unless you know what you are doing, there is no need to change anything here.</li>
+</ul>
+<p><img src="../../images/hosting-gcs/6.png" alt="">Storage Class</p>
+<ul>
+<li>In most cases it should be <strong>Standard</strong>.</li>
+</ul>
+<p><img src="../../images/hosting-gcs/7.png" alt="">Access control</p>
+<ul>
+<li>We will be handling permissions and access control configurations later on, so we&rsquo;ll leave it unchanged for now.</li>
+</ul>
+<p><img src="../../images/hosting-gcs/8.png" alt="">Encryption</p>
+<ul>
+<li>As this bucket will be publicly available, we don&rsquo;t need to change anything with Encryption settings.</li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <strong>Now, we can go proceed to the new bucket settings page.</strong>
+
+</div>
+
+<p><img src="../../images/hosting-gcs/9.png" alt=""></p>
+<hr>
+<h3 id="upload-the-static-website">Upload the static website</h3>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <strong>While you can upload your static website using the web interface, it&rsquo;s preferred to do that using Google Cloud SDK, specially if you are planning on updating your mirror with new content frequently.</strong>
+
+</div>
+
+<h4 id="install-google-cloud-sdk-command-line-interfacehttpscloudgooglecomsdkinstall"><a href="https://cloud.google.com/sdk/install">Install Google Cloud SDK Command Line Interface</a></h4>
+<p><strong>Installing Google Cloud SDK</strong> is pretty straight forward process. Simply, follow the instructions related to your operating system in this <a href="https://cloud.google.com/sdk/install"><strong>guide</strong></a> and you will be good to go.</p>
+<h3 id="upload-using-google-cloud-sdk-cli">Upload using Google Cloud SDK CLI</h3>
+<ul>
+<li>After installing Google Cloud Sdk, you will need to authorize the local client to connect to you Google Cloud account, you can do that by opening your terminal and entering <code>gcloud init</code></li>
+</ul>
+<p><img src="../../images/hosting-gcs/10.png" alt=""></p>
+<ul>
+<li>After <strong>Successfully logging in to your account</strong>, you will be asked to select the project you want to use, if you didn&rsquo;t create a new project you can do that now using the local CLI.</li>
+</ul>
+<p><img src="../../images/hosting-gcs/11.png" alt=""></p>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <strong>Now, you can use your local CLI to upload the static mirror to the newly created bucket.</strong>
+
+</div>
+
+<ul>
+<li>Using your terminal, change directory to the static mirror files location, and enter <code>gsutil rsync -R [local-dir] gs://[bucketname]</code></li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <strong>Replace <code>[local-dir]</code> with the static mirror directory name and <code>[bucketname]</code> with the bucket name.</strong>
+
+</div>
+
+<p><img src="../../images/hosting-gcs/12.png" alt="">Uploading files</p>
+<ul>
+<li>Now if you go to your bucket settings page, you will notice the static mirror files are uploaded.</li>
+</ul>
+<p><img src="../../images/hosting-gcs/13.png" alt=""></p>
+<ul>
+<li>Final step will be <strong>setting public permissions</strong> to the files so the static mirror will be accessible to public internet, you can do that using the local CLI by entering <code>gsutil iam ch allUsers:objectViewer gs://[bucketname]</code></li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <strong>Replace <code>[bucketname]</code> with your bucket name.</strong>
+
+</div>
+
+<p>Now you can access your static mirror using this URL scheme <code>https://storage.googleapis.com/[bucketname]/index.html</code></p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <strong>Replace <code>[bucketname]</code> with your bucket name.</strong>
+
+</div>
+
+<p><img src="../../images/hosting-gcs/14.png" alt=""></p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Updating the static mirror</h4>
+
+    <strong>Updating your static mirror with new content</strong> will be as simple as going to the mirror&rsquo;s local directory on your terminal and executing <code>gsutil rsync -R [local-dir] gs://[bucketname]</code> every time.
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-57dae832f11c9e2186ac568884cdf639">4.3 - Hosting on GitHub</h1>
+    <div class="lead">A guide on hosting a static website on GitHub.</div>
+	<p>Required expertise level : <strong>Intermediate</strong></p>
+<p>Platform : <strong>Any</strong></p>
+<hr>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <blockquote>
+<p><strong>GitHub</strong> is <strong>a software development platform</strong> using Git version control system, and it provides the ability to serve static web pages through <a href="https://pages.github.com/"><strong>GitHub Pages service</strong></a>.</p>
+</blockquote>
+
+
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    GitHub provides an easy <a href="https://pages.github.com/"><strong>step-by-step guide</strong></a> on how to host a static website on their platform.
+The guide is available in English, so, in order to avoid redundancy we&rsquo;ll just refer to it here and add a translated version for every available language in our documentations.
+
+</div>
+
+<hr>
+<h2 id="install-git">Install Git</h2>
+<ul>
+<li>
+<p><strong>MS Windows</strong></p>
+<ul>
+<li><strong><a href="https://git-scm.com/download/win">Download</a></strong> and install the official installation file</li>
+<li>Install using <strong><a href="https://chocolatey.org/packages/git">Chocolatey</a></strong> windows package manager <code>choco install git</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Gnu/Linux</strong></p>
+<ul>
+<li><strong>Normally,</strong> you will fine Git package available in your distribution software repositories, in that case you can simply use your package manager to install it directly. ex: <code>apt install git</code></li>
+</ul>
+</li>
+<li>
+<p><strong>macOS</strong></p>
+<ul>
+<li>Install using <strong><a href="https://docs.brew.sh/Installation">Homebrew</a></strong> package manager. <code>brew install git</code></li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Matrix channel" aria-label="Matrix channel">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://matrix.to/#/!kxgkaasHfjVIgsDvlx:matrix.org?via=matrix.org">
+      <i class="fa fa-comment"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://twitter.com/IcarusProject0">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Mastodon" aria-label="Mastodon">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://mastodon.online/web/accounts/41742">
+      <i class="fab fa-mastodon"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/icaruslab">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Send us an email" aria-label="Send us an email">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="mailto:info@fightcensorship.tech">
+      <i class="fa fa-at"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GPG Key" aria-label="GPG Key">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0x8982de90bb823122bed49ba7b055b6a6adf40cda">
+      <i class="fa fa-key"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 GPLv3, All Rights Reserved</small>
+        
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.8.1/dist/mermaid.min.js" integrity="sha384-to2w0I1OqmbJ9J6yTnIX+KYU8grNpZoD1dKPLjgEJvMe5L5+/7qvuNa2sQo8WAWj" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../js/main.min.e258f257267bce2836aedb7e9ff0b95142b75e7a9db55a98b95ca084be7e7758.js" integrity="sha256-4ljyVyZ7zig2rtt&#43;n/C5UUK3XnqdtVqYuVyghL5&#43;d1g=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+  </body>
+</html>

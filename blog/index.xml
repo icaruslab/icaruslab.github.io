@@ -1,51 +1,100 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Icarus Project Blog</title><link>/blog.html</link><description>Recent content in Icarus Project Blog on Icarus Project</description><generator>Hugo -- gohugo.io</generator><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Introducing Icarus Project</title><link>/blog/2020/09/19/introducing-icarus-project.html</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>/blog/2020/09/19/introducing-icarus-project.html</guid><description>
-&lt;div class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-&lt;img class="card-img-top" src="../blog/2020/09/19/introducing-icarus-project/logo_hubd07df05cf1faee0af1a1547178b69a4_20304_600x300_fill_catmullrom_smart1_2.png" width="600" height="300">
-&lt;div class="card-body px-0 pt-2 pb-0">
-&lt;p class="card-text">
-&lt;/p>
-&lt;/div>
-&lt;/div>
-&lt;div class="alert alert-primary" role="alert">
-With the &lt;strong>first release&lt;/strong> of Icarus Project&amp;rsquo;s documentations, we are happy to announce the results of our research and documentation process.
-&lt;/div>
-&lt;h2 id="what-is-icarus-project">What is Icarus Project?&lt;/h2>
-&lt;p>&lt;strong>The project idea&lt;/strong> started as an individual initiative in 2017, trying to collect, test, document, and develop Internet censorship circumvention techniques as a response to the rise of Internet censorship at the time.&lt;/p>
-&lt;p>&lt;strong>In 2019&lt;/strong> the idea started to be realized through one year fellowship program supported by Open Tech Fund (OTF) Information Controls Fellowship program, and hosted by &lt;a href="https://www.stratosphereips.org/team">Stratosphere Lab&lt;/a> at the Czech Technical University in Prague (CVUT).&lt;/p>
-&lt;p>&lt;strong>We started by collecting, testing, and documenting as many ideas and methods as we can.&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>Now,&lt;/strong> we present these guides and documentations to serve as the core of this project. We are hoping that this initial release should it prove - useful and effective - will receive and integrate different contributions from the interested communities, towards developing and maintaining an accessible and user-friendly online repository of accumulative experience and research.&lt;/p>
-&lt;hr>
-&lt;h2 id="who-is-this-project-for">Who is this project for?&lt;/h2>
-&lt;p>Icarus Project and all its affiliated documentations, tools, and code are created and developed for the sole purpose of supporting Human rights organizations, independent new outlets, and individual publishers and activists struggling with Internet censorship in their environment.&lt;/p>
-&lt;h2 id="why-not-just-use-user-side-tools-such-as-tor-or-vpn">Why not just use user-side tools, such as Tor or VPN?&lt;/h2>
-&lt;blockquote>
-&lt;p>While we are willing to document and facilitate the usability of different user-side circumvention solutions such as Tor, and various VPN protocols, our main focus will be at publishers-side approaches.&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>There are many reasons behind this approach&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>User-side circumvention tools are often easy to be blocked or throttled&lt;/strong>.&lt;/li>
-&lt;/ul>
-&lt;p>With the exception of some circumvention tools with built-in obfuscation techniques such Shadowsocks, and new VPN protocols like Wireguard, most VPN services can be easy to identify and block.
-Beside the fact that implementing circumvention solutions in this scenario with protocols like OpenVPN such as SSL tunnelling can be very complicated and usually has its own consequences on the connection performance.&lt;/p>
-&lt;p>As for Tor, it will always be a very good and recommended solution, not just for censorship circumvention but also for user privacy related reasons, and enabling Tor bridges to overcome the network blockage is relatively easy and effective.&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Circumventing the block of user-side circumvention tools can be complicated process for non-technical users&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>As mentioned earlier, in a scenario where VPN services and/or Tor network is being effectively blocked or throttled, enabling and utilizing circumvention techniques for these services by the end user can be complicated especially for users with little or no technical experience.&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Publishers often lose big chunk of their non-technical audience&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>As a consequence of this situation, independent publishers in their struggle with Internet censorship often lose a considerable part of their audience due to the user’s inability to get around the censorship, in addition to that it also affects their ability to reach new audience.&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>In some environments, installing circumvention tools i.e. Tor, VPN could be incriminating and dangerous&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;p>One big concern would be the user&amp;rsquo;s physical security issue as in some oppressive environments, physical abduction of the user’s devices is a possibility and the very existence of such software on these devices could be incriminating and often gets utilized by the authorities as evidence against users.&lt;/p>
-&lt;h3 id="collateral-freedom">Collateral freedom!&lt;/h3>
-&lt;p>In the context of Internet censorship circumvention, &lt;a href="https://en.wikipedia.org/wiki/Collateral_freedom">Collateral freedom&lt;/a> concept can be described as increasing the economical, political, and technical costs of Internet censorship by using crucial and big cloud services providers, and utilizing modern web encryption protocols to ultimately force censors in a situation where they can&amp;rsquo;t block the content, without breaking or completely blocking access to crucial cloud services.&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="../docs/getting-started.html">Getting Started&lt;/a>: Get started with Icarus Project&lt;/li>
-&lt;/ul>
-&lt;div class="alert alert-warning" role="alert">
-&lt;h4 class="alert-heading">Note&lt;/h4>
-Feel free to reach out and let us know what do you think and how can we improve, &lt;a href="../community">checkout the community page&lt;/a>, also, checkout the &lt;a href="../docs/contribution-guidelines/">Contribution Guidelines&lt;/a> if you are interested!
-&lt;/div></description></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icarus Project – Icarus Project Blog</title>
+    <link>/blog.html</link>
+    <description>Recent content in Icarus Project Blog on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: Introducing Icarus Project</title>
+      <link>/blog/2020/09/19/introducing-icarus-project.html</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/09/19/introducing-icarus-project.html</guid>
+      <description>
+        
+        
+        
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 610px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;../blog/2020/09/19/introducing-icarus-project/logo_hubd07df05cf1faee0af1a1547178b69a4_20304_600x300_fill_catmullrom_smart1_2.png&#34; width=&#34;600&#34; height=&#34;300&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+
+    With the &lt;strong&gt;first release&lt;/strong&gt; of Icarus Project&amp;rsquo;s documentations, we are happy to announce the results of our research and documentation process.
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;what-is-icarus-project&#34;&gt;What is Icarus Project?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The project idea&lt;/strong&gt; started as an individual initiative in 2017, trying to collect, test, document, and develop Internet censorship circumvention techniques as a response to the rise of Internet censorship at the time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In 2019&lt;/strong&gt; the idea started to be realized through one year fellowship program supported by Open Tech Fund (OTF) Information Controls Fellowship program, and hosted by &lt;a href=&#34;https://www.stratosphereips.org/team&#34;&gt;Stratosphere Lab&lt;/a&gt; at the Czech Technical University in Prague (CVUT).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We started by collecting, testing, and documenting as many ideas and methods as we can.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Now,&lt;/strong&gt; we present these guides and documentations to serve as the core of this project. We are hoping that this initial release should it prove - useful and effective - will receive and integrate different contributions from the interested communities, towards developing and maintaining an accessible and user-friendly online repository of accumulative experience and research.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;who-is-this-project-for&#34;&gt;Who is this project for?&lt;/h2&gt;
+&lt;p&gt;Icarus Project and all its affiliated documentations, tools, and code are created and developed for the sole purpose of supporting Human rights organizations, independent new outlets, and individual publishers and activists struggling with Internet censorship in their environment.&lt;/p&gt;
+&lt;h2 id=&#34;why-not-just-use-user-side-tools-such-as-tor-or-vpn&#34;&gt;Why not just use user-side tools, such as Tor or VPN?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While we are willing to document and facilitate the usability of different user-side circumvention solutions such as Tor, and various VPN protocols, our main focus will be at publishers-side approaches.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;There are many reasons behind this approach&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User-side circumvention tools are often easy to be blocked or throttled&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With the exception of some circumvention tools with built-in obfuscation techniques such Shadowsocks, and new VPN protocols like Wireguard, most VPN services can be easy to identify and block.
+Beside the fact that implementing circumvention solutions in this scenario with protocols like OpenVPN such as SSL tunnelling can be very complicated and usually has its own consequences on the connection performance.&lt;/p&gt;
+&lt;p&gt;As for Tor, it will always be a very good and recommended solution, not just for censorship circumvention but also for user privacy related reasons, and enabling Tor bridges to overcome the network blockage is relatively easy and effective.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Circumventing the block of user-side circumvention tools can be complicated process for non-technical users&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As mentioned earlier, in a scenario where VPN services and/or Tor network is being effectively blocked or throttled, enabling and utilizing circumvention techniques for these services by the end user can be complicated especially for users with little or no technical experience.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Publishers often lose big chunk of their non-technical audience&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As a consequence of this situation, independent publishers in their struggle with Internet censorship often lose a considerable part of their audience due to the user’s inability to get around the censorship, in addition to that it also affects their ability to reach new audience.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;In some environments, installing circumvention tools i.e. Tor, VPN could be incriminating and dangerous&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One big concern would be the user&amp;rsquo;s physical security issue as in some oppressive environments, physical abduction of the user’s devices is a possibility and the very existence of such software on these devices could be incriminating and often gets utilized by the authorities as evidence against users.&lt;/p&gt;
+&lt;h3 id=&#34;collateral-freedom&#34;&gt;Collateral freedom!&lt;/h3&gt;
+&lt;p&gt;In the context of Internet censorship circumvention, &lt;a href=&#34;https://en.wikipedia.org/wiki/Collateral_freedom&#34;&gt;Collateral freedom&lt;/a&gt; concept can be described as increasing the economical, political, and technical costs of Internet censorship by using crucial and big cloud services providers, and utilizing modern web encryption protocols to ultimately force censors in a situation where they can&amp;rsquo;t block the content, without breaking or completely blocking access to crucial cloud services.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../docs/getting-started.html&#34;&gt;Getting Started&lt;/a&gt;: Get started with Icarus Project&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    Feel free to reach out and let us know what do you think and how can we improve, &lt;a href=&#34;../community&#34;&gt;checkout the community page&lt;/a&gt;, also, checkout the &lt;a href=&#34;../docs/contribution-guidelines/&#34;&gt;Contribution Guidelines&lt;/a&gt; if you are interested!
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

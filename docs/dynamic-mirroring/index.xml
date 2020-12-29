@@ -1,56 +1,95 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Icarus Project – Dynamic Mirroring</title><link>/docs/dynamic-mirroring.html</link><description>Recent content in Dynamic Mirroring on Icarus Project</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="/docs/dynamic-mirroring/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Decoy</title><link>/docs/dynamic-mirroring/decoy.html</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/docs/dynamic-mirroring/decoy.html</guid><description>
-&lt;p>Required expertise level : &lt;strong>Intermediate / Advanced&lt;/strong>&lt;/p>
-&lt;p>Platform : &lt;strong>Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong>&lt;/p>
-&lt;hr>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Decoy is a reverse-proxy written in python and ready to deploy on Google App Engine platform. It can be configured to serve a specific website through App Engine.&lt;/p>
-&lt;/div>
-&lt;p>The main advantage Decoy provides is the ability to serve the configured website through &lt;a href="https://cloud.google.com/appengine">GAE platform - Google App Engine&lt;/a>, using a sub-domain under &lt;code>*.appspot.com&lt;/code>.&lt;/p>
-&lt;p>&lt;strong>Decoy will proxy all URLs which contains the configured domain in &lt;code>config.py&lt;/code> file automatically, any other URL will be opened normally without proxy.&lt;/strong>&lt;/p>
-&lt;h2 id="usage">Usage&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>Clone the project&lt;/p>
-&lt;p>&lt;code>git clone https://github.com/icaruslab/decoy.git&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Create an account on &lt;a href="https://cloud.google.com/">Google Cloud Platform&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>After accessing &lt;a href="https://console.cloud.google.com/">Google Cloud Console&lt;/a> create a new project&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="../../images/decoy/1.png" alt="">New Project&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-&lt;h4 class="alert-heading">Note&lt;/h4>
-The project name should be unique, if that&amp;rsquo;s the case the project ID will be the same, other wise it will be assigned a random name. The project ID will be used to access your mirror, final URL will be &lt;code>[ProjectID.appspot.com]&lt;/code>
-&lt;/div>
-&lt;ol start="4">
-&lt;li>Install &lt;a href="https://cloud.google.com/sdk/install">Google Cloud SDK&lt;/a>&lt;/li>
-&lt;li>Replace the &lt;code>url&lt;/code> variable in &lt;code>config.py&lt;/code> with your website domain name&lt;/li>
-&lt;li>Use your terminal to go the project&amp;rsquo;s directory&lt;/li>
-&lt;li>Run &lt;code>gcloud init&lt;/code> to configure GCloud SDK and login to your account.&lt;/li>
-&lt;li>Select the project you created earlier using &lt;code>gcloud config set project [ProjectID]&lt;/code>&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="../../images/decoy/2.png" alt="">Set project ID&lt;/p>
-&lt;ol start="9">
-&lt;li>Run &lt;code>gcloud app deploy&lt;/code> and follow the instructions to deploy the app&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="../../images/decoy/3.png" alt="">Deploy&lt;/p>
-&lt;ol start="10">
-&lt;li>Finally you can confirm your mirror is running by visiting &lt;code>[youprojectname].appspot.com&lt;/code>&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="../../images/decoy/4.png" alt="">&lt;/p>
-&lt;h2 id="why-google-app-engine">Why Google App Engine?&lt;/h2>
-&lt;p>&lt;strong>The main advantage&lt;/strong> of having the mirror traffic routed through GAE, is the ability to use a sub-domain under &lt;code>appspot.com&lt;/code> to access the mirror.&lt;/p>
-&lt;p>As the same domain is associated with many other &lt;strong>Google cloud services&lt;/strong> it&amp;rsquo;d be difficult to block it entirely.&lt;/p>
-&lt;p>However, &lt;strong>it&amp;rsquo;s possible to block the sub-domain&lt;/strong> without having to block the entire domain name, in which case you&amp;rsquo;ll be able to get a new mirror up and running in less than two minutes by simply creating a new project with a different name and ID and repeating steps &lt;strong>8:10&lt;/strong>&lt;/p>
-&lt;h2 id="attribution">Attribution&lt;/h2>
-&lt;p>This project was inspired and built on &lt;a href="https://github.com/bslatkin/mirrorrr">mirrorrr&lt;/a> project.&lt;/p>
-&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
-&lt;p>This project and all Icarus Project’s related code and guides are developed for &lt;strong>the sole purpose of Internet censorship circumvention&lt;/strong>, more specifically in human rights and independent media context.&lt;/p>
-&lt;p>&lt;strong>Icarus Project is not responsible for any abuse and/or malicious use of any of its published research results.&lt;/strong>&lt;/p>
-&lt;h2 id="todo">Todo&lt;/h2>
-&lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> Rewrite in Python3&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icarus Project – Dynamic Mirroring</title>
+    <link>/docs/dynamic-mirroring.html</link>
+    <description>Recent content in Dynamic Mirroring on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/docs/dynamic-mirroring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Decoy</title>
+      <link>/docs/dynamic-mirroring/decoy.html</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/dynamic-mirroring/decoy.html</guid>
+      <description>
+        
+        
+        &lt;p&gt;Required expertise level : &lt;strong&gt;Intermediate / Advanced&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Decoy is a reverse-proxy written in python and ready to deploy on Google App Engine platform. It can be configured to serve a specific website through App Engine.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;The main advantage Decoy provides is the ability to serve the configured website through &lt;a href=&#34;https://cloud.google.com/appengine&#34;&gt;GAE platform - Google App Engine&lt;/a&gt;, using a sub-domain under &lt;code&gt;*.appspot.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Decoy will proxy all URLs which contains the configured domain in &lt;code&gt;config.py&lt;/code&gt; file automatically, any other URL will be opened normally without proxy.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the project&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/icaruslab/decoy.git&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create an account on &lt;a href=&#34;https://cloud.google.com/&#34;&gt;Google Cloud Platform&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After accessing &lt;a href=&#34;https://console.cloud.google.com/&#34;&gt;Google Cloud Console&lt;/a&gt; create a new project&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/decoy/1.png&#34; alt=&#34;&#34;&gt;New Project&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    The project name should be unique, if that&amp;rsquo;s the case the project ID will be the same, other wise it will be assigned a random name. The project ID will be used to access your mirror, final URL will be &lt;code&gt;[ProjectID.appspot.com]&lt;/code&gt;
+
+&lt;/div&gt;
+
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://cloud.google.com/sdk/install&#34;&gt;Google Cloud SDK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Replace the &lt;code&gt;url&lt;/code&gt; variable in &lt;code&gt;config.py&lt;/code&gt; with your website domain name&lt;/li&gt;
+&lt;li&gt;Use your terminal to go the project&amp;rsquo;s directory&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;gcloud init&lt;/code&gt; to configure GCloud SDK and login to your account.&lt;/li&gt;
+&lt;li&gt;Select the project you created earlier using &lt;code&gt;gcloud config set project [ProjectID]&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/decoy/2.png&#34; alt=&#34;&#34;&gt;Set project ID&lt;/p&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Run &lt;code&gt;gcloud app deploy&lt;/code&gt; and follow the instructions to deploy the app&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/decoy/3.png&#34; alt=&#34;&#34;&gt;Deploy&lt;/p&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;Finally you can confirm your mirror is running by visiting &lt;code&gt;[youprojectname].appspot.com&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/decoy/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;why-google-app-engine&#34;&gt;Why Google App Engine?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The main advantage&lt;/strong&gt; of having the mirror traffic routed through GAE, is the ability to use a sub-domain under &lt;code&gt;appspot.com&lt;/code&gt; to access the mirror.&lt;/p&gt;
+&lt;p&gt;As the same domain is associated with many other &lt;strong&gt;Google cloud services&lt;/strong&gt; it&amp;rsquo;d be difficult to block it entirely.&lt;/p&gt;
+&lt;p&gt;However, &lt;strong&gt;it&amp;rsquo;s possible to block the sub-domain&lt;/strong&gt; without having to block the entire domain name, in which case you&amp;rsquo;ll be able to get a new mirror up and running in less than two minutes by simply creating a new project with a different name and ID and repeating steps &lt;strong&gt;8:10&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;attribution&#34;&gt;Attribution&lt;/h2&gt;
+&lt;p&gt;This project was inspired and built on &lt;a href=&#34;https://github.com/bslatkin/mirrorrr&#34;&gt;mirrorrr&lt;/a&gt; project.&lt;/p&gt;
+&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;
+&lt;p&gt;This project and all Icarus Project’s related code and guides are developed for &lt;strong&gt;the sole purpose of Internet censorship circumvention&lt;/strong&gt;, more specifically in human rights and independent media context.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Icarus Project is not responsible for any abuse and/or malicious use of any of its published research results.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;todo&#34;&gt;Todo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Rewrite in Python3&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
