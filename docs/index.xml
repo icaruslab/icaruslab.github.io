@@ -414,7 +414,7 @@ in this scenario, the browser gets to do most of job and IPFS just delivers raw 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;After following &lt;a href=&#34;https://docs.ipfs.io/how-to/command-line-quick-start/#initialize-the-repository&#34;&gt;IPFS guides&lt;/a&gt; on how to get the application on your machine running, confirm&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;❯ ipfs --version
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;❯ ipfs --version
 ipfs version 0.6.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Using your termianl, go to your static mirror directory.&lt;/li&gt;
@@ -563,7 +563,7 @@ ipfs version 0.6.0
 &lt;blockquote&gt;
 &lt;p&gt;Run the following commands in your terminal in their respective order&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt install software-properties-common
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt install software-properties-common
 sudo add-apt-repository ppa:nginx/stable
 sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install nginx -y
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/onion-services/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -583,24 +583,24 @@ sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;
 &lt;blockquote&gt;
 &lt;p&gt;Add in the following lines in &lt;code&gt;/etc/apt/sources.list&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;deb https://deb.torproject.org/torproject.org stretch main
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;deb https://deb.torproject.org/torproject.org stretch main
 deb-src https://deb.torproject.org/torproject.org stretch main
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Run the following commands in your terminal in their respective order&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt install tor deb.torproject.org-keyring
 sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install tor
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Run the following commands to start Tor daemon&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start tor
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start tor
 sudo systemctl &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;enable&lt;/span&gt; tor
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Confirm Tor is running without issues&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl status tor
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl status tor
 tor --version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/onion-services/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -616,12 +616,12 @@ tor --version
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Before:&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;72&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#HiddenServiceDir /var/lib/tor/hidden_service/&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;72&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#HiddenServiceDir /var/lib/tor/hidden_service/&lt;/span&gt;
  &lt;span style=&#34;color:#bd93f9&#34;&gt;73&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#HiddenServicePort 80 127.0.0.1:80&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;After&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;HiddenServiceDir /var/lib/tor/myfirstonion/
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;HiddenServiceDir /var/lib/tor/myfirstonion/
 HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.0.0.1:80
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Restart Tor service&lt;/p&gt;
@@ -630,7 +630,7 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 &lt;blockquote&gt;
 &lt;p&gt;Confirm your Onion Service related files were generated at &lt;code&gt;/var/lib/tor/myfirstonion/&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cd&lt;/span&gt; /var/lib/tor/myfirstonion/ &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ls
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cd&lt;/span&gt; /var/lib/tor/myfirstonion/ &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ls
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should find two files generated at this directory&lt;/p&gt;
 &lt;p&gt;1- &lt;code&gt;hostname&lt;/code&gt; &lt;strong&gt;contains your Onion Service address&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2- &lt;code&gt;private_key&lt;/code&gt; &lt;strong&gt;Private key used for encryption. Don&amp;rsquo;t edit or share this file under any circumstances&lt;/strong&gt;&lt;/p&gt;
@@ -640,7 +640,7 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;It&amp;rsquo;s very important to read Nginx documentations and follow the &lt;a href=&#34;https://riseup.net/en/security/network-security/tor/onionservices-best-practices&#34;&gt;best practices&lt;/a&gt; when configuring your Onion Service&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;But essentially, you can get your Onion Service up &amp;amp; running by adding this simple config file to your &lt;code&gt;/etc/nginx/sites-enabled&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;server&lt;/span&gt; {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;server&lt;/span&gt; {
     &lt;span style=&#34;color:#ff79c6&#34;&gt;listen&lt;/span&gt; 127.0.0.1:&lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt;;
     &lt;span style=&#34;color:#ff79c6&#34;&gt;server_name&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;[onion-address]&lt;/span&gt;; &lt;span style=&#34;color:#6272a4&#34;&gt;#replace with your generated onion address, you can get that by executing : `cat /var/lib/[yourservicename]/hostname`
 &lt;/span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;/var/www/html/mystaticmirror&lt;/span&gt;; &lt;span style=&#34;color:#6272a4&#34;&gt;#replace with your mirror&amp;#39;s files directory, and make sure the webserver user has access permissions to it.
@@ -675,7 +675,7 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 &lt;ul&gt;
 &lt;li&gt;Apache&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;VirtualHost&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;*:443&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;VirtualHost&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;*:443&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;ServerName&lt;/span&gt; &amp;lt;your-website.tld&amp;gt;
        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;DocumentRoot&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;/path/to/htdocs&lt;/span&gt;
 
@@ -688,9 +688,9 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Nginx&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;add_header&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;Onion-Location&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;http://&amp;lt;your-onion-address&amp;gt;.onion&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$request_uri&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;add_header&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;Onion-Location&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;http://&amp;lt;your-onion-address&amp;gt;.onion&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$request_uri&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;HTML &lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;onion-location&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;http://&amp;lt;your-onion-service-address&amp;gt;.onion&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;onion-location&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;http://&amp;lt;your-onion-service-address&amp;gt;.onion&amp;#34;&lt;/span&gt; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -717,6 +717,24 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
         &lt;p&gt;Required expertise level : &lt;strong&gt;Advanced&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Any&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;p&gt;Encrypted Server Name Indication (ESNI), Now, &lt;a href=&#34;https://www.ietf.org/archive/id/draft-ietf-tls-esni-10.txt&#34;&gt;Encrypted Client Hello (ECH)&lt;/a&gt;, is still undergoing a lot of changes and developments, and will probably see more changes before it reaches a production ready state, it&amp;rsquo;s important to note that it&amp;rsquo;s &lt;strong&gt;not yet production ready.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The purpose of this guide was to introduce the new technology and a proof of concept &amp;ldquo;based on our testing&amp;rdquo; of the potential benefit of ESNI in the context of censorship circumvention. &lt;strong&gt;This guide is no longer valid and will be removed in the next update&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Both Cloudflare and Mozilla announced they are working on a compatible server and client implementation of the latest draft of ECH, we will keep following the updates and will test any new implementations as it&amp;rsquo;s being introduced, and present our findings in the future.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ietf.org/archive/id/draft-ietf-tls-esni-10.txt&#34;&gt;TLS Encrypted Client Hello (draft-ietf-tls-esni-10) - IETF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.mozilla.org/security/2021/01/07/encrypted-client-hello-the-future-of-esni-in-firefox/&#34;&gt;Encrypted Client Hello: the future of ESNI in Firefox - Mozilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.cloudflare.com/encrypted-client-hello/&#34;&gt;Good-bye ESNI, hello ECH! - CloudFlare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/div&gt;
+
 &lt;h3 id=&#34;what-is-server-name-indication-sni&#34;&gt;What is Server Name Indication (SNI)?&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Server Name Indication (SNI) is an extension to the Transport Layer Security (TLS) network encrypted protocol.&lt;/strong&gt;&lt;/p&gt;
 
@@ -816,7 +834,7 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 
     &lt;p&gt;by adding visiting this address in your browser &lt;code&gt;https://[yourdomain.com]/cdn-cgi/trace&lt;/code&gt; i.e. &lt;code&gt;https://www.cloudflare.com/cdn-cgi/trace&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;You should get these &lt;strong&gt;values:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;tls=TLSv1.3
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;tls=TLSv1.3
 sni=encrypted
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -1037,7 +1055,7 @@ While there are different ways of performing this task using Wget, you may get d
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;pulling-the-website-to-your-local-machine&#34;&gt;Pulling the website to your local machine&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;httrack --mirror --robots&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt; --stay-on-same-domain --user-agent &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0&amp;#34;&lt;/span&gt;  --keep-links&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt; --path example.org --quiet https://example.org/ -* +example.org/*
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;httrack --mirror --robots&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt; --stay-on-same-domain --user-agent &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0&amp;#34;&lt;/span&gt;  --keep-links&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt; --path example.org --quiet https://example.org/ -* +example.org/*
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;parameters-and-options-description&#34;&gt;Parameters and options description&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;--mirror&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Mirror websites&lt;/p&gt;
@@ -1292,7 +1310,7 @@ While there are different ways of performing this task using Wget, you may get d
 &lt;ul&gt;
 &lt;li&gt;The simplest form of static website hosting policy on S3 should look like this.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
     &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Version&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;2012-10-17&amp;#34;&lt;/span&gt;,
     &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Statement&amp;#34;&lt;/span&gt;: [
         {
@@ -1361,11 +1379,11 @@ While there are different ways of performing this task using Wget, you may get d
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Linux x86 (64-bit)&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&amp;#34;&lt;/span&gt; -o &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;awscliv2.zip&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&amp;#34;&lt;/span&gt; -o &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;awscliv2.zip&amp;#34;&lt;/span&gt;
 unzip awscliv2.zip
 sudo ./aws/install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Linux ARM&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip&amp;#34;&lt;/span&gt; -o &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;awscliv2.zip&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip&amp;#34;&lt;/span&gt; -o &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;awscliv2.zip&amp;#34;&lt;/span&gt;
 unzip awscliv2.zip
 sudo ./aws/install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
@@ -1389,7 +1407,7 @@ sudo ./aws/install
 
 &lt;/div&gt;
 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;awscli configure
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;awscli configure
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../images/hosting-s3/14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1399,7 +1417,7 @@ sudo ./aws/install
 &lt;p&gt;Upload your files by executing &lt;strong&gt;&lt;strong&gt;replace [bucket-name] with the name of the bucket you created on S3&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;aws s3 sync . s3://&lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;bucket-name&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;/
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;aws s3 sync . s3://&lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;bucket-name&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;

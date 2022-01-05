@@ -296,7 +296,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;Run the following commands in your terminal in their respective order&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt install software-properties-common
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt install software-properties-common
 sudo add-apt-repository ppa:nginx/stable
 sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install nginx -y
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -316,24 +316,24 @@ sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;
 &lt;blockquote&gt;
 &lt;p&gt;Add in the following lines in &lt;code&gt;/etc/apt/sources.list&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;deb https://deb.torproject.org/torproject.org stretch main
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;deb https://deb.torproject.org/torproject.org stretch main
 deb-src https://deb.torproject.org/torproject.org stretch main
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Run the following commands in your terminal in their respective order&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt install tor deb.torproject.org-keyring
 sudo apt update &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install tor
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Run the following commands to start Tor daemon&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start tor
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start tor
 sudo systemctl &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;enable&lt;/span&gt; tor
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Confirm Tor is running without issues&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl status tor
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl status tor
 tor --version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;../../../images/onion-services/7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -349,12 +349,12 @@ tor --version
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Before:&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;72&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#HiddenServiceDir /var/lib/tor/hidden_service/&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;72&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#HiddenServiceDir /var/lib/tor/hidden_service/&lt;/span&gt;
  &lt;span style=&#34;color:#bd93f9&#34;&gt;73&lt;/span&gt; &lt;span style=&#34;color:#6272a4&#34;&gt;#HiddenServicePort 80 127.0.0.1:80&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;After&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;HiddenServiceDir /var/lib/tor/myfirstonion/
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;HiddenServiceDir /var/lib/tor/myfirstonion/
 HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.0.0.1:80
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Restart Tor service&lt;/p&gt;
@@ -363,7 +363,7 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 &lt;blockquote&gt;
 &lt;p&gt;Confirm your Onion Service related files were generated at &lt;code&gt;/var/lib/tor/myfirstonion/&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cd&lt;/span&gt; /var/lib/tor/myfirstonion/ &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ls
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cd&lt;/span&gt; /var/lib/tor/myfirstonion/ &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ls
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should find two files generated at this directory&lt;/p&gt;
 &lt;p&gt;1- &lt;code&gt;hostname&lt;/code&gt; &lt;strong&gt;contains your Onion Service address&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2- &lt;code&gt;private_key&lt;/code&gt; &lt;strong&gt;Private key used for encryption. Don&amp;rsquo;t edit or share this file under any circumstances&lt;/strong&gt;&lt;/p&gt;
@@ -373,7 +373,7 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;It&amp;rsquo;s very important to read Nginx documentations and follow the &lt;a href=&#34;https://riseup.net/en/security/network-security/tor/onionservices-best-practices&#34;&gt;best practices&lt;/a&gt; when configuring your Onion Service&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;But essentially, you can get your Onion Service up &amp;amp; running by adding this simple config file to your &lt;code&gt;/etc/nginx/sites-enabled&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;server&lt;/span&gt; {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;server&lt;/span&gt; {
     &lt;span style=&#34;color:#ff79c6&#34;&gt;listen&lt;/span&gt; 127.0.0.1:&lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt;;
     &lt;span style=&#34;color:#ff79c6&#34;&gt;server_name&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;[onion-address]&lt;/span&gt;; &lt;span style=&#34;color:#6272a4&#34;&gt;#replace with your generated onion address, you can get that by executing : `cat /var/lib/[yourservicename]/hostname`
 &lt;/span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;/var/www/html/mystaticmirror&lt;/span&gt;; &lt;span style=&#34;color:#6272a4&#34;&gt;#replace with your mirror&amp;#39;s files directory, and make sure the webserver user has access permissions to it.
@@ -408,7 +408,7 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 &lt;ul&gt;
 &lt;li&gt;Apache&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;VirtualHost&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;*:443&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;VirtualHost&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;*:443&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;ServerName&lt;/span&gt; &amp;lt;your-website.tld&amp;gt;
        &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;DocumentRoot&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;/path/to/htdocs&lt;/span&gt;
 
@@ -421,9 +421,9 @@ HiddenServicePort &lt;span style=&#34;color:#bd93f9&#34;&gt;80&lt;/span&gt; 127.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Nginx&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;add_header&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;Onion-Location&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;http://&amp;lt;your-onion-address&amp;gt;.onion&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$request_uri&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;add_header&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;Onion-Location&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;http://&amp;lt;your-onion-address&amp;gt;.onion&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$request_uri&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;HTML &lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;onion-location&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;http://&amp;lt;your-onion-service-address&amp;gt;.onion&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;onion-location&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;http://&amp;lt;your-onion-service-address&amp;gt;.onion&amp;#34;&lt;/span&gt; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;

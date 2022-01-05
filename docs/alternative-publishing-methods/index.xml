@@ -110,7 +110,7 @@ in this scenario, the browser gets to do most of job and IPFS just delivers raw 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;After following &lt;a href=&#34;https://docs.ipfs.io/how-to/command-line-quick-start/#initialize-the-repository&#34;&gt;IPFS guides&lt;/a&gt; on how to get the application on your machine running, confirm&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;❯ ipfs --version
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;❯ ipfs --version
 ipfs version 0.6.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Using your termianl, go to your static mirror directory.&lt;/li&gt;
@@ -236,6 +236,24 @@ ipfs version 0.6.0
         &lt;p&gt;Required expertise level : &lt;strong&gt;Advanced&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Any&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    &lt;p&gt;Encrypted Server Name Indication (ESNI), Now, &lt;a href=&#34;https://www.ietf.org/archive/id/draft-ietf-tls-esni-10.txt&#34;&gt;Encrypted Client Hello (ECH)&lt;/a&gt;, is still undergoing a lot of changes and developments, and will probably see more changes before it reaches a production ready state, it&amp;rsquo;s important to note that it&amp;rsquo;s &lt;strong&gt;not yet production ready.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The purpose of this guide was to introduce the new technology and a proof of concept &amp;ldquo;based on our testing&amp;rdquo; of the potential benefit of ESNI in the context of censorship circumvention. &lt;strong&gt;This guide is no longer valid and will be removed in the next update&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Both Cloudflare and Mozilla announced they are working on a compatible server and client implementation of the latest draft of ECH, we will keep following the updates and will test any new implementations as it&amp;rsquo;s being introduced, and present our findings in the future.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ietf.org/archive/id/draft-ietf-tls-esni-10.txt&#34;&gt;TLS Encrypted Client Hello (draft-ietf-tls-esni-10) - IETF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.mozilla.org/security/2021/01/07/encrypted-client-hello-the-future-of-esni-in-firefox/&#34;&gt;Encrypted Client Hello: the future of ESNI in Firefox - Mozilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.cloudflare.com/encrypted-client-hello/&#34;&gt;Good-bye ESNI, hello ECH! - CloudFlare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/div&gt;
+
 &lt;h3 id=&#34;what-is-server-name-indication-sni&#34;&gt;What is Server Name Indication (SNI)?&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Server Name Indication (SNI) is an extension to the Transport Layer Security (TLS) network encrypted protocol.&lt;/strong&gt;&lt;/p&gt;
 
@@ -335,7 +353,7 @@ ipfs version 0.6.0
 
     &lt;p&gt;by adding visiting this address in your browser &lt;code&gt;https://[yourdomain.com]/cdn-cgi/trace&lt;/code&gt; i.e. &lt;code&gt;https://www.cloudflare.com/cdn-cgi/trace&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;You should get these &lt;strong&gt;values:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;tls=TLSv1.3
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;tls=TLSv1.3
 sni=encrypted
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
