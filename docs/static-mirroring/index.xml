@@ -24,6 +24,7 @@
         
         &lt;p&gt;Required expertise level : &lt;strong&gt;Beginner / Intermediate&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;last revision : January 2022&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;
 
@@ -137,6 +138,7 @@ While there are different ways of performing this task using Wget, you may get d
         
         &lt;p&gt;Required expertise level : &lt;strong&gt;Beginner / Intermediate&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;last revision : January 2022&lt;/p&gt;
 &lt;hr&gt;
 
 
@@ -288,6 +290,7 @@ While there are different ways of performing this task using Wget, you may get d
         
         &lt;p&gt;Required expertise level : &lt;strong&gt;Beginner / Intermediate&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | BSD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;last revision : January 2022&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;wp2statichttpsgithubcomwp2static&#34;&gt;&lt;a href=&#34;https://github.com/WP2Static&#34;&gt;WP2Static&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;../../images/wp2static/1.png&#34; alt=&#34;&#34;&gt;WP2Static options&lt;/p&gt;
@@ -311,15 +314,15 @@ While there are different ways of performing this task using Wget, you may get d
 &lt;p&gt;Install &lt;a href=&#34;https://getcomposer.org/&#34;&gt;Composer&lt;/a&gt; and PHP on your local machine.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Change to the plugins source code directory.&lt;/p&gt;
+&lt;p&gt;Move to the plugins source code directory.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Build the plugin using&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;composer install&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Compress the plugin directory into a .zip archive&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;zip -r wp2static.zip wp2static&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Compress the plugin directory into a .zip archive, you should find the resulted archive in your home directory under &lt;code&gt;/Downloads&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;composer build wp2static.zip&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
