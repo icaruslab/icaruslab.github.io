@@ -45,6 +45,7 @@
         
         &lt;p&gt;Required expertise level : &lt;strong&gt;Intermediate&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Last tested and confirmed : March 2022&lt;/p&gt;
 &lt;hr&gt;
 
 
@@ -110,9 +111,9 @@ in this scenario, the browser gets to do most of job and IPFS just delivers raw 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;After following &lt;a href=&#34;https://docs.ipfs.io/how-to/command-line-quick-start/#initialize-the-repository&#34;&gt;IPFS guides&lt;/a&gt; on how to get the application on your machine running, confirm&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;❯ ipfs --version
-ipfs version 0.6.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;❯ ipfs --version
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ipfs version 0.6.0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Using your termianl, go to your static mirror directory.&lt;/li&gt;
 &lt;li&gt;Run &lt;code&gt;ipfs add -Q  --recursive --progress mystaticmirror &lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -220,158 +221,6 @@ ipfs version 0.6.0
 
 &lt;/div&gt;
 
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Encrypted SNI</title>
-      <link>/docs/alternative-publishing-methods/esni/esni.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/alternative-publishing-methods/esni/esni.html</guid>
-      <description>
-        
-        
-        &lt;p&gt;Required expertise level : &lt;strong&gt;Advanced&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Platform : &lt;strong&gt;Any&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;Encrypted Server Name Indication (ESNI), Now, &lt;a href=&#34;https://www.ietf.org/archive/id/draft-ietf-tls-esni-10.txt&#34;&gt;Encrypted Client Hello (ECH)&lt;/a&gt;, is still undergoing a lot of changes and developments, and will probably see more changes before it reaches a production ready state, it&amp;rsquo;s important to note that it&amp;rsquo;s &lt;strong&gt;not yet production ready.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The purpose of this guide was to introduce the new technology and a proof of concept &amp;ldquo;based on our testing&amp;rdquo; of the potential benefit of ESNI in the context of censorship circumvention. &lt;strong&gt;This guide is no longer valid and will be removed in the next update&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Both Cloudflare and Mozilla announced they are working on a compatible server and client implementation of the latest draft of ECH, we will keep following the updates and will test any new implementations as it&amp;rsquo;s being introduced, and present our findings in the future.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ietf.org/archive/id/draft-ietf-tls-esni-10.txt&#34;&gt;TLS Encrypted Client Hello (draft-ietf-tls-esni-10) - IETF&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.mozilla.org/security/2021/01/07/encrypted-client-hello-the-future-of-esni-in-firefox/&#34;&gt;Encrypted Client Hello: the future of ESNI in Firefox - Mozilla&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.cloudflare.com/encrypted-client-hello/&#34;&gt;Good-bye ESNI, hello ECH! - CloudFlare&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;/div&gt;
-
-&lt;h3 id=&#34;what-is-server-name-indication-sni&#34;&gt;What is Server Name Indication (SNI)?&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Server Name Indication (SNI) is an extension to the Transport Layer Security (TLS) network encrypted protocol.&lt;/strong&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-
-    &lt;strong&gt;Essentially,&lt;/strong&gt; SNI&amp;rsquo;s purpose is to send the requested domain name to the webserver in the form of plain/text HTTP header, so the server will send back the appropriate response to initiate the encrypted connection.
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;SNI was originally &lt;a href=&#34;https://tools.ietf.org/html/rfc3546&#34;&gt;standardized in 2003&lt;/a&gt;,&lt;/strong&gt; it&amp;rsquo;s wide implementation is a big part of today&amp;rsquo;s Internet infrastructure, mainly because it allowed hosting multiple websites with different domain names on the same webserver.&lt;/p&gt;
-&lt;p&gt;Since then, the SNI header is a main target in any Deep Packet Inspection (DPI) operations, to preliminarily detect traffic to specific host before blocking.  &lt;a href=&#34;https://blog.cloudflare.com/encrypted-sni/&#34;&gt;read more about SNI and the issues it presents&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;what-is-encrypted-sni-and-how-can-it-help&#34;&gt;What is Encrypted SNI and how can it help?&lt;/h3&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-
-    &lt;p&gt;&lt;a href=&#34;https://tools.ietf.org/html/draft-ietf-tls-esni-06&#34;&gt;Encrypted SNI (ESNI)&lt;/a&gt; is a new suggested extension, it uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Public-key_cryptography&#34;&gt;&lt;strong&gt;asymmetric encryption keys&lt;/strong&gt;&lt;/a&gt; to encrypt the SNI header, the server publishes the public key &lt;code&gt;well-known&lt;/code&gt; DNS record and the client fetches the key using DNS.&lt;/p&gt;
-&lt;p&gt;Current implementations of ESNI requires DNS over HTTPS (DoH) in order to work.&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    Encrypted SNI is still not standardized, which means that it&amp;rsquo;s still in early development stages and might undergo a lot of changes on it&amp;rsquo;s way to be a widely implemented standard
-
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h3 id=&#34;how-to-test-encrypted-sni&#34;&gt;How to test Encrypted SNI?&lt;/h3&gt;
-&lt;p&gt;Some projects are trying to test for the best implementation of ESNI, or how to integrate it with major software stacks i.e. &lt;a href=&#34;https://github.com/sftcd/nginx&#34;&gt;Nginx&lt;/a&gt;, and &lt;a href=&#34;https://github.com/sftcd/openssl/tree/master/esnistuff&#34;&gt;OpenSSL&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;If you are interested in a deeper technical understanding of ESNI you can check out these projects&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://defo.ie/&#34;&gt;Developing ESNI for OpenSSL (DEfO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/SixGenInc/Noctilucent&#34;&gt;Noctilucent&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-
-
-    In this guide, we will use the most stable and tested implementation which comes with CloudFlare and Mozilla Firefox
-
-&lt;/div&gt;
-
-&lt;h3 id=&#34;server-side&#34;&gt;Server Side&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Currently,&lt;/strong&gt; the only stable and tested server side implementation of ESNI is &lt;a href=&#34;https://blog.cloudflare.com/esni/&#34;&gt;CloudFlare&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;All you have to do is to enable &lt;strong&gt;TLS 1.3&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Log in&lt;/strong&gt; to your &lt;strong&gt;CloudFlare account,&lt;/strong&gt; select your &lt;strong&gt;domain name&lt;/strong&gt;, go to &amp;gt; &lt;code&gt;SSL/TLS&lt;/code&gt; options, choose &amp;gt; &lt;code&gt;Edge Certificates&lt;/code&gt;, and make sure &amp;gt; &lt;code&gt;TLS 1.3&lt;/code&gt; is enabled.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/esni/1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;client-side&#34;&gt;Client Side&lt;/h3&gt;
-&lt;p&gt;Mozilla Firefox latest releases are shipped with TLSv1.3 and ESNI extension support, yet, it doesn&amp;rsquo;t come enabled by default for now.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;To enable ESNI support in Mozilla Firefox&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Make Firefox is updated to latest release&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/esni/2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable DNS over HTTPS (DoH) in &lt;code&gt;Preferences&lt;/code&gt; &amp;gt; &lt;code&gt;Network Settings&lt;/code&gt; &amp;gt; &lt;code&gt;Enable DNS over HTTPS&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/esni/3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-
-    &lt;p&gt;CloudFlare DoH resolver &lt;strong&gt;might be blocked&lt;/strong&gt; in your country. &lt;strong&gt;&lt;a href=&#34;https://1.1.1.1/help&#34;&gt;Check here&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;If that&amp;rsquo;s the case, you can try changing &lt;code&gt;Next DNS&lt;/code&gt;, or choose &lt;code&gt;Custom&lt;/code&gt; and test the public resolver - with DoH support -  from &lt;strong&gt;&lt;a href=&#34;https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers&#34;&gt;this list&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Enable ESNI extension support
-&lt;ul&gt;
-&lt;li&gt;Open a &lt;strong&gt;new tab&lt;/strong&gt; and type the address &lt;code&gt;about:config&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Click&lt;/strong&gt; &lt;code&gt;Accept the Risk and Continue&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Search&lt;/strong&gt; for &lt;code&gt;network.security.esni.enabled&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Click&lt;/strong&gt; on the value to change it from &lt;code&gt;False&lt;/code&gt; to &lt;code&gt;True&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Restart&lt;/strong&gt; your browser and test your settings &lt;a href=&#34;https://www.cloudflare.com/ssl/encrypted-sni/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/esni/4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/esni/5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
-&lt;h4 class=&#34;alert-heading&#34;&gt;Test your website&lt;/h4&gt;
-
-    &lt;p&gt;by adding visiting this address in your browser &lt;code&gt;https://[yourdomain.com]/cdn-cgi/trace&lt;/code&gt; i.e. &lt;code&gt;https://www.cloudflare.com/cdn-cgi/trace&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;You should get these &lt;strong&gt;values:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;tls=TLSv1.3
-sni=encrypted
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h3 id=&#34;resources-and-readings&#34;&gt;Resources and readings&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;CloudFlare : &lt;a href=&#34;https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/&#34;&gt;Encrypt that SNI: Firefox edition&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;CloudFlare : &lt;a href=&#34;https://blog.cloudflare.com/encrypted-sni/&#34;&gt;Encrypt it or lose it: how encrypted SNI works&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;IETF : &lt;a href=&#34;https://tools.ietf.org/html/rfc3546&#34;&gt;Transport Layer Security (TLS) Extensions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;IETF : &lt;a href=&#34;https://tools.ietf.org/html/draft-ietf-tls-esni-07&#34;&gt;TLS Encrypted Client Hello - draft-ietf-tls-esni-07&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Chromium Support Status :  &lt;a href=&#34;https://bugs.chromium.org/p/chromium/issues/detail?id=908132&#34;&gt;Issue 908132&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://defo.ie/&#34;&gt;Developing ESNI for OpenSSL (DEfO)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Mozilla : &lt;a href=&#34;https://blog.mozilla.org/security/2018/10/18/encrypted-sni-comes-to-firefox-nightly/&#34;&gt;Encrypted SNI Comes to Firefox Nightly - October 18, 2018&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;If you want to test ESNI further, or develop something for it - &lt;a href=&#34;https://github.com/SixGenInc/Noctilucent&#34;&gt;Noctilucent&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;For better understanding of &lt;a href=&#34;https://www.cloudflare.com/learning/dns/dns-over-tls/&#34;&gt;DNS over HTTPS (DoH)&lt;/a&gt; and other &lt;a href=&#34;https://dnsprivacy.org/wiki/&#34;&gt;DNS privacy related materials&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>

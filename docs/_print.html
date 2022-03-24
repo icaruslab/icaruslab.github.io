@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.92.1" />
+<meta name="generator" content="Hugo 0.95.0" />
 <link rel="canonical" type="text/html" href="../docs.html">
 <link rel="alternate" type="application/rss&#43;xml" href="../docs/index.xml">
 <meta name="robots" content="noindex, nofollow">
@@ -144,7 +144,7 @@ Note
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../offline-search-index.80af7f9edcf19ba9ee639a4e7fd0ebe1.json"
+  data-offline-search-index-json-src="../offline-search-index.57df775d3c8448adff6d825943dd4eab.json"
   data-offline-search-base-href="../"
   data-offline-search-max-results="10"
 >
@@ -400,14 +400,6 @@ This is the multi-page printable view of this section.
     
 	
 <li>5.2: <a href="#pg-7a223fbe9ffda78accaf5b105b058fa4">Interplanetary File System</a></li>
-
-
-    
-  
-    
-    
-	
-<li>5.3: <a href="#pg-a617b3c7505460c5d950bc8d61b43158">Encrypted SNI</a></li>
 
 
     
@@ -670,7 +662,7 @@ Each of these suggested methods has their own pros and cons, we’ll try to iter
     <div class="lead">Use <a href="https://www.gnu.org/software/wget/">Wget</a> to create a static clone of a website</div>
 	<p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
 <p>Platform : <strong>Gnu/Linux | macOS | MS Windows | Android | BSD</strong></p>
-<p>last revision : January 2022</p>
+<p>Last tested and confirmed : January 2022</p>
 <hr>
 <p>
 
@@ -788,7 +780,7 @@ While there are different ways of performing this task using Wget, you may get d
     <div class="lead">Use <a href="https://www.httrack.com/">HTTrack</a> to create a static clone of a website</div>
 	<p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
 <p>Platform : <strong>Gnu/Linux | macOS | MS Windows | Android | BSD</strong></p>
-<p>last revision : January 2022</p>
+<p>Last tested and confirmed : January 2022</p>
 <hr>
 
 
@@ -863,8 +855,8 @@ While there are different ways of performing this task using Wget, you may get d
 </ul>
 <hr>
 <h3 id="pulling-the-website-to-your-local-machine">Pulling the website to your local machine</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">httrack --mirror --robots<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span> --stay-on-same-domain --user-agent <span style="color:#f1fa8c">&#34;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0&#34;</span>  --keep-links<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span> --path example.org --quiet https://example.org/ -* +example.org/*
-</code></pre></div><h5 id="parameters-and-options-description">Parameters and options description</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>httrack --mirror --robots<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span> --stay-on-same-domain --user-agent <span style="color:#f1fa8c">&#34;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0&#34;</span>  --keep-links<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span> --path example.org --quiet https://example.org/ -* +example.org/*
+</span></span></code></pre></div><h5 id="parameters-and-options-description">Parameters and options description</h5>
 <p><code>--mirror</code></p>
 <p>Mirror websites</p>
 <p><code>--robots=0</code></p>
@@ -944,7 +936,7 @@ While there are different ways of performing this task using Wget, you may get d
     <div class="lead">Testing multiple WordPress plugins to generate a static mirror.</div>
 	<p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
 <p>Platform : <strong>Gnu/Linux | macOS | MS Windows | BSD</strong></p>
-<p>last revision : January 2022</p>
+<p>Last tested and confirmed : January 2022</p>
 <hr>
 <h2 id="wp2statichttpsgithubcomwp2static"><a href="https://github.com/WP2Static">WP2Static</a></h2>
 <p><img src="../images/wp2static/1.png" alt="">WP2Static options</p>
@@ -1081,7 +1073,7 @@ While there are different ways of performing this task using Wget, you may get d
     <div class="lead">A guide on hosting a static website on Amazon S3.</div>
 	<p>Required expertise level : <strong>Intermediate</strong></p>
 <p>Platform : <strong>Any</strong></p>
-<p>last revision : January 2022</p>
+<p>Last tested and confirmed : January 2022</p>
 <hr>
 
 
@@ -1160,23 +1152,23 @@ While there are different ways of performing this task using Wget, you may get d
 <ul>
 <li>The simplest form of static website hosting policy on S3 should look like this.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-    <span style="color:#ff79c6">&#34;Version&#34;</span>: <span style="color:#f1fa8c">&#34;2012-10-17&#34;</span>,
-    <span style="color:#ff79c6">&#34;Statement&#34;</span>: [
-        {
-            <span style="color:#ff79c6">&#34;Sid&#34;</span>: <span style="color:#f1fa8c">&#34;PublicReadGetObject&#34;</span>,
-            <span style="color:#ff79c6">&#34;Effect&#34;</span>: <span style="color:#f1fa8c">&#34;Allow&#34;</span>,
-            <span style="color:#ff79c6">&#34;Principal&#34;</span>: <span style="color:#f1fa8c">&#34;*&#34;</span>,
-            <span style="color:#ff79c6">&#34;Action&#34;</span>: [
-                <span style="color:#f1fa8c">&#34;s3:GetObject&#34;</span>
-            ],
-            <span style="color:#ff79c6">&#34;Resource&#34;</span>: [
-                <span style="color:#f1fa8c">&#34;arn:aws:s3:::example.com/*&#34;</span>
-            ]
-        }
-    ]
-}
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&#34;Version&#34;</span>: <span style="color:#f1fa8c">&#34;2012-10-17&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&#34;Statement&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Sid&#34;</span>: <span style="color:#f1fa8c">&#34;PublicReadGetObject&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Effect&#34;</span>: <span style="color:#f1fa8c">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Principal&#34;</span>: <span style="color:#f1fa8c">&#34;*&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Action&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;s3:GetObject&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Resource&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;arn:aws:s3:::example.com/*&#34;</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 <div class="alert alert-warning" role="alert">
 <h4 class="alert-heading">Note</h4>
@@ -1229,14 +1221,14 @@ While there are different ways of performing this task using Wget, you may get d
 </li>
 </ul>
 <p><strong>Linux x86 (64-bit)</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#f1fa8c">&#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34;</span> -o <span style="color:#f1fa8c">&#34;awscliv2.zip&#34;</span>
-unzip awscliv2.zip
-sudo ./aws/install
-</code></pre></div><p><strong>Linux ARM</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl <span style="color:#f1fa8c">&#34;https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip&#34;</span> -o <span style="color:#f1fa8c">&#34;awscliv2.zip&#34;</span>
-unzip awscliv2.zip
-sudo ./aws/install
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl <span style="color:#f1fa8c">&#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34;</span> -o <span style="color:#f1fa8c">&#34;awscliv2.zip&#34;</span>
+</span></span><span style="display:flex;"><span>unzip awscliv2.zip
+</span></span><span style="display:flex;"><span>sudo ./aws/install
+</span></span></code></pre></div><p><strong>Linux ARM</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl <span style="color:#f1fa8c">&#34;https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip&#34;</span> -o <span style="color:#f1fa8c">&#34;awscliv2.zip&#34;</span>
+</span></span><span style="display:flex;"><span>unzip awscliv2.zip
+</span></span><span style="display:flex;"><span>sudo ./aws/install
+</span></span></code></pre></div><ul>
 <li><strong>macOS</strong>
 <ul>
 <li>Install using <strong><a href="https://docs.brew.sh/Installation">Homebrew</a></strong> package manager. <code>brew install awscli</code></li>
@@ -1257,8 +1249,8 @@ sudo ./aws/install
 
 </div>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">awscli configure
-</code></pre></div><p><img src="../images/hosting-s3/14.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awscli configure
+</span></span></code></pre></div><p><img src="../images/hosting-s3/14.png" alt=""></p>
 <ul>
 <li>
 <p>ِMove to the website local directory.</p>
@@ -1267,8 +1259,8 @@ sudo ./aws/install
 <p>Upload your files by executing <strong><strong>replace [bucket-name] with the name of the bucket you created on S3</strong></strong></p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">aws s3 sync . s3://<span style="color:#ff79c6">[</span>bucket-name<span style="color:#ff79c6">]</span>/
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws s3 sync . s3://<span style="color:#ff79c6">[</span>bucket-name<span style="color:#ff79c6">]</span>/
+</span></span></code></pre></div>
 
 <div class="pageinfo pageinfo-primary">
 <p>Now you can test your new static mirror, you&rsquo;ll find the website URL in <strong>bucket settings &gt; Properties &gt; Static website hosting</strong></p>
@@ -1325,7 +1317,7 @@ sudo ./aws/install
     <div class="lead">A guide on hosting a static website on Google Cloud Storage.</div>
 	<p>Required expertise level : <strong>Intermediate</strong></p>
 <p>Platform : <strong>Any</strong></p>
-<p>last revision : January 2022</p>
+<p>Last tested and confirmed : January 2022</p>
 <hr>
 
 
@@ -1493,7 +1485,7 @@ sudo ./aws/install
     <div class="lead">A guide on hosting a static website on GitHub.</div>
 	<p>Required expertise level : <strong>Intermediate</strong></p>
 <p>Platform : <strong>Any</strong></p>
-<p>last revision : January 2022</p>
+<p>Last tested and confirmed : January 2022</p>
 <hr>
 
 
@@ -1602,6 +1594,7 @@ The guide is available in English, so, in order to avoid redundancy we&rsquo;ll 
     <div class="lead">Reverse-proxy written in python and ready to deploy on Google App Engine platform.</div>
 	<p>Required expertise level : <strong>Intermediate / Advanced</strong></p>
 <p>Platform : <strong>Gnu/Linux | macOS | MS Windows | Android | BSD</strong></p>
+<p>Last tested and confirmed : March 2022</p>
 <hr>
 
 
@@ -1745,6 +1738,7 @@ The guide is available in English, so, in order to avoid redundancy we&rsquo;ll 
     <div class="lead">Introduction to Tor network</div>
 	<p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
 <p>Platform : <strong>Gnu/Linux | macOS | MS Windows | Android | BSD</strong></p>
+<p>Last tested and confirmed : March 2022</p>
 <hr>
 
 
@@ -1899,7 +1893,7 @@ The guide is available in English, so, in order to avoid redundancy we&rsquo;ll 
 <h2 id="when-tor-is-blocked-activate-bridges">When Tor is blocked, activate bridges</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube-nocookie.com/embed/DkEqWGF3cvg?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/DkEqWGF3cvg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -2001,6 +1995,7 @@ The guide is available in English, so, in order to avoid redundancy we&rsquo;ll 
     <div class="lead">Create Onion Service for your Static mirror</div>
 	<p>Required expertise level : <strong>Advanced</strong></p>
 <p>Platform : <strong>Linux / Ubuntu - Debian</strong></p>
+<p>Last tested and confirmed : March 2022</p>
 <hr>
 
 
@@ -2025,10 +2020,10 @@ The guide is available in English, so, in order to avoid redundancy we&rsquo;ll 
 <blockquote>
 <p>Run the following commands in your terminal in their respective order</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install software-properties-common
-sudo add-apt-repository ppa:nginx/stable
-sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> sudo apt install nginx -y
-</code></pre></div><p><img src="../images/onion-services/6.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install software-properties-common
+</span></span><span style="display:flex;"><span>sudo add-apt-repository ppa:nginx/stable
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> sudo apt install nginx -y
+</span></span></code></pre></div><p><img src="../images/onion-services/6.png" alt=""></p>
 <p>Confirm your installation by entering <code>nginx -v</code>, the output should look similar to this</p>
 <ul>
 <li><strong>Install Tor client</strong></li>
@@ -2045,26 +2040,26 @@ sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> sudo apt install n
 <blockquote>
 <p>Add in the following lines in <code>/etc/apt/sources.list</code></p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">deb https://deb.torproject.org/torproject.org stretch main
-deb-src https://deb.torproject.org/torproject.org stretch main
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>deb https://deb.torproject.org/torproject.org stretch main
+</span></span><span style="display:flex;"><span>deb-src https://deb.torproject.org/torproject.org stretch main
+</span></span></code></pre></div><blockquote>
 <p>Run the following commands in your terminal in their respective order</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
-gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
-sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> apt install tor deb.torproject.org-keyring
-sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> sudo apt install tor
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+</span></span><span style="display:flex;"><span>gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> apt install tor deb.torproject.org-keyring
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> sudo apt install tor
+</span></span></code></pre></div><blockquote>
 <p>Run the following commands to start Tor daemon</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start tor
-sudo systemctl <span style="color:#8be9fd;font-style:italic">enable</span> tor
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start tor
+</span></span><span style="display:flex;"><span>sudo systemctl <span style="color:#8be9fd;font-style:italic">enable</span> tor
+</span></span></code></pre></div><blockquote>
 <p>Confirm Tor is running without issues</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl status tor
-tor --version
-</code></pre></div><p><img src="../images/onion-services/7.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl status tor
+</span></span><span style="display:flex;"><span>tor --version
+</span></span></code></pre></div><p><img src="../images/onion-services/7.png" alt=""></p>
 <ul>
 <li><strong>Configure Tor client</strong></li>
 </ul>
@@ -2078,22 +2073,22 @@ tor --version
 <ul>
 <li><strong>Before:</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#bd93f9">72</span> <span style="color:#6272a4">#HiddenServiceDir /var/lib/tor/hidden_service/</span>
- <span style="color:#bd93f9">73</span> <span style="color:#6272a4">#HiddenServicePort 80 127.0.0.1:80</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#bd93f9">72</span> <span style="color:#6272a4">#HiddenServiceDir /var/lib/tor/hidden_service/</span>
+</span></span><span style="display:flex;"><span> <span style="color:#bd93f9">73</span> <span style="color:#6272a4">#HiddenServicePort 80 127.0.0.1:80</span>
+</span></span></code></pre></div><ul>
 <li><strong>After</strong>:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">HiddenServiceDir /var/lib/tor/myfirstonion/
-HiddenServicePort <span style="color:#bd93f9">80</span> 127.0.0.1:80
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>HiddenServiceDir /var/lib/tor/myfirstonion/
+</span></span><span style="display:flex;"><span>HiddenServicePort <span style="color:#bd93f9">80</span> 127.0.0.1:80
+</span></span></code></pre></div><blockquote>
 <p>Restart Tor service</p>
 </blockquote>
 <p><code>sudo systemctl restart tor</code></p>
 <blockquote>
 <p>Confirm your Onion Service related files were generated at <code>/var/lib/tor/myfirstonion/</code></p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8be9fd;font-style:italic">cd</span> /var/lib/tor/myfirstonion/ <span style="color:#ff79c6">&amp;&amp;</span> ls
-</code></pre></div><p>You should find two files generated at this directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">cd</span> /var/lib/tor/myfirstonion/ <span style="color:#ff79c6">&amp;&amp;</span> ls
+</span></span></code></pre></div><p>You should find two files generated at this directory</p>
 <p>1- <code>hostname</code> <strong>contains your Onion Service address</strong></p>
 <p>2- <code>private_key</code> <strong>Private key used for encryption. Don&rsquo;t edit or share this file under any circumstances</strong></p>
 <p><img src="../images/onion-services/8.png" alt=""></p>
@@ -2102,19 +2097,19 @@ HiddenServicePort <span style="color:#bd93f9">80</span> 127.0.0.1:80
 </ul>
 <p><strong>It&rsquo;s very important to read Nginx documentations and follow the <a href="https://riseup.net/en/security/network-security/tor/onionservices-best-practices">best practices</a> when configuring your Onion Service</strong></p>
 <p>But essentially, you can get your Onion Service up &amp; running by adding this simple config file to your <code>/etc/nginx/sites-enabled</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#ff79c6">server</span> {
-    <span style="color:#ff79c6">listen</span> 127.0.0.1:<span style="color:#bd93f9">80</span>;
-    <span style="color:#ff79c6">server_name</span> <span style="color:#f1fa8c">[onion-address]</span>; <span style="color:#6272a4">#replace with your generated onion address, you can get that by executing : `cat /var/lib/[yourservicename]/hostname`
-</span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">root</span> <span style="color:#f1fa8c">/var/www/html/mystaticmirror</span>; <span style="color:#6272a4">#replace with your mirror&#39;s files directory, and make sure the webserver user has access permissions to it.
-</span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">client_max_body_size</span> <span style="color:#f1fa8c">99M</span>;
-    <span style="color:#ff79c6">port_in_redirect</span> off;
-    <span style="color:#ff79c6">charset</span> <span style="color:#f1fa8c">utf-8</span>;
-    <span style="color:#ff79c6">index</span> <span style="color:#f1fa8c">index.html</span>;
-<span style="color:#ff79c6">location</span> <span style="color:#f1fa8c">/</span> {
-    <span style="color:#ff79c6">autoindex</span> off;
-}
-}
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#ff79c6">server</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">listen</span> 127.0.0.1:<span style="color:#bd93f9">80</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">server_name</span> <span style="color:#f1fa8c">[onion-address]</span>; <span style="color:#6272a4">#replace with your generated onion address, you can get that by executing : `cat /var/lib/[yourservicename]/hostname`
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">root</span> <span style="color:#f1fa8c">/var/www/html/mystaticmirror</span>; <span style="color:#6272a4">#replace with your mirror&#39;s files directory, and make sure the webserver user has access permissions to it.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">client_max_body_size</span> <span style="color:#f1fa8c">99M</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">port_in_redirect</span> off;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">charset</span> <span style="color:#f1fa8c">utf-8</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">index</span> <span style="color:#f1fa8c">index.html</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">location</span> <span style="color:#f1fa8c">/</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">autoindex</span> off;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li><strong>Testing your setup</strong></li>
 </ul>
 <p><img src="../images/onion-services/9.png" alt=""></p>
@@ -2137,23 +2132,23 @@ HiddenServicePort <span style="color:#bd93f9">80</span> 127.0.0.1:80
 <ul>
 <li>Apache</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-apache" data-lang="apache"><span style="color:#ff79c6">&lt;VirtualHost</span> <span style="color:#f1fa8c">*:443</span><span style="color:#ff79c6">&gt;</span>
-       <span style="color:#8be9fd;font-style:italic">ServerName</span> &lt;your-website.tld&gt;
-       <span style="color:#8be9fd;font-style:italic">DocumentRoot</span> <span style="color:#f1fa8c">/path/to/htdocs</span>
-
-       <span style="color:#8be9fd;font-style:italic">Header</span> set Onion-Location <span style="color:#f1fa8c">&#34;http://your-onion-address.onion%{REQUEST_URI}s&#34;</span>
-
-       <span style="color:#8be9fd;font-style:italic">SSLEngine</span> <span style="color:#ff79c6">on</span>
-       <span style="color:#8be9fd;font-style:italic">SSLCertificateFile</span> <span style="color:#f1fa8c">&#34;/path/to/www.example.com.cert&#34;</span>
-       <span style="color:#8be9fd;font-style:italic">SSLCertificateKeyFile</span> <span style="color:#f1fa8c">&#34;/path/to/www.example.com.key&#34;</span>
-     <span style="color:#ff79c6">&lt;/VirtualHost&gt;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;VirtualHost</span> <span style="color:#f1fa8c">*:443</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#8be9fd;font-style:italic">ServerName</span> &lt;your-website.tld&gt;
+</span></span><span style="display:flex;"><span>       <span style="color:#8be9fd;font-style:italic">DocumentRoot</span> <span style="color:#f1fa8c">/path/to/htdocs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       <span style="color:#8be9fd;font-style:italic">Header</span> set Onion-Location <span style="color:#f1fa8c">&#34;http://your-onion-address.onion%{REQUEST_URI}s&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       <span style="color:#8be9fd;font-style:italic">SSLEngine</span> <span style="color:#ff79c6">on</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#8be9fd;font-style:italic">SSLCertificateFile</span> <span style="color:#f1fa8c">&#34;/path/to/www.example.com.cert&#34;</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#8be9fd;font-style:italic">SSLCertificateKeyFile</span> <span style="color:#f1fa8c">&#34;/path/to/www.example.com.key&#34;</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ff79c6">&lt;/VirtualHost&gt;</span>
+</span></span></code></pre></div><ul>
 <li>Nginx</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#ff79c6">add_header</span> <span style="color:#f1fa8c">Onion-Location</span> <span style="color:#f1fa8c">http://&lt;your-onion-address&gt;.onion</span><span style="color:#8be9fd;font-style:italic">$request_uri</span>;
-</code></pre></div><p><strong>HTML <code>&lt;meta&gt;</code></strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">http-equiv</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;onion-location&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;http://&lt;your-onion-service-address&gt;.onion&#34;</span> /&gt;
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#ff79c6">add_header</span> <span style="color:#f1fa8c">Onion-Location</span> <span style="color:#f1fa8c">http://&lt;your-onion-address&gt;.onion</span><span style="color:#8be9fd;font-style:italic">$request_uri</span>;
+</span></span></code></pre></div><p><strong>HTML <code>&lt;meta&gt;</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">meta</span> <span style="color:#50fa7b">http-equiv</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;onion-location&#34;</span> <span style="color:#50fa7b">content</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;http://&lt;your-onion-service-address&gt;.onion&#34;</span> /&gt;
+</span></span></code></pre></div>
 
 <div class="alert alert-primary" role="alert">
 
@@ -2186,6 +2181,7 @@ HiddenServicePort <span style="color:#bd93f9">80</span> 127.0.0.1:80
     <div class="lead">A peer-to-peer hypermedia protocol</div>
 	<p>Required expertise level : <strong>Intermediate</strong></p>
 <p>Platform : <strong>Gnu/Linux | macOS | MS Windows | Android | BSD</strong></p>
+<p>Last tested and confirmed : March 2022</p>
 <hr>
 
 
@@ -2251,9 +2247,9 @@ in this scenario, the browser gets to do most of job and IPFS just delivers raw 
 <ul>
 <li><strong>After following <a href="https://docs.ipfs.io/how-to/command-line-quick-start/#initialize-the-repository">IPFS guides</a> on how to get the application on your machine running, confirm</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">❯ ipfs --version
-ipfs version 0.6.0
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>❯ ipfs --version
+</span></span><span style="display:flex;"><span>ipfs version 0.6.0
+</span></span></code></pre></div><ul>
 <li>Using your termianl, go to your static mirror directory.</li>
 <li>Run <code>ipfs add -Q  --recursive --progress mystaticmirror </code></li>
 </ul>
@@ -2369,162 +2365,6 @@ ipfs version 0.6.0
     
 	
   
-    
-    
-	
-    
-
-<div class="td-content" style="page-break-before: always">
-    
-	<h1 id="pg-a617b3c7505460c5d950bc8d61b43158">5.3 - Encrypted SNI</h1>
-    <div class="lead">Encrypted Server Name Indication</div>
-	<p>Required expertise level : <strong>Advanced</strong></p>
-<p>Platform : <strong>Any</strong></p>
-<hr>
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Note</h4>
-
-    <p>Encrypted Server Name Indication (ESNI), Now, <a href="https://www.ietf.org/archive/id/draft-ietf-tls-esni-10.txt">Encrypted Client Hello (ECH)</a>, is still undergoing a lot of changes and developments, and will probably see more changes before it reaches a production ready state, it&rsquo;s important to note that it&rsquo;s <strong>not yet production ready.</strong></p>
-<p>The purpose of this guide was to introduce the new technology and a proof of concept &ldquo;based on our testing&rdquo; of the potential benefit of ESNI in the context of censorship circumvention. <strong>This guide is no longer valid and will be removed in the next update</strong>.</p>
-<p>Both Cloudflare and Mozilla announced they are working on a compatible server and client implementation of the latest draft of ECH, we will keep following the updates and will test any new implementations as it&rsquo;s being introduced, and present our findings in the future.</p>
-<p><strong>References</strong></p>
-<ul>
-<li><a href="https://www.ietf.org/archive/id/draft-ietf-tls-esni-10.txt">TLS Encrypted Client Hello (draft-ietf-tls-esni-10) - IETF</a></li>
-<li><a href="https://blog.mozilla.org/security/2021/01/07/encrypted-client-hello-the-future-of-esni-in-firefox/">Encrypted Client Hello: the future of ESNI in Firefox - Mozilla</a></li>
-<li><a href="https://blog.cloudflare.com/encrypted-client-hello/">Good-bye ESNI, hello ECH! - CloudFlare</a></li>
-</ul>
-
-
-</div>
-
-<h3 id="what-is-server-name-indication-sni">What is Server Name Indication (SNI)?</h3>
-<p><strong>Server Name Indication (SNI) is an extension to the Transport Layer Security (TLS) network encrypted protocol.</strong></p>
-
-
-<div class="alert alert-primary" role="alert">
-
-
-    <strong>Essentially,</strong> SNI&rsquo;s purpose is to send the requested domain name to the webserver in the form of plain/text HTTP header, so the server will send back the appropriate response to initiate the encrypted connection.
-
-</div>
-
-<p><strong>SNI was originally <a href="https://tools.ietf.org/html/rfc3546">standardized in 2003</a>,</strong> it&rsquo;s wide implementation is a big part of today&rsquo;s Internet infrastructure, mainly because it allowed hosting multiple websites with different domain names on the same webserver.</p>
-<p>Since then, the SNI header is a main target in any Deep Packet Inspection (DPI) operations, to preliminarily detect traffic to specific host before blocking.  <a href="https://blog.cloudflare.com/encrypted-sni/">read more about SNI and the issues it presents</a></p>
-<h3 id="what-is-encrypted-sni-and-how-can-it-help">What is Encrypted SNI and how can it help?</h3>
-
-
-<div class="alert alert-primary" role="alert">
-
-
-    <p><a href="https://tools.ietf.org/html/draft-ietf-tls-esni-06">Encrypted SNI (ESNI)</a> is a new suggested extension, it uses <a href="https://en.wikipedia.org/wiki/Public-key_cryptography"><strong>asymmetric encryption keys</strong></a> to encrypt the SNI header, the server publishes the public key <code>well-known</code> DNS record and the client fetches the key using DNS.</p>
-<p>Current implementations of ESNI requires DNS over HTTPS (DoH) in order to work.</p>
-
-
-</div>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Note</h4>
-
-    Encrypted SNI is still not standardized, which means that it&rsquo;s still in early development stages and might undergo a lot of changes on it&rsquo;s way to be a widely implemented standard
-
-</div>
-
-<hr>
-<h3 id="how-to-test-encrypted-sni">How to test Encrypted SNI?</h3>
-<p>Some projects are trying to test for the best implementation of ESNI, or how to integrate it with major software stacks i.e. <a href="https://github.com/sftcd/nginx">Nginx</a>, and <a href="https://github.com/sftcd/openssl/tree/master/esnistuff">OpenSSL</a>.</p>
-<p><strong>If you are interested in a deeper technical understanding of ESNI you can check out these projects</strong></p>
-<ul>
-<li><a href="https://defo.ie/">Developing ESNI for OpenSSL (DEfO)</a></li>
-<li><a href="https://github.com/SixGenInc/Noctilucent">Noctilucent</a></li>
-</ul>
-<hr>
-
-
-<div class="alert alert-primary" role="alert">
-
-
-    In this guide, we will use the most stable and tested implementation which comes with CloudFlare and Mozilla Firefox
-
-</div>
-
-<h3 id="server-side">Server Side</h3>
-<p><strong>Currently,</strong> the only stable and tested server side implementation of ESNI is <a href="https://blog.cloudflare.com/esni/">CloudFlare</a>.</p>
-<p>All you have to do is to enable <strong>TLS 1.3</strong></p>
-<p><strong>Log in</strong> to your <strong>CloudFlare account,</strong> select your <strong>domain name</strong>, go to &gt; <code>SSL/TLS</code> options, choose &gt; <code>Edge Certificates</code>, and make sure &gt; <code>TLS 1.3</code> is enabled.</p>
-<p><img src="../images/esni/1.png" alt=""></p>
-<h3 id="client-side">Client Side</h3>
-<p>Mozilla Firefox latest releases are shipped with TLSv1.3 and ESNI extension support, yet, it doesn&rsquo;t come enabled by default for now.</p>
-<p><strong>To enable ESNI support in Mozilla Firefox</strong></p>
-<ul>
-<li>Make Firefox is updated to latest release</li>
-</ul>
-<p><img src="../images/esni/2.png" alt=""></p>
-<ul>
-<li>Enable DNS over HTTPS (DoH) in <code>Preferences</code> &gt; <code>Network Settings</code> &gt; <code>Enable DNS over HTTPS</code></li>
-</ul>
-<p><img src="../images/esni/3.png" alt=""></p>
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Note</h4>
-
-    <p>CloudFlare DoH resolver <strong>might be blocked</strong> in your country. <strong><a href="https://1.1.1.1/help">Check here</a>.</strong></p>
-<p>If that&rsquo;s the case, you can try changing <code>Next DNS</code>, or choose <code>Custom</code> and test the public resolver - with DoH support -  from <strong><a href="https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Public+Resolvers">this list</a>.</strong></p>
-
-
-</div>
-
-<ul>
-<li>Enable ESNI extension support
-<ul>
-<li>Open a <strong>new tab</strong> and type the address <code>about:config</code></li>
-<li><strong>Click</strong> <code>Accept the Risk and Continue</code></li>
-<li><strong>Search</strong> for <code>network.security.esni.enabled</code></li>
-<li><strong>Click</strong> on the value to change it from <code>False</code> to <code>True</code></li>
-</ul>
-</li>
-<li><strong>Restart</strong> your browser and test your settings <a href="https://www.cloudflare.com/ssl/encrypted-sni/">here</a></li>
-</ul>
-<p><img src="../images/esni/4.png" alt=""></p>
-<p><img src="../images/esni/5.png" alt=""></p>
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Test your website</h4>
-
-    <p>by adding visiting this address in your browser <code>https://[yourdomain.com]/cdn-cgi/trace</code> i.e. <code>https://www.cloudflare.com/cdn-cgi/trace</code></p>
-<p>You should get these <strong>values:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">tls=TLSv1.3
-sni=encrypted
-</code></pre></div>
-
-</div>
-
-<hr>
-<h3 id="resources-and-readings">Resources and readings</h3>
-<ul>
-<li>CloudFlare : <a href="https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/">Encrypt that SNI: Firefox edition</a></li>
-<li>CloudFlare : <a href="https://blog.cloudflare.com/encrypted-sni/">Encrypt it or lose it: how encrypted SNI works</a></li>
-<li>IETF : <a href="https://tools.ietf.org/html/rfc3546">Transport Layer Security (TLS) Extensions</a></li>
-<li>IETF : <a href="https://tools.ietf.org/html/draft-ietf-tls-esni-07">TLS Encrypted Client Hello - draft-ietf-tls-esni-07</a></li>
-<li>Chromium Support Status :  <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=908132">Issue 908132</a></li>
-<li><a href="https://defo.ie/">Developing ESNI for OpenSSL (DEfO)</a></li>
-<li>Mozilla : <a href="https://blog.mozilla.org/security/2018/10/18/encrypted-sni-comes-to-firefox-nightly/">Encrypted SNI Comes to Firefox Nightly - October 18, 2018</a></li>
-<li>If you want to test ESNI further, or develop something for it - <a href="https://github.com/SixGenInc/Noctilucent">Noctilucent</a></li>
-<li>For better understanding of <a href="https://www.cloudflare.com/learning/dns/dns-over-tls/">DNS over HTTPS (DoH)</a> and other <a href="https://dnsprivacy.org/wiki/">DNS privacy related materials</a></li>
-</ul>
-
-</div>
-
-
-
-    
-	
-  
 
     
 	
@@ -2579,8 +2419,8 @@ engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps th
 <p>If you want to run your own local Hugo server to preview your changes as you work:</p>
 <p>1- Follow the instructions here <a href="https://gohugo.io/getting-started/quick-start/">Getting started</a> to install Hugo and any other tools you need. You&rsquo;ll need at least <strong>Hugo version 0.45</strong> (we recommend using the most recent available version), and it must be the <strong>extended</strong> version, which supports SCSS.</p>
 <p>2- Fork the <a href="https://github.com/icaruslab/docs">project website repository</a> repo into your own project, clone it to your local machine</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone <span style="color:#ff79c6">[</span>your fork address<span style="color:#ff79c6">]</span>
-</code></pre></div><p>3- Run <code>hugo server</code> in the site root directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone <span style="color:#ff79c6">[</span>your fork address<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><p>3- Run <code>hugo server</code> in the site root directory.</p>
 <blockquote>
 <p>By default your site will be available at http://localhost:1313/. Now that you&rsquo;re serving your site locally, Hugo will watch for changes to the content and automatically refresh your site.</p>
 </blockquote>
@@ -2593,16 +2433,16 @@ engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps th
 <li>Add the new language under <code>[languages]</code> in <code>config.toml</code></li>
 </ul>
 <h3 id="example-of-the-required-values">Example of the required values</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[languages.en]
-		title = <span style="color:#f1fa8c">&#34;Icarus Project&#34;</span>
-		description = <span style="color:#f1fa8c">&#34;Testign and documenting Internet censorship circumvention techniques&#34;</span>
-		languageName =<span style="color:#f1fa8c">&#34;English&#34;</span>
-		languagedirection = <span style="color:#f1fa8c">&#34;ltr&#34;</span>
-		contentDir = <span style="color:#f1fa8c">&#34;content/en&#34;</span>
-    weight = <span style="color:#bd93f9">1</span>
-    time_format_default = <span style="color:#f1fa8c">&#34;02.01.2006&#34;</span>
-		time_format_blog = <span style="color:#f1fa8c">&#34;02.01.2006&#34;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[languages.en]
+</span></span><span style="display:flex;"><span>		title = <span style="color:#f1fa8c">&#34;Icarus Project&#34;</span>
+</span></span><span style="display:flex;"><span>		description = <span style="color:#f1fa8c">&#34;Testign and documenting Internet censorship circumvention techniques&#34;</span>
+</span></span><span style="display:flex;"><span>		languageName =<span style="color:#f1fa8c">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span>		languagedirection = <span style="color:#f1fa8c">&#34;ltr&#34;</span>
+</span></span><span style="display:flex;"><span>		contentDir = <span style="color:#f1fa8c">&#34;content/en&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>    time_format_default = <span style="color:#f1fa8c">&#34;02.01.2006&#34;</span>
+</span></span><span style="display:flex;"><span>		time_format_blog = <span style="color:#f1fa8c">&#34;02.01.2006&#34;</span>
+</span></span></code></pre></div><ul>
 <li>Follow <a href="https://www.docsy.dev/docs/language/#internationalization-bundles">Docsy&rsquo;s guide</a> on how to translate the theme&rsquo;s UI strings (text for buttons etc.)</li>
 <li>Submit your changes in a pull request</li>
 </ul>
@@ -2801,7 +2641,7 @@ engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps th
 
 
 
-<script src="../js/main.min.660660dbd0d9c175057fbb05f45ebbd9a96ab4258f65825f83a6de9116f3e694.js" integrity="sha256-ZgZg29DZwXUFf7sF9F672alqtCWPZYJfg6bekRbz5pQ=" crossorigin="anonymous"></script>
+<script src="../js/main.min.a607d6f96f76cd8217365de48d6848112df53de279933836185a7c65153d2b14.js" integrity="sha256-pgfW&#43;W92zYIXNl3kjWhIES31PeJ5kzg2GFp8ZRU9KxQ=" crossorigin="anonymous"></script>
 
 
 

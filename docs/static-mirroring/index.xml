@@ -24,7 +24,7 @@
         
         &lt;p&gt;Required expertise level : &lt;strong&gt;Beginner / Intermediate&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;last revision : January 2022&lt;/p&gt;
+&lt;p&gt;Last tested and confirmed : January 2022&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;
 
@@ -138,7 +138,7 @@ While there are different ways of performing this task using Wget, you may get d
         
         &lt;p&gt;Required expertise level : &lt;strong&gt;Beginner / Intermediate&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | Android | BSD&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;last revision : January 2022&lt;/p&gt;
+&lt;p&gt;Last tested and confirmed : January 2022&lt;/p&gt;
 &lt;hr&gt;
 
 
@@ -213,8 +213,8 @@ While there are different ways of performing this task using Wget, you may get d
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;pulling-the-website-to-your-local-machine&#34;&gt;Pulling the website to your local machine&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;httrack --mirror --robots&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt; --stay-on-same-domain --user-agent &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0&amp;#34;&lt;/span&gt;  --keep-links&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt; --path example.org --quiet https://example.org/ -* +example.org/*
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;parameters-and-options-description&#34;&gt;Parameters and options description&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;httrack --mirror --robots&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt; --stay-on-same-domain --user-agent &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0&amp;#34;&lt;/span&gt;  --keep-links&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;0&lt;/span&gt; --path example.org --quiet https://example.org/ -* +example.org/*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;parameters-and-options-description&#34;&gt;Parameters and options description&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;--mirror&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Mirror websites&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;--robots=0&lt;/code&gt;&lt;/p&gt;
@@ -290,7 +290,7 @@ While there are different ways of performing this task using Wget, you may get d
         
         &lt;p&gt;Required expertise level : &lt;strong&gt;Beginner / Intermediate&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Platform : &lt;strong&gt;Gnu/Linux | macOS | MS Windows | BSD&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;last revision : January 2022&lt;/p&gt;
+&lt;p&gt;Last tested and confirmed : January 2022&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;wp2statichttpsgithubcomwp2static&#34;&gt;&lt;a href=&#34;https://github.com/WP2Static&#34;&gt;WP2Static&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;../../images/wp2static/1.png&#34; alt=&#34;&#34;&gt;WP2Static options&lt;/p&gt;
