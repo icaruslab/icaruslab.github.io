@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.110.0">
 <link rel="canonical" type="text/html" href="../docs.html">
 <link rel="alternate" type="application/rss&#43;xml" href="../docs/index.xml">
 <meta name="robots" content="noindex, nofollow">
@@ -38,7 +38,6 @@ Note
 <meta property="og:description" content="Testing and documenting Internet censorship circumvention techniques" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/docs.html" /><meta property="og:image" content="/images/misc/logo.png"/><meta property="og:site_name" content="Icarus Project" />
-
 <meta itemprop="name" content="Documentation">
 <meta itemprop="description" content="Testing and documenting Internet censorship circumvention techniques"><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/misc/logo.png"/>
@@ -49,8 +48,8 @@ Note
 
 
 
-<link rel="preload" href="../scss/main.min.b550c3439f06ff2a2961492ea66039c7e5f599af82b5a70dca3c64b6188b276f.css" as="style">
-<link href="../scss/main.min.b550c3439f06ff2a2961492ea66039c7e5f599af82b5a70dca3c64b6188b276f.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../scss/main.min.97f3cb6b3a7a3b01e5769970dfd6c6735194f4357c93cac16f91211734b2ff7e.css" as="style">
+<link href="../scss/main.min.97f3cb6b3a7a3b01e5769970dfd6c6735194f4357c93cac16f91211734b2ff7e.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -144,7 +143,7 @@ Note
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../offline-search-index.9978cdcd67d557d5b7ed9aeb71ad5b01.json"
+  data-offline-search-index-json-src="../offline-search-index.e538cf945a21c8cf9e4e1110888911ee.json"
   data-offline-search-base-href="../"
   data-offline-search-max-results="10"
 >
@@ -411,7 +410,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>6: <a href="#pg-8efbf7499fe9c7bde8d2c1bb7ff6ee3c">Contribution Guidelines</a></li>
+<li>6: <a href="#pg-1eabcdd9d7eb590f86acdfad10ecfe1c">DDoS mitigation guide</a></li>
 
 
     
@@ -430,7 +429,26 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>7: <a href="#pg-8df6ea6904416b571ff9bc73afb50933">References</a></li>
+<li>7: <a href="#pg-8efbf7499fe9c7bde8d2c1bb7ff6ee3c">Contribution Guidelines</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>8: <a href="#pg-8df6ea6904416b571ff9bc73afb50933">References</a></li>
 
 
     
@@ -2382,7 +2400,488 @@ in this scenario, the browser gets to do most of job and IPFS just delivers raw 
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-8efbf7499fe9c7bde8d2c1bb7ff6ee3c">6 - Contribution Guidelines</h1>
+	<h1 id="pg-1eabcdd9d7eb590f86acdfad10ecfe1c">6 - DDoS mitigation guide</h1>
+    <div class="lead">DDoS mitigation guide</div>
+	<h1 id="summary">Summary</h1>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Who is this guide for?</h4>
+
+    <strong>Is the website you run or manage experiencing slowed performance or constant outages? It could be an issue with configuration, or it could be something more targeted.</strong>
+
+</div>
+
+<p>In the course of our work, we have seen and responded to what we believe was a sophisticated DDoS attack (defined below) that was aimed at effectively censoring an important media platform in the region. In the documentation that follows, we have reflected on this practical experience and consolidated it into a guide to respond to similar attacks.</p>
+<p>For publishers, writers or activists that believe they are facing such a targeted attack, we advise you to familiarize yourself with some of the core concepts below, and then pass this documentation guide on to your technical team for the technical configurations that will hopefully get your website back up and running and maximally protected against any attacks in the future.</p>
+<h1 id="what-is-ddos">What is DDOS?</h1>
+<h2 id="denial-of-service-dos">Denial of Service (DoS)</h2>
+<p><strong>Denial of Service (DoS)</strong> attacks are a form of cyber attack that aim to disrupt a specific online service or website on the internet by flooding its infrastructure with a high quantity of false requests exceeding the site’s handling capacity in order to eventually render it inaccessible to its usual audience.</p>
+<p>Such methods can be utilized to different ends, but the most common end aims at distributing the service/site, either continuously over time or for a specific period. DoS attacks can also aim to incrementally increase disruptions over time in order to increase the costs of hosting and mitigation.</p>
+<h2 id="distributed-denial-of-service-ddos">Distributed Denial of Service (DDoS)</h2>
+<p>In the event that you are dealing with a DoS attack, the most effective response would be to simply identify and block the source of the attack on the network level. And with the variety of web application firewall (WAF) services and different traffic control and filtering software employed on modern servers, it can be quite simple to deploy such a response.</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">But what happens when things are more sophisticated?</h4>
+
+    <strong>The task of mitigation and response becomes significantly more difficult when a DoS attack becomes a DDoS attack.</strong>
+
+</div>
+
+<p>As suggested in the name, a Distributed Denial of Service attack is a DoS attack being launched and coordinated using a number of machines — usually compromised devices “distributed” over different networks and geographic locations.</p>
+<p>Atop this decentralized layer usually sits various obfuscation techniques that make the malicious requests look as similar as possible to normal traffic. In practical terms, this makes the chance of mistakenly blocking legitimate sources of traffic in the mitigation response significantly higher.</p>
+<h2 id="how-does-a-ddos-attack-work-what-is-a-botnet">How does a DDos attack work? What is a Botnet?</h2>
+<p>The number of devices connected and exposed to the public internet increases each day. However, there is not a corresponding move to ensure that security benchmarks and software updates are properly and regularly implemented, creating a situation whereby outdated software with publicly known vulnerabilities can be exploited.</p>
+<p>This is the case, for example, with a significant amount of Internet of Things (IoT) devices, which are usually devices running simple software, such as coffee machines, printers, smart cameras, routers, etc. These devices have often not regularly been updated to run the latest firmware version or have been left with the default username and password.</p>
+<p><strong>A DDos attack relies</strong> on a malicious actor hijacking such vulnerable devices to form a network of malicious devices, or a botnet, through which the actor can then issue specific commands, such as getting them all to keep sending requests to a specific website or server.</p>
+<p>The malicious actor can utilize this network of devices to their own benefit or rent it to someone else.
+One of the most recent and infamous botnets is the <a href="https://www.malwarebytes.com/what-was-the-mirai-botnet">Mirai botnet</a>.</p>
+<h2 id="identification">Identification</h2>
+<p>Identifying a DDoS attack in real-time might seem simple enough, but anyone who has gone through the experience of hosting or managing a server that is exposed to the internet knows that there is usually a lot of random noise showing all the time on the server logs that is usually not harmful in nature, such as search engines bots.</p>
+<p>This fact makes it more complicated to identify and track the malicious traffic and its sources. It’s also important to determine whether the occurring downtime is a result of a server component malfunction, misconfiguration or an attack.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note on best practice</h4>
+
+    <p>It’s always a good practice to make sure server logs are well configured and accessible. This is especially the case with any effort to identify and mitigate a DDoS attack. Being able to access and to understand live logs will be a crucial factor in the process.</p>
+<p>It’s also important to know which logs to look at. As linux-based distributions (Ubuntu, Redhat, etc.) are the dominant operating system in the server hosting market, we’ll be using it as an example in this case.</p>
+
+
+</div>
+
+<h5 id="our-example">Our example</h5>
+<p><strong>Linux operating systems normally store logs under <code>/var/log/</code>.</strong> In this directory, you’ll find different types of logs:</p>
+<ul>
+<li>Logs from the operating system and its different components (kernel, hardware management, networking, firewall events)</li>
+<li>Logs created by specialized software installed by the user and running on the server, such as web servers (Nginx, Apache), runtime environment for a programming language (PHP, Java, Javascript), or database servers (MySQL, MongoDB)</li>
+</ul>
+<p><strong>For example</strong>, when trying to identify a DDoS attack on a WordPress-based website, we need to look at logs of the software used to run the website:</p>
+<ul>
+<li>Web server (Nginx, Apache) <code>/var/log/nginx/</code>
+<ul>
+<li><code>/var/log/nginx/</code></li>
+<li><code>/var/log/apache2/</code></li>
+</ul>
+</li>
+<li>PHP runtime (php-fpm in case of nginx)
+<ul>
+<li><code>/var/log/php/</code></li>
+<li><code>/var/log/php*/</code></li>
+</ul>
+</li>
+<li>Database server (MariaDB, MySQL, MongoDB)
+<ul>
+<li><code>/var/log/mysql/</code></li>
+</ul>
+</li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">There are some signs to look for in the logs</h4>
+
+    <hr>
+<ul>
+<li>A sudden or unusual spike in incoming traffic</li>
+<li>Too many requests coming from the same IP addresses or a specific range of addresses over a short period of time</li>
+<li>Sudden increase in incoming requests over seemingly random and non-existent pages/urls on the server, returning 404 errors</li>
+<li>Increasing number of 403 and 405 errors, indicating service outages as a result of the server exhausting the limit of its hardware capacity causing all types of system errors and eventually crashing</li>
+</ul>
+<hr>
+
+
+</div>
+
+<p><strong>If the attacks are operating on HTTP protocol</strong>, the <code>user-agent</code> request header <em>– which is used by software operating within a network protocol to identify itself, e.g.</em> <code>Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion</code> – in incoming traffic will look suspicious and can help in the identification process when cross checked with IP addresses.</p>
+<p>But, often things aren&rsquo;t so straight forward
+Attackers can easily change the <code>user-agent</code> request header used by their software to imitate a specific software such as well known search engine bots or normal browsers, such as Google Chrome or Firefox. (E.g.<code>AdsBot-Google (+http://www.google.com/adsbot.html)</code>).</p>
+<h5 id="luckily-a-lot-of-suspicious-user-agents-have-already-been-identified">Luckily, a lot of suspicious user-agents have already been identified</h5>
+<p><strong>Example of suspicious user-agents:</strong></p>
+<ul>
+<li>Baiduspider+(+http://help.baidu.jp/system/05.html)`</li>
+<li>Nuclei - Open-source project (github.com/projectdiscovery/nuclei)</li>
+</ul>
+<p><strong>You can find some public curated lists of potentially malicious user agents</strong></p>
+<ul>
+<li><a href="https://github.com/fastly/waf_testbed/blob/master/templates/default/scanners-user-agents.data.erb">Fastly scanners user agents</a></li>
+<li><a href="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/_generator_lists/bad-user-agents.list">Nginx ultimate bad bot blocker</a></li>
+</ul>
+<h2 id="mitigation">Mitigation</h2>
+<p><strong>The ultimate goal of a targeted DDoS attack is</strong> to exhaust the target’s available resources over time, making it increasingly difficult to support the infrastructure needed for the website and the technical expertise required to keep it running against the attack.</p>
+<p><strong>That means</strong>, successful mitigation will hinge on detecting and either blocking or throttling most of the malicious requests.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">What you'll find in the sections below</h4>
+
+    <p>We detail two principal approaches that can be used in combination to create a robust mitigation approach:</p>
+<ol>
+<li>server configuration mitigation measures and</li>
+<li>mitigation through the use an external service, such as web application firewalls, content delivery networks and caching.</li>
+</ol>
+
+
+</div>
+
+<h3 id="server-configuration-mitigation-measures">Server configuration mitigation measures</h3>
+<p>We outline, below, a number of useful software that can be installed on the server that can be helpful in DDoS mitigation: Fail2ban and Crowdsec.</p>
+<h4 id="fail2ban">Fail2ban</h4>
+<p><a href="https://github.com/fail2ban/fail2ban">Fail2ban</a> is a UNIX-like systems specific software (Linux, BSD, macOS). The main function of Fail2ban is to monitor a specific set of system logs and identify malicious behavior based on sets of rules and predefined patterns. Fail2ban needs to be configured according to the nature and known attack vectors of the targeted software/service.</p>
+<p>The firewall software installed on the server can then be utilized to block the detected bad actors for a specific time or indefinitely.</p>
+<p>Fail2ban is a very flexible software and can be configured to monitor a wide variety of services and endpoints. However, setting up and successfully configuring everything for multiple services can be a bit tricky at first.</p>
+<h5 id="fail2ban-configuration-files-are-organized-this-way">Fail2ban configuration files are organized this way:</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/etc/fail2ban/
+</span></span><span style="display:flex;"><span>├── action.d
+</span></span><span style="display:flex;"><span>├── fail2ban.d
+</span></span><span style="display:flex;"><span>├── filter.d
+</span></span><span style="display:flex;"><span>│   └── ignorecommands
+</span></span><span style="display:flex;"><span>└── jail.d
+</span></span></code></pre></div><hr>
+<h5 id="what-are-jails">What are jails?</h5>
+<p>Jails are used to control and define the service we need to monitor. Take the example where we are creating a jail to ban IP addresses that are getting a lot of forbidden errors on their requests, which means they are attempting to access a restricted endpoint repeatedly.</p>
+<p>In this scenario, we need to create and set the name of the filter we are going to create later, the action, and the path of the log file we are monitoring.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff79c6">[</span>nginx-forbidden<span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">enabled</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">filter</span> <span style="color:#ff79c6">=</span> nginx-forbidden
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">action</span> <span style="color:#ff79c6">=</span> iptables-multiport<span style="color:#ff79c6">[</span><span style="color:#8be9fd;font-style:italic">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;nginx-forbidden&#34;</span>, <span style="color:#8be9fd;font-style:italic">port</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;http,https&#34;</span><span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">logpath</span> <span style="color:#ff79c6">=</span> /var/log/nginx/*error*.log
+</span></span></code></pre></div><hr>
+<h5 id="what-are-filters">What are filters?</h5>
+<p>Filters define the patterns to look for in the log files. The filter uses regular expressions to define the pattern. We also have the ability to define a pattern that should be ignored, which can be useful to whitelist specific requests.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff79c6">[</span>Definition<span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">failregex</span> <span style="color:#ff79c6">=</span> ^ <span style="color:#f1fa8c">\[</span>error<span style="color:#f1fa8c">\]</span> <span style="color:#f1fa8c">\d</span>+#<span style="color:#f1fa8c">\d</span>+: .* forbidden .*, client: &lt;HOST&gt;, .*$
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">ignoreregex</span> <span style="color:#ff79c6">=</span>
+</span></span></code></pre></div><hr>
+<h5 id="what-are-actions">What are actions?</h5>
+<p>Actions are used to define how Fail2ban will respond after identifying the pattern defined in the filter. Actions can be used, for example, to block the offending IP addresses using the firewall UFW (Uncomplicated Firewall).
+Ultimately executing a command that looks like <code>ufw deny from xxx.xxx.xxx.xxx to any</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># Fail2Ban action configuration file for ufw</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># You are required to run &#34;ufw enable&#34; before this will have any effect.</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># The insert position should be appropriate to block the required traffic.</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># A number after an allow rule to the application won&#39;t be of much use.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">[</span>Definition<span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">actionstart</span> <span style="color:#ff79c6">=</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">actionstop</span> <span style="color:#ff79c6">=</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">actioncheck</span> <span style="color:#ff79c6">=</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">actionban</span> <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">[</span> -n <span style="color:#f1fa8c">&#34;&lt;application&gt;&#34;</span> <span style="color:#ff79c6">]</span> <span style="color:#ff79c6">&amp;&amp;</span> <span style="color:#8be9fd;font-style:italic">app</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;app &lt;application&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>ufw insert &lt;insertpos&gt; &lt;blocktype&gt; from &lt;ip&gt; to &lt;destination&gt; <span style="color:#8be9fd;font-style:italic">$app</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">actionunban</span> <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">[</span> -n <span style="color:#f1fa8c">&#34;&lt;application&gt;&#34;</span> <span style="color:#ff79c6">]</span> <span style="color:#ff79c6">&amp;&amp;</span> <span style="color:#8be9fd;font-style:italic">app</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;app &lt;application&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>ufw delete &lt;blocktype&gt; from &lt;ip&gt; to &lt;destination&gt; <span style="color:#8be9fd;font-style:italic">$app</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">[</span>Init<span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Option: insertpos</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Notes.: The position number in the firewall list to insert the block rule</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">insertpos</span> <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Option: blocktype</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Notes.: reject or deny</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">blocktype</span> <span style="color:#ff79c6">=</span> reject
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Option: destination</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Notes.: The destination address to block in the ufw rule</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">destination</span> <span style="color:#ff79c6">=</span> any
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Option: application</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Notes.: application from sudo ufw app list</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">application</span> <span style="color:#ff79c6">=</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># DEV NOTES:</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Author: Guilhem Lettron</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Enhancements: Daniel Black</span>
+</span></span></code></pre></div><hr>
+<h4 id="crowdsec">Crowdsec</h4>
+<p>If the process of configuring Fail2ban seemed a bit too complicated, Crowdsec, an open-source project built on similar principles as Fail2ban, should be very helpful.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube-nocookie.com/embed/t99cnWYGhdw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p>CrowdSec is a free, modern &amp; collaborative behavior detection engine, coupled with a global IP reputation network. It stacks on Fail2ban&rsquo;s philosophy but is IPV6 compatible and 60x faster (Go vs Python), uses Grok patterns to parse logs and YAML scenario to identify behaviors.
+CrowdSec is engineered for modern Cloud / Containers / VM-based infrastructures (by decoupling detection and remediation). Once detected, you can remedy threats with various bouncers (firewall block, nginx http 403, Captchas, etc.), while the aggressive IP can be sent to CrowdSec for curation before being shared among all users to further improve everyone&rsquo;s security. — <strong>Crowdsec developers</strong></p>
+
+</div>
+
+<p>As the developers describe it above, Crowdsec functions in a way similar to Fail2ban but comes with more features and is way simpler to set up.
+Another key feature of Crowdsec is the sharing of offending IP addresses across the community using it, effectively creating a community driven IP reputation system.</p>
+<p>For instruction purposes, say we are looking at a simple installation of Crowdsec to monitor incoming traffic to a Wordpress instance, but, first, we need to briefly define some of the inner parts of the software in order to get an initial understanding of how it functions.
+Crowdsec offers great documentation, which you can find <a href="https://docs.crowdsec.net/docs/getting_started/install_crowdsec">here</a>.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Building on the work of others</h4>
+
+    We will be using Crowdsec’s own documentations.
+You can refer to the <a href="https://doc.crowdsec.net/docs/concepts">concepts</a> page for a better understanding of the software components.
+
+</div>
+
+<p><strong>First</strong>, we need to install Crowdsec.
+Refer to the <a href="https://docs.crowdsec.net/docs/getting_started/install_crowdsec">installation page</a> for installation instruction specific to your operating system.</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note on best practice</h4>
+
+    <p>While it’s possible to have Crowdsec installed on a standalone server, it’s much easier to have it running on the same machine as the target website. Installing it on a standalone server would require additional configurations for authentication and security.</p>
+<p>To install Crowdsec on a standalone server, you can consult Crowdsec’s docs, <a href="https://docs.crowdsec.net/docs/configuration/crowdsec_configuration#tls">here</a>.</p>
+
+
+</div>
+
+<h5 id="our-example-1">Our example</h5>
+<p><strong>To install on Ubuntu/Debian, run:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -s https://packagecloud.io/install/repositories/Crowdsec/Crowdsec/script.deb.sh | sudo bash
+</span></span><span style="display:flex;"><span>apt install Crowdsec
+</span></span></code></pre></div><p><strong>And then initiate the configuration wizard:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/usr/share/Crowdsec/wizard.sh -c
+</span></span></code></pre></div><p><strong>The configuration wizard will appear.</strong></p>
+<p><strong>First, the script scans for logs on your system and which software they belong to. You can deselect services that you don’t want Crowdsec to monitor.</strong></p>
+<p><img src="../images/ddos/1.png" alt=""></p>
+<p><strong>Here, you need to select the “collections” that fit your use case.</strong></p>
+<p>”Collections” contain ”parsers” which help the software understand how to process the logs produced by a specific software and “scenarios” that are used to describe the attack scenario and how it should look in the logs as a pattern.</p>
+<p><img src="../images/ddos/2.png" alt=""></p>
+<p><strong>Some of the suggested collections in this example</strong></p>
+<ul>
+<li>Crowdsecurity/whitelist-good-actors</li>
+<li>Crowdsecurity/wordpress</li>
+<li>Crowdsecurity/http-cve</li>
+<li>Crowdsecurity/apache2</li>
+<li>Crowdsecurity/nginx</li>
+</ul>
+<p><strong>In the next stage, we can confirm the detected individual log files for every software. We can deselect any file we don’t want monitored.</strong></p>
+<p><img src="../images/ddos/3.png" alt=""></p>
+<p><img src="../images/ddos/4.png" alt=""></p>
+<hr>
+<p><strong>Now, we need to install the Crowdsec <a href="https://wordpress.org/plugins/crowdsec/">Wordpress plugin</a> on the targeted instance.</strong></p>
+<p>The plugin is available on Wordpress plugin store, and it can be downloaded from the <a href="https://github.com/crowdsecurity/cs-wordpress-bouncer/releases/latest">project Github</a> as well.</p>
+<p><img src="../images/ddos/5.png" alt=""></p>
+<p><strong>Once the plugin is installed and enabled, it should be accessible from the Wordpress dashboard.</strong></p>
+<p><img src="../images/ddos/6.png" alt=""></p>
+<p><strong>The first thing to set here is the <code>Local API URL</code>,</strong> which is the address of the server that’s running Crowdsec. If it’s installed on the same machine as the Wordpress instance, it should be set to <code>http://localhost:8080</code></p>
+<p>Now, <strong>we need to go back to the command line to generate the <code>Bouncer API key</code>.</strong> The bouncer will be used to authenticate its connection with Crowdsec.</p>
+<p><strong>Now, we get the key by running:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cscli bouncers add wordpress-bouncer
+</span></span></code></pre></div><p><strong>The result should be a random key that looks like this:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Api key <span style="color:#ff79c6">for</span> <span style="color:#f1fa8c">&#39;wordpress-bouncer&#39;</span>:
+</span></span><span style="display:flex;"><span> 4df97788c6a4967ba16cbd689d2395df
+</span></span><span style="display:flex;"><span>Please keep this key since you will not be able to retrieve it!
+</span></span></code></pre></div><p>After we test these settings and confirm the connection between the Wordpress plugin and Crowdsec is working, <strong>there are some settings in the plugin that we can use to fine-tune the bouncing process and make it work best for our use case.</strong></p>
+<p><strong>Here, we can customize the message that will be shown to a banned/bounced client.</strong></p>
+<p><img src="../images/ddos/7.png" alt=""></p>
+<p><strong>The default looks like this:</strong></p>
+<p><img src="../images/ddos/14.png" alt=""></p>
+<p><strong>We then need to open the advanced settings tab</strong></p>
+<p><img src="../images/ddos/9.png" alt=""></p>
+<p><strong>First, we need to enable <code>stream mode</code> and lower the <code>Resync decision each</code>.</strong></p>
+<p><img src="../images/ddos/10.png" alt=""></p>
+<p>In this example, <strong>we will set the Resync intervals to every 5 seconds.</strong>
+This basically controls the intervals of fetching new <code>decisions</code> from Crowdsec.
+But there is room for experimentation and adjustment to fine-tune these settings for each use case.</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Other important settings to check</h4>
+
+    <p>If you are using a specific content delivery network (CDN), such as Cloudflare or Fastly, your website is being served either partially or completely from the CDN’s own IP addresses.</p>
+<p>That means that the requests coming to your server will also be from the CDN and not directly from the client.
+To be able to see and log the original IP addresses of the request, CDNs usually use a specific header in the HTTP packet called <code>X-Forward-For</code>. Adding the public IP ranges of your CDN here will tell Crowdsec to trust the requests coming from them and to look for the <code>X-Forward-For</code> HTTP header` to get the original source of the request.</p>
+
+
+</div>
+
+<h5 id="how-to-whitelist-cdns">How to whitelist CDNs</h5>
+<p><img src="../images/ddos/11.png" alt=""></p>
+<p>Most CDN services usually publish a list of their public IP ranges so they can be whitelisted. <strong>Find the IP ranges for two major CDN services below:</strong></p>
+<ul>
+<li><a href="https://www.cloudflare.com/ips/">Cloudflare</a></li>
+<li><a href="https://support.google.com/a/answer/10026322?hl=en">Google</a></li>
+</ul>
+<p><strong>It’s also important to check the caching settings here:</strong></p>
+<p><img src="../images/ddos/12.png" alt=""></p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note that</h4>
+
+    <p>Some of these settings aren&rsquo;t applicable when stream mode is enabled.</p>
+<p>For a more detailed overview on how <code>stream mode</code> functions in Crowdsec, take a look at the developer’s <a href="https://docs.crowdsec.net/docs/local_api/bouncers#stream-mode">documentation</a>.</p>
+
+
+</div>
+
+<p><strong>Now, we need to choose the <code>Bouncing Level</code>. There are three choices</strong></p>
+<ul>
+<li><strong>Bouncing disabled:</strong> No ban or Captcha display to users. The road is free, even for attackers. (No action will be taken)</li>
+<li><strong>Flex bouncing:</strong> Display Captcha only, even if CrowdSec advises to ban the IP.</li>
+<li><strong>Normal bouncing:</strong> Follow CrowdSec advice (Ban or Captcha).</li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <p><strong>Tip:</strong></p>
+<p><code>Normal Bouncing</code> would be the best option if you are facing an imminent or persistent attack. <code>Flex bouncing</code> will only use captcha even if the decision from Crowdsec was <code>ban</code>. That will help in reducing the false positive bans to legitimate visitors when there is no attack.</p>
+
+
+</div>
+
+<h5 id="how-to-test-the-communication-between-crowdsec-and-the-wordpress-plugin">How to test the communication between Crowdsec and the Wordpress plugin.</h5>
+<p>We can manually ban a specific IP address using Crowdsec Then, we can observe how long it takes for the plugin to pick up the decision.</p>
+<p><strong>To manually enforce a decision, we need to run:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cscli decisions add –ip xxx.xxx.xxx.xxx
+</span></span></code></pre></div><p><strong>To check the current decisions, run:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cscli decisions list
+</span></span></code></pre></div><p><strong>We should find our banned address here</strong>
+<img src="../images/ddos/13.png" alt=""></p>
+<p>Now, if everything is working properly, <strong>we should get the following prompt screen when we try to access the website from the banned address.</strong></p>
+<p><img src="../images/ddos/14.png" alt=""></p>
+<p>Depending on the settings we discussed before, the plugin might take some time to synchronize the decisions from the API. <strong>Adjusting this time window can help increase the effectiveness of mitigating different types of attacks.</strong></p>
+<p>For example, to respond to an attack using a wide range of IP addresses from different locations, we will need to minimize the synchronization time as much as possible.
+However, we need to adjust the parameters gradually to prevent overwhelming the hardware capacities of the server or creating too many background requests.</p>
+<p>Getting the most suitable parameters for each machine, server setup, and attack scenario will take some fiddling and observation.</p>
+<h5 id="technical-notes">Technical notes</h5>
+<p><strong>WP-Cron</strong></p>
+<p>By default, WordPress uses WP-Cron to schedule its routine tasks. This should be sufficient in most cases. However, in some cases – especially with resource-hungry websites – using the operating system&rsquo;s own scheduler might be better for performance.</p>
+<p>Some custom Wordpress themes and plugins might be affected by changing this configuration, please consult the documentations below before trying</p>
+<ul>
+<li><a href="https://developer.wordpress.org/plugins/cron/hooking-wp-cron-into-the-system-task-scheduler/">Hooking WP-Cron Into the System Task Scheduler</a></li>
+<li><a href="https://docs.Crowdsec.net/docs/bouncers/wordpress/#how-to-use-system-cron-instead-of-wp-cron">How to use system CRON instead of wp-cron?</a></li>
+</ul>
+<p><strong>Caching and external scripts</strong></p>
+<p>Crowdsec will monitor and react to all requests going through normal Wordpress core loading.
+In some cases, such as some caching or content management plugins, external PHP scripts are run directly. Consult your website developer and review the installed and activated plugins, and if that is the case, check out the documentation, here.</p>
+<p><strong>Other use cases</strong></p>
+<p>Crowdsec has bouncers for other services and use cases. You can check them out, here.</p>
+<p><strong>Guides for different Crowdsec configuration scenarios</strong></p>
+<ul>
+<li><a href="https://docs.Crowdsec.net/docs/bouncers/wordpress/">Crowdsec bouncer for wordpress</a></li>
+<li><a href="https://docs.Crowdsec.net/docs/local_api/bouncers#stream-mode">What is stream mode</a></li>
+<li><a href="https://www.Crowdsec.net/blog/installing-and-configuring-Crowdsec-into-cloudflare">Using Crowdsec alongside Cloudflare</a></li>
+<li><a href="https://www.Crowdsec.net/blog/mitigate-ddos-with-Crowdsec">Configuration example for DDoS mitigation</a></li>
+<li><a href="https://docs.Crowdsec.net/docs/getting_started/install_Crowdsec/">Guide on Crowdsec installation</a></li>
+<li><a href="https://github.com/Crowdsecurity/cs-wordpress-bouncer/blob/main/docs/USER_GUIDE.md#description">Guide on Wordpress bouncer configuration</a></li>
+<li><a href="https://www.Crowdsec.net/blog/how-to-beat-application-ddos">Guide on best practices for application layer DDoS mitigation</a></li>
+</ul>
+<hr>
+<h4 id="best-practices-and-server-optimization">Best practices and server optimization</h4>
+<p>Following best practices while creating and configuring the server will be of great help in the event of dealing with a DDoS attack. One very important aspect is using different server caching mechanisms and optimizing server performance and capacity.</p>
+<p>Caching means the server will keep a cached (pre-rendered) copy of the content and serve it directly without the need to run the whole code and render a new result for every request, as long as the content is unchanged. This will not only help with DDoS resilience and mitigation but will provide improvement to the overall performance of the website or service.</p>
+<p><strong>For example</strong>, enabling caching using Nginx fastcgi or Redis helps reduce the load on the hosting server as it serves pre-rendered content as long as no changes were made to the content on the website.</p>
+<ul>
+<li><a href="https://www.linode.com/docs/guides/how-to-use-nginx-fastcgi-page-cache-with-wordpress/">Guide to Nginx fastcgi configuration</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-configure-redis-caching-to-speed-up-wordpress-on-ubuntu-14-04">Guide to Redis caching configuration</a></li>
+<li><a href="https://wordops.net/f-a-q/">Using Wordops to automate Wordpress-based website installation and configuration with recommended best practices in mind</a></li>
+</ul>
+<hr>
+<h3 id="mitigation-using-external-services">Mitigation using external services</h3>
+<p>Alongside the measures that can be implemented through self-hosted server configuration, there are a number of external services that can also aid in DDoS mitigation.</p>
+<p>Where self-hosted server configuration allows for a higher degree of specialization and gives you complete control over the flow of your data, the range of external services discussed below – which include web application firewalls, content delivery networks, and caching – bring the benefits of a wider net born out of the more macro view these service providers have.</p>
+<p><strong>Before jumping into the potential services</strong>, let’s take a moment to explain each of these services. Ultimately, many service providers offer a mix of the various services in a single offer, but it is helpful to understand each of them in isolation.</p>
+<h4 id="web-application-firewall-waf">Web application firewall (WAF)</h4>
+<p>A Web application firewall (WAF) is a custom type of firewall software that is specifically designed to work with specific types of applications. It can thus be configured to monitor all traffic related to this application, detect certain patterns and indications of malicious behavior, and respond to it using pre-set rules.</p>
+<h4 id="content-delivery-network-cdn">Content delivery network (CDN)</h4>
+<p>CDN services such as Cloudflare, Google Cloud CDN, and others all employ a global network of content caching and delivery networks, basically caching and storing parts of the website that doesn’t change so often and serving the cached data to the visitor from the nearest server to their geographical location, ultimately decreasing latency, improving load times, the overall performance for the website, and most importantly– for our case here – reducing the load and processing demands on the origin server.</p>
+<h4 id="caching">Caching</h4>
+<p>Alongside caching tactics that can be implemented on the server in order to serve pre-rendered content, external services also have their own caching mechanisms that can help optimize performance and prevent resource drains.</p>
+<h4 id="cloudflare">Cloudflare</h4>
+<p>Cloudflare offers a variety of web services. Here, we will focus only on services that are most effective for DDoS mitigation.</p>
+<h5 id="project-galileo">Project Galileo</h5>
+<p>Some of the features we will be recommending in this guide aren&rsquo;t available on Cloudflare’s free tier. However, since the main targeted audience here are NGOs, human rights related content, and independent media organizations, there is a dedicated program through which Cloudflare offers support for organizations that might fit that criteria.</p>
+<p>For more information on project Galileo and how to <a href="https://www.cloudflare.com/galileo/">apply</a>, see here.</p>
+<h5 id="live-logs">Live logs</h5>
+<p>One of the most important features will be the intuitive events processing and filtering interface.</p>
+<p>Through this interface, we can monitor the requests coming to the website as well as search through the logs using advanced filters, which will help in identifying the patterns of the attack and create specific firewall rules to mitigate.</p>
+<p><img src="../images/ddos/15.png" alt=""></p>
+<p>We are also able to search through the events using advanced filters. For example, we can search all the traffic coming from a specific country which is requesting a specific path.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Learn more</h4>
+
+    Click <a href="https://developers.cloudflare.com/logs/reference/log-fields/zone/firewall_events/">here</a> to find out more about Cloudflare Firewall Events interface.
+
+</div>
+
+<h5 id="web-application-firewall-waf-1">Web Application Firewall (WAF)</h5>
+<p>On Cloudflare, we can create sets of custom access control and firewall rules, configure them to trigger certain responses based on certain rules and indications, and we can also arrange them in terms of priority.</p>
+<p>Cloudflare offers some automated firewall rules as well, specifically curated for well known attack vectors for various widely used applications, such as Wordpress or Drupal, or attack vectors, such as SQL injection or DDoS attacks.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Learn more</h4>
+
+    You can review more about Cloudflare’s managed rules, <a href="https://developers.cloudflare.com/waf/managed-rules/">here</a>.
+
+</div>
+
+<h5 id="rate-limiting">Rate Limiting</h5>
+<p><strong>Rate limiting</strong> is a very important feature in DDoS mitigation. How it ultimately works is through setting rules that limit the amount of requests allowed from a specific source. See the setting window below:</p>
+<p><img src="../images/ddos/16.png" alt=""></p>
+<p>After the pre-set amount is exceeded a certain measure will be triggered. The response can include blocking the source for a period of time or indefinitely. Alternatively, it can be “challenged,” which means requests coming from the potentially malicious source will be redirected to what can be described as “an obstacle page” to slow down and verify its requests.</p>
+<p>This obstacle can include a CAPTCHA or simply a loading page that redirects to the original website after a short wait.
+You can read more on rate limiting on Cloudflare, <a href="https://developers.cloudflare.com/waf/rate-limiting-rules/">here</a>.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Learn more</h4>
+
+    You can also read about Cloudflare’s automated DDoS protection, <a href="https://developers.cloudflare.com/ddos-protection/">here</a>.
+
+</div>
+
+<hr>
+<h4 id="google-shield">Google Shield</h4>
+<p><strong>Shield</strong> is a DDoS protection service developed and maintained by the <a href="https://jigsaw.google.com/">Jigsaw</a> unit at Google. The service is focused on <a href="https://support.projectshield.withgoogle.com/s/?language=en_US">supporting</a> independent media organizations, news outlets, and human rights organizations that could face DDoS attacks.</p>
+<p>Shield offers a DDoS protection <a href="https://support.projectshield.withgoogle.com/s/article/FAQs?language=en_US">service</a> that leverages a combination of caching and automated rate-limiting to mitigate DDoS attacks. It functions as a reverse-proxy standing between the origin server and the visitor/client, serving the cached content through Google’s content distribution network (CDN).</p>
+<p>The service is offered for free. You do, however, need to apply for it. Check out the application instructions and criteria <a href="https://support.projectshield.withgoogle.com/s/article/How-to-apply-for-Project-Shield?language=en_US">here</a>.</p>
+<hr>
+<h4 id="deflect">Deflect</h4>
+<p><a href="https://deflect.ca">Deflect</a> is a DDoS mitigation service built by <a href="https://equalit.ie/">eQualitie</a>. The service is focused on supporting non-profit organizations at risk.</p>
+<p>You can check the supported criteria and application instructions <a href="https://deflect.ca/non-profits/">here</a>.</p>
+<hr>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-8efbf7499fe9c7bde8d2c1bb7ff6ee3c">7 - Contribution Guidelines</h1>
     <div class="lead">How to contribute to the docs</div>
 	
 
@@ -2488,7 +2987,7 @@ engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps th
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-8df6ea6904416b571ff9bc73afb50933">7 - References</h1>
+	<h1 id="pg-8df6ea6904416b571ff9bc73afb50933">8 - References</h1>
     <div class="lead">Referenced Projects, tools, and reading materials</div>
 	<ul>
 <li><a href="https://ooni.org/">Open Observatory of Network Interference (OONI)</a></li>
@@ -2603,7 +3102,7 @@ engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps th
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2022 GPLv3, All Rights Reserved</small>
+        <small class="text-white">&copy; 2023 GPLv3, All Rights Reserved</small>
         
 	
       </div>

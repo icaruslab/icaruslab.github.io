@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icarus Project – DDoS mitigation guide</title>
+    <link>/docs/ddos-mitigation-guide.html</link>
+    <description>Recent content in DDoS mitigation guide on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/ddos-mitigation-guide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
