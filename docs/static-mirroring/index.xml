@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static mirroring on Icarus Project</title>
+    <link>/docs/static-mirroring/</link>
+    <description>Recent content in Static mirroring on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@fightcensorship.tech (Icarus Project)</managingEditor>
+    <webMaster>info@fightcensorship.tech (Icarus Project)</webMaster>
+    <copyright>Some rights reserved. Unless otherwise noted, content on this page is under a Creative Commons license.</copyright><atom:link href="/docs/static-mirroring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wget</title>
+      <link>/docs/static-mirroring/wget-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/wget-guide/</guid>
+      <description>Required expertise level : Beginner / Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : January 2022
+Wget is a cli-based software that retrieves web content, it supports HTTP, HTTPS, and FTP protocols. One of Wget’s features is the ability to scan and index the entirety of a website and download a fully functional static clone of the original website.
+The static clone can be later refreshed and updated with new content published to the original website.</description>
+    </item>
+    
+    <item>
+      <title>HTTrack</title>
+      <link>/docs/static-mirroring/httrack-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/httrack-guide/</guid>
+      <description>Required expertise level : Beginner / Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : January 2022
+HTTrack is a free software developed for the specific purpose of downloading fully functional offline copies of any website.
+It has many advantages over Wget, and offers a graphical user interface. While it’s not being updated since 2017, it proofed to be efficient in most use cases in our testing scenarios.</description>
+    </item>
+    
+    <item>
+      <title>WordPress Plugins</title>
+      <link>/docs/static-mirroring/wpplugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/wpplugins/</guid>
+      <description>Required expertise level : Beginner / Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | BSD
+Last tested and confirmed : January 2022
+WP2Static WP2Static options
+WP2Static can be considered as the most optimal plugin for the purpose of generating and updating a static mirror.
+This plugin also offers different deployment sub-plugins which can configure direct deployments to platforms like Amazon S3 and GitHub.
+However, it&amp;rsquo;s plugin development process itself doesn’t seem to be stable, at the time of writing these documentations, it appears to be transitioning to a new approach and undergoing big changes.</description>
+    </item>
+    
+  </channel>
+</rss>

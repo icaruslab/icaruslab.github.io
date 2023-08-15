@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static mirror hosting on Icarus Project</title>
+    <link>/docs/static-mirroring/static-hosting/</link>
+    <description>Recent content in Static mirror hosting on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@fightcensorship.tech (Icarus Project)</managingEditor>
+    <webMaster>info@fightcensorship.tech (Icarus Project)</webMaster>
+    <copyright>Some rights reserved. Unless otherwise noted, content on this page is under a Creative Commons license.</copyright><atom:link href="/docs/static-mirroring/static-hosting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting on Amazon S3</title>
+      <link>/docs/static-mirroring/static-hosting/amazons3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/static-hosting/amazons3/</guid>
+      <description>Required expertise level : Intermediate
+Platform : Any
+Last tested and confirmed : January 2022
+Amazon S3 (Amazon Simple Storage Service) is a data storage service and one of the Amazon Web Services (AWS)
+S3 provides object storage service, which means that data is stored and addressed as objects, each object contains it&amp;rsquo;s own data in addition to meta-data and a unique identifier.
+Object storage is often used to store big amounts of data that doesn&amp;rsquo;t need the features and structure of the file systems hierarchy.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on Google Cloud Storage</title>
+      <link>/docs/static-mirroring/static-hosting/gcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/static-hosting/gcs/</guid>
+      <description>Required expertise level : Intermediate
+Platform : Any
+Last tested and confirmed : January 2022
+Google Cloud Storage is object storage service similar to Amazon S3, and it provides the ability to serve static web pages as well.
+The main advantage of using Google Cloud Storage to host our static mirror is the ability to serve a fully functional &amp;ldquo;static&amp;rdquo; web pages directly using Google Cloud Platform URLs which usually looks like this: https://storage.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on GitHub</title>
+      <link>/docs/static-mirroring/static-hosting/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/static-hosting/github/</guid>
+      <description>Required expertise level : Intermediate
+Platform : Any
+Last tested and confirmed : January 2022
+GitHub is a software development platform using Git version control system, and it provides the ability to serve static web pages through GitHub Pages service.
+Note GitHub provides an easy step-by-step guide on how to host a static website on their platform. The guide is available in English, so, in order to avoid redundancy we&amp;rsquo;ll just refer to it here and add a translated version for every available language in our documentations.</description>
+    </item>
+    
+  </channel>
+</rss>

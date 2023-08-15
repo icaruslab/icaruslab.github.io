@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta charset="UTF-8" />
+<meta name="author"
+  content="info@fightcensorship.tech Icarus Project " />
+<meta name="description"
+  content="Create Onion Service for your Static mirror
+" />
+<meta name="keywords"
+  content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#48AD9C" />
+<link rel="canonical" href="/docs/alternative-publishing-methods/tor/staticonion/" />
+
+
+<title>
+   Static Onion :: Icarus Project  
+</title>
+
+
+
+ 
+
+
+
+  
+
+
+<link rel="stylesheet" href="/main.bf369f1addd9221a52374ee87aeebebfe100f5004c933d3c292a4728f57246f5.css" />
+
+
+
+
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png">
+<link rel="mask-icon" href="/favicons/favicon.svg" color="#328378">
+<link rel="icon" href="/favicons/favicon.svg">
+<meta itemprop="name" content="Static Onion">
+<meta itemprop="description" content="Create Onion Service for your Static mirror
+">
+
+<meta itemprop="wordCount" content="618"><meta itemprop="image" content="/img/default.png"/>
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Static Onion" />
+<meta property="og:description" content="Create Onion Service for your Static mirror
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/alternative-publishing-methods/tor/staticonion/" /><meta property="og:image" content="/img/default.png"/><meta property="article:section" content="docs" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/img/default.png"/>
+
+<meta name="twitter:title" content="Static Onion"/>
+<meta name="twitter:description" content="Create Onion Service for your Static mirror
+"/>
+ 
+ 
+
+
+
+
+
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <a class="screen-reader-text" href="#content">Skip to content</a>
+
+    
+
+<header class="background-head">
+
+    
+    <div class="container-fluid pt-2">
+    <div id="menu" class="container">
+      <nav class="navbar navbar-expand-lg justify-content-between align-items-center" aria-label="Primary">
+        <a aria-label="Icarus Project Logo" class="navbar-brand" href="/">
+          <img class="img-fluid" src="/img/logo.svg" alt="Icarus Project logo" width="150px" height="auto">
+        </a>
+
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+
+        <div id="menu-items" class="collapse navbar-collapse flex-grow-0 mt-lg-0 mt-4">
+          <ul class="navbar-nav align-items-lg-center"><li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 "  href="/">Home</a>
+            </li>
+            <li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 "  href="/about/">About</a>
+            </li>
+            <li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 active" aria-current="page"  href="/docs/">Documentation</a>
+            </li>
+            <li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 "  href="/community/">Community</a>
+            </li>
+            <li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 "  href="/blog/">Blog</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+</div>
+    
+
+</header>
+
+
+
+    <div id="content" class="content py-5">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-12 col-md-4 col-xl-3">
+                        
+<div id="sidebar-menu">
+  <nav>
+    <ul class="td-sidebar-nav__section ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsoverview-li">
+  <a href="/docs/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsoverview"><span class="">Overview</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsgetting-started-li">
+  <a href="/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting Started</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsstatic-mirroring-li">
+  <a href="/docs/static-mirroring/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsstatic-mirroring"><span class="">Static mirroring</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringwget-guide-li">
+  <a href="/docs/static-mirroring/wget-guide/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringwget-guide"><span class="">Wget</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringhttrack-guide-li">
+  <a href="/docs/static-mirroring/httrack-guide/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringhttrack-guide"><span class="">HTTrack</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringwpplugins-li">
+  <a href="/docs/static-mirroring/wpplugins/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringwpplugins"><span class="">WordPress Plugins</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsstatic-mirroringstatic-hosting-li">
+  <a href="/docs/static-mirroring/static-hosting/" title="Static mirror hosting" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsstatic-mirroringstatic-hosting"><span class="">Hosting</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringstatic-hostingamazons3-li">
+  <a href="/docs/static-mirroring/static-hosting/amazons3/" title="Hosting on Amazon S3" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringstatic-hostingamazons3"><span class="">Amazon S3</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringstatic-hostinggcs-li">
+  <a href="/docs/static-mirroring/static-hosting/gcs/" title="Hosting on Google Cloud Storage" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringstatic-hostinggcs"><span class="">Google CS</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringstatic-hostinggithub-li">
+  <a href="/docs/static-mirroring/static-hosting/github/" title="Hosting on GitHub" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringstatic-hostinggithub"><span class="">GitHub</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsdynamic-mirroring-li">
+  <a href="/docs/dynamic-mirroring/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsdynamic-mirroring"><span class="">Dynamic Mirroring</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsdynamic-mirroringdecoy-li">
+  <a href="/docs/dynamic-mirroring/decoy/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsdynamic-mirroringdecoy"><span class="">Decoy</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsalternative-publishing-methods-li">
+  <a href="/docs/alternative-publishing-methods/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsalternative-publishing-methods"><span class="">Alternative Publishing Methods</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsalternative-publishing-methodstor-li">
+  <a href="/docs/alternative-publishing-methods/tor/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsalternative-publishing-methodstor"><span class="">Tor</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsalternative-publishing-methodstorintro-li">
+  <a href="/docs/alternative-publishing-methods/tor/intro/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsalternative-publishing-methodstorintro"><span class="">Intro to Tor</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsalternative-publishing-methodstoreotk-li">
+  <a href="/docs/alternative-publishing-methods/tor/eotk/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsalternative-publishing-methodstoreotk"><span class="">EOTK</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsalternative-publishing-methodstorstaticonion-li">
+  <a href="/docs/alternative-publishing-methods/tor/staticonion/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-docsalternative-publishing-methodstorstaticonion"><span class="active">Static Onion</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsalternative-publishing-methodsipfsipfs-li">
+  <a href="/docs/alternative-publishing-methods/ipfs/ipfs/" title="Interplanetary File System" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsalternative-publishing-methodsipfsipfs"><span class="">IPFS</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsddos-mitigation-guide-li">
+  <a href="/docs/ddos-mitigation-guide/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsddos-mitigation-guide"><span class="">DDoS mitigation guide</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docscontribution-guidelines-li">
+  <a href="/docs/contribution-guidelines/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docscontribution-guidelines"><span class="">Contribution Guidelines</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsreference-li">
+  <a href="/docs/reference/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsreference"><span class="">References</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+                    </aside>
+                    <main class="col-12 col-md-8 col-xl-9" role="main">
+                        <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/alternative-publishing-methods/">Alternative Publishing Methods</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/alternative-publishing-methods/tor/">Tor</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Static Onion</li>
+  </ol>
+</nav>
+                        <p class="reading-time"><span class="inline-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill='currentColor' d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"/></svg>
+</span> 3 minute read </p>
+                        <h1>Static Onion</h1>
+                        <p>Required expertise level : <strong>Advanced</strong></p>
+<p>Platform : <strong>Linux / Ubuntu - Debian</strong></p>
+<p>Last tested and confirmed : March 2022</p>
+<hr>
+
+
+<div class="pageinfo pageinfo-primary">
+<p>This guide will walk you through the process of creating <strong>Onion Service</strong> for you static website.</p>
+
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <strong>This guide</strong> focuses on creating a simple Onion service mainly in the context of censorship circumvention, if you are more concerned with the anonymity Tor provides in Onion services you should not depend on this guide alone, reading and understanding <strong><a href="https://2019.www.torproject.org/docs/tor-onion-service.html.en">Tor project documentations</a></strong> will best practice in that case, <strong>as a ensuring full anonymity is an advanced and very details oriented process.</strong>
+
+</div>
+<hr>
+<ul>
+<li><strong>Install Nginx webserver</strong></li>
+</ul>
+<blockquote>
+<p>Run the following commands in your terminal in their respective order</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install software-properties-common
+</span></span><span style="display:flex;"><span>sudo add-apt-repository ppa:nginx/stable
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install nginx -y
+</span></span></code></pre></div><p><img src="/img/onion-services/6.png" alt=""></p>
+<p>Confirm your installation by entering <code>nginx -v</code>, the output should look similar to this</p>
+<ul>
+<li><strong>Install Tor client</strong></li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    <strong>If Tor Project Website and Tor communications are blocked in your country,</strong> probably the official <strong><a href="https://deb.torproject.org/torproject.org">software repositories</a></strong> are also blocked, in which case you should skip adding them and install Tor directly from <strong>your distribution&rsquo;s repositories.</strong>
+
+</div>
+<blockquote>
+<p>Add in the following lines in <code>/etc/apt/sources.list</code></p>
+</blockquote>
+<pre tabindex="0"><code>deb https://deb.torproject.org/torproject.org stretch main
+deb-src https://deb.torproject.org/torproject.org stretch main
+</code></pre><blockquote>
+<p>Run the following commands in your terminal in their respective order</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+</span></span><span style="display:flex;"><span>gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> apt install tor deb.torproject.org-keyring
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install tor
+</span></span></code></pre></div><blockquote>
+<p>Run the following commands to start Tor daemon</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start tor
+</span></span><span style="display:flex;"><span>sudo systemctl enable tor
+</span></span></code></pre></div><blockquote>
+<p>Confirm Tor is running without issues</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl status tor
+</span></span><span style="display:flex;"><span>tor --version
+</span></span></code></pre></div><p><img src="/img/onion-services/7.png" alt=""></p>
+<ul>
+<li><strong>Configure Tor client</strong></li>
+</ul>
+<blockquote>
+<p><strong>Open</strong> Tor config file at <code>/etc/tor/torrc</code> with your favorite editor</p>
+</blockquote>
+<p><code>vim /etc/tor/torrc</code></p>
+<blockquote>
+<p><strong>Uncomment</strong> the following lines by removing the <code>#</code>, and optionally, replace the directory name in <code>/var/lib/tor/hidden_service/</code> with different name, specially if you are planning on hosting multiple Onion Services on the same server. i.e. <code>/var/lib/tor/myfirstonion/</code></p>
+</blockquote>
+<ul>
+<li><strong>Before:</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">72</span> <span style="color:#75715e">#HiddenServiceDir /var/lib/tor/hidden_service/</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">73</span> <span style="color:#75715e">#HiddenServicePort 80 127.0.0.1:80</span>
+</span></span></code></pre></div><ul>
+<li><strong>After</strong>:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>HiddenServiceDir /var/lib/tor/myfirstonion/
+</span></span><span style="display:flex;"><span>HiddenServicePort <span style="color:#ae81ff">80</span> 127.0.0.1:80
+</span></span></code></pre></div><blockquote>
+<p>Restart Tor service</p>
+</blockquote>
+<p><code>sudo systemctl restart tor</code></p>
+<blockquote>
+<p>Confirm your Onion Service related files were generated at <code>/var/lib/tor/myfirstonion/</code></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /var/lib/tor/myfirstonion/ <span style="color:#f92672">&amp;&amp;</span> ls
+</span></span></code></pre></div><p>You should find two files generated at this directory</p>
+<p>1- <code>hostname</code> <strong>contains your Onion Service address</strong></p>
+<p>2- <code>private_key</code> <strong>Private key used for encryption. Don&rsquo;t edit or share this file under any circumstances</strong></p>
+<p><img src="/img/onion-services/8.png" alt=""></p>
+<ul>
+<li><strong>Configure Nginx Webserver</strong></li>
+</ul>
+<p><strong>It&rsquo;s very important to read Nginx documentations and follow the <a href="https://riseup.net/en/security/network-security/tor/onionservices-best-practices">best practices</a> when configuring your Onion Service</strong></p>
+<p>But essentially, you can get your Onion Service up &amp; running by adding this simple config file to your <code>/etc/nginx/sites-enabled</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#66d9ef">server</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">listen</span> 127.0.0.1:<span style="color:#ae81ff">80</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">server_name</span> <span style="color:#e6db74">[onion-address]</span>; <span style="color:#75715e">#replace with your generated onion address, you can get that by executing : `cat /var/lib/[yourservicename]/hostname`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">root</span> <span style="color:#e6db74">/var/www/html/mystaticmirror</span>; <span style="color:#75715e">#replace with your mirror&#39;s files directory, and make sure the webserver user has access permissions to it.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">client_max_body_size</span> <span style="color:#e6db74">99M</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">port_in_redirect</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">charset</span> <span style="color:#e6db74">utf-8</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">index</span> <span style="color:#e6db74">index.html</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">autoindex</span> <span style="color:#66d9ef">off</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li><strong>Testing your setup</strong></li>
+</ul>
+<p><img src="/img/onion-services/9.png" alt=""></p>
+<p>Make sure Both Nginx and Tor client are restarted and running succesfully, then head to your Tor Browser and test your new Onion address.</p>
+<ul>
+<li><strong>[Optional] - announcing your new mirror for Tor browser users</strong></li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+
+
+    <p><a href="https://community.torproject.org/onion-services/advanced/onion-location/"><strong>Onion-Location</strong></a> is a new feature implemented in Tor Browser.</p>
+<p>It essentially allows you to <strong>announce your Onion mirror</strong> for Tor Browser users when they access your original website, through adding an <strong>HTTP Header</strong> using your webserver, or adding specific <strong>HTML <code>&lt;meta&gt;</code></strong> to your <code>index.html</code> page.</p>
+
+
+</div>
+<p><strong>HTTP Header</strong></p>
+<ul>
+<li>Apache</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:443</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>       ServerName &lt;your-website.tld&gt;
+</span></span><span style="display:flex;"><span>       DocumentRoot <span style="color:#e6db74">/path/to/htdocs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       Header set Onion-Location <span style="color:#e6db74">&#34;http://your-onion-address.onion%{REQUEST_URI}s&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>       SSLEngine <span style="color:#66d9ef">on</span>
+</span></span><span style="display:flex;"><span>       SSLCertificateFile <span style="color:#e6db74">&#34;/path/to/www.example.com.cert&#34;</span>
+</span></span><span style="display:flex;"><span>       SSLCertificateKeyFile <span style="color:#e6db74">&#34;/path/to/www.example.com.key&#34;</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">&lt;/VirtualHost&gt;</span>
+</span></span></code></pre></div><ul>
+<li>Nginx</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#66d9ef">add_header</span> <span style="color:#e6db74">Onion-Location</span> <span style="color:#e6db74">http://&lt;your-onion-address&gt;.onion</span>$request_uri;
+</span></span></code></pre></div><p><strong>HTML <code>&lt;meta&gt;</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onion-location&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://&lt;your-onion-service-address&gt;.onion&#34;</span> /&gt;
+</span></span></code></pre></div>
+
+<div class="alert alert-primary" role="alert">
+
+
+    <strong>When</strong> everything is well configured and working, visitors of your original Clearnet website using Tor browser, should be notified about the availability of the Onion mirror and it&rsquo;s address.
+
+</div>
+<p><img src="/img/onion-services/10.png" alt=""></p>
+
+                        <hr>
+                        
+
+
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="container-fluid background-blue-800 text-white py-5">
+    <div class="container">      
+      <div class="row">
+        <div class="col-lg-9 col-12 mb-xl-0 mb-4">
+          <p class="mb-0">© 2023 Some rights reserved. Unless otherwise noted, content on this page is under a Creative Commons license.</p>
+        </div>
+        <div class="col-lg-3 col-12 d-flex justify-content-lg-end">
+          
+
+<a href="https://mastodon.online/web/accounts/41742" target="_blank" rel="noopener" title="Mastodon" aria-label="Icarus project on Mastodon"><span class="inline-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill='currentColor' d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+</span></a>
+
+<a href="https://twitter.com/IcarusProject0" target="_blank" rel="noopener" title="Twitter" aria-label="Icarus project on Twitter"><span class="inline-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill='currentColor' d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</span></a>
+
+<a href="https://github.com/icaruslab" target="_blank" rel="noopener" title="Github" aria-label="Icarus project on Github"><span class="inline-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill='currentColor' d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a>
+        </div>
+      </div>      
+    </div>
+</footer>
+
+
+
+<script src="/bundle.min.ccb21994223b4e5350bf3890d44cf74a348355b27a36885473665983f83990a3.js" integrity="sha256-zLIZlCI7TlNQvziQ1Ez3SjSDVbJ6NohUc2ZZg/g5kKM="></script>
+
+
+    
+
+</body>
+
+</html>

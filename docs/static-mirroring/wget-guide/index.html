@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta charset="UTF-8" />
+<meta name="author"
+  content="info@fightcensorship.tech Icarus Project " />
+<meta name="description"
+  content="Use [Wget](https://www.gnu.org/software/wget/) to create a static clone of a website
+" />
+<meta name="keywords"
+  content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#48AD9C" />
+<link rel="canonical" href="/docs/static-mirroring/wget-guide/" />
+
+
+<title>
+   Wget :: Icarus Project  
+</title>
+
+
+
+ 
+
+
+
+  
+
+
+<link rel="stylesheet" href="/main.bf369f1addd9221a52374ee87aeebebfe100f5004c933d3c292a4728f57246f5.css" />
+
+
+
+
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png">
+<link rel="mask-icon" href="/favicons/favicon.svg" color="#328378">
+<link rel="icon" href="/favicons/favicon.svg">
+<meta itemprop="name" content="Wget">
+<meta itemprop="description" content="Use [Wget](https://www.gnu.org/software/wget/) to create a static clone of a website
+">
+
+<meta itemprop="wordCount" content="579"><meta itemprop="image" content="/img/default.png"/>
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Wget" />
+<meta property="og:description" content="Use [Wget](https://www.gnu.org/software/wget/) to create a static clone of a website
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/static-mirroring/wget-guide/" /><meta property="og:image" content="/img/default.png"/><meta property="article:section" content="docs" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/img/default.png"/>
+
+<meta name="twitter:title" content="Wget"/>
+<meta name="twitter:description" content="Use [Wget](https://www.gnu.org/software/wget/) to create a static clone of a website
+"/>
+ 
+ 
+
+
+
+
+
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <a class="screen-reader-text" href="#content">Skip to content</a>
+
+    
+
+<header class="background-head">
+
+    
+    <div class="container-fluid pt-2">
+    <div id="menu" class="container">
+      <nav class="navbar navbar-expand-lg justify-content-between align-items-center" aria-label="Primary">
+        <a aria-label="Icarus Project Logo" class="navbar-brand" href="/">
+          <img class="img-fluid" src="/img/logo.svg" alt="Icarus Project logo" width="150px" height="auto">
+        </a>
+
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+
+        <div id="menu-items" class="collapse navbar-collapse flex-grow-0 mt-lg-0 mt-4">
+          <ul class="navbar-nav align-items-lg-center"><li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 "  href="/">Home</a>
+            </li>
+            <li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 "  href="/about/">About</a>
+            </li>
+            <li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 active" aria-current="page"  href="/docs/">Documentation</a>
+            </li>
+            <li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 "  href="/community/">Community</a>
+            </li>
+            <li class="nav-item ms-0 ms-lg-4">
+              <a class="nav-link color-gray-500 "  href="/blog/">Blog</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+</div>
+    
+
+</header>
+
+
+
+    <div id="content" class="content py-5">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-12 col-md-4 col-xl-3">
+                        
+<div id="sidebar-menu">
+  <nav>
+    <ul class="td-sidebar-nav__section ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsoverview-li">
+  <a href="/docs/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsoverview"><span class="">Overview</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsgetting-started-li">
+  <a href="/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting Started</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsstatic-mirroring-li">
+  <a href="/docs/static-mirroring/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsstatic-mirroring"><span class="">Static mirroring</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsstatic-mirroringwget-guide-li">
+  <a href="/docs/static-mirroring/wget-guide/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringwget-guide"><span class="active">Wget</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringhttrack-guide-li">
+  <a href="/docs/static-mirroring/httrack-guide/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringhttrack-guide"><span class="">HTTrack</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringwpplugins-li">
+  <a href="/docs/static-mirroring/wpplugins/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringwpplugins"><span class="">WordPress Plugins</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsstatic-mirroringstatic-hosting-li">
+  <a href="/docs/static-mirroring/static-hosting/" title="Static mirror hosting" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsstatic-mirroringstatic-hosting"><span class="">Hosting</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringstatic-hostingamazons3-li">
+  <a href="/docs/static-mirroring/static-hosting/amazons3/" title="Hosting on Amazon S3" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringstatic-hostingamazons3"><span class="">Amazon S3</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringstatic-hostinggcs-li">
+  <a href="/docs/static-mirroring/static-hosting/gcs/" title="Hosting on Google Cloud Storage" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringstatic-hostinggcs"><span class="">Google CS</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsstatic-mirroringstatic-hostinggithub-li">
+  <a href="/docs/static-mirroring/static-hosting/github/" title="Hosting on GitHub" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstatic-mirroringstatic-hostinggithub"><span class="">GitHub</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsdynamic-mirroring-li">
+  <a href="/docs/dynamic-mirroring/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsdynamic-mirroring"><span class="">Dynamic Mirroring</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsdynamic-mirroringdecoy-li">
+  <a href="/docs/dynamic-mirroring/decoy/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsdynamic-mirroringdecoy"><span class="">Decoy</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsalternative-publishing-methods-li">
+  <a href="/docs/alternative-publishing-methods/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsalternative-publishing-methods"><span class="">Alternative Publishing Methods</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsalternative-publishing-methodstor-li">
+  <a href="/docs/alternative-publishing-methods/tor/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsalternative-publishing-methodstor"><span class="">Tor</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsalternative-publishing-methodstorintro-li">
+  <a href="/docs/alternative-publishing-methods/tor/intro/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsalternative-publishing-methodstorintro"><span class="">Intro to Tor</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsalternative-publishing-methodstoreotk-li">
+  <a href="/docs/alternative-publishing-methods/tor/eotk/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsalternative-publishing-methodstoreotk"><span class="">EOTK</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsalternative-publishing-methodstorstaticonion-li">
+  <a href="/docs/alternative-publishing-methods/tor/staticonion/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsalternative-publishing-methodstorstaticonion"><span class="">Static Onion</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsalternative-publishing-methodsipfsipfs-li">
+  <a href="/docs/alternative-publishing-methods/ipfs/ipfs/" title="Interplanetary File System" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsalternative-publishing-methodsipfsipfs"><span class="">IPFS</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsddos-mitigation-guide-li">
+  <a href="/docs/ddos-mitigation-guide/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsddos-mitigation-guide"><span class="">DDoS mitigation guide</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docscontribution-guidelines-li">
+  <a href="/docs/contribution-guidelines/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docscontribution-guidelines"><span class="">Contribution Guidelines</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsreference-li">
+  <a href="/docs/reference/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsreference"><span class="">References</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+                    </aside>
+                    <main class="col-12 col-md-8 col-xl-9" role="main">
+                        <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/docs/">Documentation</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/static-mirroring/">Static mirroring</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Wget</li>
+  </ol>
+</nav>
+                        <p class="reading-time"><span class="inline-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill='currentColor' d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"/></svg>
+</span> 3 minute read </p>
+                        <h1>Wget</h1>
+                        <p>Required expertise level : <strong>Beginner / Intermediate</strong></p>
+<p>Platform : <strong>Gnu/Linux | macOS | MS Windows | Android | BSD</strong></p>
+<p>Last tested and confirmed : January 2022</p>
+<hr>
+<p>
+
+<div class="alert alert-primary" role="alert">
+
+
+    <strong>Wget</strong> is a cli-based software that retrieves web content, it supports HTTP, HTTPS, and FTP protocols.
+
+</div>
+<strong>One of Wget’s features</strong> is the ability to scan and index the entirety of a website and download a fully functional static clone of the original website.</p>
+<p>The static clone can be later refreshed and updated with new content published to the original website.
+While there are different ways of performing this task using Wget, you may get different results depending on your original website properties, including the CMS being used, the web server configurations, any kind of DDoS protection and online asset&rsquo;s protection e.g. images and videos.</p>
+<hr>
+<h3 id="install-wget">Install Wget</h3>
+<p><strong>MS Windows</strong></p>
+<ul>
+<li>
+<p><a href="https://chocolatey.org/install">Chocolatey</a> package manager for MS Windows</p>
+<p><code>choco install wget</code></p>
+</li>
+</ul>
+<p><strong>Gnu/Linux</strong></p>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    As Wget is a Gnu developed software, it’s available in most distributions main repositories, the installation process should be as simple as using your distribution’s package manager.
+
+</div>
+<blockquote>
+<p>Examples</p>
+</blockquote>
+<ul>
+<li>
+<p><code>apt install wget</code></p>
+</li>
+<li>
+<p><code>dnf install wget</code></p>
+</li>
+<li>
+<p><code>pacman -S wget</code></p>
+</li>
+</ul>
+<p><strong>macOS</strong></p>
+<ul>
+<li>
+<p>Install using <a href="https://brew.sh/">Homebrew</a> package manager</p>
+<p><code>brew install wget</code></p>
+</li>
+<li>
+<p>Install using <a href="https://www.macports.org/install.php">Macports</a></p>
+<p><code>port install wget</code></p>
+</li>
+</ul>
+<hr>
+<h3 id="pulling-the-website-to-your-local-machine">Pulling the website to your local machine</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    We will be using some basic parameters for Wget which should work for the majority of websites, but you may need to refer to the <a href="https://www.gnu.org/software/wget/manual/wget.html">manual pages of Wget</a> in case of needing to do some tweaks or solve an issue with the resulting mirror.
+
+</div>
+<p><code>wget --mirror --convert-links --adjust-extension --page-requisites http://example.org</code></p>
+<h5 id="parameters-and-options-description">Parameters and options description</h5>
+<p><code>--mirror</code></p>
+<p>Turn on options suitable for mirroring.  This option turns on recursion and time-stamping, sets infinite recursion depth and keeps FTP directory listings.</p>
+<p>-<code>-convert-links</code></p>
+<p>After the download is complete, convert the links in the document to make them suitable for local viewing.  This affects not only the visible hyperlinks, but any part of the document that links to external content, such as embedded images, links to style sheets, hyperlinks to non-HTML content, etc.</p>
+<p><code>--adjust-extension</code></p>
+<p>If some link points to <code>//foo.com/bar.cgi?xyz</code> with <code>--adjust-extension</code> asserted and its local destination is intended to be .<code>/foo.com/bar.cgi?xyz.css</code>, then the link would be converted to <code>//foo.com/bar.cgi?xyz.css</code>. Note that only the filename part has been modified. The rest of the URL has been left untouched, including the net path <code>(&quot;//&quot;)</code> which would otherwise be processed by Wget and converted to the effective scheme <code>(ie. &quot;http://&quot;)</code>.</p>
+<p><code>--page-requisites</code></p>
+<p>This option causes Wget to download all the files that are necessary to properly display a given HTML page.  This includes such things as inlined images, sounds, and referenced stylesheets.</p>
+<hr>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    <a href="https://gitlab.com/gnuwget/wget2">Wget2</a> is currently being developed, while it’s not stable yet but it’s a full rewrite of the original Wget and meant to replace it in the near future. Wget2 comes with many new features such as HTTP/2.0 support and multi-threaded download which can make the process of pulling large websites way faster.
+
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    For websites operating behind Cloudflare, this process can be identified as malicious behaviour as many simultaneous requests are coming from one IP address in short intervals, this can result in partial downloads or failing to download some assets such as inline images and CSS files.
+
+</div>
+<p><strong>This can be solved</strong> by either <strong>whitelisting your IP address on Cloudflare</strong> and disable assets protection features during the crawling process, or configure the origin server to <strong>allow direct access</strong> on a different domain/sub-domain with <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">basic authentication</a> enabled, you can then add <code>--http-user=[HTTP-USER]</code> <code>--http-passwd=[HTTP-PASSWORD]</code> parameters to your Wget command to authenticate.</p>
+
+                        <hr>
+                        
+
+
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="container-fluid background-blue-800 text-white py-5">
+    <div class="container">      
+      <div class="row">
+        <div class="col-lg-9 col-12 mb-xl-0 mb-4">
+          <p class="mb-0">© 2023 Some rights reserved. Unless otherwise noted, content on this page is under a Creative Commons license.</p>
+        </div>
+        <div class="col-lg-3 col-12 d-flex justify-content-lg-end">
+          
+
+<a href="https://mastodon.online/web/accounts/41742" target="_blank" rel="noopener" title="Mastodon" aria-label="Icarus project on Mastodon"><span class="inline-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill='currentColor' d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+</span></a>
+
+<a href="https://twitter.com/IcarusProject0" target="_blank" rel="noopener" title="Twitter" aria-label="Icarus project on Twitter"><span class="inline-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill='currentColor' d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</span></a>
+
+<a href="https://github.com/icaruslab" target="_blank" rel="noopener" title="Github" aria-label="Icarus project on Github"><span class="inline-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill='currentColor' d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a>
+        </div>
+      </div>      
+    </div>
+</footer>
+
+
+
+<script src="/bundle.min.ccb21994223b4e5350bf3890d44cf74a348355b27a36885473665983f83990a3.js" integrity="sha256-zLIZlCI7TlNQvziQ1Ez3SjSDVbJ6NohUc2ZZg/g5kKM="></script>
+
+
+    
+
+</body>
+
+</html>

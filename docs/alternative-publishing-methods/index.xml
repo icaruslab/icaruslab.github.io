@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alternative Publishing Methods on Icarus Project</title>
+    <link>/docs/alternative-publishing-methods/</link>
+    <description>Recent content in Alternative Publishing Methods on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@fightcensorship.tech (Icarus Project)</managingEditor>
+    <webMaster>info@fightcensorship.tech (Icarus Project)</webMaster>
+    <copyright>Some rights reserved. Unless otherwise noted, content on this page is under a Creative Commons license.</copyright><atom:link href="/docs/alternative-publishing-methods/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interplanetary File System</title>
+      <link>/docs/alternative-publishing-methods/ipfs/ipfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/alternative-publishing-methods/ipfs/ipfs/</guid>
+      <description>Required expertise level : Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : March 2022
+Interplanetary File System - IPFS is A peer-to-peer hypermedia protocol which is being introduced as the future successor of HTTP.
+Being built on the peer-to-peer data exchange system, IPFS is practically difficult to block at least by current censorship techniques and standards, making it worth testing.</description>
+    </item>
+    
+  </channel>
+</rss>

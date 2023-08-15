@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Icarus Project</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@fightcensorship.tech (Icarus Project)</managingEditor>
+    <webMaster>info@fightcensorship.tech (Icarus Project)</webMaster>
+    <copyright>Some rights reserved. Unless otherwise noted, content on this page is under a Creative Commons license.</copyright>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

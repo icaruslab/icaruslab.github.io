@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tor on Icarus Project</title>
+    <link>/docs/alternative-publishing-methods/tor/</link>
+    <description>Recent content in Tor on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@fightcensorship.tech (Icarus Project)</managingEditor>
+    <webMaster>info@fightcensorship.tech (Icarus Project)</webMaster>
+    <copyright>Some rights reserved. Unless otherwise noted, content on this page is under a Creative Commons license.</copyright><atom:link href="/docs/alternative-publishing-methods/tor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Tor</title>
+      <link>/docs/alternative-publishing-methods/tor/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/alternative-publishing-methods/tor/intro/</guid>
+      <description>Required expertise level : Beginner / Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : March 2022
+This guide is an updated version of this article, published by MadaMasr - An Egyptian independent media organization - in the context of releasing their own Onion mirror.
+What is Tor? Tor is the acronym for the original project that produced The Onion Router protocol, which protects the identity of internet users.</description>
+    </item>
+    
+    <item>
+      <title>EOTK</title>
+      <link>/docs/alternative-publishing-methods/tor/eotk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/alternative-publishing-methods/tor/eotk/</guid>
+      <description>Required expertise level : Advanced
+Platform : Gnu/Linux | macOS | BSD
+Introduction As described by it&amp;rsquo;s own developer
+EOTK provides a tool for deploying HTTP and HTTPS onion sites to provide official onion-networking presences for popular websites.
+The result is essentially a &amp;ldquo;man in the middle&amp;rdquo; proxy; you should set them up only for your own sites, or for sites which do not require login credentials of any kind.</description>
+    </item>
+    
+    <item>
+      <title>Static Onion</title>
+      <link>/docs/alternative-publishing-methods/tor/staticonion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/alternative-publishing-methods/tor/staticonion/</guid>
+      <description>Required expertise level : Advanced
+Platform : Linux / Ubuntu - Debian
+Last tested and confirmed : March 2022
+This guide will walk you through the process of creating Onion Service for you static website.
+Note This guide focuses on creating a simple Onion service mainly in the context of censorship circumvention, if you are more concerned with the anonymity Tor provides in Onion services you should not depend on this guide alone, reading and understanding Tor project documentations will best practice in that case, as a ensuring full anonymity is an advanced and very details oriented process.</description>
+    </item>
+    
+  </channel>
+</rss>

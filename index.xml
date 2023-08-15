@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icarus Project</title>
+    <link>/</link>
+    <description>Recent content on Icarus Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@fightcensorship.tech (Icarus Project)</managingEditor>
+    <webMaster>info@fightcensorship.tech (Icarus Project)</webMaster>
+    <copyright>Some rights reserved. Unless otherwise noted, content on this page is under a Creative Commons license.</copyright>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decoy Dynamic Mirroring</title>
+      <link>/code/duck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/code/duck/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>We take note</title>
+      <link>/features/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/features/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interplanetary File System (IPFS)</title>
+      <link>/code/ipfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/code/ipfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intro to Tor</title>
+      <link>/docs/alternative-publishing-methods/tor/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/alternative-publishing-methods/tor/intro/</guid>
+      <description>Required expertise level : Beginner / Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : March 2022
+This guide is an updated version of this article, published by MadaMasr - An Egyptian independent media organization - in the context of releasing their own Onion mirror.
+What is Tor? Tor is the acronym for the original project that produced The Onion Router protocol, which protects the identity of internet users.</description>
+    </item>
+    
+    <item>
+      <title>Mirror, mirror on the web</title>
+      <link>/features/mirrors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/features/mirrors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EOTK</title>
+      <link>/docs/alternative-publishing-methods/tor/eotk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/alternative-publishing-methods/tor/eotk/</guid>
+      <description>Required expertise level : Advanced
+Platform : Gnu/Linux | macOS | BSD
+Introduction As described by it&amp;rsquo;s own developer
+EOTK provides a tool for deploying HTTP and HTTPS onion sites to provide official onion-networking presences for popular websites.
+The result is essentially a &amp;ldquo;man in the middle&amp;rdquo; proxy; you should set them up only for your own sites, or for sites which do not require login credentials of any kind.</description>
+    </item>
+    
+    <item>
+      <title>Get smarter about censorship</title>
+      <link>/features/censorship/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/features/censorship/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Tor Network</title>
+      <link>/code/tor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/code/tor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Decoy</title>
+      <link>/docs/dynamic-mirroring/decoy/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/dynamic-mirroring/decoy/</guid>
+      <description>Required expertise level : Intermediate / Advanced
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : March 2022
+Decoy is a reverse-proxy written in python and ready to deploy on Google App Engine platform. It can be configured to serve a specific website through App Engine.
+The main advantage Decoy provides is the ability to serve the configured website through GAE platform - Google App Engine, using a sub-domain under *.</description>
+    </item>
+    
+    <item>
+      <title>Interplanetary File System</title>
+      <link>/docs/alternative-publishing-methods/ipfs/ipfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/alternative-publishing-methods/ipfs/ipfs/</guid>
+      <description>Required expertise level : Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : March 2022
+Interplanetary File System - IPFS is A peer-to-peer hypermedia protocol which is being introduced as the future successor of HTTP.
+Being built on the peer-to-peer data exchange system, IPFS is practically difficult to block at least by current censorship techniques and standards, making it worth testing.</description>
+    </item>
+    
+    <item>
+      <title>Static Onion</title>
+      <link>/docs/alternative-publishing-methods/tor/staticonion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/alternative-publishing-methods/tor/staticonion/</guid>
+      <description>Required expertise level : Advanced
+Platform : Linux / Ubuntu - Debian
+Last tested and confirmed : March 2022
+This guide will walk you through the process of creating Onion Service for you static website.
+Note This guide focuses on creating a simple Onion service mainly in the context of censorship circumvention, if you are more concerned with the anonymity Tor provides in Onion services you should not depend on this guide alone, reading and understanding Tor project documentations will best practice in that case, as a ensuring full anonymity is an advanced and very details oriented process.</description>
+    </item>
+    
+    <item>
+      <title>Wget</title>
+      <link>/docs/static-mirroring/wget-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/wget-guide/</guid>
+      <description>Required expertise level : Beginner / Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : January 2022
+Wget is a cli-based software that retrieves web content, it supports HTTP, HTTPS, and FTP protocols. One of Wget’s features is the ability to scan and index the entirety of a website and download a fully functional static clone of the original website.
+The static clone can be later refreshed and updated with new content published to the original website.</description>
+    </item>
+    
+    <item>
+      <title>HTTrack</title>
+      <link>/docs/static-mirroring/httrack-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/httrack-guide/</guid>
+      <description>Required expertise level : Beginner / Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | Android | BSD
+Last tested and confirmed : January 2022
+HTTrack is a free software developed for the specific purpose of downloading fully functional offline copies of any website.
+It has many advantages over Wget, and offers a graphical user interface. While it’s not being updated since 2017, it proofed to be efficient in most use cases in our testing scenarios.</description>
+    </item>
+    
+    <item>
+      <title>WordPress Plugins</title>
+      <link>/docs/static-mirroring/wpplugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/wpplugins/</guid>
+      <description>Required expertise level : Beginner / Intermediate
+Platform : Gnu/Linux | macOS | MS Windows | BSD
+Last tested and confirmed : January 2022
+WP2Static WP2Static options
+WP2Static can be considered as the most optimal plugin for the purpose of generating and updating a static mirror.
+This plugin also offers different deployment sub-plugins which can configure direct deployments to platforms like Amazon S3 and GitHub.
+However, it&amp;rsquo;s plugin development process itself doesn’t seem to be stable, at the time of writing these documentations, it appears to be transitioning to a new approach and undergoing big changes.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on Amazon S3</title>
+      <link>/docs/static-mirroring/static-hosting/amazons3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/static-hosting/amazons3/</guid>
+      <description>Required expertise level : Intermediate
+Platform : Any
+Last tested and confirmed : January 2022
+Amazon S3 (Amazon Simple Storage Service) is a data storage service and one of the Amazon Web Services (AWS)
+S3 provides object storage service, which means that data is stored and addressed as objects, each object contains it&amp;rsquo;s own data in addition to meta-data and a unique identifier.
+Object storage is often used to store big amounts of data that doesn&amp;rsquo;t need the features and structure of the file systems hierarchy.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on Google Cloud Storage</title>
+      <link>/docs/static-mirroring/static-hosting/gcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/static-hosting/gcs/</guid>
+      <description>Required expertise level : Intermediate
+Platform : Any
+Last tested and confirmed : January 2022
+Google Cloud Storage is object storage service similar to Amazon S3, and it provides the ability to serve static web pages as well.
+The main advantage of using Google Cloud Storage to host our static mirror is the ability to serve a fully functional &amp;ldquo;static&amp;rdquo; web pages directly using Google Cloud Platform URLs which usually looks like this: https://storage.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on GitHub</title>
+      <link>/docs/static-mirroring/static-hosting/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/docs/static-mirroring/static-hosting/github/</guid>
+      <description>Required expertise level : Intermediate
+Platform : Any
+Last tested and confirmed : January 2022
+GitHub is a software development platform using Git version control system, and it provides the ability to serve static web pages through GitHub Pages service.
+Note GitHub provides an easy step-by-step guide on how to host a static website on their platform. The guide is available in English, so, in order to avoid redundancy we&amp;rsquo;ll just refer to it here and add a translated version for every available language in our documentations.</description>
+    </item>
+    
+    <item>
+      <title>Introducing Icarus Project</title>
+      <link>/blog/old/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/blog/old/</guid>
+      <description>With the first release of Icarus Project&amp;rsquo;s documentations, we are happy to announce the results of our research and documentation process. What is Icarus Project? The project idea started as an individual initiative in 2017, trying to collect, test, document, and develop Internet censorship circumvention techniques as a response to the rise of Internet censorship at the time.
+In 2019 the idea started to be realized through one year fellowship program supported by Open Tech Fund (OTF) Information Controls Fellowship program, and hosted by Stratosphere Lab at the Czech Technical University in Prague (CVUT).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/icarus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/authors/icarus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About Icarus Project</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>info@fightcensorship.tech (Icarus Project)</author>
+      <guid>/community/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
